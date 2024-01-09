@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html><head><title>Userspace</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Userspace"/><meta property="og:description" content="This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done. (5) The Layman’s Guide to Linux: User Space - YouTube (Covers most things at once, but I would recommend doing other sections first then come back to this video) Package managers § These systems are designed to help a user manage packages (applications and services that run on an OS)."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done. (5) The Layman’s Guide to Linux: User Space - YouTube (Covers most things at once, but I would recommend doing other sections first then come back to this video) Package managers § These systems are designed to help a user manage packages (applications and services that run on an OS)."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="OS-&amp;-Firmware/Userspace"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;events&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networking-&amp;-Webdev&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="programming"><button class="folder-button"><span class="folder-title">Basics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="programming"><li><a href="../programming/Binary-and-Hexadecimal-(TODO)" data-for="programming/Binary-and-Hexadecimal-(TODO)">Binary and Hexadecimal (TODO)</a></li><li><a href="../programming/Compilers-(TODO)" data-for="programming/Compilers-(TODO)">Compilers (TODO)</a></li><li><a href="../programming/Garbage-Collection-(TODO)" data-for="programming/Garbage-Collection-(TODO)">Garbage Collection (TODO)</a></li><li><a href="../programming/HTML-(TODO)" data-for="programming/HTML-(TODO)">HTML (TODO)</a></li><li><a href="../programming/python" data-for="programming/python">python</a></li><li><a href="../programming/Speculation-&amp;-Branch-Prediction-(TODO)" data-for="programming/Speculation-&amp;-Branch-Prediction-(TODO)">Speculation &amp; Branch Prediction (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="events"><button class="folder-button"><span class="folder-title">events</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="events"><li><a href="../events/GDG-YYC" data-for="events/GDG-YYC">GDG YYC</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../Game-Dev-&amp;-Graphics/Shaders-(TODO)" data-for="Game-Dev-&amp;-Graphics/Shaders-(TODO)">Shaders (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)" data-for="Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)">UI Strategies (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../Hardware/Basics" data-for="Hardware/Basics">Basics</a></li><li><a href="../Hardware/Connection-Types-(TODO)" data-for="Hardware/Connection-Types-(TODO)">Connection Types (TODO)</a></li><li><a href="../Hardware/CPU-(TODO)" data-for="Hardware/CPU-(TODO)">CPU (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networking-&amp;-Webdev"><button class="folder-button"><span class="folder-title">Networking &amp; Webdev</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networking-&amp;-Webdev"><li><a href="../Networking-&amp;-Webdev/HTTP-(TODO)" data-for="Networking-&amp;-Webdev/HTTP-(TODO)">HTTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)" data-for="Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)">Networking Error Correction (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Products-and-Services-(TODO)" data-for="Networking-&amp;-Webdev/Products-and-Services-(TODO)">Products and Services (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/SMTP-(TODO)" data-for="Networking-&amp;-Webdev/SMTP-(TODO)">SMTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Virtualization-(TODO)" data-for="Networking-&amp;-Webdev/Virtualization-(TODO)">Virtualization (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">OS &amp; Firmware</a></li><li><a href="../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)" data-for="Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)">Samir Secret Sharing (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../OS-&amp;-Firmware/">OS &amp; Firmware</a></div></nav><h1 class="article-title ">Userspace</h1><p class="content-meta ">Jan 09, 2024, 8 min read</p></div></div><article class="popover-hint"><p>This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5JoYzAyo8eA" class="external alias">(5) The Layman’s Guide to Linux: User Space - YouTube</a> (Covers most things at once, but I would recommend doing other sections first then come back to this video)</li>
+</ul>
+<h3 id="package-managers">Package managers<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#package-managers" class="internal alias"> §</a></h3>
+<p>These systems are designed to help a user manage packages (applications and services that run on an OS). These are common on linux systems, but less common on windows. They give advantages over just normally just installing applications because you can manage versions, updates, and uninstalling more easliy:</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=vX3krP6JmOY" class="external alias">apt, dpkg, git, Python PiP (Linux Package Management) // Linux for Hackers // EP 5 - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=X20QCZlOhzM" class="external alias">The APT Package Manager in Debian and Ubuntu - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/windows/package-manager/" class="external alias">Windows Package Manager | Microsoft Docs</a></p>
+</li>
+<li>
+<p><a href="https://brew.sh/" class="external alias">The Missing Package Manager for macOS (or Linux) — Homebrew</a></p>
+</li>
+<li>
+<p><a href="https://chocolatey.org/" class="external alias">Chocolatey Software | Chocolatey - The package manager for Windows</a></p>
+</li>
+</ul>
+<p>There is an alternative to package managers that are essentially containerized forms of package managers:</p>
+<ul>
+<li>
+<p><a href="https://snapcraft.io/" class="external alias">Snapcraft - Snaps are universal Linux packages</a></p>
+</li>
+<li>
+<p><a href="https://flatpak.org/" class="external alias">Flatpak—the future of application distribution</a></p>
+</li>
+</ul>
+<h3 id="distros">Distro’s<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distros" class="internal alias"> §</a></h3>
+<p>Distro’s or distributions is the name given to different “flavours” of operating systems (really only applies to linux since there’s 1 version of macos and 1 version of windows). A distro is what you actually install to your computer and includes a kernel, and all the default userspace packages and configurations.</p>
+<p>There are many different distro’s, but generally there are some groups of “similar” ones that do thing in a similar way and have similar setups. Packages can have a wide range of formats and which ones are supported is often tied to the type of distro you use</p>
+<h4 id="debian">Debian<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#debian" class="internal alias"> §</a></h4>
+<p>The most popular type of linux distro. Can use raw binaries or .deb files for packages. Typically uses apt as a package manager:</p>
+<ul>
+<li>
+<p>ZorinOS: <a href="https://zorin.com/os/" class="external alias">Zorin OS - Make your computer better.</a></p>
+</li>
+<li>
+<p>Mint: <a href="https://linuxmint.com/" class="external alias">Home - Linux Mint</a>, <a href="https://github.com/linuxmint" class="external alias">Linux Mint · GitHub</a></p>
+</li>
+<li>
+<p>Ubuntu: <a href="https://ubuntu.com/" class="external alias">Enterprise Open Source and Linux | Ubuntu</a></p>
+</li>
+<li>
+<p>Cutefish: <a href="https://www.youtube.com/watch?v=o-VYDqMK994" class="external alias">CuteFishOS - A Clean Mac-Like Linux Desktop - YouTube</a></p>
+</li>
+<li>
+<p>Parrot: <a href="https://www.parrotsec.org/" class="external alias">Parrot Security</a></p>
+</li>
+<li>
+<p>Kali: <a href="https://www.kali.org/" class="external alias">Kali Linux | Penetration Testing and Ethical Hacking Linux Distribution</a></p>
+</li>
+<li>
+<p>POP!: <a href="https://pop.system76.com/" class="external alias">Pop!_OS by System76</a></p>
+</li>
+<li>
+<p>Elementary: <a href="https://elementary.io/" class="external alias">The thoughtful, capable, and ethical replacement for Windows and macOS ⋅ elementary OS</a></p>
+</li>
+</ul>
+<h4 id="arch">Arch<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arch" class="internal alias"> §</a></h4>
+<p>Considered to be the bleeding edge, and also typically the hardest learning curve. Tends to use pacman in conjunction with AUR (Arch user repository) to get it’s packages:</p>
+<ul>
+<li>
+<p>Manjaro: <a href="https://manjaro.org/" class="external alias">Manjaro</a></p>
+</li>
+<li>
+<p>Endeavour: <a href="https://endeavouros.com/" class="external alias">EndeavourOS – A terminal-centric distro with a vibrant and friendly community at its core</a></p>
+</li>
+<li>
+<p>Reborn: <a href="https://rebornos.org/" class="external alias">Homepage rebornos - RebornOS</a></p>
+</li>
+</ul>
+<h4 id="fedora">Fedora<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fedora" class="internal alias"> §</a></h4>
+<p>Often considered the more “corporate” type of distro:</p>
+<ul>
+<li><a href="https://getfedora.org/" class="external alias">Fedora (getfedora.org)</a></li>
+</ul>
+<h4 id="lfs-linux-from-scratch">LFS (Linux from scratch)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lfs-linux-from-scratch" class="internal alias"> §</a></h4>
+<p>Linux from scratch is exactly what it sounds like. You build your system from nothing and basically create “your own distro”</p>
+<ul>
+<li>
+<p><a href="https://www.linuxfromscratch.org/" class="external alias">Welcome to Linux From Scratch!</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Linux_From_Scratch" class="external alias">Linux From Scratch - Wikipedia</a></p>
+</li>
+</ul>
+<h3 id="processes">Processes<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processes" class="internal alias"> §</a></h3>
+<p>A running program. They are essentially enclosed processes that have a bunch of state. When a process is made it will have a PID you can use to identify the process. While each process is seperate you can technically “pipe” the contents of processes between each other, typically using STDIN and STDOUT:</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Ip9P1XJt5PI" class="external alias">Linux Internals - Process Management - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=TJzltwv7jJs" class="external alias">Linux processes, init, fork/exec, ps, kill, fg, bg, jobs - YouTube</a></p>
+</li>
+</ul>
+<h3 id="terminalshell">Terminal/Shell<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#terminalshell" class="internal alias"> §</a></h3>
+<p>The shell is the name given to the system that lets you start and stop processes. The terminal is just the visualization of the shell that you interact with. When you start processes via clicking on a shortcut this still goes through the shell, but you likely won’t see the terminal representation.</p>
+<p>Shells:</p>
+<ul>
+<li>
+<p>Bash; <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" class="external alias">Bash (Unix shell) - Wikipedia</a>, <a href="https://www.gnu.org/software/bash/" class="external alias">Bash - GNU Project - Free Software Foundation</a></p>
+</li>
+<li>
+<p>ZSH; <a href="https://en.wikipedia.org/wiki/Z_shell" class="external alias">Z shell - Wikipedia</a>, <a href="https://www.zsh.org/" class="external alias">Zsh</a></p>
+</li>
+<li>
+<p>Fish: <a href="https://fishshell.com/" class="external alias">fish shell</a></p>
+</li>
+</ul>
+<p>Terminals</p>
+<ul>
+<li>
+<p><a href="https://ohmyz.sh/" class="external alias">Oh My Zsh - a delightful &amp; open source framework for Zsh</a></p>
+</li>
+<li>
+<p>Termux; <a href="https://termux.com/" class="external alias">Termux | Terminal emulator and Linux environment for Android.</a></p>
+</li>
+<li>
+<p>Cmder; <a href="https://github.com/cmderdev/cmder" class="external alias">cmderdev/cmder: Lovely console emulator package for Windows (github.com)</a></p>
+</li>
+<li>
+<p>warp: <a href="https://www.warp.dev/" class="external alias">Warp: The terminal for the 21st century</a></p>
+</li>
+<li>
+<p>Alacritty: <a href="https://github.com/alacritty/alacritty" class="external alias">alacritty/alacritty: A cross-platform, OpenGL terminal emulator. (github.com)</a></p>
+</li>
+</ul>
+<p>Additional references</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Yt57-gg9jVg" class="external alias">The Terminal vs The Shell - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://kieranwood.ca/terminal-basics" class="external alias">Terminal Basics</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=VWicoVXmCNw" class="external alias">Introduction to Basic Linux Commands - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=I4EWvMFj37g" class="external alias">Bash in 100 Seconds - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=kboexp3QiUg" class="external alias">Batch/Cmd Programming: Lesson 1 (Basics) - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Zl7npywCB84" class="external alias">Bash Shell Scripting Tutorial For Beginners - Bash Basics in 20 Minutes - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=IHrGresKu2w" class="external alias">Microsoft PowerShell for Beginners - Video 1 Learn PowerShell - YouTube</a></p>
+</li>
+</ul>
+<h4 id="streams">Streams<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#streams" class="internal alias"> §</a></h4>
+<p>Streams is the name given to the system used to communicate with processes through the shell. There are 2 main types (and also STDERR you can look into yourself)</p>
+<p><a href="https://gist.githubusercontent.com/Descent098/ab3bc88425c71e36f3583d916b9ee2b9/raw/c8497db3647bcb1e934120a32b60775c1874ee8f/std.png" class="external"><img src="https://gist.githubusercontent.com/Descent098/ab3bc88425c71e36f3583d916b9ee2b9/raw/c8497db3647bcb1e934120a32b60775c1874ee8f/std.png" alt="std"/></a></p>
+<h5 id="stdin">STDIN<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stdin" class="internal alias"> §</a></h5>
+<p>The INput stream that the terminal and commands use</p>
+<h5 id="stdout">STDOUT<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stdout" class="internal alias"> §</a></h5>
+<p>The OUTput stream that is what you as a user often read when a command is finished</p>
+<h5 id="piping">Piping<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#piping" class="internal alias"> §</a></h5>
+<p>You can PIPE the output (stdout) of one command (command1), or some text to the input (stdin) of another command (command2):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="shell" data-theme="github-dark github-light"><code data-language="shell" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">command1</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> |</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> command2</span></span></code></pre></figure>
+<p>This means command2 will run using the output of command1 as input</p>
+<h4 id="sudopermissions">Sudo/permissions<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sudopermissions" class="internal alias"> §</a></h4>
+<p>Some folders and files are locked to “admins”, on linux you need to use the command <code>sudo</code> to allow access. On windows you need to use the gui prompt.</p>
+<h3 id="file-system">File System<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-system" class="internal alias"> §</a></h3>
+<p>This is the system that is used to keep track of your files. People use this term to refer to multiple things (including both the way things are stored, and the file structure itself), but this just simply refers to the actual process of how your files are stored.</p>
+<p>Further on we will talk about the file system structures that are common on operating systems, and that is not about how something is stored, but where things are commonly stored (though sometimes people still just call it the file system)</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KN8YgJnShPM" class="external alias">(5) Files &amp; File Systems: Crash Course Computer Science #20 - YouTube</a></li>
+</ul>
+<h4 id="file-system-structure">File System Structure<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-system-structure" class="internal alias"> §</a></h4>
+<p>This is the standard used to describe where you should look in a file system for certain things (i.e. installed apps, default configurations etc.)</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=42iQKuQodW4" class="external alias">Linux Directories Explained in 100 Seconds - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=HbgzrKJvDRw" class="external alias">Linux File System/Structure Explained! - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=K71WCq-g77U" class="external alias">(5) Linux vs Windows File System Structure Compared! - YouTube</a></p>
+</li>
+<li>
+<p>[Environment variables](<a href="https://kieranwood.ca/terminal-basics/#slide=21" class="external alias">Terminal Basics (kieranwood.ca)</a>) (These often get used to make finding certain paths easier)</p>
+</li>
+</ul>
+<h4 id="file-system-formats">File System Formats<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-system-formats" class="internal alias"> §</a></h4>
+<p>This is the way in which the file system actually stores it’s data. This can impose limitations (like 4Gb file size limits for FAT32) and enable features (rolling backups/snapshots for BTRFS for some setups) depending on which you chose:</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=qsP_sBUbmZM" class="external alias">NTFS vs FAT32 vs exFAT - Everything You Need To Know - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=HdEozE2gN9I" class="external alias">(5) File Systems | Which One is the Best? ZFS, BTRFS, or EXT4 - YouTube</a> (Bit opinionated, particularly about raid)</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=B6kg2zeJ9do" class="external alias">(5) Introduction to the Ext4 File System for Linux - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=BV0-EPUYuQc" class="external alias">(5) File Systems as Fast As Possible - YouTube</a></p>
+</li>
+</ul>
+<h3 id="display-server">Display Server<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#display-server" class="internal alias"> §</a></h3>
+<p>Controls what you actually see, without this nothing will render to the screen (examples are x server and wayland). In order for a GUI to appear whatever application is running will need to run through the display server</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=mV1TNyWGQQ8" class="external alias">X Window System - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=U_MBJcD3SFI" class="external alias">Wayland vs Xorg | Learn which one to choose - YouTube</a></p>
+</li>
+</ul>
+<h3 id="desktop-environments">Desktop Environments<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#desktop-environments" class="internal alias"> §</a></h3>
+<p>The name given to the collection of systems that run to give a linux distribution it’s “look and feel”. This includes things like a start menu (or not), a search bar (or not), desktop icons (or not), taskbar/app dock (or not), the file explorer and many other features that make a distribution look and feel different. Note that sometimes distro’s with the same desktop environment will look different because they can often be styled with custom themes using CSS.</p>
+<ul>
+<li>
+<p>GNOME, a very popular DE: <a href="https://www.gnome.org/" class="external alias">GNOME – Simple, beautiful, elegant.</a></p>
+</li>
+<li>
+<p>KDE Plasma: <a href="https://kde.org/plasma-desktop/" class="external alias">Plasma - KDE Community</a></p>
+</li>
+<li>
+<p>Cinnamon: <a href="https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)" class="external alias">Cinnamon (desktop environment) - Wikipedia</a>, <a href="https://www.youtube.com/watch?v=XUkUmx6TZLA" class="external alias">video</a></p>
+</li>
+<li>
+<p>MATE: <a href="https://mate-desktop.org/" class="external alias">MATE Desktop Environment | MATE (mate-desktop.org)</a></p>
+</li>
+<li>
+<p>XFCE: <a href="https://www.xfce.org/" class="external alias">Xfce Desktop Environment</a></p>
+</li>
+<li>
+<p>Cutefish: <a href="https://cutefish-ubuntu.github.io/" class="external alias">CutefishOS – Cutefish OS Built on Ubuntu (cutefish-ubuntu.github.io)</a>, <a href="https://linuxcool.net/en/instructions/how-to-install-cutefish-desktop-in-ubuntu-and-derivatives/" class="external alias">How to install Cutefish Desktop in Ubuntu and derivatives (linuxcool.net)</a></p>
+</li>
+</ul>
+<h3 id="window-manager">Window Manager<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#window-manager" class="internal alias"> §</a></h3>
+<p>Controls the borders of GUI windows [the minimize, maximize and close buttons], as well as their positions and dimensions. These are usually part of desktop environments but you can install custom ones:</p>
+<ul>
+<li>Window manager used by GNOME: <a href="https://www.enlightenment.org/" class="external alias">Enlightenment Main</a></li>
+<li>A fun tiling window manager I used to use in my edgy arch linux days: <a href="https://github.com/qtile/qtile" class="external">https://github.com/qtile/qtile</a></li>
+<li>Another Tiling window manager: <a href="https://i3wm.org/" class="external">https://i3wm.org/</a></li>
+<li>Awesome: <a href="https://awesomewm.org/" class="external">https://awesomewm.org/</a></li>
+</ul>
+<h3 id="file-manager">File Manager<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-manager" class="internal alias"> §</a></h3>
+<p>What allows you to visually traverse your file system</p>
+<ul>
+<li>
+<p>Nemo: <a href="https://en.wikipedia.org/wiki/Nemo_(file_manager)" class="external alias">Nemo (file manager) - Wikipedia</a>,<a href="https://github.com/linuxmint/nemo" class="external alias">source</a></p>
+</li>
+<li>
+<p>Dolphin: <a href="https://apps.kde.org/dolphin/" class="external alias">Dolphin - KDE Applications</a></p>
+</li>
+<li>
+<p>Nautilus (GNOME): <a href="https://gitlab.gnome.org/GNOME/nautilus" class="external alias">GNOME / Files · GitLab</a></p>
+</li>
+</ul>
+<h2 id="helpful-reference-videos">Helpful reference videos<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#helpful-reference-videos" class="internal alias"> §</a></h2>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=LB9wVRYF9tA" class="external alias">Brief Introduction to Computing Systems - User Space Processes, Shells, Kernels, and Hardware - CS1 - YouTube</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=xHu7qI1gDPA" class="external alias">Unix system calls (1/2) - YouTube</a> &amp; <a href="https://www.youtube.com/watch?v=2DrjQBL5FMU" class="external alias">Unix system calls (2/2) - YouTube</a></p>
+</li>
+</ul></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-1"><a href="#package-managers" data-for="package-managers">Package managers</a></li><li class="depth-1"><a href="#distros" data-for="distros">Distro's</a></li><li class="depth-1"><a href="#processes" data-for="processes">Processes</a></li><li class="depth-1"><a href="#terminalshell" data-for="terminalshell">Terminal/Shell</a></li><li class="depth-1"><a href="#file-system" data-for="file-system">File System</a></li><li class="depth-1"><a href="#display-server" data-for="display-server">Display Server</a></li><li class="depth-1"><a href="#desktop-environments" data-for="desktop-environments">Desktop Environments</a></li><li class="depth-1"><a href="#window-manager" data-for="window-manager">Window Manager</a></li><li class="depth-1"><a href="#file-manager" data-for="file-manager">File Manager</a></li><li class="depth-0"><a href="#helpful-reference-videos" data-for="helpful-reference-videos">Helpful reference videos</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li>No backlinks found</li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+function toggleCallout() {
+  const outerBlock = this.parentElement;
+  outerBlock.classList.toggle(`is-collapsed`);
+  const collapsed = outerBlock.classList.contains(`is-collapsed`);
+  const height = collapsed ? this.scrollHeight : outerBlock.scrollHeight;
+  outerBlock.style.maxHeight = height + `px`;
+  let current = outerBlock;
+  let parent = outerBlock.parentElement;
+  while (parent) {
+    if (!parent.classList.contains(`callout`)) {
+      return;
+    }
+    const collapsed2 = parent.classList.contains(`is-collapsed`);
+    const height2 = collapsed2 ? parent.scrollHeight : parent.scrollHeight + current.scrollHeight;
+    parent.style.maxHeight = height2 + `px`;
+    current = parent;
+    parent = parent.parentElement;
+  }
+}
+function setupCallout() {
+  const collapsible = document.getElementsByClassName(
+    `callout is-collapsible`
+  );
+  for (const div of collapsible) {
+    const title = div.firstElementChild;
+    if (title) {
+      title.removeEventListener(`click`, toggleCallout);
+      title.addEventListener(`click`, toggleCallout);
+      const collapsed = div.classList.contains(`is-collapsed`);
+      const height = collapsed ? title.scrollHeight : div.scrollHeight;
+      div.style.maxHeight = height + `px`;
+    }
+  }
+}
+document.addEventListener(`nav`, setupCallout);
+window.addEventListener(`resize`, setupCallout);
+</script><script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+          const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+          mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: 'loose',
+            theme: darkMode ? 'dark' : 'default'
+          });
+          document.addEventListener('nav', async () => {
+            await mermaid.run({
+              querySelector: '.mermaid'
+            })
+          });
+          </script><script type="application/javascript">
+          const socket = new WebSocket('ws://localhost:3001')
+          socket.addEventListener('message', () => document.location.reload())
+        </script><script src="../postscript.js" type="module"></script></html>
