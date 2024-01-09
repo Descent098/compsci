@@ -2,7 +2,7 @@ export const CommonArgv = {
   directory: {
     string: true,
     alias: ["d"],
-    default: "content",
+    default: "compsci-kb",
     describe: "directory to look for content files",
   },
   verbose: {
@@ -63,7 +63,7 @@ export const BuildArgv = {
   output: {
     string: true,
     alias: ["o"],
-    default: "public",
+    default: "site",
     describe: "output folder for files",
   },
   serve: {
