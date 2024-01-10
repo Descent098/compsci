@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Noise (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Noise-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Noise-(TODO)</guid>
-    <description>… Perlin Noise (TODO) § Minecraft Flow Fields Coding Challenge #24: Perlin Noise Flow Field - YouTube Voronoi (TODO) § ….</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
-  </item><item>
-    <title>Procedural Generation (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Procedural-Generation-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Procedural-Generation-(TODO)</guid>
-    <description>… Wave function collapse (TODO) § How Townscaper Works: A Story Four Games in the Making (youtube.com) The Wave Function Collapse algorithm - YouTube .</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
-  </item><item>
-    <title>Quaternians</title>
-    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Quaternians</link>
-    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Quaternians</guid>
-    <description> Don’t Get Lost in Deep Space: Understanding Quaternions - Technical Articles (allaboutcircuits.com) Quaternion - Wikipedia .</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
-  </item><item>
-    <title>Shaders (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Shaders-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Shaders-(TODO)</guid>
-    <description>… The Book of Shaders Introduction to shaders: Learn the basics! .</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
-  </item><item>
-    <title>UI Strategies (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/UI-Strategies-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/UI-Strategies-(TODO)</guid>
-    <description>Immediate vs Retained UI § Immediate-Mode Graphical User Interfaces - 2005 (youtube.com) Immediate Mode vs Retained Mode – oandre.gal Immediate UI vs Retained UI - Collin Quinn’s Portfolio (collquinn.</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
-  </item><item>
-    <title>basics</title>
-    <link>https:/quartz.jzhao.xyz/HCI-&-VR/basics</link>
-    <guid>https:/quartz.jzhao.xyz/HCI-&-VR/basics</guid>
-    <description>….</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
-  </item><item>
     <title>Basics</title>
     <link>https:/quartz.jzhao.xyz/Hardware/Basics</link>
     <guid>https:/quartz.jzhao.xyz/Hardware/Basics</guid>
     <description>Generally speaking there are a few pieces’ of hardware you need, and will be found in basically every machine GPU (often optional or integrated into CPU); What actually renders frames to the monitor that you see.</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
   </item><item>
     <title>CPU (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Hardware/CPU-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Hardware/CPU-(TODO)</guid>
     <description>The “brain” of the computer. This is what essentially tells your computer what to do, and helps coordinates operations between other parts of your computer.</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
   </item><item>
     <title>Connection Types (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</guid>
     <description>There are tons of ways of connecting your PC to peripherals (devices outside your PC).</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
   </item><item>
     <title>HTTP (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP-(TODO)</guid>
     <description> RFC 4229 - HTTP Header Field Registrations (ietf.org) .</description>
-    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+  </item><item>
+    <title>Networking Error Correction (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Networking-Error-Correction-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Networking-Error-Correction-(TODO)</guid>
+    <description>UDP FEC (Forward Error Correction) § Using Forward Error Correction to Mitigate Packet Loss (f5.com) Is FEC-code needed for UDP? - Stack Overflow RFC 6363: Forward Error Correction (FEC) Framework (rfc-editor.</description>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+  </item><item>
+    <title>Products and Services (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Products-and-Services-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Products-and-Services-(TODO)</guid>
+    <description> Tunnel | Zero Trust App Connector | Cloudflare .</description>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+  </item><item>
+    <title>SMTP (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/SMTP-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/SMTP-(TODO)</guid>
+    <description> Sending raw email using the Amazon SES API - Amazon Simple Email Service Parse Raw Email (MIME) Guide - SigParser Why Plain Text Emails Still Work &amp; How to Use Them - Litmus See the whole ‘raw’ email message in Outlook - Office Watch (office-watch.</description>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+  </item><item>
+    <title>Virtualization (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Virtualization-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Virtualization-(TODO)</guid>
+    <description>… VM’s (TODO) § … Containerization (TODO) § … Orchestration &amp; Infrastructure as Code (TODO) § … declarative A Theory of Voluntary Cooperation (markburgess.</description>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+  </item><item>
+    <title>Userspace</title>
+    <link>https:/quartz.jzhao.xyz/OS-&-Firmware/Userspace</link>
+    <guid>https:/quartz.jzhao.xyz/OS-&-Firmware/Userspace</guid>
+    <description>This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done. (5) The Layman’s Guide to Linux: User Space - YouTube (Covers most things at once, but I would recommend doing other sections first then come back to this video) Package managers § These systems are designed to help a user manage packages (applications and services that run on an OS).</description>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+  </item><item>
+    <title>Samir Secret Sharing (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Security-&-Cryptography/Samir-Secret-Sharing-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Security-&-Cryptography/Samir-Secret-Sharing-(TODO)</guid>
+    <description> A beginner’s guide to Shamir’s Secret Sharing | by Keyless Technologies | Medium Shamir’s secret sharing - Wikipedia Shamir’s Secret Sharing Algorithm | Cryptography - GeeksforGeeks .</description>
+    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
   </item>
     </channel>
   </rss>
