@@ -1,0 +1,54 @@
+{
+  "settings": {
+    "migrated": 3,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": "#a069e2",
+    "recentlyUsedIcons": [],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": ".md$",
+        "icon": "FabMarkdown",
+        "for": "everything",
+        "order": 0
+      },
+      {
+        "rule": ".png$|.jpg$|.jpeg$",
+        "icon": "FasImage",
+        "for": "everything",
+        "order": 1
+      },
+      {
+        "rule": ".txt$",
+        "icon": "FarFileLines",
+        "for": "everything",
+        "order": 2
+      },
+      {
+        "rule": ".pdf$",
+        "icon": "FasFilePdf",
+        "for": "everything",
+        "order": 3
+      },
+      {
+        "rule": ".docx$",
+        "icon": "FasFileWord",
+        "for": "everything",
+        "order": 4
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true
+  }
+}
