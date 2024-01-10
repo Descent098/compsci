@@ -164,6 +164,7 @@ This is the system that is used to keep track of your files. People use this ter
 Further on we will talk about the file system structures that are common on operating systems, and that is not about how something is stored, but where things are commonly stored (though sometimes people still just call it the file system)
 
 - [(5) Files & File Systems: Crash Course Computer Science #20 - YouTube](https://www.youtube.com/watch?v=KN8YgJnShPM)
+- ["The ZFS filesystem" - Philip Paeps (LCA 2020) (youtube.com)](https://www.youtube.com/watch?v=Hjpqa_kjCOI)
 
 #### File System Structure
 

@@ -1,2 +1,3 @@
 ...
 - [The Book of Shaders](https://thebookofshaders.com/)
+- [Introduction to shaders: Learn the basics!](https://www.youtube.com/watch?v=3mfvZ-mdtZQ)
