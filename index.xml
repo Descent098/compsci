@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>HTML (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/HTML-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/HTML-(TODO)</guid>
-    <description> HTML Standard (whatwg.org) .</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <title>Noise (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Noise-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Noise-(TODO)</guid>
+    <description>… Perlin Noise (TODO) § Minecraft Flow Fields Coding Challenge #24: Perlin Noise Flow Field - YouTube Voronoi (TODO) § ….</description>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
-    <title>Speculation &amp; Branch Prediction (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Speculation-&-Branch-Prediction-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Speculation-&-Branch-Prediction-(TODO)</guid>
-    <description> Branch predictor - Wikipedia Speculation in JavaScriptCore | WebKit Security Concerns (TODO) § Meltdown and Spectre (meltdownattack.com) Meltdown and Spectre (spectreattack.</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <title>Procedural Generation (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Procedural-Generation-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Procedural-Generation-(TODO)</guid>
+    <description>… Wave function collapse (TODO) § How Townscaper Works: A Story Four Games in the Making (youtube.com) The Wave Function Collapse algorithm - YouTube .</description>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
-    <title>python</title>
-    <link>https:/quartz.jzhao.xyz/programming/python</link>
-    <guid>https:/quartz.jzhao.xyz/programming/python</guid>
-    <description>Python is a versatile and widely-used programming language that is used by developers, data scientists, and educators alike. Created by Guido van Rossum and first released in 1991, Python has steadily grown in popularity due to its simplicity and readability.</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <title>Quaternians</title>
+    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Quaternians</link>
+    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Quaternians</guid>
+    <description> Don’t Get Lost in Deep Space: Understanding Quaternions - Technical Articles (allaboutcircuits.com) Quaternion - Wikipedia .</description>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>Shaders (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Shaders-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Shaders-(TODO)</guid>
-    <description>… The Book of Shaders .</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <description>… The Book of Shaders Introduction to shaders: Learn the basics! .</description>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>UI Strategies (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/UI-Strategies-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/UI-Strategies-(TODO)</guid>
     <description>Immediate vs Retained UI § Immediate-Mode Graphical User Interfaces - 2005 (youtube.com) Immediate Mode vs Retained Mode – oandre.gal Immediate UI vs Retained UI - Collin Quinn’s Portfolio (collquinn.</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>basics</title>
     <link>https:/quartz.jzhao.xyz/HCI-&-VR/basics</link>
     <guid>https:/quartz.jzhao.xyz/HCI-&-VR/basics</guid>
     <description>….</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>Basics</title>
     <link>https:/quartz.jzhao.xyz/Hardware/Basics</link>
     <guid>https:/quartz.jzhao.xyz/Hardware/Basics</guid>
     <description>Generally speaking there are a few pieces’ of hardware you need, and will be found in basically every machine GPU (often optional or integrated into CPU); What actually renders frames to the monitor that you see.</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>CPU (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Hardware/CPU-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Hardware/CPU-(TODO)</guid>
     <description>The “brain” of the computer. This is what essentially tells your computer what to do, and helps coordinates operations between other parts of your computer.</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>Connection Types (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</guid>
     <description>There are tons of ways of connecting your PC to peripherals (devices outside your PC).</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item><item>
     <title>HTTP (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP-(TODO)</guid>
     <description> RFC 4229 - HTTP Header Field Registrations (ietf.org) .</description>
-    <pubDate>Tue, 09 Jan 2024 08:07:52 GMT</pubDate>
+    <pubDate>Wed, 10 Jan 2024 07:26:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
