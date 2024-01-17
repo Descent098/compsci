@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Basics.md",
+                "file": "programming/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Basics.md",
+                "file": "programming/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Basics.md",
+                "file": "programming/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Basics.md"
+                "file": "programming/Basics.md"
               }
             }
           }
@@ -166,10 +166,13 @@
   },
   "active": "f54408281cbddd4f",
   "lastOpenFiles": [
+    "Networking & Webdev/Basics.md",
+    "HCI & VR/Basics.md",
+    "Game Dev & Graphics/Basics.md",
+    "Hardware/Basics.md",
+    "Game Dev & Graphics/Procedural Generation (TODO).md",
     "Events/GDG YYC.md",
     "Events",
-    "HCI & VR/basics.md",
-    "Hardware/Basics.md",
     "Security & Cryptography/Basics.md",
     "OS & Firmware/Basics.md",
     "programming/Basics.md",
@@ -177,7 +180,6 @@
     "programming/python.md",
     "programming/Advanced Data Structures (TODO).md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
     "Networking & Webdev/HTTP (TODO).md",
     "Networking & Webdev/SMTP (TODO).md",
     "programming/Garbage Collection (TODO).md",
@@ -193,8 +195,6 @@
     "events/internet and social media",
     "events/lawsuits/Two Michaels Detainment (TODO).md",
     "events/internet and social media/Blue Whale Challenge.md",
-    "countries/Canada (TODO).md",
-    "_meta/templates/Person Template.md",
     "events/lawsuits",
     "concepts and crimes",
     "countries",
