@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Basics</title>
-    <link>https:/quartz.jzhao.xyz/Hardware/Basics</link>
-    <guid>https:/quartz.jzhao.xyz/Hardware/Basics</guid>
-    <description>Generally speaking there are a few pieces’ of hardware you need, and will be found in basically every machine GPU (often optional or integrated into CPU); What actually renders frames to the monitor that you see.</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
-  </item><item>
-    <title>CPU (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Hardware/CPU-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Hardware/CPU-(TODO)</guid>
-    <description>The “brain” of the computer. This is what essentially tells your computer what to do, and helps coordinates operations between other parts of your computer.</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
-  </item><item>
-    <title>Connection Types (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</guid>
-    <description>There are tons of ways of connecting your PC to peripherals (devices outside your PC).</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
-  </item><item>
-    <title>HTTP (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP-(TODO)</guid>
-    <description> RFC 4229 - HTTP Header Field Registrations (ietf.org) .</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
-  </item><item>
     <title>Networking Error Correction (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Networking-Error-Correction-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Networking-Error-Correction-(TODO)</guid>
     <description>UDP FEC (Forward Error Correction) § Using Forward Error Correction to Mitigate Packet Loss (f5.com) Is FEC-code needed for UDP? - Stack Overflow RFC 6363: Forward Error Correction (FEC) Framework (rfc-editor.</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
   </item><item>
     <title>Products and Services (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Products-and-Services-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Products-and-Services-(TODO)</guid>
     <description> Tunnel | Zero Trust App Connector | Cloudflare .</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
   </item><item>
     <title>SMTP (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/SMTP-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/SMTP-(TODO)</guid>
     <description> Sending raw email using the Amazon SES API - Amazon Simple Email Service Parse Raw Email (MIME) Guide - SigParser Why Plain Text Emails Still Work &amp; How to Use Them - Litmus See the whole ‘raw’ email message in Outlook - Office Watch (office-watch.</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
   </item><item>
     <title>Virtualization (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Virtualization-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Virtualization-(TODO)</guid>
     <description>… VM’s (TODO) § … Containerization (TODO) § … Orchestration &amp; Infrastructure as Code (TODO) § … declarative A Theory of Voluntary Cooperation (markburgess.</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
   </item><item>
     <title>Userspace</title>
     <link>https:/quartz.jzhao.xyz/OS-&-Firmware/Userspace</link>
     <guid>https:/quartz.jzhao.xyz/OS-&-Firmware/Userspace</guid>
     <description>This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done. (5) The Layman’s Guide to Linux: User Space - YouTube (Covers most things at once, but I would recommend doing other sections first then come back to this video) Package managers § These systems are designed to help a user manage packages (applications and services that run on an OS).</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
   </item><item>
     <title>Samir Secret Sharing (TODO)</title>
     <link>https:/quartz.jzhao.xyz/Security-&-Cryptography/Samir-Secret-Sharing-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/Security-&-Cryptography/Samir-Secret-Sharing-(TODO)</guid>
     <description> A beginner’s guide to Shamir’s Secret Sharing | by Keyless Technologies | Medium Shamir’s secret sharing - Wikipedia Shamir’s Secret Sharing Algorithm | Cryptography - GeeksforGeeks .</description>
-    <pubDate>Wed, 10 Jan 2024 15:04:55 GMT</pubDate>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
+  </item><item>
+    <title>low-level</title>
+    <link>https:/quartz.jzhao.xyz/Security-&-Cryptography/low-level</link>
+    <guid>https:/quartz.jzhao.xyz/Security-&-Cryptography/low-level</guid>
+    <description>overflows § … Mitigation § Use compiler flags for stack protection in GCC and Clang | Red Hat Developer .</description>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
+  </item><item>
+    <title>GDG YYC</title>
+    <link>https:/quartz.jzhao.xyz/events/GDG-YYC</link>
+    <guid>https:/quartz.jzhao.xyz/events/GDG-YYC</guid>
+    <description>Notes from GDG YYC 2023, a google conference in Calgary Alberta. Google’s latest experiments in Labs AI § … Google AI Foundations § Attention is All You Need – Google Research Models &amp; Tools § … Gen AI studio § … Generative AI Studio (google.</description>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
+  </item><item>
+    <title>Advanced Data Structures (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/programming/Advanced-Data-Structures-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Advanced-Data-Structures-(TODO)</guid>
+    <description>Struct § … Interface § … Class § … Enumerator § … Iterators § … Recursive Types § … Trees § This is a computer science concept that comes up a lot. The basics are that a graph/tree is a collection of nodes that are linked together.</description>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
+  </item><item>
+    <title>Algorithms &amp; Complexity (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</guid>
+    <description> Everything Is Fast For Small n (codinghorror.com) .</description>
+    <pubDate>Wed, 17 Jan 2024 06:52:55 GMT</pubDate>
   </item>
     </channel>
   </rss>
