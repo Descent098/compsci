@@ -22,7 +22,7 @@ Here are a few:
 	- [Rule 184 - Wikipedia](https://en.wikipedia.org/wiki/Rule_184)
 
 ## Uses
-- Procedural Generation
+- [[Procedural Generation (TODO)]]
 	- Textures
 		- [Procedural Textures Created on Cellular Automata (sccg.sk)](http://sccg.sk/~borovsky/rigorous_thesis/version111.htm)
 		- [[2111.13545] $μ$NCA: Texture Generation with Ultra-Compact Neural Cellular Automata (arxiv.org)](https://arxiv.org/abs/2111.13545)

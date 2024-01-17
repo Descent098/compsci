@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Dev & Graphics/Noise (TODO).md",
+                "file": "Hardware/Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/python.md",
+                "file": "Hardware/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/python.md",
+                "file": "Hardware/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/python.md"
+                "file": "Hardware/Basics.md"
               }
             }
           }
@@ -163,25 +164,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1833d0816d7f4738",
+  "active": "f54408281cbddd4f",
   "lastOpenFiles": [
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "Events/GDG YYC.md",
+    "Events",
+    "HCI & VR/basics.md",
+    "Hardware/Basics.md",
+    "Security & Cryptography/Basics.md",
+    "OS & Firmware/Basics.md",
+    "programming/Basics.md",
     "Game Dev & Graphics/Noise (TODO).md",
+    "programming/python.md",
+    "programming/Advanced Data Structures (TODO).md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Game Dev & Graphics/Procedural Generation (TODO).md",
     "Networking & Webdev/HTTP (TODO).md",
     "Networking & Webdev/SMTP (TODO).md",
     "programming/Garbage Collection (TODO).md",
-    "programming/Advanced Data Structures (TODO).md",
-    "programming/index.md",
     "programming/Algorithms & Complexity (TODO).md",
     "programming/Programming Paradigms (TODO).md",
     "Security & Cryptography/low-level.md",
     "programming/Open Source (TODO).md",
     "Excalidraw/Drawing 2024-01-11 02.20.24.excalidraw.md",
     "Excalidraw",
-    "programming/python.md",
-    "Security & Cryptography/Basics.md",
-    "OS & Firmware/Basics.md",
     "OS & Firmware/Userspace.md",
     "Game Dev & Graphics/Quaternians.md",
     "Game Dev & Graphics/Shaders (TODO).md",
@@ -190,16 +195,12 @@
     "events/internet and social media/Blue Whale Challenge.md",
     "countries/Canada (TODO).md",
     "_meta/templates/Person Template.md",
-    "_meta/templates/Politics & History Note Template.md",
-    "_meta/templates/Event template.md",
-    "_meta/templates/Ignite Article.md",
     "events/lawsuits",
     "concepts and crimes",
     "countries",
     "_meta/templates/periodic",
     "_meta/templates",
     "_meta",
-    "events/Israel & Palestine",
-    "people"
+    "events/Israel & Palestine"
   ]
 }

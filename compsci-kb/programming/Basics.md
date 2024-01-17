@@ -1,5 +1,5 @@
 ---
-title: Basics
+title: 🌱Basics/Intro
 date: 2024-01-09
 aliases:
   - programming
