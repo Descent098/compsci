@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Dev & Graphics/Procedural Generation (TODO).md",
+                "file": "programming/python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f54408281cbddd4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Game Dev & Graphics/Noise (TODO).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Dev & Graphics/Procedural Generation (TODO).md",
+                "file": "programming/python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Game Dev & Graphics/Procedural Generation (TODO).md",
+                "file": "programming/python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game Dev & Graphics/Procedural Generation (TODO).md"
+                "file": "programming/python.md"
               }
             }
           }
@@ -153,14 +165,26 @@
   },
   "active": "1833d0816d7f4738",
   "lastOpenFiles": [
-    "Game Dev & Graphics/Noise (TODO).md",
     "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "Game Dev & Graphics/Noise (TODO).md",
+    "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Networking & Webdev/HTTP (TODO).md",
+    "Networking & Webdev/SMTP (TODO).md",
+    "programming/Garbage Collection (TODO).md",
+    "programming/Advanced Data Structures (TODO).md",
+    "programming/index.md",
+    "programming/Algorithms & Complexity (TODO).md",
+    "programming/Programming Paradigms (TODO).md",
+    "Security & Cryptography/low-level.md",
+    "programming/Open Source (TODO).md",
+    "Excalidraw/Drawing 2024-01-11 02.20.24.excalidraw.md",
+    "Excalidraw",
+    "programming/python.md",
     "Security & Cryptography/Basics.md",
     "OS & Firmware/Basics.md",
     "OS & Firmware/Userspace.md",
     "Game Dev & Graphics/Quaternians.md",
     "Game Dev & Graphics/Shaders (TODO).md",
-    "Networking & Webdev/SMTP (TODO).md",
     "events/internet and social media",
     "events/lawsuits/Two Michaels Detainment (TODO).md",
     "events/internet and social media/Blue Whale Challenge.md",
@@ -169,25 +193,13 @@
     "_meta/templates/Politics & History Note Template.md",
     "_meta/templates/Event template.md",
     "_meta/templates/Ignite Article.md",
-    "_meta/templates/Philosophy Note Template.md",
-    "countries/Sudan (TODO).md",
-    "countries/Soviet Union (TODO).md",
-    "countries/Israel & Palestine (TODO).md",
-    "countries/Chile (TODO).md",
-    "index.md",
-    "people/John Mearsheimer (TODO).md",
     "events/lawsuits",
     "concepts and crimes",
     "countries",
-    "_meta/templates/Events.md",
-    "events/lawsuits/Trump Indictments (TODO).md",
-    "people/Norman Finklestein (TODO).md",
-    "people/Henry Kissinger (TODO).md",
     "_meta/templates/periodic",
     "_meta/templates",
     "_meta",
     "events/Israel & Palestine",
-    "people",
-    "events"
+    "people"
   ]
 }

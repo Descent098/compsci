@@ -28,6 +28,15 @@ For this section I will use Pseudocode, this is a fancy name for "I don't want t
 ...
 #### Mappings (dictionaries, hash-maps, associative arrays)
 
+## Functions (TODO)
+
+### Anatomy of functions (TODO)
+...
+### Returns (TODO)
+...
+### Recursion (TODO)
+...
+
 
 
 

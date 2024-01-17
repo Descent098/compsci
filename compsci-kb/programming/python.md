@@ -68,7 +68,8 @@ Integers are whole numbers, which means they don’t have any decimal points.
 - For Example: `5`, `-10`, `1000`
 
 ```python
-my_integer = 42print(my_integer)  # Output: 42
+my_integer = 42
+print(my_integer)  # Output: 42
 ```
 
 ### FLOATING-POINT NUMBERS (`FLOAT`)
@@ -78,7 +79,8 @@ my_integer = 42print(my_integer)  # Output: 42
 - Example: `3.14`, `-0.5`, `2.0`
 
 ```python
-my_float = 3.14159print(my_float)  # Output: 3.14159
+my_float = 3.14159
+print(my_float)  # Output: 3.14159
 ```
 
 ### STRINGS (`STR`)
@@ -88,7 +90,8 @@ my_float = 3.14159print(my_float)  # Output: 3.14159
 - Example: `'Hello, World!'`, `"Python is fun"`, `'''Triple-quoted strings'''`
 
 ```python
-my_string = "Hello, World!"print(my_string)  # Output: Hello, World!
+my_string = "Hello, World!"
+print(my_string)  # Output: Hello, World!
 ```
 
 These three basic data types are the building blocks for most Python programs. You can perform operations on them, combine them, and use them to represent different kinds of data in your code. As you continue to learn Python, you’ll discover more data types and ways to work with them, but these are the essential ones to get started.
@@ -164,7 +167,8 @@ Python functions are like mini-programs or reusable blocks of code that perform 
 - To create a function, you use the `def` keyword, followed by the function name and parentheses `()`. You can also include parameters (input values) inside the parentheses.
 
 ```python
-def greet(name):    print("Hello, " + name + "!")
+def greet(name):    
+    print("Hello, " + name + "!")
 ```
 
 - In this example, we defined a function called `greet` that takes one parameter, `name`.
@@ -184,13 +188,16 @@ greet("Alice")
 - Functions can also return a result using the `return` keyword. This is like the answer you get from a math function.
 
 ```python
-def add(a, b):    result = a + b    return result
+def add(a, b):    
+    result = a + b    
+    return result
 ```
 
 - In this example, the `add` function takes two parameters, `a` and `b`, adds them together, and returns the result.
 
 ```python
-sum_result = add(5, 3)print(sum_result)  # Output: 8
+sum_result = add(5, 3)
+print(sum_result)  # Output: 8
 ```
 
 - Here, we call the `add` function with `5` and `3` as arguments and store the result in the `sum_result` variable.
@@ -223,7 +230,8 @@ Python control flows, especially the `if` statement, help you make decisions i
 - The basic structure of an `if` statement looks like this:
 
 ```python
-if condition:    # Code to execute if the condition is True
+if condition:    
+    # Code to execute if the condition is True
 ```
 
 - The `condition` is an expression that evaluates to either `True` or `False`.
@@ -250,7 +258,10 @@ if condition:    # Code to execute if the condition is True
 **Example:**
 
 ```python
-x = 5y = 10 if x < y:    print("x is less than y")
+x = 5
+y = 10 
+if x < y:    
+    print("x is less than y")
 ```
 
 - In this example, the `if` statement checks if `x` is less than `y`. If it’s true, it prints “x is less than y.”
@@ -262,7 +273,13 @@ x = 5y = 10 if x < y:    print("x is less than y")
 **Example:**
 
 ```python
-age = 20 if age < 18:    print("You are underage.")elif age >= 18 and age < 65:    print("You are an adult.")else:    print("You are a senior citizen.")
+age = 20 
+if age < 18:    
+    print("You are underage.")
+elif age >= 18 and age < 65:
+    print("You are an adult.")
+else:    
+    print("You are a senior citizen.")
 ```
 
 - In this example, the code checks different conditions based on the age variable and prints an appropriate message.
@@ -274,7 +291,13 @@ age = 20 if age < 18:    print("You are underage.")elif age >= 18 and age < 65: 
 **Example:**
 
 ```python
-x = 5 if x > 0:    if x % 2 == 0:        print("x is a positive even number.")    else:        print("x is a positive odd number.")else:    print("x is not a positive number.")
+x = 5 
+if x > 0:
+	if x % 2 == 0:
+	    print("x is a positive even number.")
+	else:        print("x is a positive odd number.")
+else:    
+    print("x is not a positive number.")
 ```
 
 - In this example, we have nested `if` statements to determine whether `x` is positive and even or positive and odd.
@@ -292,7 +315,8 @@ Python loops are used to repeatedly execute a block of code. They allow you to a
 **Basic `for` Loop Syntax:**
 
 ```python
-for variable in sequence:    # Code to execute in each iteration
+for variable in sequence:    
+    # Code to execute in each iteration
 ```
 
 - `variable` represents an item from the sequence in each iteration, and `sequence` is the collection of items to loop through.
@@ -300,7 +324,9 @@ for variable in sequence:    # Code to execute in each iteration
 **Example:**
 
 ```python
-fruits = ["apple", "banana", "cherry"] for fruit in fruits:    print(fruit)
+fruits = ["apple", "banana", "cherry"] 
+for fruit in fruits:
+    print(fruit)
 ```
 
 - In this example, the `for` loop iterates through the `fruits` list and prints each fruit one by one.
@@ -312,7 +338,8 @@ fruits = ["apple", "banana", "cherry"] for fruit in fruits:    print(fruit)
 **Basic `while` Loop Syntax:**
 
 ```python
-while condition:    # Code to execute as long as the condition is True
+while condition:    
+    # Code to execute as long as the condition is True
 ```
 
 - The loop will continue running as long as `condition` remains `True`.
@@ -320,7 +347,10 @@ while condition:    # Code to execute as long as the condition is True
 **Example:**
 
 ```python
-count = 0 while count < 5:    print("Count: ", count)    count += 1
+count = 0 
+while count < 5:    
+    print("Count: ", count)    
+    count += 1
 ```
 
 - In this example, the `while` loop prints the value of `count` as long as it’s less than `5`, incrementing `count` in each iteration.
@@ -334,7 +364,11 @@ count = 0 while count < 5:    print("Count: ", count)    count += 1
 **Example (using `break`):**
 
 ```python
-numbers = [1, 2, 3, 4, 5, 6] for num in numbers:    if num == 4:        break  # Exit the loop when num is 4    print(num)
+numbers = [1, 2, 3, 4, 5, 6] 
+for num in numbers:    
+    if num == 4:        
+    break  # Exit the loop when num is 4    
+print(num)
 ```
 
 - In this example, the loop stops when `num` becomes `4`, and the code after the loop continues executing.
@@ -342,7 +376,11 @@ numbers = [1, 2, 3, 4, 5, 6] for num in numbers:    if num == 4:        break  #
 **Example (using `continue`):**
 
 ```python
-numbers = [1, 2, 3, 4, 5, 6] for num in numbers:    if num % 2 == 0:        continue  # Skip even numbers    print(num)
+numbers = [1, 2, 3, 4, 5, 6] 
+for num in numbers:    
+    if num % 2 == 0:        
+        continue  # Skip even numbers    
+	print(num)
 ```
 
 - In this example, the loop skips even numbers and continues to the next iteration.
@@ -358,7 +396,8 @@ In Python, classes are like blueprints for creating objects. Think of a class as
 - To create a class, you use the `class` keyword, followed by the name of the class (usually starting with a capital letter).
 
 ```python
-class Dog:    # Class definition goes here
+class Dog:    
+    # Class definition goes here
 ```
 
 - In this example, we’ve defined a class called `Dog`.
@@ -368,7 +407,9 @@ class Dog:    # Class definition goes here
 - Attributes are variables that store data within a class. They represent the characteristics or properties of objects created from the class.
 
 ```python
-class Dog:    breed = "Unknown"  # Attribute to store the dog's breed    age = 0           # Attribute to store the dog's age
+class Dog:    
+    breed = "Unknown"  # Attribute to store the dog's breed    
+    age = 0            # Attribute to store the dog's age
 ```
 
 - In this class, `breed` and `age` are attributes that every dog object will have.
@@ -378,7 +419,15 @@ class Dog:    breed = "Unknown"  # Attribute to store the dog's breed    age = 0
 - Methods are functions defined within a class. They represent the actions or behaviors that objects of the class can perform.
 
 ```python
-class Dog:    breed = "Unknown"    age = 0     def bark(self):        print("Woof! Woof!")     def fetch(self):        print("Fetching the ball...")
+class Dog:    
+    breed = "Unknown"    
+    age = 0     
+
+    def bark(self):        
+        print("Woof! Woof!")    
+ 
+    def fetch(self):       
+        print("Fetching the ball...")
 ```
 
 - In this class, `bark()` and `fetch()` are methods that represent the actions a dog can do.
@@ -398,7 +447,10 @@ my_dog = Dog()  # Creating an instance of the Dog class
 - You can access attributes and methods of an object using dot notation (`object_name.attribute` or `object_name.method()`).
 
 ```python
-my_dog.breed = "Golden Retriever"  # Setting the breed attributemy_dog.age = 3                    # Setting the age attribute print("My dog is a", my_dog.breed)  # Accessing the breed attributemy_dog.bark()                       # Calling the bark method
+my_dog.breed = "Golden Retriever"   # Setting the breed attribute
+my_dog.age = 3                      # Setting the age attribute 
+print("My dog is a", my_dog.breed)  # Accessing the breed attribute
+my_dog.bark()                       # Calling the bark method
 ```
 
 - Here, we’ve set the `breed` and `age` attributes and called the `bark()` method on `my_dog`.
@@ -408,7 +460,13 @@ my_dog.breed = "Golden Retriever"  # Setting the breed attributemy_dog.age = 3  
 - The `__init__` method is a special method in Python classes. It’s called when you create an object from the class and is used to initialize attributes.
 
 ```python
-class Dog:    def __init__(self, breed, age):        self.breed = breed        self.age = age     def bark(self):        print("Woof! Woof!")
+class Dog:    
+    def __init__(self, breed, age):        
+        self.breed = breed        
+        self.age = age     
+
+    def bark(self):        
+        print("Woof! Woof!")
 ```
 
 - When you create a `Dog` object, you need to provide values for `breed` and `age`.
@@ -431,21 +489,15 @@ Type hints are a way in python to specify the **intended** type of a variable (n
   
 
 ```python
-
 age = 21
 
-  
-
 def greet(name):
-
    return f"Hello {name}"
 
   
 
 class Animal:
-
    def __init__(self, name):
-
       self.name = name
 
 ```
@@ -457,51 +509,27 @@ Can be converted to:
   
 
 ```python
-
 age:int = 21
 
-  
-
 def greet(name:str) -> str:
-
    return f"Hello {name}"
 
-  
-
 class Animal:
-
    def __init__(self, name:str):
-
       self.name:str = name
 
 ```
 
-  
-
 This gives an indication to people running your code which data types they should use. Along with this there are a few special types to keep in mind (most need to be imported from the typing module):
 
-  
-
 | Type | Usage | Example |
-
-|------|-------|---------|
-
+| ---- | ---- | ---- |
 | Union | To indicate one type **OR** another | A variable called age which can be a string or int could be given as `age:Union[str,int] = "Twenty Three"` |
-
 | Literal | The avlue for the variable is literally one of the subscripted values | x is 2, 4 or 6 **only** `x:Literal[2,4,6]` |
-
 | Tuple | A tuple is an imutable data type similar to a list, this can mean a tuple, or is used to indicate multiple return values | The function `func()` returns an int and a bool in that order `def func() -> Tuple[int, bool` |
-
-| List | A list is a collection. Collections can be subscripted to tell you what's inside | users is a list of list of strings `users:List[List[str]] = [["kieran"],["James"]]`
-
-| Callable | This means any object that has a `__call__()` method including functions (yes they are objects) | Passing the function `do_stuff()` to `time(func:Callable)` so it can run it and time it `time(do_stuff)` |  
-
-  
-
+| List | A list is a collection. Collections can be subscripted to tell you what's inside | users is a list of list of strings `users:List[List[str]] = [["kieran"],["James"]]` |
+| Callable | This means any object that has a `__call__()` method including functions (yes they are objects) | Passing the function `do_stuff()` to `time(func:Callable)` so it can run it and time it `time(do_stuff)` |
 ### Enforcing types
-
-  
-
 Python does not enforce types on function parameters. But you can make your own type enforcement by doing type comparisons. There are two ways to do this. The first is to use `type()` and compare to the class, for example:
 
   
@@ -536,45 +564,25 @@ def show_animal(animal:Animal):
 
 ```
 
-  
-
 This method works **ok**, but it's not the best. For example let's say you have a class that extends the `str` class, it would fail that check:
-
-  
 
 ```python
 
 class MyString(str):
-
   def __init__(self,value:str):
-
     if not type(value) == str:
-
       raise ValueError(f"{value} is not a string")
-
     self.value = value
 
-  
-
   def __str__(self) -> str:
-
     return self.value  
 
-  
-  
-
 def greet(name:str) -> str:
-
   if not type(name) == str:
-
     raise ValueError(f"{name} is not a string")
-
   return f"Hello {name}"
 
-  
-
 greet(MyString("Kieran")) # ValueError: Kieran is not a string
-
 ```
 
   
@@ -584,38 +592,21 @@ If we want to include subclasses we should use `isinstance()`:
   
 
 ```python
-
 class MyString(str):
-
   def __init__(self,value:str):
-
     if not type(value) == str:
-
       raise ValueError(f"{value} is not a string")
-
     self.value = value
 
-  
-
   def __str__(self) -> str:
-
     return self.value  
-
   
-  
-
 def greet(name:str) -> str:
-
   if not isinstance(name, str):
-
     raise ValueError(f"{name} is not a string")
-
   return f"Hello {name}"
 
-  
-
 greet(MyString("Kieran")) # Hello Kieran
-
 ```
 
   
@@ -625,13 +616,9 @@ Here are some good types you can use with `isinstance()` that are more general:
   
 
 |Type|Uses|package|
-
 |----|----|-------|
-
 | Number | All number types (int and float) work with it |[numbers](https://docs.python.org/3/library/numbers.html).Number|
-
 | Iterable | Any type that can be iterated (a for loop works on it) | Iterable |
-
 | Callable | Any type that can be called with parenthesis `()` (like function objects) | Callable |
 
   
@@ -1321,17 +1308,12 @@ Other Operators:
   
 
 | Function name | Operator |
-
-|`__sub__()`| `-`|
-
+| ---- | ---- |
+| `-__sub__()` | `-` |
 |`__mul__()`| `*`|
-
 |`__floordiv__()`|  `//`|
-
 |`__truediv__()`| `/`|
-
 |`__mod__()`| `%`|
-
 |`__pow__()`| `**`|
 
   
@@ -1371,15 +1353,11 @@ print(DoMath(5) < 3)
   
 
 | Function name | Operator |
-
-|`__lt__()`|  `<`|
-
+| ---- | ---- |
+| `__lt__()` | `<` |
 |`__le__()`|  `<=`|
-
 |`__eq__()`|  `==`|
-
 |`__ne__()`|  `!=`|
-
 |`__ge__()`|  `>=`|
 
   
@@ -2719,3 +2697,6 @@ class Student:
    grades:List[int] = field(default_factory=empty_list) # Initialize Student.grades to an empty list
 
 ```
+
+## Additional Resources 
+- [Inside the Python GIL. (youtube.com)](https://www.youtube.com/watch?v=ph374fJqFPE)

@@ -1,5 +1,6 @@
 ...
 
+- often used in conjunction with [[Cellular Automata (TODO)]]
 ## Perlin Noise (TODO)
 
 - Minecraft
@@ -9,3 +10,4 @@
 
 ## Voronoi (TODO)
 ...
+- Fractures

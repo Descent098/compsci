@@ -17,6 +17,8 @@
 - [v8-perf/gc.md at master · thlorenz/v8-perf (github.com)](https://github.com/thlorenz/v8-perf/blob/master/gc.md)
 - [JavaScript garbage collection: Browser vs. server - LogRocket Blog](https://blog.logrocket.com/javascript-garbage-collection-browser-vs-server/)
 - [JavaScript Internals: Garbage Collection | AppSignal Blog](https://blog.appsignal.com/2020/10/21/garbage-collection-in-javascript.html)
+- [Mastering Memory Management in Node.js: Tips and Tricks for Better Performance (youtube.com)](https://www.youtube.com/watch?v=YBnN2JpS4hI)
+- [Understand JS Garbage Collector in 4 mins (youtube.com)](https://www.youtube.com/watch?v=FZ42HMWG6xg)
 ### Python
 - [Python Garbage Collection: What It Is and How It Works (stackify.com)](https://stackify.com/python-garbage-collection/)
 - [Garbage Collection in Python - GeeksforGeeks](https://www.geeksforgeeks.org/garbage-collection-python/)
