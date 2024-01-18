@@ -341,6 +341,9 @@ All the graphs we've seen so far have been unweighted.
 ### Gap Buffers
 [Gap buffer - Wikipedia](https://en.wikipedia.org/wiki/Gap_buffer)
 
+### Hashmaps/dictionaries/hashtables
+
+Details about these data structures can be found in the dedicated page on [[Hashing]]
 
 ## Additional References
 - [MIT 6.851 Advanced Data Structures, Spring 2012 - YouTube](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)

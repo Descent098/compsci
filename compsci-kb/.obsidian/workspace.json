@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/python.md",
+                "file": "Programming/python.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/Basics.md",
+                "file": "Programming/Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "227cf951bcb784c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/Basics.md",
+                "file": "Programming/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/Basics.md",
+                "file": "Programming/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/Basics.md"
+                "file": "Programming/Basics.md"
               }
             }
           }
@@ -166,41 +178,44 @@
   },
   "active": "f54408281cbddd4f",
   "lastOpenFiles": [
+    "Programming/Binary and Hexadecimal (TODO).md",
+    "Programming/Basics.md",
+    "Programming/Advanced Data Structures (TODO).md",
+    "Programming/python.md",
+    "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Untitled.md",
+    "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "Programming/Hashing.md",
+    "img/hashing/line-graph.png",
+    "img/hashing/hashing-2.png",
+    "img/hashing/hashing-1.png",
+    "img/hashing",
+    "img",
+    "definitions/hashing.md",
+    "definitions",
+    "index.md",
+    "Security & Cryptography/Basics.md",
+    "Game Dev & Graphics/Noise (TODO).md",
     "Networking & Webdev/Basics.md",
     "HCI & VR/Basics.md",
     "Game Dev & Graphics/Basics.md",
     "Hardware/Basics.md",
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
     "Events/GDG YYC.md",
     "Events",
-    "Security & Cryptography/Basics.md",
     "OS & Firmware/Basics.md",
-    "programming/Basics.md",
-    "Game Dev & Graphics/Noise (TODO).md",
-    "programming/python.md",
-    "programming/Advanced Data Structures (TODO).md",
-    "Game Dev & Graphics/Cellular Automata (TODO).md",
     "Networking & Webdev/HTTP (TODO).md",
     "Networking & Webdev/SMTP (TODO).md",
-    "programming/Garbage Collection (TODO).md",
-    "programming/Algorithms & Complexity (TODO).md",
-    "programming/Programming Paradigms (TODO).md",
+    "Programming/Garbage Collection (TODO).md",
+    "Programming/Algorithms & Complexity (TODO).md",
+    "Programming/Programming Paradigms (TODO).md",
     "Security & Cryptography/low-level.md",
-    "programming/Open Source (TODO).md",
+    "Programming/Open Source (TODO).md",
     "Excalidraw/Drawing 2024-01-11 02.20.24.excalidraw.md",
     "Excalidraw",
-    "OS & Firmware/Userspace.md",
-    "Game Dev & Graphics/Quaternians.md",
-    "Game Dev & Graphics/Shaders (TODO).md",
     "events/internet and social media",
-    "events/lawsuits/Two Michaels Detainment (TODO).md",
-    "events/internet and social media/Blue Whale Challenge.md",
     "events/lawsuits",
     "concepts and crimes",
     "countries",
-    "_meta/templates/periodic",
-    "_meta/templates",
-    "_meta",
-    "events/Israel & Palestine"
+    "_meta/templates/periodic"
   ]
 }
