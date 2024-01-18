@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html><head><title>Hashing</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Hashing"/><meta property="og:description" content="Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="programming/Hashing"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;events&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networking-&amp;-Webdev&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="events"><button class="folder-button"><span class="folder-title">events</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="events"><li><a href="../events/GDG-YYC" data-for="events/GDG-YYC">GDG YYC</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" data-for="Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)">Cellular Automata (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Noise-(TODO)" data-for="Game-Dev-&amp;-Graphics/Noise-(TODO)">Noise (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)" data-for="Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)">Procedural Generation (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Quaternians" data-for="Game-Dev-&amp;-Graphics/Quaternians">Quaternians</a></li><li><a href="../Game-Dev-&amp;-Graphics/Shaders-(TODO)" data-for="Game-Dev-&amp;-Graphics/Shaders-(TODO)">Shaders (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)" data-for="Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)">UI Strategies (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../Hardware/Connection-Types-(TODO)" data-for="Hardware/Connection-Types-(TODO)">Connection Types (TODO)</a></li><li><a href="../Hardware/CPU-(TODO)" data-for="Hardware/CPU-(TODO)">CPU (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../HCI-&amp;-VR/basics" data-for="HCI-&amp;-VR/basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networking-&amp;-Webdev"><button class="folder-button"><span class="folder-title">Networking &amp; Webdev</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networking-&amp;-Webdev"><li><a href="../Networking-&amp;-Webdev/Basics" data-for="Networking-&amp;-Webdev/Basics">🌱Basics/Intro</a></li><li><a href="../Networking-&amp;-Webdev/HTTP-(TODO)" data-for="Networking-&amp;-Webdev/HTTP-(TODO)">HTTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)" data-for="Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)">Networking Error Correction (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Products-and-Services-(TODO)" data-for="Networking-&amp;-Webdev/Products-and-Services-(TODO)">Products and Services (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/SMTP-(TODO)" data-for="Networking-&amp;-Webdev/SMTP-(TODO)">SMTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Virtualization-(TODO)" data-for="Networking-&amp;-Webdev/Virtualization-(TODO)">Virtualization (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="programming"><button class="folder-button"><span class="folder-title">programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="programming"><li><a href="../programming/Basics" data-for="programming/Basics">🌱Basics/Intro</a></li><li><a href="../programming/Advanced-Data-Structures-(TODO)" data-for="programming/Advanced-Data-Structures-(TODO)">Advanced Data Structures (TODO)</a></li><li><a href="../programming/Algorithms-&amp;-Complexity-(TODO)" data-for="programming/Algorithms-&amp;-Complexity-(TODO)">Algorithms &amp; Complexity (TODO)</a></li><li><a href="../programming/Binary-and-Hexadecimal-(TODO)" data-for="programming/Binary-and-Hexadecimal-(TODO)">Binary and Hexadecimal (TODO)</a></li><li><a href="../programming/Compilers-(TODO)" data-for="programming/Compilers-(TODO)">Compilers (TODO)</a></li><li><a href="../programming/Garbage-Collection-(TODO)" data-for="programming/Garbage-Collection-(TODO)">Garbage Collection (TODO)</a></li><li><a href="../programming/Hashing" data-for="programming/Hashing">Hashing</a></li><li><a href="../programming/HTML-(TODO)" data-for="programming/HTML-(TODO)">HTML (TODO)</a></li><li><a href="../programming/Open-Source-(TODO)" data-for="programming/Open-Source-(TODO)">Open Source (TODO)</a></li><li><a href="../programming/Programming-Paradigms-(TODO)" data-for="programming/Programming-Paradigms-(TODO)">Programming Paradigms (TODO)</a></li><li><a href="../programming/python" data-for="programming/python">python</a></li><li><a href="../programming/Speculation-&amp;-Branch-Prediction-(TODO)" data-for="programming/Speculation-&amp;-Branch-Prediction-(TODO)">Speculation &amp; Branch Prediction (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../Security-&amp;-Cryptography/low-level" data-for="Security-&amp;-Cryptography/low-level">low-level</a></li><li><a href="../Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)" data-for="Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)">Samir Secret Sharing (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../programming/">programming</a></div></nav><h1 class="article-title ">Hashing</h1><p class="content-meta ">Jan 18, 2024, 14 min read</p></div></div><article class="popover-hint"><p>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm. Also it should be 1-way, meaning unlike encryption or compression where we want to be able to get the original value for hashing we only want to create an output from an input, but we <strong>do not</strong> want to be able to get the input from the output. Ideally in most cases you also want something that returns a fixed-size output, so no matter how big your input is you always get the same length output.</p>
+<p>So to recap hash functions should:</p>
+<ol>
+<li>Have 1 output for each input (deterministic) and ideally <strong>unique</strong> (see <a href="#hash-collisions" class="internal alias">hash collisions</a>)</li>
+<li>Able to get output from input, but not input from output (one-way)</li>
+<li>Should return outputs of the same length (Fixed-size output); Not required but nice to have</li>
+</ol>
+<p>So let’s say we have a hashing algorithm called <code>hash()</code>. When we call <code>hash()</code> with the text <code>kieran</code> (<code>hash(&quot;kieran)</code>) we get back the hash <code>3617183895572154872</code>. The important thing is that when we call <code>hash(&quot;kieran&quot;)</code> again we should get <code>3617183895572154872</code> again. In other words for the same input, we should <strong>always</strong> get the same output, and ideally the output for each input should be unique.</p>
+<h2 id="uses">Uses<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uses" class="internal alias"> §</a></h2>
+<p>There are far too many uses for hashes to cover them all here (blockchains, git/vcs, cache invalidation etc.), but I have included a few common ones.</p>
+<h3 id="integrity-hashes">Integrity Hashes<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integrity-hashes" class="internal alias"> §</a></h3>
+<p>When you’re downloading a file from the internet you are fundamentally getting it from a network. How do you know that someone has not replaced the original file in transit to your device? How do you know the image your downloading isn’t actually some malicious code? One way to check is with integrity hashes.</p>
+<p>Integrity hashes have been around for a while, on the early days of the internet <a href="https://en.wikipedia.org/wiki/MD5" class="external alias">md5</a> file hashes were common to see on websites you donwloaded software from. Even though security has gotten better since the 2000’s it’s still a concerning prospect that you might be downloading unsafe files. The most concerning of these are files you don’t even choose to download.</p>
+<p>When you run javascript on a webpage you often first have to download the file from somewhere. Typically this is done by including a URL in the src attribute of a script tag. Let’s say for example our file is hosted on <a href="https://schulichignite.com/file.js" class="external">https://schulichignite.com/file.js</a> we could do:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="html" data-theme="github-dark github-light"><code data-language="html" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#85E89D;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> src</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;https://schulichignite.com/file.js&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">>&lt;/</span><span style="--shiki-dark:#85E89D;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">></span></span></code></pre></figure>
+<p>Well, if we put on our hacking black fedora’s and trench-coats there is a clear way for someone malicious to inject code into this. All they have to do is convince your computer (or any of the computers your computer connects to), that whatever malicious code they want to run is at the URL.</p>
+<p>There are more involved methods of doing this like stealing peoples passwords and uploading malicious code, or hacking into a server etc. The method isn’t important, the point is that when we ask <a href="https://schulichignite.com/file.js" class="external">https://schulichignite.com/file.js</a> for the file we have no way to make sure we are getting what we want. These attacks are often called CDN-poisioning or cache-poisioning. It feeds off a problem of authority. I can’t trust schulichignite.com and the only validation I can get that the code is correct is from schulichignite.com. Sort of like asking a theif if they took something, and just hoping they tell the truth. So the question as developers is how do we provide something to authenticate the file that works in HTML?</p>
+<p>Well, with our knowledge of hashes we can use a built-in attribute called <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity" class="external alias">subresource integrity</a> to add integrity hashes to our javascript. All we do is include an <code>integrity</code> attribute that tells the browser which hash function to use (in our case <a href="https://en.wikipedia.org/wiki/SHA-1" class="external alias">SHA-1</a>) and then the hash. For example:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="html" data-theme="github-dark github-light"><code data-language="html" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#85E89D;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> src</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;https://schulichignite.com/file.js&quot;</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> integrity</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;sha1-865cd55417af5a27ab17ae1fff7510c7acc4f250&quot;</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> crossorigin</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;anonymous&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">>&lt;/</span><span style="--shiki-dark:#85E89D;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">></span></span></code></pre></figure>
+<p>Now when the browser downloads the file it will run the contents as a string through the SHA-1 hashing algorithm, then check against <code>865cd55417af5a27ab17ae1fff7510c7acc4f250</code>, and only run it if it matches.</p>
+<h3 id="passwords">Passwords<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#passwords" class="internal alias"> §</a></h3>
+<p>Storing people’s passwords in plain text is bad. Imagine someone were to read your database and it had information like this:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>name</th><th>email</th><th>password</th></tr></thead><tbody><tr><td>Kieran</td><td><a href="mailto:kieran@canadiancoding.ca" class="external alias">kieran@canadiancoding.ca</a></td><td>me_name_is_not_kieran</td></tr><tr><td>Jamie</td><td><a href="mailto:jamie@hotmail.co.uk" class="external alias">jamie@hotmail.co.uk</a></td><td>whiskers_is_life23</td></tr><tr><td>Paul</td><td><a href="mailto:paul@zmail.gov" class="external alias">paul@zmail.gov</a></td><td>P455W0RD</td></tr></tbody></table></div>
+<p>Kieran and Jamie both don’t deserve their password stolen (paul might with a password like that), so how do we make it so even if people get access to your database through a hack, or an annoyed ex-employee that your users are safe? Well a password only matters in order for us to know if someone should be allowed to login. So instead of storing the password we let the user type in their password and we just store the hash, since they can then use the same password to generate the same hash and login! and we have the bonus of storing information that is useless to hackers (assuming they can’t reverse the hash). So instead with our original database we get:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>name</th><th>email</th><th>password</th></tr></thead><tbody><tr><td>Kieran</td><td><a href="mailto:kieran@canadiancoding.ca" class="external alias">kieran@canadiancoding.ca</a></td><td>3940687576951907022</td></tr><tr><td>Jamie</td><td><a href="mailto:jamie@hotmail.co.uk" class="external alias">jamie@hotmail.co.uk</a></td><td>6922927947780301451</td></tr><tr><td>Paul</td><td><a href="mailto:paul@zmail.gov" class="external alias">paul@zmail.gov</a></td><td>P455W0RD</td></tr></tbody></table></div>
+<p>(Paul’s password doesn’t get hashed because he should feel bad about how bad his password is)</p>
+<h3 id="salting--peppering">Salting &amp; peppering<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#salting--peppering" class="internal alias"> §</a></h3>
+<p>One very easy to implement way of breaking up common <a href="#hash-collisions" class="internal alias">hash collisions</a> for passwords (and other uses) is to add salting. Salting is just adding characters to the end of an input. So for example if we have the input <code>&quot;mypassword&quot;</code> and the salt <code>&quot;+_()*&amp;^%$#@!&quot;</code> then we would hash using <code>hash(&quot;mypassword+_()*&amp;^%$#@!&quot;)</code>. This way if something like <code>&quot;hello123&quot;</code> used to collide with <code>&quot;mypassword&quot;</code> then it does not imply <code>hash(&quot;mypassword+_()*&amp;^%$#@!&quot;) == hash(&quot;hello123+_()*&amp;^%$#@!&quot;)</code> (in most common hash functions).</p>
+<p>Peppering is the same idea except you add the pepper to the front of the text, and apply it before the salting. So if you have the pepper <code>&quot;!@#$%^&amp;*()_+&quot;</code>, then with the salt above and the same password as above you would do <code>hash(&quot;!@#$%^&amp;*()_+mypassword+_()*&amp;^%$#@!&quot;)</code>.</p>
+<h2 id="hash-collisions">Hash Collisions<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hash-collisions" class="internal alias"> §</a></h2>
+<p>Let’s say we have a hash function that takes in some text, converts each letter to an integer using an <a href=".." class="internal alias" data-slug="index">ASCII</a> table, and then sums them to give you a hash. For this function any set of letters that are the same would give you the same hash. So if we called the function <code>ASCII_Hash()</code> then <code>ASCII_Hash('xyz') == ASCII_Hash('yzx') == ASCII_Hash('zyx')</code>. These situations where different results provide the same hash are called hash collisions.</p>
+<p>Hash collisions are a big problem especially for hashmaps and integrity hashes. It is quite common to have collisions in hash maps, when this happens it means that items that are collided and end up further down the linked list are slower to access. If we had a hashmap that used <code>ASCII_Hash()</code> if we inserted values with the keys <code>'xyz','yzx','zyx'</code> in that order, then to access the value of <code>zyx</code> we would first have to hash <code>zyx</code>, and then check <code>xyz</code>, then <code>yzx</code>, then finally find it at <code>zyx</code>. These performance hits can <a href="https://youtu.be/jE0V-p1odPg?t=967" class="external alias">cause real problems</a>. In algorithmic complexity notation we go from a constant time (<code>O(1)</code>, which is a fancy way to say it takes as long as the hash function takes), to a linear time (<code>O(n)</code>, where <code>n</code> is the number of elements that collide, meaning for every colliding element we go up by n * time taken to run). This difference means our hash tables scale horribly over time:</p>
+<p><img src="../img/hashing/line-graph.png" alt/></p>
+<p>(time to run is measured in how long it takes to access each element in the linked list)</p>
+<p>This opens up tons of problems like general slowdowns and even denial of service (DOS) attacks, where if you know enough collisions you can keep creating more and more collisions to crash a python server.</p>
+<p>Integrity hashes are even worse. Hash collisions in integrity hashes are very dangerous. What they imply is that your method of validating something is what it says it is can work for something that isn’t what you were looking for. Similar to having a security guard that lets in every person named dave because you forgot to specify which dave you wanted to let in. There are <a href="https://github.com/corkami/collisions#introduction" class="external alias">tools designed</a> to help generate these collisions, and if someone manages to find a collision and inject malicious code into a file, while you confirm it as “safe” it can cause big issues.</p>
+<p>Passwords can also have huge issues with hash collisions. Remember what I said about someone being able to hack into a database and just see the hashes. Well if they can create hash collisions then they can access someones account without needing their password. They just need to guess the hash algorithm you’re using, know the hash they’re targetting, and if they can create a password that matches the hash then they can get into the account!</p>
+<h2 id="hash-based-data-structures">Hash-based Data structures<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hash-based-data-structures" class="internal alias"> §</a></h2>
+<p>Hashmaps/dictionaries/hashtables are a common datastructure that allow you to create key-value pairs. This is what runs behind the scenes for many JSON implementations. So with a JSON file like:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="json" data-theme="github-dark github-light"><code data-language="json" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">{</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    &quot;name&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;kieran&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<p>In this case <code>name</code> is our key, and <code>kieran</code> is our value. From here there are 2 classes/structs we will need a <code>Node</code> and a <code>HashTable</code>. In pseudocode they would look like this:</p>
+<pre><code>class Node:
+    key: str
+    value: any
+
+class HashTable:
+    buckets: List[List[Node]]
+</code></pre>
+<p>A node will be where we store the key-value pair, which will then be placed into our buckets list/Array. We also need to decide how many buckets we want, for now we will arbitrarily pick 6 (because it makes the drawings easier 😉) but we will discuss what more or less buckets does shortly. The basic idea is that we will use a hashing function to generate an index location in the buckets list, we will then insert the node at that index in the buckets list. This means that for searching later we can skip searching all values in any of the other buckets!</p>
+<p>So the insertion would take the steps:</p>
+<ol>
+<li>Create <code>HashTable</code> with 6 empty buckets</li>
+<li>Take the key you want to insert and hash it with some algorithm (make sure resulting hash is just numbers)</li>
+<li>Take that hash and modulo (divide by and take the remainder) it by the number of buckets (in our case 6)</li>
+<li>Create a node which contains the value and the key</li>
+<li>Insert the node into the index you calculated from the key</li>
+</ol>
+<p>Steps 1-4:</p>
+<p><img src="../img/hashing/hashing-1.png" alt/></p>
+<p>Step 5:</p>
+<p><img src="../img/hashing/hashing-2.png" alt/></p>
+<p>Here is what inserting would look like in pseudocode:</p>
+<pre><code>ht = HashTable([[],[],[],[],[],[]]) # 1. Create HashTable with 6 empty buckets
+
+function insert_into_hash_table(ht:HashTable, key:str, value: Any):
+    # 2. Take the key you want to insert and hash it with some algorithm (make sure resulting hash is just numbers)
+    hashed_key = hash(key)
+    # 3. Take that hash and modulo (divide by and take the remainder) it by the number of buckets (in our case 6)
+    index = int(hashed_key % 6)
+    # 4. Create a node which contains the value and the key
+    new_node = Node(key, value)
+    # 5. Insert the node into the index you calculated from the key
+    ht.buckets[index].insert(new_node)
+</code></pre>
+<p>The reason why this is handy is because compared to a normal list of every value we do the hash function first (which is fast), then we only have to search the bucket from the index we generated! So the basic algorithm for searching would be:</p>
+<ol>
+<li>Take the key you want to find and hash it with some algorithm (make sure resulting hash is just numbers)</li>
+<li>Take that hash and modulo (divide by and take the remainder) it by the number of buckets (in our case 6)</li>
+<li>Look into the <code>HashTable</code> at the given index, if list at index is empty throw an error, if not then go through the list at that index and check each node in the list until you find one with the same key, if you hit the end of the list then throw an error</li>
+</ol>
+<p>The pseudocode would look like:</p>
+<pre><code>function search_hash_table(ht:HashTable, key:str):
+    # 1. Take the key you want to insert and hash it with some algorithm (make sure resulting hash is just numbers)
+    hashed_key = hash(key)
+
+    # 2. Take that hash and modulo (divide by and take the remainder) it by the number of buckets (in our case 6)
+    index = int(hashed_key % 6)
+
+    # 3. Look into the `HashTable` at the given index
+
+    ## 3.1 Check if index list is empty
+    if length(ht.buckets[index]) == 0:
+        raise Error(&quot;Key not in HashTable&quot;)
+
+    ## 3.2 go through the list at that index and check each node in the list until you find one with the same key
+    for node in ht.buckets[index]:
+        if node.key == key:
+            return node.value
+
+    ## 3.3 You reached the end of the list without finding the key
+    raise Error(&quot;Key not in HashTable&quot;)
+</code></pre>
+<p>On the positive side this means if we have a large collection of buckets and our hashes are mostly unique we can skip a ton of values while searching!</p>
+<p>But on the negative side keep in mind that every bucket that isn’t being used is wasting memory with an empty list, so be careful what number of buckets you choose. Also keep in mind that collisions will cause the same index to be used, which means every collision makes the efficiency of looking up the node you are adding go down.</p>
+<h2 id="hashability">Hashability<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hashability" class="internal alias"> §</a></h2>
+<p>Python (and lots of languages), will only allow you to hash certain data types. Specifically each data type will have a built in hash function, which defines how that data type should be hashed. In python since all data types are classes, this means that the class must have a <code>__hash__()</code> method. In lots of cases in different languages this ends up being only applicable to <em>immutable data types</em>.</p>
+<p>An immutable data type is a type of data that cannot be changed. For example tuples have their data set in stone, you cannot append or modify them without reassigning the variable set to a tuple to a new value. For example with tuple’s to add a value “to a tuple” we would create a <strong>new tuple</strong> with the same values, and our new value in it. This concept gets complicated in python, but the most important weird situation is that lists are not able to be keys in any dictionaries/hashmaps because the built-in <code>__hash__()</code> function does not work on it. There are several reasons for this, but the main one is that you can mutate the data such as appending and popping items from the list (<a href="https://wiki.python.org/moin/DictionaryKeys" class="external alias">this article explains in more details why</a>).</p>
+<h2 id="common-hashing-algorithms">Common hashing algorithms<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#common-hashing-algorithms" class="internal alias"> §</a></h2>
+<p>General Hashing:</p>
+<ul>
+<li>SHA (very common, somewhat secure, very fast)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SHA-1" class="external alias">Wikipedia page</a></li>
+<li><a href="https://brilliant.org/wiki/secure-hashing-algorithms/#:~:text=SHA%2D1%20works%20by%20feeding,in%20hexadecimal%20notation%20for%20compactness." class="external alias">How SHA-1 Works (Brilliant)</a></li>
+<li><a href="https://01faria-marcello.medium.com/how-sha-secure-hashing-algorithm-works-ac8de87db9ba" class="external alias">How SHA (Secure Hash Algorithm) works? by Marcello Faria</a></li>
+<li><a href="https://www.youtube.com/watch?v=kmHojGMUn0Q" class="external alias">How Does SHA-1 Work - Intro to Cryptographic Hash Functions and SHA-1</a></li>
+<li><a href="https://www.youtube.com/watch?v=nduoUEHrK_4" class="external alias">SHA 256 | SHA 256 Algorithm Explanation | How SHA 256 Algorithm Works | Cryptography | Simplilearn</a></li>
+<li><a href="https://www.youtube.com/watch?v=orIgy2MjqrA" class="external alias">SHA-256 | COMPLETE Step-By-Step Explanation (W/ Example)</a></li>
+<li><a href="https://www.youtube.com/watch?v=DMtFhACPnTY" class="external alias">SHA: Secure Hashing Algorithm - Computerphile</a></li>
+</ul>
+</li>
+<li>MD5 (not very secure, but very very fast)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/MD5" class="external alias">Wikipedia page</a></li>
+<li><a href="https://www.youtube.com/watch?v=r6GlzIWiMD0" class="external alias">MD5 Algorithm | What Is MD5 Algorithm? | MD5 Algorithm Explained | Network Security | Simplilearn</a></li>
+<li><a href="https://www.youtube.com/watch?v=7ZKwKVn4utw" class="external alias">#34 MD5 Algorithm ( Message Digest 5) Working and Example |CNS|</a></li>
+<li><a href="https://www.geeksforgeeks.org/what-is-the-md5-algorithm/" class="external alias">What is the MD5 Algorithm?</a></li>
+</ul>
+</li>
+</ul>
+<p>For passwords there are more involved hashing algorithms you can look into. These algorithms are designed to take a while to compute, the reason you want this is to avoid <a href="https://cybernews.com/security/what-is-a-brute-force-attack/" class="external alias">brute force attacks</a> (video version <a href="https://www.youtube.com/watch?v=7U-RbOKanYs" class="external alias">here</a>). These are not great for long sets of data because of how slow they are:</p>
+<p><strong>DO RESEARCH YOURSELF AS THIS ARTICLE MAY HAVE AGED BY THE TIME YOU’RE READING IT AND THESE MAY NO LONGER BE SECURE!</strong></p>
+<ul>
+<li>Bcrypt
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bcrypt" class="external alias">Wikipedia page</a></li>
+<li><a href="https://auth0.com/blog/hashing-in-action-understanding-bcrypt/" class="external alias">Hashing in Action: Understanding bcrypt</a></li>
+<li><a href="https://blog.boot.dev/cryptography/bcrypt-step-by-step/" class="external alias">BCRYPT STEP BY STEP</a></li>
+</ul>
+</li>
+<li>PBKDF2
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/PBKDF2" class="external alias">Wikipedia page</a></li>
+<li><a href="https://nishothan-17.medium.com/pbkdf2-hashing-algorithm-841d5cc9178d" class="external alias">PBKDF2 Hashing Algorithm</a></li>
+<li><a href="https://cryptobook.nakov.com/mac-and-key-derivation/pbkdf2" class="external alias">PBKDF2 | PRactical Cryptography for Developers</a></li>
+<li><a href="https://www.youtube.com/watch?v=OXT8xqWww6U" class="external alias">PBKDF2 | Bill Buchanan OBE</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="other-good-resources">Other good resources<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-good-resources" class="internal alias"> §</a></h2>
+<ul>
+<li><a href="https://kieranwood.ca/tech/blog/verifying-quickly/" class="external alias">How to verify quickly | Kieran Wood</a></li>
+<li><a href="https://cryptobook.nakov.com/cryptographic-hash-functions" class="external alias">Practical Cryptography for developers | Hash Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/cryptography/cryptography_hash_functions.htm" class="external alias">Tutorialspoint | Cryptography Hash functions</a></li>
+<li><a href="https://www.youtube.com/watch?v=KqqOXndnvic" class="external alias">MIT OpenCourseWare | 21. Cryptography: Hash Functions</a></li>
+<li><a href="https://www.youtube.com/watch?v=KyUTuwz_b7Q" class="external alias">Hash Tables &amp; Hash Functions</a></li>
+</ul></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#uses" data-for="uses">Uses</a></li><li class="depth-1"><a href="#integrity-hashes" data-for="integrity-hashes">Integrity Hashes</a></li><li class="depth-1"><a href="#passwords" data-for="passwords">Passwords</a></li><li class="depth-1"><a href="#salting--peppering" data-for="salting--peppering">Salting &amp; peppering</a></li><li class="depth-0"><a href="#hash-collisions" data-for="hash-collisions">Hash Collisions</a></li><li class="depth-0"><a href="#hash-based-data-structures" data-for="hash-based-data-structures">Hash-based Data structures</a></li><li class="depth-0"><a href="#hashability" data-for="hashability">Hashability</a></li><li class="depth-0"><a href="#common-hashing-algorithms" data-for="common-hashing-algorithms">Common hashing algorithms</a></li><li class="depth-0"><a href="#other-good-resources" data-for="other-good-resources">Other good resources</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li><a href="../programming/Advanced-Data-Structures-(TODO)" class="internal">Advanced Data Structures (TODO)</a></li><li><a href="../programming/Basics" class="internal">🌱Basics/Intro</a></li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+function toggleCallout() {
+  const outerBlock = this.parentElement;
+  outerBlock.classList.toggle(`is-collapsed`);
+  const collapsed = outerBlock.classList.contains(`is-collapsed`);
+  const height = collapsed ? this.scrollHeight : outerBlock.scrollHeight;
+  outerBlock.style.maxHeight = height + `px`;
+  let current = outerBlock;
+  let parent = outerBlock.parentElement;
+  while (parent) {
+    if (!parent.classList.contains(`callout`)) {
+      return;
+    }
+    const collapsed2 = parent.classList.contains(`is-collapsed`);
+    const height2 = collapsed2 ? parent.scrollHeight : parent.scrollHeight + current.scrollHeight;
+    parent.style.maxHeight = height2 + `px`;
+    current = parent;
+    parent = parent.parentElement;
+  }
+}
+function setupCallout() {
+  const collapsible = document.getElementsByClassName(
+    `callout is-collapsible`
+  );
+  for (const div of collapsible) {
+    const title = div.firstElementChild;
+    if (title) {
+      title.removeEventListener(`click`, toggleCallout);
+      title.addEventListener(`click`, toggleCallout);
+      const collapsed = div.classList.contains(`is-collapsed`);
+      const height = collapsed ? title.scrollHeight : div.scrollHeight;
+      div.style.maxHeight = height + `px`;
+    }
+  }
+}
+document.addEventListener(`nav`, setupCallout);
+window.addEventListener(`resize`, setupCallout);
+</script><script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+          const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+          mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: 'loose',
+            theme: darkMode ? 'dark' : 'default'
+          });
+          document.addEventListener('nav', async () => {
+            await mermaid.run({
+              querySelector: '.mermaid'
+            })
+          });
+          </script><script src="../postscript.js" type="module"></script></html>
