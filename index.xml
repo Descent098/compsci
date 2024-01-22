@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>low-level</title>
-    <link>https:/quartz.jzhao.xyz/Security-&-Cryptography/low-level</link>
-    <guid>https:/quartz.jzhao.xyz/Security-&-Cryptography/low-level</guid>
-    <description>overflows § … Mitigation § Use compiler flags for stack protection in GCC and Clang | Red Hat Developer .</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
-  </item><item>
-    <title>GDG YYC</title>
-    <link>https:/quartz.jzhao.xyz/events/GDG-YYC</link>
-    <guid>https:/quartz.jzhao.xyz/events/GDG-YYC</guid>
-    <description>Notes from GDG YYC 2023, a google conference in Calgary Alberta. Google’s latest experiments in Labs AI § … Google AI Foundations § Attention is All You Need – Google Research Models &amp; Tools § … Gen AI studio § … Generative AI Studio (google.</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <title>Abstraction (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/programming/Abstraction-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Abstraction-(TODO)</guid>
+    <description>… Related talks § Preventing the Collapse of Civilization / Jonathan Blow (Thekla, Inc) (youtube.com) Abstraction Can Make Your Code Worse (youtube.com) Clean Code : Horrible Performance | Full Interview (youtube.</description>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Advanced Data Structures (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/Advanced-Data-Structures-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/Advanced-Data-Structures-(TODO)</guid>
     <description>Struct § … Interface § … Class § … Enumerator § … Iterators § … Recursive Types § … Trees § This is a computer science concept that comes up a lot. The basics are that a graph/tree is a collection of nodes that are linked together.</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Algorithms &amp; Complexity (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</guid>
-    <description> Everything Is Fast For Small n (codinghorror.com) .</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <description>Simple patterns (TODO) § These patterns are ones you will often see people do even if they’ve never looked at algorithms before. String Building (TODO) § The idea of the string builder pattern is to treat a string like an list and continuously push substrings into the string in order to build the result slowly.</description>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Binary and Hexadecimal (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/Binary-and-Hexadecimal-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/Binary-and-Hexadecimal-(TODO)</guid>
-    <description>Binary § … Operations in Binary § … Addition § … Subtraction § … Multiplication § … Division § … Other Novel uses § … Binary Enumeration § … Booleans § … Hexadecimal § … Operations in Hex § … Addition § … Subtraction § … Multiplication § … Division § … Other Novel uses § … Addressing § ….</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 .</description>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Compilers (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/Compilers-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/Compilers-(TODO)</guid>
     <description>Steps: Lexer/Tokenizer: Break up code into smallest meaningful pieces. For python the code def myfunc(x):\n\tprint(x) might be broken up into a list of: [def, myfunc, (, x, ), :, \t, print, (, x, ) ] Parser: Take the tokens and turn them into something logical.</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Garbage Collection (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/Garbage-Collection-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/Garbage-Collection-(TODO)</guid>
     <description>Algorithms and Theory § Mark-and-Sweep: Garbage Collection Algorithm - GeeksforGeeks Static single-assignment form - Wikipedia Modern Day implementations § V8 (Node JS, Chromium browsers) § Trash talk: the Orinoco garbage collector · V8 High-performance garbage collection for C++ · V8 Garbage collection in V8, an illustrated guide | by Irina Shestak | Medium smol-zines/guides/garbage-collection-in-v8.</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>HTML (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/HTML-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/HTML-(TODO)</guid>
     <description> HTML Standard (whatwg.org) .</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Hashing</title>
     <link>https:/quartz.jzhao.xyz/programming/Hashing</link>
     <guid>https:/quartz.jzhao.xyz/programming/Hashing</guid>
     <description>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm.</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item><item>
     <title>Open Source (TODO)</title>
     <link>https:/quartz.jzhao.xyz/programming/Open-Source-(TODO)</link>
     <guid>https:/quartz.jzhao.xyz/programming/Open-Source-(TODO)</guid>
     <description>Downsides § … No accountability The Dark Side of Open Source // What really happened to Faker.js? (youtube.com) The Dark Side of Open Source (youtube.</description>
-    <pubDate>Thu, 18 Jan 2024 09:39:23 GMT</pubDate>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
+  </item><item>
+    <title>Programming Paradigms (TODO)</title>
+    <link>https:/quartz.jzhao.xyz/programming/Programming-Paradigms-(TODO)</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Programming-Paradigms-(TODO)</guid>
+    <description>Object oriented § … Critiques § Why Objects Suck (codinghorror.com) Procedural § … Functional § ….</description>
+    <pubDate>Mon, 22 Jan 2024 00:16:29 GMT</pubDate>
   </item>
     </channel>
   </rss>
