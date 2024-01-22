@@ -8,43 +8,95 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1833d0816d7f4738",
+            "id": "614f24aa3fe2421f",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f54408281cbddd4f",
-            "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Programming/Basics.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "1ff75b4c6f994b2b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Binary and Hexadecimal (TODO).md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
             }
           },
           {
             "id": "227cf951bcb784c4",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
                 "mode": "source",
                 "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "320b9a0dd11b1f9f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Game Dev & Graphics/Procedural Generation (TODO).md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "82ccee6b5f7431cd",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/binary/binary-table-123.png"
+              }
+            }
+          },
+          {
+            "id": "53a8f3a3067ae3eb",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/binary/bin-to-int-123.png"
+              }
+            }
+          },
+          {
+            "id": "868e1c1470438fc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OS & Firmware/Unix & Linux (TODO).md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Basics.md",
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Basics.md",
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Basics.md"
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md"
               }
             }
           }
@@ -176,15 +228,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f54408281cbddd4f",
+  "active": "227cf951bcb784c4",
   "lastOpenFiles": [
     "Programming/Binary and Hexadecimal (TODO).md",
     "Programming/Basics.md",
-    "Programming/Advanced Data Structures (TODO).md",
-    "Programming/python.md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
-    "Untitled.md",
     "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "OS & Firmware/Unix & Linux (TODO).md",
+    "Programming/Algorithms & Complexity (TODO).md",
+    "img/binary/bin-to-int-123.png",
+    "Programming/Abstraction (TODO).md",
+    "Parallelism & Asynchronus code (TODO).md",
+    "Programming/python.md",
+    "Hardware/Basics.md",
+    "img/binary/decimals-in-tens.png",
+    "img/binary/binary-table-123.png",
+    "Game Dev & Graphics/Rendering (TODO).md",
+    "img/binary/decimal-table.png",
+    "img/binary",
+    "Programming/Advanced Data Structures (TODO).md",
     "Programming/Hashing.md",
     "img/hashing/line-graph.png",
     "img/hashing/hashing-2.png",
@@ -199,23 +261,16 @@
     "Networking & Webdev/Basics.md",
     "HCI & VR/Basics.md",
     "Game Dev & Graphics/Basics.md",
-    "Hardware/Basics.md",
     "Events/GDG YYC.md",
     "Events",
     "OS & Firmware/Basics.md",
     "Networking & Webdev/HTTP (TODO).md",
     "Networking & Webdev/SMTP (TODO).md",
     "Programming/Garbage Collection (TODO).md",
-    "Programming/Algorithms & Complexity (TODO).md",
-    "Programming/Programming Paradigms (TODO).md",
-    "Security & Cryptography/low-level.md",
-    "Programming/Open Source (TODO).md",
-    "Excalidraw/Drawing 2024-01-11 02.20.24.excalidraw.md",
     "Excalidraw",
     "events/internet and social media",
     "events/lawsuits",
     "concepts and crimes",
-    "countries",
-    "_meta/templates/periodic"
+    "countries"
   ]
 }

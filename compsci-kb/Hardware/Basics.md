@@ -1,8 +1,7 @@
 ---
 title: 🌱Basics/Intro
 ---
-
-Generally speaking there are a few pieces' of hardware you need, and will be found in basically every machine
+Hardware is the name we give to the physical components of a computer. The hardware is all the stuff that actually sends the signals (electrical or otherwise) we need to make our computers work. Generally speaking there are a few pieces' of hardware you need, and will be found in basically every machine...
 
 - GPU (often optional or integrated into CPU); What actually renders frames to the monitor that you see. This can be a "discrete gpu" (one you buy and install), or integrated GPU where the GPU is built into the CPU
   

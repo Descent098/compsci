@@ -5,10 +5,26 @@ aliases:
   - programming
 tags:
 ---
-This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the [[python]] section, which will detail how to use python for all these concepts.
+This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the [[python]] section, which will detail how to use python for all these concepts. This section covers programming more holistically, and will be more difficult than just learning a language to start with. 
+## Programming Languages
+Computers communicate using electrical signals, these signals are then [[Abstraction (TODO)|abstracted]] into [[Binary and Hexadecimal (TODO)#Binary|binary]]. This allows programmers to control these signals in easier to work with ways. Programming languages are built on top of layers and layers of existing [[OS & Firmware/Basics#Firmware/Bios|firmware]] and [[OS & Firmware/Basics|operating systems]]. Programming languages let you define programs (also called applications or binaries) that run in order to do something. Anything you run on your electronic devices today is the result of a programming language. 
 
-## Pseudocode
+### Source Code, Binaries, and scripts
+Source code are the actual files a programmer works with to create **binaries**. Binaries (not to be confused with [[Binary and Hexadecimal (TODO)#Binary|binary]]) are software that can be run by a computer. The source code is essentially an easily readable set of instructions, which the computer then compiles (using a [[Compilers (TODO)|compiler]]) into "machine code", which is what the computer then actually runs. Binaries are also called:
+
+- applications, or apps
+- scripts
+- executables or execs
+
+### Pseudocode
 For this section I will use Pseudocode, this is a fancy name for "I don't want to write real code". Essentially it will be a mix of code syntax and plain English to make it easy to read. It also lets me explain topics and syntax from multiple language at once.
+
+### Compiled vs interpreted (TODO)
+...
+#### REPL (TODO)
+...
+#### Bytecode (TODO)
+...
 ## Comments
 Comments are what they sound like, they don't do anything and they're there to let you add comments for yourself and other developers to read. This can be handy (especially when starting) to provide information that is not easily ascertainable by the code. A comment can be on it's own line, or "inline". inline comments will go after some code. Comments can also be single-line, or multiline. In the example below the comment character will be `//`, which means anything after `//` will be a comment. For example:
 

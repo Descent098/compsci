@@ -1,4 +1,42 @@
 ...
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+<script>
+const CANVASWIDTH = 300
+
+const CANVASHEIGHT = 300
+
+let gameOfLife = [
+      [0,0,0],
+      [0,1,0],
+      [0,0,0]
+    ]
+
+function setup() {
+    createCanvas(CANVASWIDTH, CANVASHEIGHT);
+  }
+
+  function draw() {
+    background(255,255,255);
+    for (let i = 0; i < 3; i++) {
+        ypos = i * 100
+        for (let j = 0; j < 3; j++) {
+          xpos = 100 * j
+          if (gameOfLife[i][j] == 1){
+            fill(0)
+          } else{
+            noFill()
+          }
+          square(xpos,ypos,100)
+        }
+    }
+  }
+</script>
+
+## Important terms (TODO)
+...
+
+### Cells (TODO)
+...
 
 ## Neighborhoods (TODO)
 ...
@@ -20,6 +58,13 @@ Here are a few:
 - Rule 184
 	- Used in traffic flow simulation, balistics, and particle deposition (stuff getting stuck to other stuff)
 	- [Rule 184 - Wikipedia](https://en.wikipedia.org/wiki/Rule_184)
+
+## Game of Life (TODO)
+
+- [Game of Life -- from Wolfram MathWorld](https://mathworld.wolfram.com/GameofLife.html)
+- [LifeWiki (conwaylife.com)](https://conwaylife.com/wiki/Main_Page)
+- [Spaceship - LifeWiki (conwaylife.com)](https://conwaylife.com/wiki/Spaceship)
+- [Inventing Game of Life (John Conway) - Numberphile (youtube.com)](https://www.youtube.com/watch?v=R9Plq-D1gEk)
 
 ## Uses
 - [[Procedural Generation (TODO)]]
@@ -52,6 +97,9 @@ Here are a few:
 		- [Lattice Gas Automata implemented in Python 3.8 (youtube.com)](https://www.youtube.com/watch?v=pNPIFz8g3c0)
 		- [1.0 (fas.org)](https://sgp.fas.org/othergov/doe/lanl/pubs/00285743.pdf)
 		- [A Gentle Introduction to Lattice Gas Automaton for Simulation of Fluid Flow with Python. [The FHP model for Navier-Stokes Equations] | by Mohamed Gaber | Medium](https://mohamed-gaber.medium.com/a-gentle-introduction-to-lattice-gas-automaton-for-simulation-of-fluid-flow-with-python-f285884dcc09)
+	- Simulating computer systems
+		- [Let’s BUILD a COMPUTER in CONWAY's GAME of LIFE ⠠⠵ (youtube.com)](https://www.youtube.com/watch?v=Kk2MH9O4pXY)
+		- 
 
 
 ## Additional Resources
@@ -59,8 +107,26 @@ Here are a few:
 - [Cellular Automata for video games (youtube.com)](https://www.youtube.com/watch?v=JEPHf9n3Dgc)
 - [Wolfram Atlas: Cellular Automata](https://atlas.wolfram.com/TOC/TOC_101.html)
 - [Cellular Automata > The 256 Rules (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/cellular-automata/supplement.html)
-- [[2309.14364] ALIFE 2023 (arxiv.org)](https://ar5iv.labs.arxiv.org/html/2309.14364)
+- [John von Neumann's Cellular Automata | Embryo Project Encyclopedia (asu.edu)](https://embryo.asu.edu/pages/john-von-neumanns-cellular-automata)
 - [Neural Patterns](https://neuralpatterns.io/)
+- [3D Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=dQJ5aEsP6Fs)
+- [Go Forth and Replicate | Scientific American](https://www.scientificamerican.com/article/go-forth-and-replicate-2008-02/)
+- [Cellular Automata. In the 1940s, John Von Neumann and… | by Ahmad Hamze | Medium](https://medium.com/@Ahmad_Hamze/cellular-automata-d7b0b3151f17)
+- [The Incredible Story of The Game of Life (youtube.com)](https://www.youtube.com/watch?v=jvSp6VHt_Pc)
+- Papers
+	- [The General and Logical Theory of Automata (vordenker.de)](https://www.vordenker.de/ggphilosophy/jvn_the-general-and-logical-theory-of-automata.pdf)
+	- [[2309.14364] ALIFE 2023 (arxiv.org)](https://ar5iv.labs.arxiv.org/html/2309.14364)
+	- [An Implementation of von Neumann's Self-Reproducing Machine (mit.edu)](https://fab.cba.mit.edu/classes/865.18/replication/Pesavento.pdf)
+- Coding train series
+	- [7.1: Cellular Automata - The Nature of Code (youtube.com)](https://www.youtube.com/watch?v=DKGodqDs9sA&list=PLRqwX-V7Uu6aFlwukCmDf0-1-uSR7mklK&index=65)
+	- [7.2: Wolfram Elementary Cellular Automata - The Nature of Code (youtube.com)](https://www.youtube.com/watch?v=W1zKu3fDQR8&list=PLRqwX-V7Uu6aFlwukCmDf0-1-uSR7mklK&index=65)
+	- [I.0: Introduction - The Nature of Code (youtube.com)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aFlwukCmDf0-1-uSR7mklK)
+	- [Coding Challenge 179: Elementary Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=Ggxt06qSAe4)
+- Talks By Stephen Wolfram
+	- [Cellular Automata and Rule 30 (Stephen Wolfram) | AI Podcast Clips (youtube.com)](https://www.youtube.com/watch?v=VguG_y05Xe8)
+	- [Stephen Wolfram: Cellular Automata, Computation, and Physics | Lex Fridman Podcast #89 (youtube.com)](https://www.youtube.com/watch?v=ez773teNFYA)
+	- [How to Think Computationally About AI, the Universe and Everything | Stephen Wolfram | TED (youtube.com)](https://www.youtube.com/watch?v=fLMZAHyrpyo)
+	- [Computing a theory of everything | Stephen Wolfram (youtube.com)](https://www.youtube.com/watch?v=60P7717-XOQ)
 
 [^1]: [Stephen Wolfram: A New Kind of Science | Online—Table of Contents (wolframscience.com)](https://www.wolframscience.com/nks/)
 [^2]: [Seashell patterns: left is real, right generated by a CA | Download Scientific Diagram (researchgate.net)](https://www.researchgate.net/figure/Seashell-patterns-left-is-real-right-generated-by-a-CA-Source-3_fig1_272359229)
