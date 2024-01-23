@@ -1,3 +1,10 @@
+---
+aliases:
+  - binary
+  - hex
+title: Number Systems (binary & hex)
+---
+
 When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again:
 ```
 0

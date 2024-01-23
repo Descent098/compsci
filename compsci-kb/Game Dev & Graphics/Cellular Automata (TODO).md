@@ -1,37 +1,8 @@
-...
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
-<script>
-const CANVASWIDTH = 300
+Cellular automata are a weird concept to explain. Fundamentally they are a way of using simple rules to populate 2d and higher dimension arrays. They are somewhat of an enigma, they are typically incredibly simple algorithms, yet they're used in incredibly complex simulations all the time. The easiest way to explain them might be to start with a working example, then work backwards to what you're seeing. Below is an example of a cellular automata:
 
-const CANVASHEIGHT = 300
+<iframe loading="lazy" width="600px" height="650px" src="https://editor.p5js.org/codingtrain/full/IE77UYZ-G"></iframe>
 
-let gameOfLife = [
-      [0,0,0],
-      [0,1,0],
-      [0,0,0]
-    ]
-
-function setup() {
-    createCanvas(CANVASWIDTH, CANVASHEIGHT);
-  }
-
-  function draw() {
-    background(255,255,255);
-    for (let i = 0; i < 3; i++) {
-        ypos = i * 100
-        for (let j = 0; j < 3; j++) {
-          xpos = 100 * j
-          if (gameOfLife[i][j] == 1){
-            fill(0)
-          } else{
-            noFill()
-          }
-          square(xpos,ypos,100)
-        }
-    }
-  }
-</script>
-
+As you can see a very interesting pattern has occurred, based on an incredibly simple set of [[#Rules]] (rule 90 in this case). So what is actually happening to generate this image?
 ## Important terms (TODO)
 ...
 
@@ -43,7 +14,9 @@ function setup() {
 - Von Neuman vs Moore
 
 ## Rules
-Rules is a shorthand name used for various patterns. It was created by Stephenn Wolfram in his book *A New Kind of Science*[^1].
+Rules is a shorthand name used for various patterns. It was created by Stephen Wolfram in his book *A New Kind of Science*[^1]. These are defined using [[Binary and Hexadecimal (TODO)#Binary|binary]] 
+
+
 
 Here are a few:
 - Rule 30
@@ -59,7 +32,13 @@ Here are a few:
 	- Used in traffic flow simulation, balistics, and particle deposition (stuff getting stuck to other stuff)
 	- [Rule 184 - Wikipedia](https://en.wikipedia.org/wiki/Rule_184)
 
+Rules in general are very pernicious to find benefits in. Many of the cellular automata uses, and theories come out of brute force just trying the algorithms.
+
+<iframe loading="lazy" width="600px" height="650px" src="https://editor.p5js.org/Descent098/full/N5ifTxtg-"></iframe>
+
+
 ## Game of Life (TODO)
+Conway's game of life was a recreational math project by John Conway. 
 
 - [Game of Life -- from Wolfram MathWorld](https://mathworld.wolfram.com/GameofLife.html)
 - [LifeWiki (conwaylife.com)](https://conwaylife.com/wiki/Main_Page)
@@ -97,9 +76,14 @@ Here are a few:
 		- [Lattice Gas Automata implemented in Python 3.8 (youtube.com)](https://www.youtube.com/watch?v=pNPIFz8g3c0)
 		- [1.0 (fas.org)](https://sgp.fas.org/othergov/doe/lanl/pubs/00285743.pdf)
 		- [A Gentle Introduction to Lattice Gas Automaton for Simulation of Fluid Flow with Python. [The FHP model for Navier-Stokes Equations] | by Mohamed Gaber | Medium](https://mohamed-gaber.medium.com/a-gentle-introduction-to-lattice-gas-automaton-for-simulation-of-fluid-flow-with-python-f285884dcc09)
+	- Falling sand
+		- [How To Code a Falling Sand Simulation (like Noita) with Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=5Ka3tbbT-9E)
+		- [Coding Challenge 180: Falling Sand - YouTube](https://www.youtube.com/watch?v=L4u7Zy_b868)
 	- Simulating computer systems
 		- [Let’s BUILD a COMPUTER in CONWAY's GAME of LIFE ⠠⠵ (youtube.com)](https://www.youtube.com/watch?v=Kk2MH9O4pXY)
-		- 
+		- [Introduction to Complexity: Cellular Automata as Computers (youtube.com)](https://www.youtube.com/watch?v=N5DuBpnpW-8)
+		- [Computation in Complex Systems : Computation Everywhere : Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=RPP1bbtZyE8)
+
 
 
 ## Additional Resources
@@ -113,6 +97,13 @@ Here are a few:
 - [Go Forth and Replicate | Scientific American](https://www.scientificamerican.com/article/go-forth-and-replicate-2008-02/)
 - [Cellular Automata. In the 1940s, John Von Neumann and… | by Ahmad Hamze | Medium](https://medium.com/@Ahmad_Hamze/cellular-automata-d7b0b3151f17)
 - [The Incredible Story of The Game of Life (youtube.com)](https://www.youtube.com/watch?v=jvSp6VHt_Pc)
+- [Organic neural cellular automata (youtube.com)](https://www.youtube.com/watch?v=NPlAEnGX4Dg)
+- [Exploring Emergent Structures with Cellular Automata [English] (youtube.com)](https://www.youtube.com/watch?v=coL5GKxYg90)
+- [cellular-automata-models-complexity.pdf (wolfram.com)](https://content.wolfram.com/sw-publications/2020/07/cellular-automata-models-complexity.pdf)
+- [Life Worth Mentioning: Complexity in Life-Like Cellular Automata | Artificial Life | MIT Press](https://direct.mit.edu/artl/article/27/2/105/107883/Life-Worth-Mentioning-Complexity-in-Life-Like)
+- [Cellular automata as models of complexity | Nature](https://www.nature.com/articles/311419a0#:~:text=The%20origins%20of%20such%20complexity,and%20as%20information%2Dprocessing%20systems.)
+- [Cellular Automaton - YouTube](https://www.youtube.com/watch?v=eUcviWn9ACc)
+- [Elementary Cellular Automaton - Intro to Computer Science (youtube.com)](https://www.youtube.com/watch?v=M_pkidxeGMY)
 - Papers
 	- [The General and Logical Theory of Automata (vordenker.de)](https://www.vordenker.de/ggphilosophy/jvn_the-general-and-logical-theory-of-automata.pdf)
 	- [[2309.14364] ALIFE 2023 (arxiv.org)](https://ar5iv.labs.arxiv.org/html/2309.14364)
@@ -127,6 +118,7 @@ Here are a few:
 	- [Stephen Wolfram: Cellular Automata, Computation, and Physics | Lex Fridman Podcast #89 (youtube.com)](https://www.youtube.com/watch?v=ez773teNFYA)
 	- [How to Think Computationally About AI, the Universe and Everything | Stephen Wolfram | TED (youtube.com)](https://www.youtube.com/watch?v=fLMZAHyrpyo)
 	- [Computing a theory of everything | Stephen Wolfram (youtube.com)](https://www.youtube.com/watch?v=60P7717-XOQ)
+	- [Cellular Automata and Stephen Wolfram's Theory of Everything | Peter Woit and Lex Fridman - YouTube](https://www.youtube.com/watch?v=Z4C3uTt02as)
 
 [^1]: [Stephen Wolfram: A New Kind of Science | Online—Table of Contents (wolframscience.com)](https://www.wolframscience.com/nks/)
 [^2]: [Seashell patterns: left is real, right generated by a CA | Download Scientific Diagram (researchgate.net)](https://www.researchgate.net/figure/Seashell-patterns-left-is-real-right-generated-by-a-CA-Source-3_fig1_272359229)

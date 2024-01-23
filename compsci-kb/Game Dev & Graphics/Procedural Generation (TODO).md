@@ -15,6 +15,7 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 ### Wave function collapse (TODO)
 - [How Townscaper Works: A Story Four Games in the Making (youtube.com)](https://www.youtube.com/watch?v=_1fvJ5sHh6A)
 - [The Wave Function Collapse algorithm - YouTube](https://www.youtube.com/watch?v=qRtrj6Pua2A)
+- [EASY Wave Function Collapse Tutorial for Unity Games! [Unity Tutorial] (youtube.com)](https://www.youtube.com/watch?v=IDKWtzTRX3Q)
 
 
 
@@ -48,6 +49,8 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 		- [NVIDIA’s New AI Trained For 5,000,000,000 Steps! (youtube.com)](https://www.youtube.com/watch?v=nAMSfmHuMOQ)
 		- [NVIDIA’s New AI Trained For 10 Years! But How? 🤺 (youtube.com)](https://www.youtube.com/watch?v=1kV-rZZw50Q)
 			- 10 years == 10 days of training
+		- [Practical Procedural Generation for Everyone (youtube.com)](https://www.youtube.com/watch?v=WumyfLEa6bU)
+		- [Procedural Modeling Using Graph Grammars (youtube.com)](https://www.youtube.com/watch?v=FG3LbcOGHqw)
 	- Inspiration
 		- [Codeer - YouTube](https://www.youtube.com/@Codeer/videos)
 		- [Procedural Walk System (youtube.com)](https://www.youtube.com/watch?v=MWgUnv4TFY4)
@@ -60,6 +63,9 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 		- [1 year of progress on my game (youtube.com)](https://www.youtube.com/watch?v=ClETeoWp7I8)
 		- [Performance showcase (youtube.com)](https://www.youtube.com/watch?v=ivL20WQ9Pr8)
 		- [Procedural hydrogels in Blender (youtube.com)](https://www.youtube.com/watch?v=Pr3ZSa3p7WI)
+		- [Creating Little Castles with Wave Function Collapse (youtube.com)](https://www.youtube.com/watch?v=MyMbbmWVCDw)
+		- [Full Body IK: Procedural Dragon Animations (youtube.com)](https://www.youtube.com/watch?v=Z8eqaFG7lZQ)
+		- [Designing (Procedural) Monsters (youtube.com)](https://www.youtube.com/watch?v=a87tB__3KEs)
 - Terrain
 	- [[Noise (TODO)]]
 	- [Procedural Generation with Wave Function Collapse and Model Synthesis | Unity Devlog (youtube.com)](https://www.youtube.com/watch?v=zIRTOgfsjl0)

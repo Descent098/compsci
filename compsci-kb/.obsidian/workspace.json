@@ -64,39 +64,33 @@
             }
           },
           {
-            "id": "82ccee6b5f7431cd",
+            "id": "82f3c594ae3e5d3b",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "img/binary/binary-table-123.png"
-              }
+                "file": "OS & Firmware/Unix & Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
             }
           },
           {
-            "id": "53a8f3a3067ae3eb",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/binary/bin-to-int-123.png"
-              }
-            }
-          },
-          {
-            "id": "868e1c1470438fc3",
+            "id": "fd8e915c9b9eddbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS & Firmware/Unix & Linux (TODO).md",
+                "file": "Game Dev & Graphics/Shaders (TODO).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -162,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
+                "file": "OS & Firmware/Unix & Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
+                "file": "OS & Firmware/Unix & Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md"
+                "file": "OS & Firmware/Unix & Linux.md"
               }
             }
           }
@@ -228,22 +222,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "227cf951bcb784c4",
+  "active": "82f3c594ae3e5d3b",
   "lastOpenFiles": [
-    "Programming/Binary and Hexadecimal (TODO).md",
-    "Programming/Basics.md",
-    "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Game Dev & Graphics/Shaders (TODO).md",
+    "Game Dev & Graphics/Rendering (TODO).md",
     "Game Dev & Graphics/Procedural Generation (TODO).md",
-    "OS & Firmware/Unix & Linux (TODO).md",
-    "Programming/Algorithms & Complexity (TODO).md",
+    "OS & Firmware/Unix & Linux.md",
+    "OS & Firmware/Basics.md",
+    "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Programming/Open Source & Free Software.md",
+    "Programming/Binary and Hexadecimal (TODO).md",
+    "Networking & Webdev/Basics.md",
+    "Programming/Basics.md",
     "img/binary/bin-to-int-123.png",
+    "img/binary/binary-table-123.png",
+    "Game Dev & Graphics/Basics.md",
+    "Networking & Webdev/HTTP (TODO).md",
+    "Programming/Open Source.md",
+    "Programming/Algorithms & Complexity (TODO).md",
     "Programming/Abstraction (TODO).md",
-    "Parallelism & Asynchronus code (TODO).md",
+    "Programming/Parallelism & Asynchronus code (TODO).md",
     "Programming/python.md",
     "Hardware/Basics.md",
     "img/binary/decimals-in-tens.png",
-    "img/binary/binary-table-123.png",
-    "Game Dev & Graphics/Rendering (TODO).md",
     "img/binary/decimal-table.png",
     "img/binary",
     "Programming/Advanced Data Structures (TODO).md",
@@ -258,15 +259,8 @@
     "index.md",
     "Security & Cryptography/Basics.md",
     "Game Dev & Graphics/Noise (TODO).md",
-    "Networking & Webdev/Basics.md",
     "HCI & VR/Basics.md",
-    "Game Dev & Graphics/Basics.md",
-    "Events/GDG YYC.md",
     "Events",
-    "OS & Firmware/Basics.md",
-    "Networking & Webdev/HTTP (TODO).md",
-    "Networking & Webdev/SMTP (TODO).md",
-    "Programming/Garbage Collection (TODO).md",
     "Excalidraw",
     "events/internet and social media",
     "events/lawsuits",

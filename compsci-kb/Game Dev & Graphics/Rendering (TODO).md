@@ -9,3 +9,6 @@ A method that will allow you to have multiple semi-transparent objects render pr
 - [VTK Technical Highlight: Dual Depth Peeling (kitware.com)](https://www.kitware.com/vtk-technical-highlight-dual-depth-peeling/)
 - [Depth Peeling Order Independent Transparency in Vulkan - Matthew Wellings](https://matthewwellings.com/blog/depth-peeling-order-independent-transparency-in-vulkan/)
 - [OrderIndependentTransparency.pdf (nvidia.com)](https://developer.download.nvidia.com/assets/gamedev/docs/OrderIndependentTransparency.pdf)
+
+## Additional Resources
+- [Low Complexity, High Fidelity: The Rendering of INSIDE (youtube.com)](https://www.youtube.com/watch?v=RdN06E6Xn9E)
