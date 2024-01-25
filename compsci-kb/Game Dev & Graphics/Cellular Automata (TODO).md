@@ -94,6 +94,7 @@ Conway's game of life was a recreational math project by John Conway.
 - [John von Neumann's Cellular Automata | Embryo Project Encyclopedia (asu.edu)](https://embryo.asu.edu/pages/john-von-neumanns-cellular-automata)
 - [Neural Patterns](https://neuralpatterns.io/)
 - [3D Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=dQJ5aEsP6Fs)
+- [Play John Conway’s Game of Life (playgameoflife.com)](https://playgameoflife.com/)
 - [Go Forth and Replicate | Scientific American](https://www.scientificamerican.com/article/go-forth-and-replicate-2008-02/)
 - [Cellular Automata. In the 1940s, John Von Neumann and… | by Ahmad Hamze | Medium](https://medium.com/@Ahmad_Hamze/cellular-automata-d7b0b3151f17)
 - [The Incredible Story of The Game of Life (youtube.com)](https://www.youtube.com/watch?v=jvSp6VHt_Pc)
@@ -102,6 +103,7 @@ Conway's game of life was a recreational math project by John Conway.
 - [cellular-automata-models-complexity.pdf (wolfram.com)](https://content.wolfram.com/sw-publications/2020/07/cellular-automata-models-complexity.pdf)
 - [Life Worth Mentioning: Complexity in Life-Like Cellular Automata | Artificial Life | MIT Press](https://direct.mit.edu/artl/article/27/2/105/107883/Life-Worth-Mentioning-Complexity-in-Life-Like)
 - [Cellular automata as models of complexity | Nature](https://www.nature.com/articles/311419a0#:~:text=The%20origins%20of%20such%20complexity,and%20as%20information%2Dprocessing%20systems.)
+- [Conway's Game of Life 3D (youtube.com)](https://www.youtube.com/watch?v=6O9CLARsJ04)
 - [Cellular Automaton - YouTube](https://www.youtube.com/watch?v=eUcviWn9ACc)
 - [Elementary Cellular Automaton - Intro to Computer Science (youtube.com)](https://www.youtube.com/watch?v=M_pkidxeGMY)
 - Papers

@@ -63,6 +63,7 @@ Bruce Perens and others on the Debian team have actually expanded these out to t
     The license must not place restrictions on other software that is distributed along with the licensed software. For example, the license must not insist that all other programs distributed on the same medium must be free software.
 >10. **Example Licenses**
     The **[GPL](https://www.gnu.org/copyleft/gpl.html)**, **[BSD](https://opensource.org/licenses/BSD-3-Clause)**, and **[Artistic](https://perldoc.perl.org/perlartistic.html)** licenses are examples of licenses that we consider _free_.
+>
 > - From the Debian Social contract [^5]
 
 Without these rules being obeyed the argument is that the user is not in control of a program, but rather the program controls the user. These stipulations are what allow the sort of control that free software advocates would call "free or libre".
@@ -151,7 +152,7 @@ If you are planning to use these licenses [they have a tool to help choose](http
 #### MIT Open Courseware
 In 2001 MIT launched the [OpenCourseWare project](https://ocw.mit.edu/)[^12]. This project was trying to help democratize the access to university level course content. They distribute the content on multiple platforms, details for which can be found [here](https://openlearning.mit.edu/courses-programs/mit-opencourseware).
 ## Critiques of open source
-While the idea of open source sounds great there are many critiques in practice. While these shouldn't necessarily dissuade you from developing open source they are things to keep in mind:
+While the idea of open source sounds great there are many critiques in practice. While these shouldn't necessarily dissuade you from developing open source they are things to keep in mind. These are various situations that caused issues in open source projects:
 
 - Little to no accountability
 	- [The Dark Side of Open Source // What really happened to Faker.js? (youtube.com)](https://www.youtube.com/watch?v=R6S-b_k-ZKY)
@@ -182,6 +183,38 @@ While the idea of open source sounds great there are many critiques in practice.
 		- [A sad day for Rust (steveklabnik.com)](https://steveklabnik.com/writing/a-sad-day-for-rust)
 		- [The Downfall of Actix Web (youtube.com)](https://www.youtube.com/watch?v=enLUX1TtNyE)
 
+### Closed source
+
+Closed source is what most people will think of as the “default” way to do things. Essentially this means that the source code used to create an app is not disclosed. So for example if you have a large company that distributes videos, you may have no idea what code is running on their servers to process your data. It’s important to keep in mind that closed source does not guarantee that something is **proprietary** (created by the company, for the company). Many closed source systems actually rely (sometimes entirely) on [[Open Source & Free Software|open source]] software.
+
+Assuming the other software you’re using does not have any conflicts with the licenses it is there is nothing stopping people from writing closed source software.
+
+There are some arguable advantages to doing so, such as if you're in any of these situations:
+
+- You are one of the first groups in a field and want to keep your head start
+- You are using methods of solving a problem that haven’t been patented/published yet
+    - Many countries use a “first to patent” approach, meaning even if you created the technology you can be sued out of using it if someone patents it before you
+- You just don’t want people to use your code
+	- Ultimately projects you create are yours, unless stipulated by other dependencies people don't have any right to tell you what you can and cannot do
+
+#### Bad reasons to do closed source
+
+With everything being said, some people opt to do close source for bad reasons. Here are a few **bad reasons** to do closed source.
+
+##### Security through obscurity
+
+The idea is that something can be secured by just making it hard to find. For example you might have a “closed source” file with all the passwords in it, or a server that uses an encryption key in a weird directory so people are less likely to find it.
+
+One real world example of this was a story I heard from someone who wrote firmware for a router company that used to “trust” devices by having them send signals with set time intervals. So for example it would send a letter “a” after establishing a connection at 1, 1.3, 1.5, 1.8, and 3 seconds. The idea being this pattern was so “random”, that it should be secure.
+
+**This isn’t security**, at best it’s just inconvenient for people trying to steal your information. Close sourcing something because you don’t know how to do security is just irresponsible, not clever. People should be able to know which encryption system, or software your using and **still not be able to break in** (often called [zero trust systems](https://www.microsoft.com/en-ca/security/business/zero-trust#:~:text=What%20is%20Zero%20Trust%3F,originates%20from%20an%20open%20network.). If just having to know some small piece of information allows people to break in, then it’s just a matter of your project having information worth stealing before someone will get in.
+
+##### Uniqueness/proprietary system
+
+Many times when people are creating projects they intend to sell they will try to not be transparent with the technologies they use. If they create websites they want customers to think they use some “special sauce” system to create them that requires the company. This being a reason to close source is also a bad idea if you are actually just using open source projects to build with. Not only because it’s dishonest, but depending on what you’re doing the claims themselves can be illegal.
+
+If you lie to someone in order to get them to work with you, in most countries you’re committing fraud. It’s fine if you don’t want people to know what you’re using, but that should be the stated reason. Trying to hide behind closing your source to ramp up the price, and/or lie about implementation details can create a lot of problems.
+
 ## Additional Resources
 - Articles & Blog posts on the topic
 	- [Stealing Like a Developer | Schulich Ignite](https://schulichignite.com/blog/stealing-like-a-developer/)
@@ -193,6 +226,7 @@ While the idea of open source sounds great there are many critiques in practice.
 	- [The Darker Side of Aaron Swartz | The New Yorker](https://www.newyorker.com/magazine/2013/03/11/requiem-for-a-dream)
 	- [Aaron Swartz](http://www.aaronsw.com/)
 - [History of Gnu, Linux, Free and Open Source Software (Revolution OS) (youtube.com)](https://www.youtube.com/watch?v=vjMZssWMweA)
+- [The Rise Of Open-Source Software (youtube.com)](https://www.youtube.com/watch?v=SpeDK1TPbew)
 - [Reclaim your freedom with free libre software now - Richard Stallman of Free Software Movement (youtube.com)](https://www.youtube.com/watch?v=n9YDz-Iwgyw)
 - [For A Free Digital Society - Richard M. Stallman (youtube.com)](https://www.youtube.com/watch?v=7ZSPf7YnGfE)
 - [The Code: Story of Linux documentary (Multilingual) (youtube.com)](https://www.youtube.com/watch?v=XMm0HsmOTFI)

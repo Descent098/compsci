@@ -66,6 +66,7 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 		- [Creating Little Castles with Wave Function Collapse (youtube.com)](https://www.youtube.com/watch?v=MyMbbmWVCDw)
 		- [Full Body IK: Procedural Dragon Animations (youtube.com)](https://www.youtube.com/watch?v=Z8eqaFG7lZQ)
 		- [Designing (Procedural) Monsters (youtube.com)](https://www.youtube.com/watch?v=a87tB__3KEs)
+		- [I made this 3D game with ONLY code (youtube.com)](https://www.youtube.com/watch?v=QhvzmskRiCk)
 - Terrain
 	- [[Noise (TODO)]]
 	- [Procedural Generation with Wave Function Collapse and Model Synthesis | Unity Devlog (youtube.com)](https://www.youtube.com/watch?v=zIRTOgfsjl0)
