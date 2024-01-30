@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><title>Number Systems (binary &amp; hex)</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Number Systems (binary &amp; hex)"/><meta property="og:description" content="When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 ."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 ."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="programming/Binary-and-Hexadecimal-(TODO)"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;events&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networking-&amp;-Webdev&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="events"><button class="folder-button"><span class="folder-title">events</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="events"><li><a href="../events/GDG-YYC" data-for="events/GDG-YYC">GDG YYC</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" data-for="Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)">Cellular Automata (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Noise-(TODO)" data-for="Game-Dev-&amp;-Graphics/Noise-(TODO)">Noise (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)" data-for="Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)">Procedural Generation (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Quaternians" data-for="Game-Dev-&amp;-Graphics/Quaternians">Quaternians</a></li><li><a href="../Game-Dev-&amp;-Graphics/Rendering-(TODO)" data-for="Game-Dev-&amp;-Graphics/Rendering-(TODO)">Rendering (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Shaders-(TODO)" data-for="Game-Dev-&amp;-Graphics/Shaders-(TODO)">Shaders (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)" data-for="Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)">UI Strategies (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../Hardware/Connection-Types-(TODO)" data-for="Hardware/Connection-Types-(TODO)">Connection Types (TODO)</a></li><li><a href="../Hardware/CPU-(TODO)" data-for="Hardware/CPU-(TODO)">CPU (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../HCI-&amp;-VR/basics" data-for="HCI-&amp;-VR/basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networking-&amp;-Webdev"><button class="folder-button"><span class="folder-title">Networking &amp; Webdev</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networking-&amp;-Webdev"><li><a href="../Networking-&amp;-Webdev/Basics" data-for="Networking-&amp;-Webdev/Basics">🌱Basics/Intro</a></li><li><a href="../Networking-&amp;-Webdev/HTTP-(TODO)" data-for="Networking-&amp;-Webdev/HTTP-(TODO)">HTTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)" data-for="Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)">Networking Error Correction (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Products-and-Services-(TODO)" data-for="Networking-&amp;-Webdev/Products-and-Services-(TODO)">Products and Services (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/SMTP-(TODO)" data-for="Networking-&amp;-Webdev/SMTP-(TODO)">SMTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Virtualization-(TODO)" data-for="Networking-&amp;-Webdev/Virtualization-(TODO)">Virtualization (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../OS-&amp;-Firmware/Unix-&amp;-Linux" data-for="OS-&amp;-Firmware/Unix-&amp;-Linux">Linux</a></li><li><a href="../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="programming"><button class="folder-button"><span class="folder-title">programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="programming"><li><a href="../programming/Basics" data-for="programming/Basics">🌱Basics/Intro</a></li><li><a href="../programming/Abstraction-(TODO)" data-for="programming/Abstraction-(TODO)">Abstraction (TODO)</a></li><li><a href="../programming/Advanced-Data-Structures-(TODO)" data-for="programming/Advanced-Data-Structures-(TODO)">Advanced Data Structures (TODO)</a></li><li><a href="../programming/Algorithms-&amp;-Complexity-(TODO)" data-for="programming/Algorithms-&amp;-Complexity-(TODO)">Algorithms &amp; Complexity (TODO)</a></li><li><a href="../programming/Compilers-(TODO)" data-for="programming/Compilers-(TODO)">Compilers (TODO)</a></li><li><a href="../programming/Open-Source-&amp;-Free-Software" data-for="programming/Open-Source-&amp;-Free-Software">FOSS (Free and Open Source Software)</a></li><li><a href="../programming/Garbage-Collection-(TODO)" data-for="programming/Garbage-Collection-(TODO)">Garbage Collection (TODO)</a></li><li><a href="../programming/Hashing" data-for="programming/Hashing">Hashing</a></li><li><a href="../programming/HTML-(TODO)" data-for="programming/HTML-(TODO)">HTML (TODO)</a></li><li><a href="../programming/Binary-and-Hexadecimal-(TODO)" data-for="programming/Binary-and-Hexadecimal-(TODO)">Number Systems (binary &amp; hex)</a></li><li><a href="../programming/Parallelism-&amp;-Asynchronus-code-(TODO)" data-for="programming/Parallelism-&amp;-Asynchronus-code-(TODO)">Parallelism &amp; Asynchronus code (TODO)</a></li><li><a href="../programming/Programming-Paradigms-(TODO)" data-for="programming/Programming-Paradigms-(TODO)">Programming Paradigms (TODO)</a></li><li><a href="../programming/python" data-for="programming/python">python</a></li><li><a href="../programming/Speculation-&amp;-Branch-Prediction-(TODO)" data-for="programming/Speculation-&amp;-Branch-Prediction-(TODO)">Speculation &amp; Branch Prediction (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../Security-&amp;-Cryptography/low-level" data-for="Security-&amp;-Cryptography/low-level">low-level</a></li><li><a href="../Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)" data-for="Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)">Samir Secret Sharing (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../programming/">programming</a></div></nav><h1 class="article-title ">Number Systems (binary &amp; hex)</h1><p class="content-meta ">Jan 25, 2024, 8 min read</p></div></div><article class="popover-hint"><p>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again:</p>
+<html><head><title>Number Systems (binary &amp; hex)</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Number Systems (binary &amp; hex)"/><meta property="og:description" content="When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 ."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 ."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="programming/Binary-and-Hexadecimal-(TODO)"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;events&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networking-&amp;-Webdev&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="events"><button class="folder-button"><span class="folder-title">events</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="events"><li><a href="../events/GDG-YYC" data-for="events/GDG-YYC">GDG YYC</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" data-for="Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)">Cellular Automata (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Noise-(TODO)" data-for="Game-Dev-&amp;-Graphics/Noise-(TODO)">Noise (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)" data-for="Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)">Procedural Generation (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Quaternians" data-for="Game-Dev-&amp;-Graphics/Quaternians">Quaternians</a></li><li><a href="../Game-Dev-&amp;-Graphics/Rendering-(TODO)" data-for="Game-Dev-&amp;-Graphics/Rendering-(TODO)">Rendering (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Shaders-(TODO)" data-for="Game-Dev-&amp;-Graphics/Shaders-(TODO)">Shaders (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)" data-for="Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)">UI Strategies (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../Hardware/Connection-Types-(TODO)" data-for="Hardware/Connection-Types-(TODO)">Connection Types (TODO)</a></li><li><a href="../Hardware/CPU-(TODO)" data-for="Hardware/CPU-(TODO)">CPU (TODO)</a></li><li><a href="../Hardware/Logic-Gates-(TODO)" data-for="Hardware/Logic-Gates-(TODO)">Logic Gates (TODO)</a></li><li><a href="../Hardware/RAM" data-for="Hardware/RAM">RAM</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../HCI-&amp;-VR/basics" data-for="HCI-&amp;-VR/basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networking-&amp;-Webdev"><button class="folder-button"><span class="folder-title">Networking &amp; Webdev</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networking-&amp;-Webdev"><li><a href="../Networking-&amp;-Webdev/Basics" data-for="Networking-&amp;-Webdev/Basics">🌱Basics/Intro</a></li><li><a href="../Networking-&amp;-Webdev/HTTP-(TODO)" data-for="Networking-&amp;-Webdev/HTTP-(TODO)">HTTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/IP-(internet-Protocol)" data-for="Networking-&amp;-Webdev/IP-(internet-Protocol)">IP (internet Protocol)</a></li><li><a href="../Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)" data-for="Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)">Networking Error Correction (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Products-and-Services-(TODO)" data-for="Networking-&amp;-Webdev/Products-and-Services-(TODO)">Products and Services (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/SMTP-(TODO)" data-for="Networking-&amp;-Webdev/SMTP-(TODO)">SMTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Virtualization-(TODO)" data-for="Networking-&amp;-Webdev/Virtualization-(TODO)">Virtualization (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../OS-&amp;-Firmware/Unix-&amp;-Linux" data-for="OS-&amp;-Firmware/Unix-&amp;-Linux">Linux</a></li><li><a href="../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="programming"><button class="folder-button"><span class="folder-title">programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="programming"><li><a href="../programming/Basics" data-for="programming/Basics">🌱Basics/Intro</a></li><li><a href="../programming/Abstraction-(TODO)" data-for="programming/Abstraction-(TODO)">Abstraction (TODO)</a></li><li><a href="../programming/Advanced-Data-Structures-(TODO)" data-for="programming/Advanced-Data-Structures-(TODO)">Advanced Data Structures (TODO)</a></li><li><a href="../programming/Algorithms-&amp;-Complexity-(TODO)" data-for="programming/Algorithms-&amp;-Complexity-(TODO)">Algorithms &amp; Complexity (TODO)</a></li><li><a href="../programming/Compilers-(TODO)" data-for="programming/Compilers-(TODO)">Compilers (TODO)</a></li><li><a href="../programming/Encodings" data-for="programming/Encodings">Encodings</a></li><li><a href="../programming/Open-Source-&amp;-Free-Software" data-for="programming/Open-Source-&amp;-Free-Software">FOSS (Free and Open Source Software)</a></li><li><a href="../programming/Garbage-Collection-(TODO)" data-for="programming/Garbage-Collection-(TODO)">Garbage Collection (TODO)</a></li><li><a href="../programming/Hashing" data-for="programming/Hashing">Hashing</a></li><li><a href="../programming/HTML-(TODO)" data-for="programming/HTML-(TODO)">HTML (TODO)</a></li><li><a href="../programming/Binary-and-Hexadecimal-(TODO)" data-for="programming/Binary-and-Hexadecimal-(TODO)">Number Systems (binary &amp; hex)</a></li><li><a href="../programming/Parallelism-&amp;-Asynchronus-code-(TODO)" data-for="programming/Parallelism-&amp;-Asynchronus-code-(TODO)">Parallelism &amp; Asynchronus code (TODO)</a></li><li><a href="../programming/Programming-Paradigms-(TODO)" data-for="programming/Programming-Paradigms-(TODO)">Programming Paradigms (TODO)</a></li><li><a href="../programming/python" data-for="programming/python">python</a></li><li><a href="../programming/Speculation-&amp;-Branch-Prediction-(TODO)" data-for="programming/Speculation-&amp;-Branch-Prediction-(TODO)">Speculation &amp; Branch Prediction (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../Security-&amp;-Cryptography/low-level" data-for="Security-&amp;-Cryptography/low-level">low-level</a></li><li><a href="../Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)" data-for="Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)">Samir Secret Sharing (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../programming/">programming</a></div></nav><h1 class="article-title ">Number Systems (binary &amp; hex)</h1><p class="content-meta ">Jan 30, 2024, 21 min read</p></div></div><article class="popover-hint"><p>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again:</p>
 <pre><code>0
 1
 2
@@ -24,7 +24,7 @@
 <li>1 three</li>
 </ul>
 <p>Each representing the hundreds, tens and one’s columns of the above table. As such when a value “spills over” it increases the digit by adding 1 to the left column of whatever overflows.</p>
-<h2 id="powers-of-10-decimal">Powers of 10 decimal<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#powers-of-10-decimal" class="internal alias"> §</a></h2>
+<h2 id="powers-of-10">Powers of 10<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#powers-of-10" class="internal alias"> §</a></h2>
 <p>Another way to view this is in powers of 10. I have put the minimum value of each column on top, and the maximum below:</p>
 <p><img src="../img/binary/decimals-in-tens.png" width="auto" height="auto"/></p>
 <p>This same model will be used later to help explain other base numbering systems like binary and hex.</p>
@@ -436,7 +436,7 @@ remainder > Current Cell
 You know you’ve done it right if your remainder is 0.</p>
 <h3 id="converting-binary-numbers-to-decimal">Converting binary numbers to decimal<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#converting-binary-numbers-to-decimal" class="internal alias"> §</a></h3>
 <p>Now we’ve seen how to convert number to binary, let’s see about how to convert numbers from binary to decimal.</p>
-<h4 id="the-continuous-add-algorithm--todo">The continuous add Algorithm  (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-continuous-add-algorithm--todo" class="internal alias"> §</a></h4>
+<h4 id="the-continuous-add-algorithm">The continuous add Algorithm<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-continuous-add-algorithm" class="internal alias"> §</a></h4>
 <p>Now we have the table our algorithm for creating a binary number from a decimal is:</p>
 <ol>
 <li>Keep track of a value called result, at the start result is equal to 0</li>
@@ -495,7 +495,7 @@ convertToInteger(&quot;01111011&quot;)
 <span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">x </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> bin</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">0b</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">01111011</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
 <span data-line> </span>
 <span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">convert_to_decimal(x) </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># 123</span></span></code></pre></figure>
-<p>…</p>
+<p>So if we were to take <code>0b01111011</code> and convert it to an integer we would start from the rightmost (least significant bit), to the left it would go:</p>
 
 
 
@@ -521,45 +521,659 @@ convertToInteger(&quot;01111011&quot;)
 
 
 
-<div class="table-container"><table><thead><tr><th>128</th><th>64</th><th>32</th><th>16</th><th>8</th><th>4</th><th>2</th><th>1</th></tr></thead><tbody><tr><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr></tbody></table></div>
-<p>So we start with <code>0b01111011</code></p>
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>128</th><th>64</th><th>32</th><th>16</th><th>8</th><th>4</th><th>2</th><th>1</th></tr></thead><tbody><tr><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr><tr><td>1+2+8+16+64 = 123</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
 <p><img src="../img/binary/bin-to-int-123.png" width="auto" height="auto"/></p>
-<h3 id="signed-vs-unsigned-todo">Signed vs Unsigned (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signed-vs-unsigned-todo" class="internal alias"> §</a></h3>
-<p>…</p>
-<h3 id="decimals-and-fractions-todo">Decimals and Fractions (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decimals-and-fractions-todo" class="internal alias"> §</a></h3>
-<p>…</p>
+<h3 id="signed-vs-unsigned">Signed vs Unsigned<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signed-vs-unsigned" class="internal alias"> §</a></h3>
+<p>When talking about binary there are two possible representations, signed and unsigned. Signed numbers are numbers that allow negatives and positives as well as 0 (and sometimes negative 0<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label" class="internal alias">1</a></sup>). An unsigned integer however is <strong>only able to be positive</strong>. On top of this signed integers have multiple binary representations for how they show negatives and positives.</p>
+<h4 id="signed-magnitude">Signed magnitude<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#signed-magnitude" class="internal alias"> §</a></h4>
+<p>Signed magnitude binary will have a sign bit (usually the leftmost bit [also called Most Significant bit or MSB]), which indicates if a value is positive or negative. Traditionally a 0 is positive, and 1 is negative. Since you have a sign bit you always lose 1 bit of data. So an 8 bit (1 byte) unsigned binary integer goes from being able to represent 0-255, to a signed integer being only able to represent -127-127. Unsigned on the other hand allows the leftmost bit to be part of the number, at the expense of <strong>no negative numbers</strong> being representable.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Signed (binary)</th><th>Unsigned (binary)</th></tr></thead><tbody><tr><td>00000000 = 0</td><td>00000000 = 0</td></tr><tr><td>10000000 = -0</td><td>10000000 = 128</td></tr><tr><td>00000001 = 1</td><td>00000001 = 1</td></tr><tr><td>10000001 = -1</td><td>10000001 = 128</td></tr><tr><td>10000110 = -6</td><td>10000110 = 134</td></tr></tbody></table></div>
+<p><em>All are 8 bits (1 byte)</em></p>
+<h4 id="twos-compliment">Two’s compliment<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#twos-compliment" class="internal alias"> §</a></h4>
+<p>Much more commonly people represent signed integers using two’s compliment form. This is a bit more complicated to implement, but has advantages, especially:</p>
+<ol>
+<li>it makes binary operations<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label" class="internal alias">2</a></sup> the same as unsigned values</li>
+<li>You don’t need -0 and 0, just 0</li>
+</ol>
+<p>For any number you follow the following algorithm:</p>
+<ol>
+<li>Represent the number in unsigned binary</li>
+<li>Convert the number into one’s compliment (flip all bits, so 0 becomes 1, and 1 becomes 0)</li>
+<li>Add a 1 to the end</li>
+</ol>
+<p>For example to represent -115 we would do:</p>
+<ol>
+<li>Represent the number in unsigned binary: <code>0b01110011</code></li>
+<li>Convert the number into one’s compliment (flip all bits, so 0 becomes 1, and 1 becomes 0): <code>0b10001100</code></li>
+<li>Add a 1 to the end: <code>0b10001100 + 0b0000001 = 0b10001101</code></li>
+</ol>
+<p><img src=".././img/binary/twos-compliment.png" alt/></p>
 <h3 id="operations-in-binary">Operations in Binary<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#operations-in-binary" class="internal alias"> §</a></h3>
-<p>…</p>
+<p>You can do various operations in binary to manipulate values as needed. Some of these are the same normal math we would do with any numbers, but there are also special operations we use in binary for the typical uses for binary.</p>
+<h4 id="bit-shifting">Bit Shifting<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bit-shifting" class="internal alias"> §</a></h4>
+<p>Bit shifting does what it sounds like. A bit shift left will have you take all the bits in a binary number and move them one bit left. For example <code>0b00011000</code> bit shifted left 1 bit would give you <code>0b00110000</code>.  Here are the remaining bit shifts:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Name</th><th>Symbol</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>Shift left</td><td><code>&lt;&lt;</code></td><td>Shifts all bits to the left</td><td><code>0b0011 &lt;&lt; 1 == 0b0110</code></td></tr><tr><td>Arithmetic shift right</td><td><code>>></code></td><td>Shifts bits to the right, the shift will maintain and pad with it’s sign bit instead of 0</td><td><code>0b1011 >> 2 == 0b1110</code></td></tr><tr><td>Logical shift right</td><td><code>>>></code></td><td>Shifts bits to the right, the shift will pad with 0’s</td><td><code>0b1011 >> 2 == 0b0010</code></td></tr><tr><td><sup><a href="#user-content-fn-5" id="user-content-fnref-5" data-footnote-ref aria-describedby="footnote-label" class="internal alias">3</a></sup></td><td></td><td></td><td></td></tr></tbody></table></div>
+<p>There are binary operation (as in needs 2 arguments) and unary operation (needs only 1 argument) forms of bit shifting. For example <code>0b0100 &lt;&lt; == 0b100</code> is the unary form, where it’s assumed you want to shift left by 1, the binary operation form let’s you specify how far to shift by, such as <code>0b0010 &lt;&lt; 2 == 0b1000</code>.</p>
+<h5 id="overflows">Overflows<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overflows" class="internal alias"> §</a></h5>
+<p>An overflow occurs in two circumstances, a shift left when the most significant bit is a 1 (<code>0b10000000 &lt;&lt; 1</code>), or a shift right when the least significant bit is a 1 (<code>0b00000001 >> 1</code> or <code>0b00000001 >>> 1</code>). In these cases there are various ways of handling the situation, in some cases there is a carry-in or carry-out bit, where there is a defined way to deal with these situations. In most languages however this just causes an overflow where the value is thrown away.</p>
+<p>You do need to be careful about overflows because they can pose significant security risks in situations<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label" class="internal alias">4</a></sup> <sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref aria-describedby="footnote-label" class="internal alias">5</a></sup>.</p>
+<h4 id="bit-masking">Bit Masking<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bit-masking" class="internal alias"> §</a></h4>
+<p>Bit masking is a technique where you <em>mask</em> a binary number, using another number in order to define a set of bits you want to perform an operation on. Similar to putting painters tape on a wall to define where you want paint to go, and where you don’t want it to go. Let’s say we take the 4 bit mask <code>0b0001</code>, this mask indicates that we only care about the least significant bit in the number. From there we can do various <a href="../Hardware/Logic-Gates-(TODO)#boolean-logic" class="internal alias" data-slug="Hardware/Logic-Gates-(TODO)">logical operations</a> over that “field” of bits. This has a ton of uses, but the simplest is to check 1 bit for something.</p>
+<p>Let’s say we want to know if the 6th bit from the right is a 1, we could take our input number, use a bitmask, and perform a <a href="../Hardware/Logic-Gates-(TODO)" class="internal alias" data-slug="Hardware/Logic-Gates-(TODO)">logical AND</a> operation. If both are a 1, it will be a 1, else the 6th bit will be a 0. Therefore the only two possible values given the bitmask are 0 or 32.</p>
+<p>So for example:</p>
+<pre><code>   0b11011011 (input)
+&amp;  0b00100000 (mask)
+--------------
+   0b00000000
+</code></pre>
+<p>Going from least significant bit to most we perform the AND operation on each bit, but since every bit is 0 except the 6th, every other number is guaranteed to be 0. So the most important check is the sixth bit, where <code>0 &amp; 1 == 0</code>, so we know the 6th bit is 0, since the whole number is 0.</p>
+<p>This may seem useless, but it’s a powerful tool when combined with other operations. For example lots of hardware uses the <a href="#binary-enumeration--booleans" class="internal alias">binary enumeration</a> method to change the settings for hardware on a computer. Let’s say the 3rd bit decides if the hardware is on or off. We can just use something like XOR to toggle the current setting whenever the user wants to make the change. This means we can trivially do the toggle in a single line of code: <code>input XOR 0b00000100</code>. This will toggle the third bit without us even having to check it. These operations can make things much more efficient.</p>
 <h4 id="addition">Addition<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#addition" class="internal alias"> §</a></h4>
-<p>…</p>
+<p>For unsigned addition you can do it column by column, for each column:</p>
+<ul>
+<li>If there are two 1’s, carry the bit to the next column</li>
+<li>If there is one 1, the result is 1</li>
+<li>If there are no one’s the result is 0
+Here is an example:</li>
+</ul>
+<pre><code>   0b0101  (5)
++  0b0011  (3)
+---------
+   0b1000  (8)
+</code></pre>
+<p>The steps would look like this</p>
+<p><img src=".././img/binary/unsigned-addition.png" alt/></p>
+<p>Consider a case now with overflow</p>
+<pre><code>   0b10010110    (150)
++  0b10000110    (134)
+-------------
+   0b100011100   (284)
+</code></pre>
+<p>In this case we need the overflow bit to represent our number, so we can’t throw it away, instead we have to increase our bits. With unsigned two’s compliment values we have two overflows that will break our operations:</p>
+<ol>
+<li>When two negative numbers are summed and result is positive</li>
+</ol>
+<pre><code>   0b1001 (-7)
+ + 0b1101 (-3)
+--------------
+  0b10110 (-10) --> becomes 0b0110 (6)
+</code></pre>
+<ol start="2">
+<li>When two positive numbers are summed and result is negative</li>
+</ol>
+<pre><code>   0b0111 (7)
+ + 0b0001 (1)
+--------------
+  0b1000 (-8)
+</code></pre>
 <h4 id="subtraction">Subtraction<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#subtraction" class="internal alias"> §</a></h4>
 <p>…</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=sJXTo3EZoxM" class="external alias">Binary Addition and Subtraction With Negative Numbers, 2’s Complements &amp; Signed Magnitude (youtube.com)</a></li>
+</ul>
 <h4 id="multiplication">Multiplication<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multiplication" class="internal alias"> §</a></h4>
-<p>…</p>
+<p>Binary multiplication is similar to decimal multiplication but involves only the digits 0 and 1. Here’s a step-by-step algorithm for binary multiplication:</p>
+<ol>
+<li>
+<p><strong>Write down the numbers:</strong>
+Write the two binary numbers you want to multiply, one below the other.</p>
+<pre><code>   1101  (Multiplier)
+x   101  (Multiplicand)
+</code></pre>
+</li>
+<li>
+<p><strong>Multiply each bit:</strong>
+Starting from the rightmost bit of the multiplier, multiply each bit by the entire multiplicand, just as you would in decimal multiplication. Write the intermediate products below each line.</p>
+<pre><code>      1101  (Multiplier)
+   x   101  (Multiplicand)
+   -----------
+      1101  (Partial product when multiplied by 1)
+   1101    (Shifted partial product when multiplied by 0)
+   -----------
+  100001  (Result of the multiplication)
+</code></pre>
+</li>
+<li>
+<p><strong>Add up the partial products:</strong>
+Add up all the partial products to get the final result.</p>
+<pre><code>      1101  (Multiplier)
+   x   101  (Multiplicand)
+   -----------
+      1101  (Partial product when multiplied by 1)
+   1101    (Shifted partial product when multiplied by 0)
+   -----------
+  100001  (Result of the multiplication)
+</code></pre>
+</li>
+</ol>
+<p>So, in this example, the binary multiplication result is 100001.</p>
 <h4 id="division">Division<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#division" class="internal alias"> §</a></h4>
-<p>…</p>
-<h3 id="other-novel-uses">Other Novel uses<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-novel-uses" class="internal alias"> §</a></h3>
-<p>…</p>
-<h4 id="binary-enumeration">Binary Enumeration<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#binary-enumeration" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="booleans">Booleans<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#booleans" class="internal alias"> §</a></h4>
-<p>…</p>
+<p>Division in binary follows a process similar to division in decimal, but the base is 2 instead of 10. Here’s a step-by-step algorithm for binary division:</p>
+<ol>
+<li>
+<p><strong>Align the Numbers:</strong>
+Align the divisor with the leftmost part of the dividend. If the divisor is larger than the dividend, the quotient is 0, and the remainder is the dividend itself.</p>
+<pre><code>   110101  (Dividend)
+/   101   (Divisor)
+</code></pre>
+</li>
+<li>
+<p><strong>Initialize:</strong>
+Set the quotient to zero and bring down the first digit of the dividend.</p>
+<pre><code>   110101  (Dividend)
+/   101   (Divisor)
+  |
+   1
+</code></pre>
+</li>
+<li>
+<p><strong>Divide:</strong>
+Compare the divisor with the current partial dividend. If it’s less than or equal to the partial dividend, subtract the divisor from the partial dividend, add 1 to the quotient, and bring down the next digit of the dividend. Otherwise, add a 0 to the quotient and bring down the next digit.</p>
+<pre><code>   110101  (Dividend)
+/   101   (Divisor)
+  |  
+   1       (Quotient)
+  -101
+   -----
+    010
+</code></pre>
+</li>
+<li>
+<p><strong>Repeat:</strong>
+Repeat step 3 until you have brought down all the digits of the dividend.</p>
+<pre><code>   110101  (Dividend)
+/   101   (Divisor)
+    1       (Quotient)
+  -101
+   -----
+    010
+     10
+   -----
+     01
+</code></pre>
+</li>
+<li>
+<p><strong>Result:</strong>
+The final quotient is the result, and the remainder is the remaining partial dividend.</p>
+<pre><code>   110101  (Dividend)
+/   101   (Divisor)
+    1.01    (Quotient)
+  -101
+   -----
+    010
+     10
+   -----
+     01
+</code></pre>
+</li>
+</ol>
+<p>So, in this example, the binary division result is Quotient = 1.01 and Remainder = 01.</p>
+<h3 id="uses--tricks">Uses &amp; tricks<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uses--tricks" class="internal alias"> §</a></h3>
+<p>Binary in general is the basis of all computing, but what are some uses where interacting with binary is actually better than working with base 10. These cases typically are for efficiency and/or simplicity.</p>
+<h4 id="binary-enumeration--booleans">Binary Enumeration &amp; Booleans<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#binary-enumeration--booleans" class="internal alias"> §</a></h4>
+<p><a href="../programming/Advanced-Data-Structures-(TODO)#enumerator" class="internal alias" data-slug="programming/Advanced-Data-Structures-(TODO)">Enumerators</a> can be made with a binary number by interpreting the bits as one of the two available values. For example let’s say we have some user settings in an app like:</p>
+<pre><code>premium: true or false
+adult: true or false
+useMobileData: true or false
+theme: light or dark
+</code></pre>
+<p>Each of these user settings can be assigned a 1 (true/light) or 0 (false/dark). Therefore we could represent the entire state of the user with a 4 bit binary number. For example <code>0b1010</code> would indicate that the user is premium, not an adult, allows the use of mobile data and prefers a dark scheme:</p>
+<pre><code>premium: 1 (true)
+adult: 0 (false)
+useMobileData: 1 (true)
+theme: 0 (dark)
+</code></pre>
+<h4 id="least-significant-bit-stenography">Least Significant Bit Stenography<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#least-significant-bit-stenography" class="internal alias"> §</a></h4>
+<p>When looking at pixels there’s an <a href="../programming/Encodings" class="internal alias" data-slug="programming/Encodings">encoding</a> used where each pixel has 3 associated numbers between 0-255. So each pixel can be represented by 3 bytes (i.e. <code>0b11111111</code>, <code>0b00000000</code>, <code>0b11111101</code>). So in this case [255, 0, 253] correspond to the amount of Red, Green, and Blue of that pixel. So in this case it’s very red, has no green, and has a lot of blue, which gives us:</p>
+<p><img src=".././img/binary/stenography-1.png" alt/>
+So let’s say we wanted to secretly store a 9 bit message, and we have the following pixels:
+<img src=".././img/binary/stenography-2.png" alt/>
+So if we wanted to store <code>0b111111111</code> we just add the message to the least significant (leftmost) bit of each pixel:
+<img src=".././img/binary/stenography-3.png" alt/>
+This is what the modified image would look like. There’s almost no perceptual difference, but you can now read the leftmost bit of each integer and get back our message.</p>
+<h4 id="odds-and-evens">Odds and evens<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#odds-and-evens" class="internal alias"> §</a></h4>
+<p>How can you tell if a number is odd or even in base 10? You divide by 0 and check if there’s a remainder (you can use modulus to do this <code>4 % 2 == 0</code> therefore even). But for binary it’s much faster, if the least significant bit is 1 the number is odd, else it’s even. So for example without calculating <code>0b00110101 00110101</code> I know it’s even because the rightmost bit is a 1.</p>
+<p>The reason for this is because all powers of 2 <strong>except</strong> <code>2^1</code> are even, and summing any two even numbers is even. So any number that is odd <strong>must</strong> have a 1 in the rightmost bit so that it can be a non-power of 2 number.</p>
+<h4 id="dhcp-masks">DHCP masks<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dhcp-masks" class="internal alias"> §</a></h4>
+<p>In order to use the internet your router has to have an <a href="../Networking-&amp;-Webdev/IP-(internet-Protocol)#ip-addresses-todo" class="internal alias" data-slug="Networking-&amp;-Webdev/IP-(internet-Protocol)">IP address</a> for each device that wants to communicate. This would be tedious to do by hand (called static allocation), so instead we often use DHCP (Dynamic Host Configuration Protocol) to automatically rent IP addresses to devices. For IP addresses we use four 1 byte numbers to indicate an IP address. A DHCP subnet mask  allows you to specify how many IP addresses and which pattern to use.</p>
+<p>For each mask you subtract 255 from the octet ant it tells you how many addresses are available. So for example:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Configured base IP</th><th>Subnet mask</th><th>Range of addresses</th></tr></thead><tbody><tr><td>10.0.0.0</td><td>255.255.255.255</td><td>10.0.0.0</td></tr><tr><td>10.0.0.0</td><td>255.255.255.0</td><td>10.0.0.0-10.0.0.255</td></tr><tr><td>172.0.0.0</td><td>255.255.255.0</td><td>172.0.0.0-172.0.0.255</td></tr><tr><td>172.0.0.0</td><td>255.255.0.0</td><td>172.0.0.0-172.0.255.255</td></tr><tr><td>10.0.0.0</td><td>255.255.255.128</td><td>10.0.0.0-10.0.0.128</td></tr></tbody></table></div>
 <h2 id="hexadecimal">Hexadecimal<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hexadecimal" class="internal alias"> §</a></h2>
-<p>…</p>
-<h3 id="operations-in-hex">Operations in Hex<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#operations-in-hex" class="internal alias"> §</a></h3>
-<p>…</p>
-<h4 id="addition-1">Addition<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#addition-1" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="subtraction-1">Subtraction<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#subtraction-1" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="multiplication-1">Multiplication<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multiplication-1" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="division-1">Division<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#division-1" class="internal alias"> §</a></h4>
-<p>…</p>
-<h3 id="other-novel-uses-1">Other Novel uses<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-novel-uses-1" class="internal alias"> §</a></h3>
-<p>…</p>
+<p>Hexadecimal is a base 16 system. It works similar to binary and base 10, but the counting goes 0-9 then A-F. So for example:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Decimal</th><th>Binary</th><th>Hexadecimal</th></tr></thead><tbody><tr><td>1</td><td><code>0b00000001</code></td><td><code>0x01</code></td></tr><tr><td>9</td><td><code>0b00001001</code></td><td><code>0x09</code></td></tr><tr><td>10</td><td><code>0b00001010</code></td><td><code>0x0A</code></td></tr><tr><td>11</td><td><code>0b00001011</code></td><td><code>0x0B</code></td></tr><tr><td>12</td><td><code>0b00001100</code></td><td><code>0x0C</code></td></tr><tr><td>13</td><td><code>0b00001101</code></td><td><code>0x0D</code></td></tr><tr><td>14</td><td><code>0b00001110</code></td><td><code>0x0E</code></td></tr><tr><td>15</td><td><code>0b00001111</code></td><td><code>0x0F</code></td></tr><tr><td>16</td><td><code>0b00010000</code></td><td><code>0x10</code></td></tr><tr><td>17</td><td><code>0b00010001</code></td><td><code>0x11</code></td></tr></tbody></table></div>
+<h3 id="uses--tricks-1">Uses &amp; Tricks<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uses--tricks-1" class="internal alias"> §</a></h3>
+<p>Hex has a ton of uses, many of them align with binary, and also relating to large values because hexadecimal is a more dense representation than even base 10.</p>
 <h4 id="addressing">Addressing<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#addressing" class="internal alias"> §</a></h4>
-<p>…</p></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+<p>Because you can represent much larger numbers with hexadecimal it’s used to indicate locations in <a href="../Hardware/RAM" class="internal alias" data-slug="Hardware/RAM">memory</a>. This comes up often when you’re talking about <a href="../Programming/Basics#pointers-todo" class="internal alias" data-slug="Programming/Basics">pointers</a>.</p>
+<h4 id="colour-values">Colour Values<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#colour-values" class="internal alias"> §</a></h4>
+<p>In many systems you can represent colours using “hex codes”. These are just hexadecimal numbers under the hood. The numbers themselves correspond to the amount of red, green and blue that makes up a colour (from 0-255). So for example <code>0xFF00FD</code> would give a pink pixel like:</p>
+<p><img src=".././img/binary/stenography-1.png" alt/>
+There are also ones that add alpha channel (how transparent it is). For example <code>0xFF00FDFF</code> would produce the same as above <code>0xFF00FD7F</code> would be the same, but at %50 transparency and <code>0xFF00FD00</code> would be the same colour but fully transparent. A tool to visualize this can be found <a href="https://rgbacolorpicker.com/hex-to-rgba" class="external alias">here</a>.</p>
+<h2 id="other-base-systems">Other Base systems<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-base-systems" class="internal alias"> §</a></h2>
+<p>There is a base numbering system for about any numbered base. Most of them have very little practical use, but here are a few:</p>
+<ul>
+<li>Base 12 (duodecimal or dozenal)
+<ul>
+<li>Handy for times
+<ul>
+<li>60 (seconds, minutes), 24 (1 day, hours in military time), and 12(hours in am/pm) are divisible by 12, which makes it easy to count seconds, minutes, hours, and days</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Duodecimal" class="external alias">Duodecimal - Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=U6xJfP7-HCc" class="external alias">Base 12 - Numberphile (youtube.com)</a></li>
+<li><a href="https://builtin.com/data-science/base-12" class="external alias">Base 12: An Introduction | Built In</a></li>
+<li><a href="https://www.youtube.com/watch?v=yfQVL0_POKg" class="external alias">The Base Some Computers Use Instead of Binary (youtube.com)</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Decimal</th><th>Duodecimal/dozenal</th><th>Pronunciation</th></tr></thead><tbody><tr><td>10</td><td>X or 𝛘</td><td>dek</td></tr><tr><td>11</td><td>E or ℰ</td><td>el</td></tr><tr><td>12</td><td>10</td><td>doe</td></tr><tr><td>16</td><td>14</td><td>doe-four</td></tr><tr><td>22</td><td>1X or 1𝛘</td><td>doe-dek</td></tr><tr><td>23</td><td>1E or 1ℰ</td><td>doe-el</td></tr><tr><td>24</td><td>20</td><td>two-doe</td></tr><tr><td>25</td><td>21</td><td>two-doe-one</td></tr><tr><td>60</td><td>50</td><td>five-doe</td></tr><tr><td>120</td><td>X0 or 𝛘0</td><td>dek-doe</td></tr><tr><td>132</td><td>E0 or ℰ0</td><td>el-doe</td></tr><tr><td>144</td><td>100</td><td>doe-doe or gross</td></tr></tbody></table></div>
+<ul>
+<li>Base 3 (ternary)
+<ul>
+<li>Used in some logic systems to develop software, and some physics</li>
+<li>Each value is called a trit (instead of bit like binary)</li>
+<li><a href="https://en.wikipedia.org/wiki/Three-valued_logic" class="external alias">Three-valued logic - Wikipedia</a></li>
+<li><a href="https://www.sciencedirect.com/topics/chemistry/ternary-system" class="external alias">Ternary System - an overview | ScienceDirect Topics</a></li>
+<li><a href="https://eng.libretexts.org/Bookshelves/Chemical_Engineering/Phase_Relations_in_Reservoir_Engineering_(Adewumi)/05%3A_Phase_Diagrams_IV/5.04%3A_Ternary_Systems" class="external alias">5.4: Ternary Systems - Engineering LibreTexts</a></li>
+<li><a href="https://homepage.cs.uiowa.edu/~dwjones/ternary/logic.shtml" class="external alias">Douglas W. Jones on Ternary Logic (uiowa.edu)</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Decimal</th><th>Ternary</th></tr></thead><tbody><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td></tr><tr><td>3</td><td>10</td></tr><tr><td>4</td><td>11</td></tr><tr><td>5</td><td>12</td></tr><tr><td>6</td><td>20</td></tr><tr><td>7</td><td>21</td></tr><tr><td>8</td><td>22</td></tr><tr><td>9</td><td>100</td></tr><tr><td>10</td><td>101</td></tr><tr><td>27</td><td>1000</td></tr><tr><td>81</td><td>10000</td></tr><tr><td>243</td><td>100000</td></tr><tr><td>729</td><td>1000000</td></tr><tr><td>2187</td><td>10000000</td></tr><tr><td>The maximum value of 8 trits is 6560 or <code>3^8 - 1 </code></td><td></td></tr></tbody></table></div>
+<h2 id="additional-resources">Additional Resources<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-resources" class="internal alias"> §</a></h2>
+<ul>
+<li>Binary
+<ul>
+<li><a href="https://www.youtube.com/watch?v=thrx3SBEpL8" class="external alias">Why Use Binary? - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ixJCo0cyAuA" class="external alias">Where did Bytes Come From? - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=zDNaUi2cjv4" class="external alias">Binary Explained in 01100100 Seconds (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1GSjbWt0c9M" class="external alias">Representing Numbers and Letters with Binary: Crash Course Computer Science #4 (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=LpuPe81bc2w" class="external alias">Binary Numbers and Base Systems as Fast as Possible (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Xpk67YzOn5w" class="external alias">Why Do Computers Use 1s and 0s? Binary and Transistors Explained. (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=kcTwu6TFZ08" class="external alias">What are binary numbers?|James May’s Q&amp;A (Ep 11100)|Head Squeeze (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=YYAU1hZUbwY" class="external alias">Signed and Unsigned Binary Numbers (youtube.com)</a></li>
+<li>LSB stenography
+<ul>
+<li><a href="https://www.youtube.com/watch?v=i3tsseGodfI" class="external alias">Least Significant Bit Steganography in Under 60 Seconds (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZFGlJGwaN2w" class="external alias">Steganography Explanation and Code Examples (LSB) (youtube.com)</a></li>
+<li><a href="https://medium.com/swlh/lsb-image-steganography-using-python-2bbbee2c69a2" class="external alias">LSB Image Steganography Using Python | by Devang Jain | The Startup | Medium</a></li>
+<li><a href="https://iopscience.iop.org/article/10.1088/1742-6596/1898/1/012003/pdf#:~:text=One%20of%20the%20simplest%20methods,medium%20to%20hide%20the%20message." class="external alias">https://iopscience.iop.org/article/10.1088/1742-6596/1898/1/012003/pdf</a></li>
+<li><a href="https://watermark.silverchair.com/040009_1_online.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAABYAwggV8BgkqhkiG9w0BBwagggVtMIIFaQIBADCCBWIGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMY9YrelpzO8zvcRL7AgEQgIIFM5RdpQ7yRx4WJRoUmEfifqp8ly76lExGp59GuHEj4yQ9vV-YPX0pn9XMRb770LK_WNkYTo8UbLyvRFDRDgTGtn-SDzDBoaWIdfQ-x0O3bAu9wP0gieyWbjMtJxJokK0NgGWWEp8VkhV9pGIKVTptk6ukbP_utgJdoOWI9bMOfZf4i5CueD-bOyx_xA-3yUtK-NKlgnLgkh8m9lRG1zm_Hf8lJFc7kMVTlSQV9Rmo-IXb5I8ljkaroRNtMeygLJyXfj8GtqTNMi3xhnAbWtGXsqRdgbBi-yNBHr4rnwzvoYgPCcVrMV0Xg0ey7CimN0_lgQBjyWK8HZ6On6Xg-L9vc-ARW324NH-6dFWeyULwFBQJjwOW1AnjXF1lp6vl2rit42ElrGKhg-PwGV1_iCEHMKgnmLbcWoMYKpB6vCYhemBVaxHMGw0LA2lfuEw3JgoZkKP6cRFMaDzsCe-0pQHEGu7dyA-_gVimSI5t-MM4tgOr5zwQ5uhJ_wyu7jg4fvhacf82_drNBTwp3jeuP9e2clpYWBpMODxnhEmxELxg0YvG8jBTPc1XQgO78O6-KGX2wsBtiCl4qlhQZAZTGlJZw7CsuXlwwY_ph4O4i6Nldk1PmdQ0V1YlrtqG1b9RuEs0hvxdSll4E4Zs0Ca0X7MiKdIrSTaG4i_ZWwBIBPa75Rk2ui0TG7apcKIdaG3u1w2ltI4J7UqoldoAw4aAwBnHC4Zg7mDcRGeWBXbXc7RGFAm75ooLztBIbyH8kl-xrLwbwv1vwfyXMyEBApoiz2TYjuvrQW8mJ_3mdDKAXxcm43tn34aRQ_Aq2ZhlR3L1kueReOpvkQoCiuZ7TCMzAqb8IQsOPE0vqlWNfSfJUYIIPd4nKJjYEEowZE22vC2CETCrsQ-LjWXuJBPUfmVlbuT85OU8BaKS5fT1bU078NRkkQJF70v2Oi5Ws25fUfLN5SAwwOZXn_kMcQMtYGhh05KPKe7_OKgEFdMdwKDH3TUz0dWdivC2_ohZG3rzwzYEsYQZIXF0CzBh8zCy76JRqJQP60-a9COR8G3UM42asoTJynYRnlnkU4cDq-6L89zQnf8I7owA4Zkv_0CC4BXuJarFUny5Esl7Oo5OUaKmxW9Q56OmVBDHiV-HC4Syp1B2R15olaHkNmMBImOHSdZpnM3pmBwPMoHqWqg7yAYYacDT1cxLmOIZKy9BqLoCnUzJdvzLHRXucQNMVC5P2K5xZYSzt2sKsoDQy-scuA-G5urIm5lWDebHMVY4SMUkBuCW4nObaOn2HAxr0F_9z73Xd-qPOj3kcQoBIHM6q1v3f8d4qAeI5rTTncbCmplb1tpToD2F65ih-VPMCb44Hvyvdvlgj7CE1zU-TYf0U5FHvy8FEGRX0Bj7HSSB6wBSUavAvY4EttB344J4wPqOEAVLmRsNaR49BR8_MVaCrgcxZC1d9ZaSlkL5DV8CystQ1eP1dN1SnztcgLChsEmdcBN6CqPVqoMjBqEAg1SRBiJIBIw47uX71zlqSpOG0Jile4NtfvkZVJUL0QKwZWK3tU3tKLxC9PFn_Q79cORZaBwIhYNiaxQo75OAOQr4u_IaAPHo-qXAzdRajaae6BclGoYJ9T0gq7v2sFTBUT-MD5jPXALRtzCkA15JMEaXvv7ZgXRIrLNTX4F22Q2ChD77wkGIgEcI3A2DJlQ2m8A-nqfMy7SZXZ0q1IqsnPksxKJVBL1DDNYI0lGNSmx-MnxwoJIu_zewS05rt22mSZ3522_UhcKX0lC0d6YB" class="external alias">040009_1_online.pdf (silverchair.com)</a></li>
+</ul>
+</li>
+<li>IEEE 754
+<ul>
+<li>The standard for how to represent numbers</li>
+<li><a href="https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170" class="external alias">IEEE Floating-Point Representation | Microsoft Learn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IEEE_754" class="external alias">IEEE 754 - Wikipedia</a></li>
+</ul>
+</li>
+<li>Two’s compliment
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lKTsv6iVxV4" class="external alias">Binary: Plusses &amp; Minuses (Why We Use Two’s Complement) - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=4qH4unVtJkE" class="external alias">Twos complement: Negative numbers in binary - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=X6LrOV1r_34" class="external alias">Why does 2s complement work? (youtube.com)</a></li>
+</ul>
+</li>
+<li>Overflows
+<ul>
+<li><a href="https://www.youtube.com/watch?v=DiYfguraGsU" class="external alias">16 - carry overflow (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Q7t9-Sq_4Ww" class="external alias">Binary Overflow (youtube.com)</a></li>
+</ul>
+</li>
+<li>Subnet Masking
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting" class="external alias">TCP/IP addressing and subnetting - Windows Client | Microsoft Learn</a></li>
+<li><a href="https://www.youtube.com/watch?v=eHV1aOnu7oM" class="external alias">IP address network and host portion | subnet mask explained | ccna 200-301 free | (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=oZGZRtaGyG8" class="external alias">What is a Subnet Mask??? (you NEED to know it!!) (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=s_Ntt6eTn94" class="external alias">Subnet Mask - Explained (youtube.com)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hexadecimal
+<ul>
+<li>Memory addressing
+<ul>
+<li><a href="http://www.facweb.iitkgp.ac.in/~bibhas/Hex_Memory_Addressing.pdf" class="external alias">Hex_Memory_Addressing.pdf (iitkgp.ac.in)</a></li>
+<li><a href="https://stackoverflow.com/questions/5329916/why-are-memory-addresses-are-represented-using-hexadecimal-numbers" class="external alias">language agnostic - Why are memory addresses are represented using hexadecimal numbers? - Stack Overflow</a></li>
+<li><a href="https://cs50.harvard.edu/college/2021/spring/notes/4/" class="external alias">Lecture 4 - CS50 (harvard.edu)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#footnote-label" class="internal alias"> §</a></h2>
+<ol>
+<li id="user-content-fn-2">
+<p><a href="https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170#zero" class="external">https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170#zero</a> <a href="#user-content-fnref-2" data-footnote-backref aria-label="Back to reference 1" class="data-footnote-backref internal alias">↩</a></p>
+</li>
+<li id="user-content-fn-1">
+<p><a href="https://stackoverflow.com/a/1125317" class="external">https://stackoverflow.com/a/1125317</a> <a href="#user-content-fnref-1" data-footnote-backref aria-label="Back to reference 2" class="data-footnote-backref internal alias">↩</a></p>
+</li>
+<li id="user-content-fn-5">
+<p><a href="https://stackoverflow.com/questions/141525/what-are-bitwise-shift-bit-shift-operators-and-how-do-they-work" class="external alias">language agnostic - What are bitwise shift (bit-shift) operators and how do they work? - Stack Overflow</a> <a href="#user-content-fnref-5" data-footnote-backref aria-label="Back to reference 3" class="data-footnote-backref internal alias">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p><a href="https://www.securecoding.com/blog/integer-overflow-attack-and-prevention/" class="external alias">Integer Overflow Attack and Prevention | SecureCoding.com</a> <a href="#user-content-fnref-3" data-footnote-backref aria-label="Back to reference 4" class="data-footnote-backref internal alias">↩</a></p>
+</li>
+<li id="user-content-fn-4">
+<p><a href="https://www.sciencedirect.com/topics/computer-science/integer-overflow#:~:text=Buffer%20overflow%20vulnerabilities%20typically%20arise,by%20part%20of%20the%20data." class="external alias">Integer Overflow - an overview | ScienceDirect Topics</a> <a href="#user-content-fnref-4" data-footnote-backref aria-label="Back to reference 5" class="data-footnote-backref internal alias">↩</a></p>
+</li>
+</ol>
+</section></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
 	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
 	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
 	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
@@ -569,7 +1183,7 @@ convertToInteger(&quot;01111011&quot;)
 	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
 	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
 	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
-	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#powers-of-10-decimal" data-for="powers-of-10-decimal">Powers of 10 decimal</a></li><li class="depth-0"><a href="#binary" data-for="binary">Binary</a></li><li class="depth-1"><a href="#converting-decimal-numbers-to-binary" data-for="converting-decimal-numbers-to-binary">Converting decimal numbers to binary</a></li><li class="depth-1"><a href="#converting-binary-numbers-to-decimal" data-for="converting-binary-numbers-to-decimal">Converting binary numbers to decimal</a></li><li class="depth-1"><a href="#signed-vs-unsigned-todo" data-for="signed-vs-unsigned-todo">Signed vs Unsigned (TODO)</a></li><li class="depth-1"><a href="#decimals-and-fractions-todo" data-for="decimals-and-fractions-todo">Decimals and Fractions (TODO)</a></li><li class="depth-1"><a href="#operations-in-binary" data-for="operations-in-binary">Operations in Binary</a></li><li class="depth-1"><a href="#other-novel-uses" data-for="other-novel-uses">Other Novel uses</a></li><li class="depth-0"><a href="#hexadecimal" data-for="hexadecimal">Hexadecimal</a></li><li class="depth-1"><a href="#operations-in-hex" data-for="operations-in-hex">Operations in Hex</a></li><li class="depth-1"><a href="#other-novel-uses-1" data-for="other-novel-uses-1">Other Novel uses</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" class="internal">Cellular Automata (TODO)</a></li><li><a href="../programming/Basics" class="internal">🌱Basics/Intro</a></li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#powers-of-10" data-for="powers-of-10">Powers of 10</a></li><li class="depth-0"><a href="#binary" data-for="binary">Binary</a></li><li class="depth-1"><a href="#converting-decimal-numbers-to-binary" data-for="converting-decimal-numbers-to-binary">Converting decimal numbers to binary</a></li><li class="depth-1"><a href="#converting-binary-numbers-to-decimal" data-for="converting-binary-numbers-to-decimal">Converting binary numbers to decimal</a></li><li class="depth-1"><a href="#signed-vs-unsigned" data-for="signed-vs-unsigned">Signed vs Unsigned</a></li><li class="depth-1"><a href="#operations-in-binary" data-for="operations-in-binary">Operations in Binary</a></li><li class="depth-1"><a href="#uses--tricks" data-for="uses--tricks">Uses &amp; tricks</a></li><li class="depth-0"><a href="#hexadecimal" data-for="hexadecimal">Hexadecimal</a></li><li class="depth-1"><a href="#uses--tricks-1" data-for="uses--tricks-1">Uses &amp; Tricks</a></li><li class="depth-0"><a href="#other-base-systems" data-for="other-base-systems">Other Base systems</a></li><li class="depth-0"><a href="#additional-resources" data-for="additional-resources">Additional Resources</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" class="internal">Cellular Automata (TODO)</a></li><li><a href="../programming/Basics" class="internal">🌱Basics/Intro</a></li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
 function toggleCallout() {
   const outerBlock = this.parentElement;
   outerBlock.classList.toggle(`is-collapsed`);
