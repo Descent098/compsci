@@ -1,4 +1,7 @@
+Sometimes the basics aren't enough. Often times problems you encounter will require more in-depth [[Algorithms & Complexity (TODO)|algorithms]], but sometimes the way you're representing the data can be enough to handle your problems.
 
+## Abstract vs concrete data structures
+Abstract data structures are the "idea" of a data structure. It's language-agnostic, and designed to be a tool to understand what a data structure is trying to do. 
 ## Struct
 ...
 ## Interface

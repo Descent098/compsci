@@ -182,6 +182,17 @@ While the idea of open source sounds great there are many critiques in practice.
 		- [Actix project postmortem | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=22073908)
 		- [A sad day for Rust (steveklabnik.com)](https://steveklabnik.com/writing/a-sad-day-for-rust)
 		- [The Downfall of Actix Web (youtube.com)](https://www.youtube.com/watch?v=enLUX1TtNyE)
+- Potential for exploitation of good will
+	- [The Future of Open Source? | When Open Source gets monetized - YouTube](https://www.youtube.com/watch?v=ZCmqeOHhjzk)
+	- Red Hat and CentOS
+		- [Huge Open Source Drama (youtube.com)](https://www.youtube.com/watch?v=kF5pyVUQBH8)
+		- [Furthering the evolution of CentOS Stream (redhat.com)](https://www.redhat.com/en/blog/furthering-evolution-centos-stream)
+		- [A Comprehensive Analysis of the GPL Issues With the Red Hat Enterprise Linux (RHEL) Business Model - Conservancy Blog - Software Freedom Conservancy (sfconservancy.org)](https://sfconservancy.org/blog/2023/jun/23/rhel-gpl-analysis/)
+	- MongoDB
+		- [MongoDB switches up its open-source license | TechCrunch](https://techcrunch.com/2018/10/16/mongodb-switches-up-its-open-source-license/)
+		- [Why is MongoDB’s SSPL Bad For You? (percona.com)](https://www.percona.com/blog/why-is-mongodbs-sspl-bad-for-you/)
+		- [Why is the SSPL (Server Side Public License) bad for users? - Peter Zaitsev (youtube.com)](https://www.youtube.com/watch?v=wurScYfF5q0)
+		- [Does the MongoDB License Threaten the Future of the Gnu Public License? - YouTube](https://www.youtube.com/watch?v=gi5ZGiY3G0w)
 
 ### Closed source
 
@@ -225,12 +236,39 @@ If you lie to someone in order to get them to work with you, in most countries y
 	- [Aaron Swartz's Brilliant Life and Tragic Death (rollingstone.com)](https://www.rollingstone.com/culture/culture-news/the-brilliant-life-and-tragic-death-of-aaron-swartz-177191/)
 	- [The Darker Side of Aaron Swartz | The New Yorker](https://www.newyorker.com/magazine/2013/03/11/requiem-for-a-dream)
 	- [Aaron Swartz](http://www.aaronsw.com/)
+- Interesting Licenses
+	- Commercial charging
+		- You only charge commercial users
+		- WinRAR
+			- [WinRAR And The Infinite 40-Day Trial (youtube.com)](https://www.youtube.com/watch?v=fTgZRVVr3_Y)
+			- [WinRAR 5.0: Interview with CEO Burak Canboy - Softonic](https://en.softonic.com/articles/winrar-5-0-interview-with-ceo-burak-canboy)
+		- Obsidian
+			- [License Overview - Obsidian](https://obsidian.md/license)
+			- [My problem with obsidian is that I need a license to use it if I add something w... | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=34137857)
+		- SSPL
+			- [The SSPL is Not an Open Source License - Voices of Open Source](https://blog.opensource.org/the-sspl-is-not-an-open-source-license/)
+			- MongoDB
+				- Free (non-commercial version) uses AGPL [MongoDB Licensing | MongoDB](https://www.mongodb.com/legal/licensing/community-edition), but commercial is different
+				- [Does the MongoDB License Threaten the Future of the Gnu Public License? (youtube.com)](https://www.youtube.com/watch?v=gi5ZGiY3G0w)
+				- [Server Side Public License (SSPL) | MongoDB](https://www.mongodb.com/legal/licensing/server-side-public-license)
+				- [Open Source database vs. Server Side Public License SSPL with Peter Zaitsev - Percona Podcast 01 (youtube.com)](https://www.youtube.com/watch?v=KkFajzrF61s)
+				- [MongoDB switches up its open-source license | TechCrunch](https://techcrunch.com/2018/10/16/mongodb-switches-up-its-open-source-license/)
+			- Elastic
+				- [FAQ on 2021 License Change | Elastic](https://www.elastic.co/pricing/faq/licensing)
+				- [Elastic License Update | Elastic Blog](https://www.elastic.co/blog/elastic-license-update)
+				- [License Change Clarification | Elastic Blog](https://www.elastic.co/blog/license-change-clarification)
+				- [Two Ways of Interpreting the Elastic License Change | ITPro Today: IT News, How-Tos, Trends, Case Studies, Career Tips, More](https://www.itprotoday.com/hybrid-cloud/two-ways-interpreting-elastic-license-change)
+				- [Elastic changes open-source license to monetize cloud-service use | ZDNET](https://www.zdnet.com/article/elastic-changes-open-source-license-to-monetize-cloud-service-use/)
 - [History of Gnu, Linux, Free and Open Source Software (Revolution OS) (youtube.com)](https://www.youtube.com/watch?v=vjMZssWMweA)
 - [The Rise Of Open-Source Software (youtube.com)](https://www.youtube.com/watch?v=SpeDK1TPbew)
 - [Reclaim your freedom with free libre software now - Richard Stallman of Free Software Movement (youtube.com)](https://www.youtube.com/watch?v=n9YDz-Iwgyw)
 - [For A Free Digital Society - Richard M. Stallman (youtube.com)](https://www.youtube.com/watch?v=7ZSPf7YnGfE)
 - [The Code: Story of Linux documentary (Multilingual) (youtube.com)](https://www.youtube.com/watch?v=XMm0HsmOTFI)
 - [Free software, free society: Richard Stallman at TEDxGeneva 2014 (youtube.com)](https://www.youtube.com/watch?v=Ag1AKIl_2GM)
+- [Open-Source License Explained in 5 minutes (youtube.com)](https://www.youtube.com/watch?v=MjN-mufsNbQ)
+- [Software Licensing and Why You NEED to be Careful (youtube.com)](https://www.youtube.com/watch?v=0fK2aFSYauw)
+- [How Does FREE Software Make MONEY?? (youtube.com)](https://www.youtube.com/watch?v=qgbp697tdgk)
+
 
 [^1]: [Inside You There Are Two Wolves | Know Your Meme](https://knowyourmeme.com/memes/inside-you-there-are-two-wolves)
 [^2]: [Why Open Source Misses the Point of Free Software - GNU Project - Free Software Foundation](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html)

@@ -77,7 +77,7 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 	- [Procedural Terrain Generation - YouTube](https://www.youtube.com/watch?v=bls9s1fJ9DE)
 	- [How do you ensure procedural terrain is consistent and coherent across different platforms and devices? (linkedin.com)](https://www.linkedin.com/advice/0/how-do-you-ensure-procedural-terrain-consistent-coherent)
 	- [terrain_synth_tvcg.pdf (gatech.edu)](https://faculty.cc.gatech.edu/~turk/my_papers/terrain_synth_tvcg.pdf)
-- Meshes
+- Meshes & textures
 	- [Procedural Mesh Tutorial, Part 1: Mesh Basics (youtube.com)](https://www.youtube.com/watch?v=ucuOVL7c5Hw)
 	- [Procedural Geometry - An Improvised Live Course (youtube.com)](https://www.youtube.com/watch?v=6xs0Saff940)
 	- [Mesh from Math - The basics of Marching Cubes (youtube.com)](https://www.youtube.com/watch?v=KvwVYJY_IZ4)
@@ -86,6 +86,7 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 	- [MESH GENERATION in Unity - Basics (youtube.com)](https://www.youtube.com/watch?v=eJEpeUH1EMg)
 	- [Unite 2016 - The Power of Procedural Meshes (youtube.com)](https://www.youtube.com/watch?v=8LTDFwWMlqQ)
 	- [Mesh Generation Algorithm (youtube.com)](https://www.youtube.com/watch?v=alHVa0kcjYI)
+	- [D-Buffer Decals changed my life! [UE5] (youtube.com)](https://www.youtube.com/watch?v=gHQtV4JCsfU)
 - Simulation and NPC controls
 	- [[Cellular Automata (TODO)]]
 	- "Flocks" and boids

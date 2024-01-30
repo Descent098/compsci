@@ -76,9 +76,81 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "9acc04a465b0ce26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Abstraction (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "391781a511da2048",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Advanced Data Structures (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b273b736961add53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking & Webdev/HTTP (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "deebea63ba542fb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "065dd2a96c609f16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Logic Gates (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e13928bf571496b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking & Webdev/IP (internet Protocol).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -144,7 +216,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
+                "file": "Programming/Binary and Hexadecimal (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +233,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
+                "file": "Programming/Binary and Hexadecimal (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +256,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md"
+                "file": "Programming/Binary and Hexadecimal (TODO).md"
               }
             }
           }
@@ -210,49 +282,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "227cf951bcb784c4",
+  "active": "1ff75b4c6f994b2b",
   "lastOpenFiles": [
+    "Networking & Webdev/IP (internet Protocol).md",
     "Programming/Binary and Hexadecimal (TODO).md",
+    "Hardware/Logic Gates (TODO).md",
+    "Programming/Basics.md",
+    "Networking & Webdev/HTTP (TODO).md",
+    "Hardware/RAM.md",
+    "Programming/Advanced Data Structures (TODO).md",
+    "Programming/Encodings.md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
-    "OS & Firmware/Unix & Linux.md",
+    "img/binary/stenography-3.png",
+    "img/binary/stenography-2.png",
+    "img/binary/stenography-1.png",
+    "img/binary/unsigned-addition.png",
+    "HCI & VR/Basics.md",
+    "img/binary/twos-compliment.png",
+    "Programming/Hashing.md",
+    "img/programming/node-based.png",
+    "index.md",
+    "Programming/Abstraction (TODO).md",
     "Programming/Open Source & Free Software.md",
+    "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "img/programming",
+    "OS & Firmware/Unix & Linux.md",
     "Game Dev & Graphics/Shaders (TODO).md",
     "Game Dev & Graphics/Rendering (TODO).md",
     "OS & Firmware/Basics.md",
     "Networking & Webdev/Basics.md",
-    "Programming/Basics.md",
     "img/binary/bin-to-int-123.png",
     "img/binary/binary-table-123.png",
     "Game Dev & Graphics/Basics.md",
-    "Networking & Webdev/HTTP (TODO).md",
     "Programming/Open Source.md",
     "Programming/Algorithms & Complexity (TODO).md",
-    "Programming/Abstraction (TODO).md",
     "Programming/Parallelism & Asynchronus code (TODO).md",
     "Programming/python.md",
     "Hardware/Basics.md",
     "img/binary/decimals-in-tens.png",
     "img/binary/decimal-table.png",
     "img/binary",
-    "Programming/Advanced Data Structures (TODO).md",
-    "Programming/Hashing.md",
-    "img/hashing/line-graph.png",
-    "img/hashing/hashing-2.png",
-    "img/hashing/hashing-1.png",
     "img/hashing",
     "img",
-    "definitions/hashing.md",
     "definitions",
-    "index.md",
-    "Security & Cryptography/Basics.md",
-    "Game Dev & Graphics/Noise (TODO).md",
-    "HCI & VR/Basics.md",
     "Events",
     "Excalidraw",
     "events/internet and social media",
     "events/lawsuits",
-    "concepts and crimes",
-    "countries"
+    "concepts and crimes"
   ]
 }

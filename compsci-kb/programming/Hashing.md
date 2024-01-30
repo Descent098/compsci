@@ -194,8 +194,6 @@ General Hashing:
 
 For passwords there are more involved hashing algorithms you can look into. These algorithms are designed to take a while to compute, the reason you want this is to avoid [brute force attacks](https://cybernews.com/security/what-is-a-brute-force-attack/) (video version [here](https://www.youtube.com/watch?v=7U-RbOKanYs)). These are not great for long sets of data because of how slow they are:
 
-**DO RESEARCH YOURSELF AS THIS ARTICLE MAY HAVE AGED BY THE TIME YOU'RE READING IT AND THESE MAY NO LONGER BE SECURE!**
-
 - Bcrypt
     - [Wikipedia page](https://en.wikipedia.org/wiki/Bcrypt)
     - [Hashing in Action: Understanding bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/)
@@ -206,7 +204,7 @@ For passwords there are more involved hashing algorithms you can look into. Thes
     - [PBKDF2 | PRactical Cryptography for Developers](https://cryptobook.nakov.com/mac-and-key-derivation/pbkdf2)
     - [PBKDF2 | Bill Buchanan OBE](https://www.youtube.com/watch?v=OXT8xqWww6U)
 
-## Other good resources
+## Additional Resources
 
 - [How to verify quickly | Kieran Wood](https://kieranwood.ca/tech/blog/verifying-quickly/)
 - [Practical Cryptography for developers | Hash Functions](https://cryptobook.nakov.com/cryptographic-hash-functions)

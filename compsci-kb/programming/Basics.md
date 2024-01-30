@@ -23,8 +23,30 @@ For this section I will use Pseudocode, this is a fancy name for "I don't want t
 ...
 #### REPL (TODO)
 ...
+#### Transpiling & Code Generation (TODO)
+...
 #### Bytecode (TODO)
 ...
+### Node-based
+There is one other paradigm of languages that is newer that exists. Node-based languages are languages that use nodes to visually connect your data processing. Under the hood these are fancy [[#Transpiling (TODO)|transpillers]], whatever you create visually will generate some code, and then it will be processed however that language works. These nodes will each typically represent 1 function, and then will have ways of passing information between them. For example imagine a program where a function gets someone's name and birthdate, then sends that into another function which shows "happy birthday" if it's their birthday. The pseudocode might be:
+```
+info = get_user_info() // Returns some info
+
+if info.birthday == Today:
+	say_happy_birthday()
+```
+In a node-based language it might look something like this:
+
+![](../img/programming/node-based.png)
+
+For example:
+- [Node-RED](https://nodered.org/) 
+- [scratch](https://scratch.mit.edu/) 
+- [make code](https://www.microsoft.com/en-us/makecode)
+- [dark lang](https://darklang.com/) 
+- [Torq](https://torq.io/)
+- [Power Automate](https://www.microsoft.com/en-us/power-platform/products/power-automate)
+- [Tines](https://www.tines.com/)
 ## Comments
 Comments are what they sound like, they don't do anything and they're there to let you add comments for yourself and other developers to read. This can be handy (especially when starting) to provide information that is not easily ascertainable by the code. A comment can be on it's own line, or "inline". inline comments will go after some code. Comments can also be single-line, or multiline. In the example below the comment character will be `//`, which means anything after `//` will be a comment. For example:
 
@@ -108,7 +130,7 @@ const PI = 3.14159
 ## Scoping (TODO)
 Variables don’t exist forever. If they did then long running programs would be very inefficient. What programming languages do instead is they scope variables, so they get deleted when they’re no longer needed. The scoping rules, and how they apply differ by language.
 
-This also helps to avoid some common issues that might come up with variables. For example lets say you have some code that uses the variable name then later you have some code that also uses name. In this case whichever one comes last would override the other. However if they are in different scopes, then they can be used independent of one another. Often for example you can have a program where `name` is used in one file, and `name` is used in antother file, but since the variables are scoped to each file they don't conflict. For example:
+This also helps to avoid some common issues that might come up with variables. For example lets say you have some code that uses the variable name then later you have some code that also uses name. In this case whichever one comes last would override the other. However if they are in different scopes, then they can be used independent of one another. Often for example you can have a program where `name` is used in one file, and `name` is used in another file, but since the variables are scoped to each file they don't conflict. For example:
 
 ```
 file1.name // Kieran
@@ -188,7 +210,7 @@ An unsigned integer is an integer that can **only be positive**. A signed intege
 As you can see compared to the signed integers above, unsigned integers can hold larger numbers for the same number of bits.
 #### Float/Floating Point (TODO)
 ...
-#### Array's & Lists (TODO)
+#### Collections (TODO)
 ...
 #### Booleans
 Booleans are values that indicate if something is `true` or `false`. These can be used in conjunction with [[#Conditionals (TODO)]] to tell a program what to do.
@@ -233,6 +255,7 @@ In many languages you can do checks against values of other data types to see ho
 0  // Would be false because it's 0
 [] // Would be false because it's empty
 ```
+
 #### Mappings (dictionaries, hash-maps, associative arrays)
 
 - How to use
@@ -283,4 +306,23 @@ function doStuff(){
 ```
 Some languages will allow you to modify values in outer scopes, and in those cases x would be 3. But in most languages x would be 5 at the second comment. Look into the language specifics of your language to understand this.
 
+## Pointers (TODO)
+...
 
+## Boolean Logic (TODO)
+...
+
+| Name | What it means |
+| ---- | ---- |
+| AND | If both values are true, the result is true, otherwise False |
+| OR | If one value is true, the result is true, otherwise false |
+| NOT | Invert the operation (true is false and false is true) |
+| XOR | If the values are opposite then true, else false |
+
+
+## Additional Resources
+
+- [Why TRUE + TRUE = 2: Data Types (youtube.com)](https://www.youtube.com/watch?v=6otW6OXjR8c)
+- [Abstract data types (youtube.com)](https://www.youtube.com/watch?v=2USMAwcRWHE)
+- [What is a Programming Language (youtube.com)](https://www.youtube.com/watch?v=iqOYf4RFnMY)
+- [What is Programming? (youtube.com)](https://www.youtube.com/watch?v=6YMec72CEiU)

@@ -9,3 +9,4 @@
 - [What is abstraction (youtube.com)](https://www.youtube.com/watch?v=_OVWjMkGsNY)
 - [Where Does Bad Code Come From? (youtube.com)](https://www.youtube.com/watch?v=7YpFGkG-u1w)
 - [Rust: Turtles all the way down - YouTube](https://www.youtube.com/watch?v=PuMXWc0xrK0)
+- [I tried React and it Ruined My Life - YouTube](https://www.youtube.com/watch?v=XAGCULPO_DE)
