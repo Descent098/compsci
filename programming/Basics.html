@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html><head><title>🌱Basics/Intro</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="🌱Basics/Intro"/><meta property="og:description" content="This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the python section, which will detail how to use python for all these concepts."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the python section, which will detail how to use python for all these concepts."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="programming/Basics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;events&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networking-&amp;-Webdev&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="events"><button class="folder-button"><span class="folder-title">events</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="events"><li><a href="../events/GDG-YYC" data-for="events/GDG-YYC">GDG YYC</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" data-for="Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)">Cellular Automata (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Noise-(TODO)" data-for="Game-Dev-&amp;-Graphics/Noise-(TODO)">Noise (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)" data-for="Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)">Procedural Generation (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Quaternians" data-for="Game-Dev-&amp;-Graphics/Quaternians">Quaternians</a></li><li><a href="../Game-Dev-&amp;-Graphics/Rendering-(TODO)" data-for="Game-Dev-&amp;-Graphics/Rendering-(TODO)">Rendering (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Shaders-(TODO)" data-for="Game-Dev-&amp;-Graphics/Shaders-(TODO)">Shaders (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)" data-for="Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)">UI Strategies (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../Hardware/Connection-Types-(TODO)" data-for="Hardware/Connection-Types-(TODO)">Connection Types (TODO)</a></li><li><a href="../Hardware/CPU-(TODO)" data-for="Hardware/CPU-(TODO)">CPU (TODO)</a></li><li><a href="../Hardware/Logic-Gates-(TODO)" data-for="Hardware/Logic-Gates-(TODO)">Logic Gates (TODO)</a></li><li><a href="../Hardware/RAM" data-for="Hardware/RAM">RAM</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../HCI-&amp;-VR/basics" data-for="HCI-&amp;-VR/basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networking-&amp;-Webdev"><button class="folder-button"><span class="folder-title">Networking &amp; Webdev</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networking-&amp;-Webdev"><li><a href="../Networking-&amp;-Webdev/Basics" data-for="Networking-&amp;-Webdev/Basics">🌱Basics/Intro</a></li><li><a href="../Networking-&amp;-Webdev/HTTP-(TODO)" data-for="Networking-&amp;-Webdev/HTTP-(TODO)">HTTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/IP-(internet-Protocol)" data-for="Networking-&amp;-Webdev/IP-(internet-Protocol)">IP (internet Protocol)</a></li><li><a href="../Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)" data-for="Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)">Networking Error Correction (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Products-and-Services-(TODO)" data-for="Networking-&amp;-Webdev/Products-and-Services-(TODO)">Products and Services (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/SMTP-(TODO)" data-for="Networking-&amp;-Webdev/SMTP-(TODO)">SMTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Virtualization-(TODO)" data-for="Networking-&amp;-Webdev/Virtualization-(TODO)">Virtualization (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../OS-&amp;-Firmware/Unix-&amp;-Linux" data-for="OS-&amp;-Firmware/Unix-&amp;-Linux">Linux</a></li><li><a href="../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="programming"><button class="folder-button"><span class="folder-title">programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="programming"><li><a href="../programming/Basics" data-for="programming/Basics">🌱Basics/Intro</a></li><li><a href="../programming/Abstraction-(TODO)" data-for="programming/Abstraction-(TODO)">Abstraction (TODO)</a></li><li><a href="../programming/Advanced-Data-Structures-(TODO)" data-for="programming/Advanced-Data-Structures-(TODO)">Advanced Data Structures (TODO)</a></li><li><a href="../programming/Algorithms-&amp;-Complexity-(TODO)" data-for="programming/Algorithms-&amp;-Complexity-(TODO)">Algorithms &amp; Complexity (TODO)</a></li><li><a href="../programming/Compilers-(TODO)" data-for="programming/Compilers-(TODO)">Compilers (TODO)</a></li><li><a href="../programming/Encodings" data-for="programming/Encodings">Encodings</a></li><li><a href="../programming/Open-Source-&amp;-Free-Software" data-for="programming/Open-Source-&amp;-Free-Software">FOSS (Free and Open Source Software)</a></li><li><a href="../programming/Garbage-Collection-(TODO)" data-for="programming/Garbage-Collection-(TODO)">Garbage Collection (TODO)</a></li><li><a href="../programming/Hashing" data-for="programming/Hashing">Hashing</a></li><li><a href="../programming/HTML-(TODO)" data-for="programming/HTML-(TODO)">HTML (TODO)</a></li><li><a href="../programming/Binary-and-Hexadecimal-(TODO)" data-for="programming/Binary-and-Hexadecimal-(TODO)">Number Systems (binary &amp; hex)</a></li><li><a href="../programming/Parallelism-&amp;-Asynchronus-code-(TODO)" data-for="programming/Parallelism-&amp;-Asynchronus-code-(TODO)">Parallelism &amp; Asynchronus code (TODO)</a></li><li><a href="../programming/Programming-Paradigms-(TODO)" data-for="programming/Programming-Paradigms-(TODO)">Programming Paradigms (TODO)</a></li><li><a href="../programming/python" data-for="programming/python">python</a></li><li><a href="../programming/Speculation-&amp;-Branch-Prediction-(TODO)" data-for="programming/Speculation-&amp;-Branch-Prediction-(TODO)">Speculation &amp; Branch Prediction (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../Security-&amp;-Cryptography/low-level" data-for="Security-&amp;-Cryptography/low-level">low-level</a></li><li><a href="../Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)" data-for="Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)">Samir Secret Sharing (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../programming/">programming</a></div></nav><h1 class="article-title ">🌱Basics/Intro</h1><p class="content-meta ">Jan 09, 2024, 11 min read</p></div></div><article class="popover-hint"><p>This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the <a href="../programming/python" class="internal" data-slug="programming/python">python</a> section, which will detail how to use python for all these concepts. This section covers programming more holistically, and will be more difficult than just learning a language to start with.</p>
+<html><head><title>🌱Basics/Intro</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="🌱Basics/Intro"/><meta property="og:description" content="This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the Python section, which will detail how to use python for all these concepts."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the Python section, which will detail how to use python for all these concepts."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="programming/Basics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;events&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networking-&amp;-Webdev&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="events"><button class="folder-button"><span class="folder-title">events</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="events"><li><a href="../events/GDG-YYC" data-for="events/GDG-YYC">GDG YYC</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li><li><a href="../Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)" data-for="Game-Dev-&amp;-Graphics/Cellular-Automata-(TODO)">Cellular Automata (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Noise-(TODO)" data-for="Game-Dev-&amp;-Graphics/Noise-(TODO)">Noise (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)" data-for="Game-Dev-&amp;-Graphics/Procedural-Generation-(TODO)">Procedural Generation (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Quaternions-(TODO)" data-for="Game-Dev-&amp;-Graphics/Quaternions-(TODO)">Quaternions (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Rendering-(TODO)" data-for="Game-Dev-&amp;-Graphics/Rendering-(TODO)">Rendering (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/Shaders-(TODO)" data-for="Game-Dev-&amp;-Graphics/Shaders-(TODO)">Shaders (TODO)</a></li><li><a href="../Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)" data-for="Game-Dev-&amp;-Graphics/UI-Strategies-(TODO)">UI Strategies (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../Hardware/Connection-Types-(TODO)" data-for="Hardware/Connection-Types-(TODO)">Connection Types (TODO)</a></li><li><a href="../Hardware/CPU-(TODO)" data-for="Hardware/CPU-(TODO)">CPU (TODO)</a></li><li><a href="../Hardware/Logic-Gates-(TODO)" data-for="Hardware/Logic-Gates-(TODO)">Logic Gates (TODO)</a></li><li><a href="../Hardware/RAM" data-for="Hardware/RAM">RAM</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../HCI-&amp;-VR/basics" data-for="HCI-&amp;-VR/basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networking-&amp;-Webdev"><button class="folder-button"><span class="folder-title">Networking &amp; Webdev</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networking-&amp;-Webdev"><li><a href="../Networking-&amp;-Webdev/Basics" data-for="Networking-&amp;-Webdev/Basics">🌱Basics/Intro</a></li><li><a href="../Networking-&amp;-Webdev/HTTP" data-for="Networking-&amp;-Webdev/HTTP">HTTP</a></li><li><a href="../Networking-&amp;-Webdev/IP-(internet-Protocol)" data-for="Networking-&amp;-Webdev/IP-(internet-Protocol)">IP (internet Protocol)</a></li><li><a href="../Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)" data-for="Networking-&amp;-Webdev/Networking-Error-Correction-(TODO)">Networking Error Correction (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Products-and-Services-(TODO)" data-for="Networking-&amp;-Webdev/Products-and-Services-(TODO)">Products and Services (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/SMTP-(TODO)" data-for="Networking-&amp;-Webdev/SMTP-(TODO)">SMTP (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Virtualization-(TODO)" data-for="Networking-&amp;-Webdev/Virtualization-(TODO)">Virtualization (TODO)</a></li><li><a href="../Networking-&amp;-Webdev/Webpages-(TODO)" data-for="Networking-&amp;-Webdev/Webpages-(TODO)">Webpages (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../OS-&amp;-Firmware/Unix-&amp;-Linux" data-for="OS-&amp;-Firmware/Unix-&amp;-Linux">Linux</a></li><li><a href="../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="programming"><button class="folder-button"><span class="folder-title">programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="programming"><li><a href="../programming/Basics" data-for="programming/Basics">🌱Basics/Intro</a></li><li><a href="../programming/Abstraction-(TODO)" data-for="programming/Abstraction-(TODO)">Abstraction (TODO)</a></li><li><a href="../programming/Advanced-Data-Structures-(TODO)" data-for="programming/Advanced-Data-Structures-(TODO)">Advanced Data Structures (TODO)</a></li><li><a href="../programming/Algorithms-&amp;-Complexity-(TODO)" data-for="programming/Algorithms-&amp;-Complexity-(TODO)">Algorithms &amp; Complexity (TODO)</a></li><li><a href="../programming/Compilers-(TODO)" data-for="programming/Compilers-(TODO)">Compilers (TODO)</a></li><li><a href="../programming/Encodings" data-for="programming/Encodings">Encodings</a></li><li><a href="../programming/Open-Source-&amp;-Free-Software" data-for="programming/Open-Source-&amp;-Free-Software">FOSS (Free and Open Source Software)</a></li><li><a href="../programming/Garbage-Collection-(TODO)" data-for="programming/Garbage-Collection-(TODO)">Garbage Collection (TODO)</a></li><li><a href="../programming/Hashing" data-for="programming/Hashing">Hashing</a></li><li><a href="../programming/Binary,-Hexadecimal-and-Number-Systems" data-for="programming/Binary,-Hexadecimal-and-Number-Systems">Number Systems (binary &amp; hex)</a></li><li><a href="../programming/Parallelism-&amp;-Asynchronus-code-(TODO)" data-for="programming/Parallelism-&amp;-Asynchronus-code-(TODO)">Parallelism &amp; Asynchronus code (TODO)</a></li><li><a href="../programming/Programming-Paradigms-(TODO)" data-for="programming/Programming-Paradigms-(TODO)">Programming Paradigms (TODO)</a></li><li><a href="../programming/python" data-for="programming/python">python</a></li><li><a href="../programming/Speculation-&amp;-Branch-Prediction-(TODO)" data-for="programming/Speculation-&amp;-Branch-Prediction-(TODO)">Speculation &amp; Branch Prediction (TODO)</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../Security-&amp;-Cryptography/low-level" data-for="Security-&amp;-Cryptography/low-level">low-level</a></li><li><a href="../Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)" data-for="Security-&amp;-Cryptography/Samir-Secret-Sharing-(TODO)">Samir Secret Sharing (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Types-of-attacks-(TODO)" data-for="Security-&amp;-Cryptography/Types-of-attacks-(TODO)">Types of attacks (TODO)</a></li><li><a href="../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../programming/">programming</a></div></nav><h1 class="article-title ">🌱Basics/Intro</h1><p class="content-meta ">Jan 09, 2024, 43 min read</p></div></div><article class="popover-hint"><p>This section will talk about basic programming concepts, if you want the easiest way to start programming I would look into the <a href="../Python" class="internal" data-slug="Python">Python</a> section, which will detail how to use python for all these concepts. This section covers programming more holistically, and will be more difficult than just learning a language to start with.</p>
 <h2 id="programming-languages">Programming Languages<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#programming-languages" class="internal alias"> §</a></h2>
-<p>Computers communicate using electrical signals, these signals are then <a href="../programming/Abstraction-(TODO)" class="internal alias" data-slug="programming/Abstraction-(TODO)">abstracted</a> into <a href="../programming/Binary-and-Hexadecimal-(TODO)#binary" class="internal alias" data-slug="programming/Binary-and-Hexadecimal-(TODO)">binary</a>. This allows programmers to control these signals in easier to work with ways. Programming languages are built on top of layers and layers of existing <a href="../OS-&amp;-Firmware/Basics#firmwarebios" class="internal alias" data-slug="OS-&amp;-Firmware/Basics">firmware</a> and <a href="../OS-&amp;-Firmware/Basics" class="internal alias" data-slug="OS-&amp;-Firmware/Basics">operating systems</a>. Programming languages let you define programs (also called applications or binaries) that run in order to do something. Anything you run on your electronic devices today is the result of a programming language.</p>
+<p>Computers communicate using electrical signals, these signals are then <a href="../programming/Abstraction-(TODO)" class="internal alias" data-slug="programming/Abstraction-(TODO)">abstracted</a> into <a href="../programming/Binary,-Hexadecimal-and-Number-Systems#binary" class="internal alias" data-slug="programming/Binary,-Hexadecimal-and-Number-Systems">binary</a>. This allows programmers to control these signals in easier to work with ways. Programming languages are built on top of layers and layers of existing <a href="../OS-&amp;-Firmware/Basics#firmwarebios" class="internal alias" data-slug="OS-&amp;-Firmware/Basics">firmware</a> and <a href="../OS-&amp;-Firmware/Basics" class="internal alias" data-slug="OS-&amp;-Firmware/Basics">operating systems</a>. Programming languages let you define programs (also called applications or binaries) that run in order to do something. Anything you run on your electronic devices today is the result of a programming language.</p>
+<h3 id="markup-vs-programming-languages">Markup vs Programming languages<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#markup-vs-programming-languages" class="internal alias"> §</a></h3>
+<p>Programming languages are Turing complete, this is a fancy name for meaning it can be used to do whatever you want. The intention with programming languages is to create programs/apps that do things. Markup languages instead define what should show up. For example the language that is used in PDF’s or on webpages are markup languages. They don’t actually do any processing, instead it tells the computer where to draw things on the screen that you want to show the user.</p>
 <h3 id="source-code-binaries-and-scripts">Source Code, Binaries, and scripts<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#source-code-binaries-and-scripts" class="internal alias"> §</a></h3>
-<p>Source code are the actual files a programmer works with to create <strong>binaries</strong>. Binaries (not to be confused with <a href="../programming/Binary-and-Hexadecimal-(TODO)#binary" class="internal alias" data-slug="programming/Binary-and-Hexadecimal-(TODO)">binary</a>) are software that can be run by a computer. The source code is essentially an easily readable set of instructions, which the computer then compiles (using a <a href="../programming/Compilers-(TODO)" class="internal alias" data-slug="programming/Compilers-(TODO)">compiler</a>) into “machine code”, which is what the computer then actually runs. Binaries are also called:</p>
+<p>Source code are the actual files a programmer works with to create <strong>binaries</strong>. Binaries (not to be confused with <a href="../programming/Binary,-Hexadecimal-and-Number-Systems#binary" class="internal alias" data-slug="programming/Binary,-Hexadecimal-and-Number-Systems">binary</a>) are software that can be run by a computer. The source code is essentially an easily readable set of instructions, which the computer then compiles (using a <a href="../programming/Compilers-(TODO)" class="internal alias" data-slug="programming/Compilers-(TODO)">compiler</a>) into “machine code”, which is what the computer then actually runs. Binaries are also called:</p>
 <ul>
 <li>applications, or apps</li>
 <li>scripts</li>
@@ -11,14 +13,52 @@
 </ul>
 <h3 id="pseudocode">Pseudocode<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pseudocode" class="internal alias"> §</a></h3>
 <p>For this section I will use Pseudocode, this is a fancy name for “I don’t want to write real code”. Essentially it will be a mix of code syntax and plain English to make it easy to read. It also lets me explain topics and syntax from multiple language at once.</p>
-<h3 id="compiled-vs-interpreted-todo">Compiled vs interpreted (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compiled-vs-interpreted-todo" class="internal alias"> §</a></h3>
-<p>…</p>
-<h4 id="repl-todo">REPL (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#repl-todo" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="transpiling--code-generation-todo">Transpiling &amp; Code Generation (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#transpiling--code-generation-todo" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="bytecode-todo">Bytecode (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bytecode-todo" class="internal alias"> §</a></h4>
-<p>…</p>
+<h3 id="compiled-vs-interpreted">Compiled vs interpreted<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compiled-vs-interpreted" class="internal alias"> §</a></h3>
+<p>There are various different types of languages. Compiled languages (like <a href="https://go.dev/" class="external alias">go</a>, <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="external alias">C</a>, <a href="https://www.rust-lang.org/" class="external alias">Rust</a>, etc.) require you to compile your code.  This process takes a few steps usually, and results in a binary that is pure machine code. This means once it’s compiled any  similarly configured system can just run the binary. This means the flow of your development is:</p>
+<ol>
+<li>Write source code</li>
+<li>compile</li>
+<li>Run the resulting binary</li>
+</ol>
+<p>Typically compiled languages have the tradeoff of taking longer to be able to initially run your code, however they are typically also more optimized than the other option, which is interpreted languages. Interpreted languages (<a href="https://en.wikipedia.org/wiki/Java_(programming_language)" class="external alias">Java</a>, <a href="http://python.org/" class="external alias">python</a> etc) instead allow you to compile your code into an intermediate language (or <a href="#bytecode" class="internal alias">Bytecode</a>. From there if people have the language installed they can execute the intermediate language. This is usually faster than compiling to machine code because the language doesn’t care about having to make sure <strong>everything</strong> necessary to run is included. Instead it just includes what is necessary for people to run who have the language installed already.</p>
+<p>So for example if you write a go program and compile it for windows you can send the resulting executable to someone on windows running the same architecture, and it will work. If you instead write in Java then the result you send them can only be run in java, or you have to include the entire java runtime for them to be able to run it.</p>
+<p>Python takes this a step further where to run python code you actually can’t compile it at all, to run python code you have to use the python binary, and it will then do the <a href="#bytecode" class="internal alias">Bytecode</a> and machine code conversions on the fly for you when you run the program.</p>
+<h4 id="runtimeenvironment">Runtime/environment<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#runtimeenvironment" class="internal alias"> §</a></h4>
+<p>Your runtime/environment is the actual language that runs your code. For languages that compile to machine code there isn’t really an environment after compiling. For languages that run in a <a href="#repl" class="internal alias">REPL</a> or use <a href="#bytecode" class="internal alias">Bytecode</a> a runtime is what actually executes the code you type in.</p>
+<h4 id="repl">REPL<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#repl" class="internal alias"> §</a></h4>
+<p>REPL (Read, Eval, Print, Loop) is a special way to execute code.  It is mostly used for testing, but it is possible to run full programs using it. REPL works by running your code line-by-line as you type them. For example each <code>>>></code> would be a statement, and underneath is the printed result:</p>
+<pre><code>>>> x = 4
+4
+>>> x + 10
+14
+>>> x += 4
+8
+</code></pre>
+<p>So as you can see the language <strong>R</strong>eads your code, <strong>E</strong>valuates it, <strong>P</strong>rints the relevant result, <strong>L</strong>oops to wait for the next input. This method is also available for <strong>some</strong> compiled languages, though typically through third party libraries (i.e. <a href="https://github.com/x-motemen/gore" class="external alias">gore for go</a>).</p>
+<h4 id="transpiling--code-generation">Transpiling &amp; Code Generation<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#transpiling--code-generation" class="internal alias"> §</a></h4>
+<p>A transpiler is a program that takes in code of one type and converts it to some other type of code. Sometimes the word is also used for transpiling <a href="#markup-vs-programming-languages-todo" class="internal alias">markup languages</a>. Essentially we want to take some text and convert it to text that is useful for us. A transpiller specifically tends to do this using the same methods that <a href="../programming/Compilers-(TODO)" class="internal alias" data-slug="programming/Compilers-(TODO)">Compilers (TODO)</a> use.</p>
+<p>Code generation is instead a method of creating code based on some input. For example <a href=".." class="internal alias" data-slug="index">ezcv</a> is a program that takes in information about you and generates HTML/CSS/Javascript for it. Essentially because source code is just text, we just need some code to produce text for us. For example here is a code generator that takes in your name and would generate a python file to print it:</p>
+<pre><code>name = input(&quot;Type your name&quot;)
+
+write_file(content=&quot;print({name})&quot;, filename=&quot;print_name.py&quot;)
+</code></pre>
+<p>This takes in your name from some sort of input, then writes a file called <code>print_name.py</code> with the source code <code>print(name)</code>.</p>
+<h4 id="bytecode">Bytecode<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bytecode" class="internal alias"> §</a></h4>
+<p>Bytecode is a low-level, platform-independent representation of a program’s source code that has been translated from a high-level programming language. Instead of being directly executable by a computer’s hardware, bytecode serves as an intermediate step. You generate bytecode from source code and then the language runtime will actually run the code. It is typically generated by a compiler or an interpreter and consists of compact, binary instructions that are designed to be efficiently interpreted by a virtual machine specific to the programming language.</p>
+<p>Bytecode in theory allows for greater portability of software, as it can be executed on any system equipped with the appropriate virtual machine, providing a level of abstraction between the application and the underlying hardware architecture. For example let’s say we have the code:</p>
+<pre><code>print(&quot;hello&quot;)
+</code></pre>
+<p>This code is easy to read and friendly, but if we were to put this code in python and get it’s resulting bytecode (using <a href="https://docs.python.org/3/library/dis.html" class="external alias">dis</a>), it looks like this:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">           0</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> RESUME</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">                   0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">           2</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> LOAD_GLOBAL</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">              1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">NULL</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> +</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		 14</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> LOAD_FAST</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">                0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (text)</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		 16</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> PRECALL</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">                  1</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		 20</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> CALL</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">                     1</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		 30</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> POP_TOP</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		 32</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> LOAD_CONST</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">               0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">None</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		 34</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> RETURN_VALUE</span></span></code></pre></figure>
+<p>This bytecode could be taken and run anywhere that supports python (though usually you just run python from it’s source code, and don’t even see this step). This code would then be <a href="#transpiling--code-generation-todo" class="internal alias">transpilled</a> into the machine code for your system. This can be handy for interoperability, and for optimizations that are cross-platform.</p>
 <h3 id="node-based">Node-based<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#node-based" class="internal alias"> §</a></h3>
 <p>There is one other paradigm of languages that is newer that exists. Node-based languages are languages that use nodes to visually connect your data processing. Under the hood these are fancy <a href="#transpiling-todo" class="internal alias">transpillers</a>, whatever you create visually will generate some code, and then it will be processed however that language works. These nodes will each typically represent 1 function, and then will have ways of passing information between them. For example imagine a program where a function gets someone’s name and birthdate, then sends that into another function which shows “happy birthday” if it’s their birthday. The pseudocode might be:</p>
 <pre><code>info = get_user_info() // Returns some info
@@ -70,7 +110,7 @@ some_code // This is an inline comment
 
 </code></pre>
 <p>For my pseudocode I will use <code>//</code> for comments and <code>/* */</code> for multiline comments.</p>
-<h2 id="variables-todo">Variables (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variables-todo" class="internal alias"> §</a></h2>
+<h2 id="variables">Variables<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variables" class="internal alias"> §</a></h2>
 <p>When working with code you will inevitably want to store some information. To store information we use variables. Variables are basically labels we can use to refer to information more easily. Different languages have different rules about how to create variables, and how to use them, but every language has variables in some form.</p>
 <h3 id="assignment-and-initialization">Assignment and initialization<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assignment-and-initialization" class="internal alias"> §</a></h3>
 <p>When you want to use a variable you need to create it. The simplest form of this in many programming languages is to put the label (variable name) on the left, and then an = and then the value. For example:</p>
@@ -99,15 +139,15 @@ y = 5 // y is immutable
 
 const PI = 3.14159
 </code></pre>
-<h2 id="scoping-todo">Scoping (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scoping-todo" class="internal alias"> §</a></h2>
+<h3 id="scoping">Scoping<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scoping" class="internal alias"> §</a></h3>
 <p>Variables don’t exist forever. If they did then long running programs would be very inefficient. What programming languages do instead is they scope variables, so they get deleted when they’re no longer needed. The scoping rules, and how they apply differ by language.</p>
 <p>This also helps to avoid some common issues that might come up with variables. For example lets say you have some code that uses the variable name then later you have some code that also uses name. In this case whichever one comes last would override the other. However if they are in different scopes, then they can be used independent of one another. Often for example you can have a program where <code>name</code> is used in one file, and <code>name</code> is used in another file, but since the variables are scoped to each file they don’t conflict. For example:</p>
 <pre><code>file1.name // Kieran
 
 file2.name // Jamie
 </code></pre>
-<p>In this case code in file1 will get <code>Kieran</code> when they use <code>name</code> and <code>file2</code> would get <code>Jamie</code> when they use <code>name</code>. Scoping is also heavily tied to <a href="#functions-todo" class="internal alias">Functions (TODO)</a>.</p>
-<h3 id="data-types-todo">Data Types (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-types-todo" class="internal alias"> §</a></h3>
+<p>In this case code in file1 will get <code>Kieran</code> when they use <code>name</code> and <code>file2</code> would get <code>Jamie</code> when they use <code>name</code>. Scoping is also heavily tied to <a href="#conditionals" class="internal alias">Conditionals</a> , and <a href="#functions" class="internal alias">Functions</a>.</p>
+<h3 id="data-types">Data Types<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-types" class="internal alias"> §</a></h3>
 <p>Not all data is formatted the same. Data types are the basic building blocks that let you define what data looks like. It gives information about what you’re trying to store and effects performance, and what information you can put in a variable</p>
 <h4 id="dynamic-vs-strict-typing">Dynamic vs Strict Typing<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dynamic-vs-strict-typing" class="internal alias"> §</a></h4>
 <p>Dynamic languages will allow you to create variables without stating a data type explicitly, instead they are <strong>inferred</strong>, for example:</p>
@@ -116,7 +156,7 @@ y = 3
 
 z = x + y // z is 7
 </code></pre>
-<p>In this case the type of the data is <strong>inferred</strong> meaning when x is assigned to 4 it’s inferred to be an <a href="#integer-todo" class="internal alias">Integer (TODO)</a>. In other languages you have to explicitly state the data type. If you have to state the type it’s referred to as <strong>static typed</strong>, whereas ones without needing to specify the type are called <strong>dynamic typed</strong> (or <strong>duck typed</strong> sometimes). For static languages, this is an example of how you define a variable:</p>
+<p>In this case the type of the data is <strong>inferred</strong> meaning when x is assigned to 4 it’s inferred to be an <a href="#integer" class="internal alias">Integer</a>. In other languages you have to explicitly state the data type. If you have to state the type it’s referred to as <strong>static typed</strong>, whereas ones without needing to specify the type are called <strong>dynamic typed</strong> (or <strong>duck typed</strong> sometimes). For static languages, this is an example of how you define a variable:</p>
 <pre><code>// type label = value
 int x = 4 // Rust, C and other languages use this format
 
@@ -146,7 +186,7 @@ q = 0
 </code></pre>
 <p>In many languages you will find integers being referred to as <code>int</code>.</p>
 <h5 id="sizing">Sizing<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sizing" class="internal alias"> §</a></h5>
-<p>Integers are often split up by sizes. This can help massively with optimization, but can make things more complicated. In languages that specify them usually there will be an <code>i</code> with a number. This number will typically indicate the <a href="../programming/Binary-and-Hexadecimal-(TODO)#binary" class="internal alias" data-slug="programming/Binary-and-Hexadecimal-(TODO)">bits</a>:</p>
+<p>Integers are often split up by sizes. This can help massively with optimization, but can make things more complicated. In languages that specify them usually there will be an <code>i</code> with a number. This number will typically indicate the <a href="../programming/Binary,-Hexadecimal-and-Number-Systems#binary" class="internal alias" data-slug="programming/Binary,-Hexadecimal-and-Number-Systems">bits</a>:</p>
 
 
 
@@ -211,12 +251,102 @@ q = 0
 
 
 <div class="table-container"><table><thead><tr><th>Symbol</th><th>Description</th><th>Min and Max</th></tr></thead><tbody><tr><td>u8</td><td>8 bit integer (1 byte)</td><td>0 to 255</td></tr><tr><td>u16</td><td>16 bit integer</td><td>0 to 65,535</td></tr><tr><td>u32</td><td>32 bit integer</td><td>0 to 4,294,967,295</td></tr><tr><td>As you can see compared to the signed integers above, unsigned integers can hold larger numbers for the same number of bits.</td><td></td><td></td></tr></tbody></table></div>
-<h4 id="floatfloating-point-todo">Float/Floating Point (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#floatfloating-point-todo" class="internal alias"> §</a></h4>
-<p>…</p>
-<h4 id="collections-todo">Collections (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#collections-todo" class="internal alias"> §</a></h4>
-<p>…</p>
+<h4 id="floatfloating-point">Float/Floating Point<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#floatfloating-point" class="internal alias"> §</a></h4>
+<p>Floats (floating point numbers) are decimal numbers. This includes positive <strong>and</strong> negative numbers. One important thing to keep in mind while working with floats is that every language has a limited precision (<a href="https://0.30000000000000004.com/" class="external alias">whole site dedicated to this</a>). This means it will only be accurate to a certain number of digits. There are also common rounding errors, like the famous <code>0.1+0.2 == 0.30000000000000004</code>.</p>
+<h4 id="collections">Collections<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#collections" class="internal alias"> §</a></h4>
+<p>Collections are a data type that is used to hold multiple other data types. For example lets say you wanted to keep track of all of the names of items in a player inventory. You could put them into a collection to keep track of all of them in one variable, instead of a separate variable for each item! There are tons of different types of collections, some of the names are not always exactly the same across languages, so keep that in mind when looking at this info!</p>
+<h5 id="lists">Lists<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lists" class="internal alias"> §</a></h5>
+<p>Lists are a dynamic collection. They basically let you add as much (besides memory constraints) data as you want. In strongly typed languages (ones where you have to specify types), they can only have 1 data type, in most other languages they can take whatever data you want. Here is an example of what it might look like in a <strong>non-strongly typed language</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-dark github-light"><code data-language="ini" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">ages</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> = [18,21,18,19,20]</span></span></code></pre></figure>
+<p>This gives you a list where</p>
+<p><img src=".././img/programming/array.png" alt="array"/></p>
+<p>You can then access the element using it’s <em>index</em>. The index is essentially the number that indicates where in the list a value is (starting from 0). You can access this using <code>ages[index]</code>. So if you wanted to access the <strong>second</strong> element you could use <code>ages[1]</code> (which in this case would be 21):</p>
+<p><img src=".././img/programming/array_access.png" alt="array access"/></p>
+<p>Traditionally lists will have methods to add, remove, and pop. Add and remove are self explanatory, but pop is probably a new idea. Pop will run and it will  delete an item from the front of a list and then return that value.</p>
+<h5 id="arrays">Arrays<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arrays" class="internal alias"> §</a></h5>
+<p>Arrays are one of the most basic collection types. These are typically quite restrictive, but very fast. You will have to specify the length of an array as well as the types it will contain.</p>
+<p>So for example if you want to store the ages of 5 people as integers you might do something like this:</p>
+<pre><code>ages[5]&lt;Int> = [18,21,18,19,20]
+</code></pre>
+<p>This gives you an array where:</p>
+<p><img src=".././img/programming/array.png" alt="array"/></p>
+<p>You can then access the element using it’s <em>index</em>. The index is essentially the number that indicates where in the list a value is (starting from 0). You can access this using <code>ages[index]</code>. So if you wanted to access the <strong>second</strong> element you could use <code>ages[1]</code> (which in this case would be 21):</p>
+<p><img src=".././img/programming/array_access.png" alt="array access"/></p>
+<p>This data type can be different in different languages, Arrays in JavaScript are actually <a href="#lists" class="internal alias">Lists</a> for example.</p>
+<h5 id="sets">Sets<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sets" class="internal alias"> §</a></h5>
+<p>Sets are collections that require <strong>unique</strong> items. This is implemented different ways in different languages, but for example:</p>
+<pre><code>words = set(&quot;hello&quot;, &quot;oranges&quot;, &quot;hello&quot;, &quot;great&quot;)
+print(words) // [&quot;hello&quot;, &quot;oranges&quot;, &quot;great&quot;]
+</code></pre>
+<p>Even though “hello” was given twice it only appears once. This makes sets great for checking if something exists. Imagine you are searching through a book, and want to check if the book has the word “disparate” in it. Now lets say there are 900 times the word “the” appears. To search all the words you have to search through all 900 repeats of “the”, but with a set there’s only 1 occurrence of “the”.</p>
+<h5 id="tuples">Tuple’s<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tuples" class="internal alias"> §</a></h5>
+<p>Tuples are similar to <a href="#lists" class="internal alias">lists</a>, except once the values have been added they can’t be changed (it’s immutable). So you can’t add items to a tuple, it’s stuck how it is. This can be handy for data you don’t want to let be modified. For example someone’s birthday:</p>
+<pre><code>birthday = ('oct', 29, 1998) 
+birthday[2] += 1 # ERROR
+</code></pre>
+<p>You don’t want to accidentally have someone add something to the birthday because the data doesn’t change! This is often used in databases since the data being returned should be considered read-only, and copied into something mutable if people want to make changes.</p>
+<h5 id="associative-arraysmapsjsondictionaries">Associative Arrays/Maps/JSON/Dictionaries<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#associative-arraysmapsjsondictionaries" class="internal alias"> §</a></h5>
+<p>These are the first collection that does not use indexes for it’s elements. All of these are different names for what are called key-value stores. Instead of using indexes you can set your own ‘key’, which maps to a value. This lets you represent abstract data with it’s own labels easily. For example information about a user:</p>
+<pre><code>user = {&quot;name&quot;: &quot;Kieran&quot;, &quot;age&quot;:24, &quot;developer&quot;:true} 
+
+user[&quot;name&quot;] # &quot;Kieran&quot;
+</code></pre>
+<p>Under the hood this uses <a href="../programming/Hashing" class="internal" data-slug="programming/Hashing">Hashing</a> to be more efficient. Additionally a blog post about creating these data structures from scratch can be found <a href="https://kieranwood.ca/tech/blog/verifying-quickly/" class="external alias">here</a>.</p>
+<h4 id="text-types">Text types<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text-types" class="internal alias"> §</a></h4>
+<p>There are several ways to represent text in most programming languages based on what you need.</p>
+<h5 id="char">Char<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#char" class="internal alias"> §</a></h5>
+<p>A char is a single character. In many languages this type is actually an integer under the hood. There will be a list where each character has a number corresponding to it and you can convert back and forth between them. For example in python you can see this text-number conversion with the <code>ord()</code> and <code>chr()</code> functions:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">ord</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;a&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># 97 chr(97) # 'a'</span></span></code></pre></figure>
+<p>Other languages like C you can just convert characters to integers and back natively:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="C" data-theme="github-dark github-light"><code data-language="C" data-theme="github-dark github-light" style="display:grid;"><span data-line><span>char a = 'a';</span></span>
+<span data-line> </span>
+<span data-line><span>int numericalA = (int)a; // Returns ASCII value of 'a'</span></span></code></pre></figure>
+<p>In some languages Char’s and <a href="#string" class="internal alias">String</a>’s are differentiated with <code>'</code> and <code>&quot;</code>, but in others this is not the case.</p>
+<h5 id="string">String<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#string" class="internal alias"> §</a></h5>
+<p>Strings are what we think of as normal text. They allow for the storage of text, in some languages this can be text of any length, in others it’s a fixed-length amount of text. In some languages strings consist of <a href="../Programming/Basics#arrays" class="internal alias" data-slug="Programming/Basics">Basics</a> of <a href="#char" class="internal alias">Char</a>’s, in other’s they’re their own custom type. For example you could consider “hello” to be either of the below:</p>
+<pre><code>['H','e','l','l','o']
+
+&quot;Hello&quot;
+</code></pre>
+<p>Whichever you choose in many languages they’re still treated as an <a href="#arrays" class="internal alias">array-like</a> data type. This allows you do <a href="#loops-todo" class="internal alias">loop</a> over characters to do processing.</p>
+<h5 id="whitespace-characters">Whitespace Characters<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#whitespace-characters" class="internal alias"> §</a></h5>
+<p>In strings there are often times where you need to include some sort of whitespace. For example this might be inserting a newline character in order to simulate pressing the enter key in most text editors (<code>\n</code>), or a character to indicate the same effect as pressing tab (<code>\t</code>). These are called whitespace characters. They tend to be pretty universal.</p>
+<p>For example:</p>
+<pre><code> greeting = &quot;Hello there!\nMy name is Kieran. Here are my favourite hobbies\n\t- Skiing\n\t- Coding&quot;
+</code></pre>
+<p>This would result in:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="markdown" data-theme="github-dark github-light"><code data-language="markdown" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">Hello there!</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">My name is Kieran. Here are my favourite hobbies</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">	- Skiing    </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">	- Coding</span></span></code></pre></figure>
+<h5 id="formatting">Formatting<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formatting" class="internal alias"> §</a></h5>
+<p>With strings in most languages there are various ways of doing formatting. Formatting allows you to inject data into strings. This is incredibly powerful, but can also <a href="../Security-&amp;-Cryptography/Types-of-attacks-(TODO)#cross-site-scripting-todo" class="internal alias" data-slug="Security-&amp;-Cryptography/Types-of-attacks-(TODO)">be very dangerous</a>.</p>
+<p>For example let’s say you want to have a template email where the variables for recipient (person receiving email) and sender. In python you can put an <code>f</code> in front of a string to turn it into a “format string”, from there you put the variables inside squiggly braces (<code>{}</code>), and they will be replaced by the values:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">sender </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;Kieran&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">recipient </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;you&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">email </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> f</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;&quot;&quot;Hello </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">{</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">recipient</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">}</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">,</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">We appreciate you reaching out, we are not open on the weekend and will re-open on monday at 9am to address your email. </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">Thanks,</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">{</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">sender</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">}</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;&quot;&quot;</span></span></code></pre></figure>
+<p>The same can be done in javascript with strings that use a backtick (`), then stating which should be replaced by variables using squigly braces that have a <code>$</code> in front:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js" data-theme="github-dark github-light"><code data-language="js" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">sender </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;Kieran&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">recipient </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;you&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">email </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> `Hello ${</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">recipient</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">}, </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">We appreciate you reaching out, we are not open on the weekend and will re-open on monday at 9am to address your email. </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">Thanks,</span></span>
+<span data-line><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">${</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">sender</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">}`</span></span></code></pre></figure>
+<h5 id="encoding">Encoding<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#encoding" class="internal alias"> §</a></h5>
+<p>Text under the hood is represented as numbers for each character, there are then different sets of numbers that allow for different sets of characters. These are called the encodings. Different systems use different encodings in order to allow different characters.</p>
+<p>For example ASCII is a very simple encoding that allows 127 different characters. In ASCII ‘a’ would be 97. Unicode is a set of different encodings that allow for a lot more characters. UTF-8 allows 1,112,064 characters, in our example case ‘a’ would still be 97, but this is not the case in every encoding. Also because UTF-8 supports more characters you have to be careful with conversions. Japanese characters work in UTF-8 for example, but <strong>not</strong> ASCII.</p>
+<p>We have a page dedicated to <a href="../programming/Encodings" class="internal alias" data-slug="programming/Encodings">encodings here</a>.</p>
 <h4 id="booleans">Booleans<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#booleans" class="internal alias"> §</a></h4>
-<p>Booleans are values that indicate if something is <code>true</code> or <code>false</code>. These can be used in conjunction with <a href="#conditionals-todo" class="internal alias">Conditionals (TODO)</a> to tell a program what to do.</p>
+<p>Booleans are values that indicate if something is <code>true</code> or <code>false</code>. These can be used in conjunction with <a href="#conditionals" class="internal alias">Conditionals</a> to tell a program what to do.</p>
 <p>A trivial example would be the current season:</p>
 <pre><code>is_summer = False
 is_winter = False
@@ -241,41 +371,320 @@ No
 FALSE
 False
 </code></pre>
+<h5 id="boolean-logic">Boolean Logic<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#boolean-logic" class="internal alias"> §</a></h5>
+<p>Logical operators can be used to make a series of statements and only let them be true based on which operator is used. Traditionally this uses <a href="#booleans" class="internal alias">Booleans</a>, which can also take the form of an <a href="#integer" class="internal alias">Integer</a> in languages like C and python. Here are the Boolean logic operators:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Name</th><th>What it means</th><th>Code</th><th>Symbols</th></tr></thead><tbody><tr><td>AND</td><td>If both values are true, the result is true, otherwise False</td><td><br/><code>true &amp;&amp; true // True</code><br/><br/><code>true &amp;&amp; false // False</code><br/><br/><code>false &amp;&amp; true // False</code><br/><br/><code>false &amp;&amp; false // False</code><br/></td><td><code>&amp;&amp;</code>, <code>and</code>, <code>AND</code></td></tr><tr><td>OR</td><td>If one value is true, the result is true, otherwise false</td><td><code>true || true // True</code><br/><br/><code>true || false // True</code><br/><br/><code>false || true // True</code><br/><br/><code>false || false // False</code></td><td><code>||</code>, <code>or</code>, <code>OR</code></td></tr><tr><td>NOT</td><td>Invert the operation (true is false and false is true)</td><td><code>!true // False</code><br/><br/><code>!false // True</code></td><td><code>!</code>, <code>NOT</code>, <code>not</code>,</td></tr><tr><td>XOR</td><td>If the values are opposite then true, else false, this is a [[Binary, Hexadecimal and Number Systems</td><td>binary/bitwise]] operation meaning it’s based on 0’s and 1’s in binary</td><td><br/><code>True ^ True // False</code><br/><br/><code>True ^ False // True</code><br/><br/><code>False ^ False // False</code><br/></td></tr></tbody></table></div>
+<p>This sort of logic is fundamental for <a href="../programming/Binary,-Hexadecimal-and-Number-Systems#operations-in-binary" class="internal alias" data-slug="programming/Binary,-Hexadecimal-and-Number-Systems">binary operations</a>, <a href="../Hardware/Logic-Gates-(TODO)" class="internal alias" data-slug="Hardware/Logic-Gates-(TODO)">Logic Gates (TODO)</a> and much more.</p>
+<h5 id="comparison-operators">Comparison Operators<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparison-operators" class="internal alias"> §</a></h5>
+<p>Comparison operators return a boolean value after comparing two values to see if a statement is True or False</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Name</th><th>Description</th><th>Python</th><th>JS</th></tr></thead><tbody><tr><td>Greater</td><td>Checks if something is greater than something else</td><td><code>1 &lt; 3 # True</code></td><td><code>1 &lt; 3</code></td></tr><tr><td>less</td><td>Checks if something is less than something else</td><td><code>3 > 1 # True</code></td><td><code>3 > 1 // true</code></td></tr><tr><td>Greater than or equal to</td><td>Checks if something is greater than or equal tp something else</td><td><code>1 &lt;= 3 # True</code></td><td><code>1 &lt;= 3</code></td></tr><tr><td>Less than or equal to</td><td>Checks if something is Less than or equal tp something else</td><td><code>3 => 1 # True</code></td><td><code>3 => 1</code></td></tr></tbody></table></div>
 <h5 id="truthyness">Truthyness<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#truthyness" class="internal alias"> §</a></h5>
 <p>In many languages you can do checks against values of other data types to see how “truthy” they are. This is usually done to indicate if a value is “empty” or not. For example:</p>
 <pre><code>&quot;&quot; // Would be false because it's an empty string
 0  // Would be false because it's 0
 [] // Would be false because it's empty
 </code></pre>
-<h4 id="mappings-dictionaries-hash-maps-associative-arrays">Mappings (dictionaries, hash-maps, associative arrays)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mappings-dictionaries-hash-maps-associative-arrays" class="internal alias"> §</a></h4>
-<ul>
-<li>How to use</li>
-<li>When to use</li>
-<li>JSON</li>
-</ul>
-<p>Details about hashing in general, and these data structures can be found in the <a href="../programming/Hashing" class="internal" data-slug="programming/Hashing">Hashing</a> page. Additionally a blog post about creating these data structures from scratch can be found <a href="https://kieranwood.ca/tech/blog/verifying-quickly/" class="external alias">here</a>.</p>
-<h4 id="null-none--undefined-types-todo">Null, None &amp; undefined types (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#null-none--undefined-types-todo" class="internal alias"> §</a></h4>
-<p>…</p>
-<h2 id="conditionals-todo">Conditionals (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conditionals-todo" class="internal alias"> §</a></h2>
-<p>…</p>
-<h2 id="functions-todo">Functions (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#functions-todo" class="internal alias"> §</a></h2>
-<p>…</p>
-<h3 id="anatomy-of-functions-todo">Anatomy of functions (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anatomy-of-functions-todo" class="internal alias"> §</a></h3>
-<p>…</p>
-<p>There are 2 popular forms of enforcing variable scopes, indentation and <code>{}</code>. To illustrate this point let’s look at an example:</p>
-<pre><code>x = 5
+<h5 id="referential">Referential<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#referential" class="internal alias"> §</a></h5>
+<p>A referential check is done to see if a variable is exactly the same object as another variable. So not just that the value is the same, but that the two variables are actually talking about <strong>the exact same</strong> spot in memory. In this case we will use <code>is</code> as the keyword for a referential check:</p>
+<pre><code>a = [1,2,3]
+b = a
+c = [1,2,3] 
 
-function {
-	x = 3
-}
+a == b // True
+b == c // True
+a == c // True 
+
+a is b // True
+b is c // False
+</code></pre>
+<h5 id="value-and-type">Value and Type<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#value-and-type" class="internal alias"> §</a></h5>
+<p>In some languages when you are checking a value the value itself will be derived from different types. For example :</p>
+<pre><code>1 == True // True
+0 == False // True
+</code></pre>
+<p>In this case True gets converted to an integer (1) in this case, which we then check for equality and the equality is now true. Sometimes with some languages this goes further like:</p>
+<pre><code>&quot;1&quot; == 1 // True
+</code></pre>
+<p>In some languages we have an option to equality check while forcing a specific type to be checked. We do this by adding an extra <code>=</code> to our checks (called a strict comparison):</p>
+<pre><code>
+&quot;1&quot; === 1 // False
 
 </code></pre>
-<h3 id="returns-todo">Returns (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#returns-todo" class="internal alias"> §</a></h3>
-<p>…</p>
-<h3 id="recursion-todo">Recursion (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recursion-todo" class="internal alias"> §</a></h3>
-<p>…</p>
+<h4 id="null-none--undefined-types">Null, None &amp; undefined types<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#null-none--undefined-types" class="internal alias"> §</a></h4>
+<p>Many programming languages have some sort of “Null” value. These values can be called different things, but they essentially are there to state nothing. This may seem entirely useless at first, after all who would want to reference nothing in their programs? Well, it’s actually very useful for a few reasons. Typically most people use Null as an initialization state. For example you want to create a variable you intend to use later, but have no value to put in it yet. This can be handy because it means that other programs that might use that variable can just check every so often if the value is still Null as a way to wait for it to become initialized.</p>
+<p>It’s also useful to do this for space savings. Unlike other placeholder values most Null’s take up basically no space (in some languages literally no space). This means you can save all that space in memory until you actually need it.</p>
+<h4 id="pointers">Pointers<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pointers" class="internal alias"> §</a></h4>
+<p>A pointer is a way to specify a variable that “points” to another value. This is important for languages that aren’t <a href="../Hardware/RAM" class="internal alias" data-slug="Hardware/RAM">memory</a> managed (like C). In languages that allow pointers you can specify an <a href="../programming/Binary,-Hexadecimal-and-Number-Systems#addressing" class="internal alias" data-slug="programming/Binary,-Hexadecimal-and-Number-Systems">address</a> that a pointer references. Whatever is available at that address can be manipulated as if it was the variable. For example:</p>
+<pre><code>a = 5
+
+b = *a
+
+b = b - 3
+
+print(a) // 2
+</code></pre>
+<p>This allows you to share state as we can see above where we set <code>b = *a</code>, which is saying that b is a pointer to <code>a</code> and so any changes to <code>b</code> will affect <code>a</code>. This is also used under the hood in all other languages, but many languages (like python) don’t allow you to directly modify these pointers.</p>
+<h2 id="conditionals">Conditionals<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conditionals" class="internal alias"> §</a></h2>
+<p>In programming we don’t always want to execute the same code. Sometimes we want to execute code based on something. We might want to check if someone has a premium account before allowing them to access a song, or check if they’re in a certain country etc. Conditionals are the way we do these checks, which allow us to conditionally run code based on some sort of check.</p>
+<p>Under the hood these checks operate based off <a href="#booleans" class="internal alias">Booleans</a>. All of the operations done will evaluate to a True or False value which can be checked against.</p>
+<h3 id="ifelse-elif-or-else-if">If/Else/ Elif or Else if<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ifelse-elif-or-else-if" class="internal alias"> §</a></h3>
+<p>The main statement used for conditionals is the <code>if</code> statement. This statement is made up of two parts, the condition and the body. The body will only execute if the condition is True. For example the <code>print()</code> will always execute:</p>
+<pre><code>if True{
+	print(&quot;True!&quot;)
+}
+</code></pre>
+<p>In this case <code>print(&quot;True!&quot;)</code> is the condition body it is wrapped in <code>{}</code> to indicate what should run if it’s True. For example if we nest some statements:</p>
+<pre><code>if premium{
+	if isAdult{
+		print(&quot;A premium Adult&quot;)
+	} else {
+		print(&quot;Just is premium&quot;)
+	}
+}
+</code></pre>
+<p>In this case if <code>premium</code> AND <code>isAdult</code> then we get <code>A premium Adult</code> printed.  You can see that each set of <code>{}</code> corresponds to a different condition, and will only run if that condition is true. This is called a <strong>scope</strong>. In some languages scopes are instead defined by indentation, like python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> premium:</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">	if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> isAdult:</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;A premium Adult&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">	else</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">		print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Just is premium&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span></code></pre></figure>
+<p>In this case each level of indentation is a separate scope. From here you can create <strong>control flows</strong>, which are statements that allow for multiple <em>branches</em> of code where one branch will activate based on a condition. For example code in python that changes based on the current season:</p>
+<pre><code>isSummer = false
+isWinter = false
+isFall = false
+isSpring = true
+ 
+if (is_summer){
+    print(&quot;It's warm&quot;)
+} else if (is_spring){
+    print(&quot;It's raining&quot;)
+} else if (is_fall){
+    print(&quot;It's getting colder&quot;)
+}else{ 
+    //Assumes isWinter is true
+    print(&quot;It's snowing!&quot;)
+ 
+} 
+</code></pre>
+<p>Some languages also combine the keywork <code>else if</code> into the abbreviated <code>elif</code>.</p>
+<h2 id="functions">Functions<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#functions" class="internal alias"> §</a></h2>
+<p>Functions are a way to reuse code efficiently. It allows you to define a set of steps of code that should be run when the function is “called”, along with a name.</p>
+<h3 id="using-existing-functions">Using existing functions<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#using-existing-functions" class="internal alias"> §</a></h3>
+<p>Using (or “calling”) existing functions works the same in <strong>most</strong> languages. You find whatever the name of the function is, and you type <code>function_name()</code>, some functions take in extra data (called <a href="https://schulichignite.com/definitions/functions/#parameters" class="external alias">parameters</a>), so you can “pass” the function this data when you call it.</p>
+<p>For example here is how you print some text to the screen in using a <code>print()</code> function:</p>
+<pre><code>print(&quot;Hello World&quot;)
+</code></pre>
+<p>In this case we are using a <a href="#string" class="internal alias">String</a> parameter to tell the function what to print. However there are many times that our functions take in no values, in these cases the functions effects are called side-effects. For example, let’s say we have a function to restart a computer called <code>restart()</code>:</p>
+<pre><code>restart()
+</code></pre>
+<p>We have no parameters to pass in because we just want it to effect something else that exists.</p>
+<h3 id="anatomy-of-functions">Anatomy of functions<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anatomy-of-functions" class="internal alias"> §</a></h3>
+<p>To create a function there are several parts you need, all of the parts work to define what the function does, and how it does it. These parts are:</p>
+<ol>
+<li>The definition</li>
+<li>The body</li>
+</ol>
+<p>Within each part there are several sub-parts to consider as well.</p>
+<h4 id="function-definition">Function Definition<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#function-definition" class="internal alias"> §</a></h4>
+<p>This is where you define the function name (and optionally <a href="#parameters" class="internal alias">Parameters</a>). To define a function you will need to use the definition keyword in whatever language you are writing, and you will need to provide a name.</p>
+<p>For example let’s say <code>func</code> is the definition keyword. So if we were to define a function that will tell you what the weather is today called <code>todays_weather</code> we could do it like this:</p>
+<pre><code>func todays_weather(){
+  // This is where the function body will go
+}    
+</code></pre>
+<h5 id="naming-conventions">Naming conventions<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#naming-conventions" class="internal alias"> §</a></h5>
+<p>Languages will have different naming conventions. You <strong>don’t have to follow these</strong>, but it’s recommended. In python, rust and some others functions are usually “snake case”, this means the names are all lowercase, and you separate words with “_”. For example first name might become <code>first_name</code>.</p>
+<p>Javascript, Java and others typically uses camelCase, instead of separating different words you just capitalize the first letter. So for first name it would become <code>firstName</code>. This changes nothing about the code that is run with a function, it’s just a convention people follow in languages to standardize how code looks.</p>
+<h5 id="parameters">Parameters<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parameters" class="internal alias"> §</a></h5>
+<p>Parameters are data you can pass to a function in order to be able to re-use code more effectively. For example you might specify a <code>name</code> parameter that is used to pass the user’s name to a function. Imagine we have a function called <code>greeting()</code> that takes this name parameter, it might look like this in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> greeting</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(name):    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	# Function body here</span></span></code></pre></figure>
+<p>and like this in javascript</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js" data-theme="github-dark github-light"><code data-language="js" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">function</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> greeting</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">name</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	// function body here</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h5 id="multiple-parameters">Multiple parameters<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multiple-parameters" class="internal alias"> §</a></h5>
+<p>You can specify multiple parameters for functions, in most languages you can do this with a comma seperated list of names for the parameters. For example a function <code>game_over()</code> that takes in a winner and loser parameter. First in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> game_over</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(winner, loser):    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	# Function body here</span></span></code></pre></figure>
+<p>Now in javascript a <code>gameOver()</code> function with the same parameters:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js" data-theme="github-dark github-light"><code data-language="js" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">function</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> gameOver</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">winner</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">loser</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	// Function body here</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h5 id="default-and-optional-values-for-parameters">Default and optional values for parameters<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#default-and-optional-values-for-parameters" class="internal alias"> §</a></h5>
+<p>You can also specify parameters that have default values. This can be used to make common situations your functions will be run under easier, but also can be used to make some parameters optional if the value is still the default when run. Here is a function <code>feedback_form_submission()</code> that takes in data from when someone fills out a form in an app, it takes in the email of the user, and optionally a comment variable:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> feedback_form_submission</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(name, comment</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">):    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	# function body here </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">	</span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># Can now call the function with a comment</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">feedback_form_submission(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;John Doe&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;What an awful event&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># Or call it without a comment</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">feedback_form_submission(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Kieran&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span></code></pre></figure>
+<p>In python these are also called keyword arguments (kwargs for short). In javascript it would look like this</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js" data-theme="github-dark github-light"><code data-language="js" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">function</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> feedback_form_submission</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">name</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">comment</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	// function body here</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">} </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">// Can now call the function with a comment</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">feedback_form_submission</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;John Doe&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;What an awful event&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">// Or call it without a comment</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">feedback_form_submission</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Kieran&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span></code></pre></figure>
+<h5 id="typed-vs-untyped">Typed vs Untyped<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#typed-vs-untyped" class="internal alias"> §</a></h5>
+<p>There are different types of languages, strongly and weakly typed. Strongly typed languages require you to tell the language what the types of each parameter are (integer, string, list etc.). Javascript and python are weakly typed languages, so this isn’t <strong>required</strong>, but python does offer type hinting, which can be useful in ambiguous situations. If you have never heard of <a href="https://docs.python.org/3/library/typing.html" class="external alias">type hints</a>, they are used to define what data type each of the variables/attributes should be. For example a string variable called name would look like this:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">name:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">str</span></span></code></pre></figure>
+<p>And if the variable can more than one type you have the first type on one side of a | and then the other option for the type. So <code>str | None</code> would mean the variable could be a string, or a <code>None</code> like this:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">name: </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">str</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">|</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">None</span></span></code></pre></figure>
+<p>We could then apply this to our parameters like this:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> feedback_form_submission</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(name:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">str</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, comment:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">str</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">):    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	# function body here</span></span></code></pre></figure>
+<h4 id="function-body">Function Body<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#function-body" class="internal alias"> §</a></h4>
+<p>This is where you define the code that should be run when someone calls a function. This is defined by some sort of <em>scope identifier</em>. These scope identifiers change per language, but there are two common ones.</p>
+<h5 id="indentation">Indentation<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#indentation" class="internal alias"> §</a></h5>
+<p>The indentation level of the code is used to identify the scope in several languages. For example in python let’s define a function called <code>greet_person()</code> which takes in a name parameter which is a string and uses it to greet them:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> greet_person</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(name:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">str</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">):    </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	# Function body starts here    </span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">	print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Hello there&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)    </span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">	print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(name)    </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># And ends here</span></span></code></pre></figure>
+<h5 id="squiglies">Squiglies<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#squiglies" class="internal alias"> §</a></h5>
+<p>Squiflies (not the actual name) are often used as scope identifiers in languages. For example in javascript you define where a function starts and stops with everything inside squigglies ({}), so a function starts at <code>{</code> and ends at <code>}</code>. Here is an example of a function that takes in a name, prints a greeting, then the name:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js" data-theme="github-dark github-light"><code data-language="js" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">function</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> greetPerson</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">name</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){    </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">	console.</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">log</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Good morning&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)    </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">	console.</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">log</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(name)</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<p>This means when someone calls <code>greetPerson(&quot;kieran&quot;)</code> only the two <code>console.log()</code> statements will run!</p>
+<h4 id="returning">Returning<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#returning" class="internal alias"> §</a></h4>
+<p>For some functions you will want to return a resulting value. The easiest example of this is returning a number from an addition function:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> add</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(x, y):    </span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">	return</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> x </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> y</span></span></code></pre></figure>
+<p>or in js</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js" data-theme="github-dark github-light"><code data-language="js" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">function</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> add</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">x</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">y</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){    </span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">	return</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> x </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> y</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h4 id="type-hinting-returns">Type hinting returns<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#type-hinting-returns" class="internal alias"> §</a></h4>
+<p>You can type hint your returns the same as you can with your parameters in python. You simply add a little arrow <code>-></code> before you start the function:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> add</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(x:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, y:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)-></span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:    </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">return</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> x </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> y</span></span></code></pre></figure>
+<p>This tells people what to expect when they retrieve the value of a function and store it in a variable</p>
+<h3 id="recursion">Recursion<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recursion" class="internal alias"> §</a></h3>
+<p>Recursion is the technique of running a function within a function definition. This can be used to solve problems. For example the Fibonacci sequence can be generated using:</p>
+<pre><code>func fibonacci(n){
+	if n == 0{
+		return 0
+	} if n == 1{
+		return 1
+	}
+	return fibonacci(n-1) + fibonacci(n-2)
+}
+</code></pre>
+<p>So let’s step through what happens if we were to provide <code>n=3</code>:</p>
+<pre><code>fibonacci(3):
+  1. Return fibonacci(3-1) + fibonacci(3-2)
+  2. Do the left first fibonacci(3-1):
+	  1. fibonacci(2)
+		  1. return fibonacci(2-1) + fibonacci(2-2)
+		  2. Do the left first fibonacci(2-1)
+			  1. returns 1
+		  3. Do the right
+			  1. Returns 0
+		  4. 1 + 0 = 1
+  3. Do the right
+	  1. fibonacci(3-2)
+		  1. returns 1
+  4. return 1 + 1
+
+fibonacci(3) == 2
+</code></pre>
+<p><img src=".././img/programming/recursion.png" alt/></p>
+<p>To create a recursive function we need:</p>
+<ol>
+<li>Base case(s); When the function stops making recursive calls to itself. If we don’t have this it will recurse infinitely</li>
+<li>The recursive case(s); When the function should make the recursive calls</li>
+</ol>
+<p>Here is the fibonacci function annotated with comments to indicate the base and recursive cases:</p>
+<pre><code>func fibonacci(n){
+	// 1. Base case(s)
+	if n == 0{   // Base case 1
+		return 0
+	} if n == 1{ // Base case 2
+		return 1
+	}
+
+	// 2. Recursive case
+	return fibonacci(n-1) + fibonacci(n-2)
+}
+</code></pre>
 <h3 id="effect-on-scopes">Effect on scopes<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effect-on-scopes" class="internal alias"> §</a></h3>
-<p>As mentioned earlier functions have an impact on <a href="#scoping-todo" class="internal alias">Scoping (TODO)</a>. For example there’s a separate scope inside a function:</p>
+<p>As mentioned earlier functions have an impact on <a href="#scoping" class="internal alias">Scoping</a>. For example there’s a separate scope inside a function:</p>
 <pre><code>x = 5
 
 function doStuff(){
@@ -286,42 +695,327 @@ function doStuff(){
 
 </code></pre>
 <p>Some languages will allow you to modify values in outer scopes, and in those cases x would be 3. But in most languages x would be 5 at the second comment. Look into the language specifics of your language to understand this.</p>
-<h2 id="pointers-todo">Pointers (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pointers-todo" class="internal alias"> §</a></h2>
-<p>…</p>
-<h2 id="boolean-logic-todo">Boolean Logic (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#boolean-logic-todo" class="internal alias"> §</a></h2>
-<p>…</p>
+<h2 id="loops">Loops<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#loops" class="internal alias"> §</a></h2>
+<p>Loops are a concept in programming that allows you to run some code for a defined number of times. This means if you have an operation you want to run 1000 times, or maybe run some code for every user in a database, or show a menu until someone makes a choice in a game, loops are what you want.</p>
+<h3 id="parts-of-a-loop">Parts of a loop<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parts-of-a-loop" class="internal alias"> §</a></h3>
+<p>Loops have two main parts, the loop definition, and the loop body. The loop definition defines how long the loop should run for, and/or what data is available inside the loop. The loop body defines what runs inside the loop. There are two popular ways this is done in languages, indentation or squiggly braces:</p>
+<p>*Not real code</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="rust" data-theme="github-dark github-light"><code data-language="rust" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">loop</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> definition</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">:</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    </span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">	loop</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> body </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">loop</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> definition{    </span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">	loop</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> body</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<p>In the first (used by languages like python) everything that is indented will run for each <a href="#iteration" class="internal alias">Iteration</a> of the loop, in the second everything inside the {} will run.</p>
+<h3 id="iteration">Iteration<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#iteration" class="internal alias"> §</a></h3>
+<p>Iterators is the name given to types of data that are designed to be looped over. For example if you have some text then in most languages that will be an iterator where you will start at the first letter and be able to loop through each letter one at a time.</p>
+<p>You can also usually create your own iterators so that for example if you have some code generating a slideshow you could create an iterator that loops through each slide. The only thing that matters is that you can define a start, an end, and some way to get from one item to another (sometimes items in iterators are called elements).</p>
+<h3 id="iterators">Iterators<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#iterators" class="internal alias"> §</a></h3>
+<p>Iterators is the name given to types of data that are designed to be looped over. More details can be found <a href="../programming/Advanced-Data-Structures-(TODO)#iterators-todo" class="internal alias" data-slug="programming/Advanced-Data-Structures-(TODO)">here</a>.</p>
+<h3 id="loop-types">loop Types<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#loop-types" class="internal alias"> §</a></h3>
+<p>There are several different types of loops that exist and are used in different situations. Most problems you run into can be approached with more than one option, so pick which one you think works best for you.</p>
+<h5 id="for">For<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#for" class="internal alias"> §</a></h5>
+<p>For loops run for a length of time defined by what you are trying to loop over. There is a section below that explains when to use each!</p>
+<h6 id="c-style">C-style<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-style" class="internal alias"> §</a></h6>
+<p>C-Style for loops are what most languages call for loops. They will allow you to define a variable that starts at some value, define an end condition and then loop until the variable equals that condition. Below is an idea of how this might work:</p>
+<p>*Not real code</p>
+<pre><code>index = 0
 
+for index until index is 10:
+    print(&quot;Hello&quot;)
+    index += 1
 
+</code></pre>
+<p>In the above example index starts at 0, on each <a href="#iteration" class="internal alias">iteration</a> it will print hello, and then the index has 1 added to it. The loop runs until the index variable is 10 which is when the loop ends.</p>
+<p>This can be done in python like so:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> range</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">10</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">):</span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">    # Python automatically starts at 0 </span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">    # &amp; adds 1 to index per itteration</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;hello&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span></code></pre></figure>
+<p>or Javascript like so:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">let</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">; index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 10</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">; index</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">++</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) {</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    console.</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">log</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;hello&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">);</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h6 id="foreach">Foreach<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foreach" class="internal alias"> §</a></h6>
+<p>For each loops are a bit different than regular for loops. In a regular for loop you will use integers (numbers) to control how the loop works. Whereas a foreach loop will loop over each item/element in an <a href="#iterators" class="internal alias">iterator</a>.</p>
+<p>For example lets say you have a shopping list, and want to print each item in the shopping list, you can do something like this:</p>
+<p>*Not real code</p>
+<pre><code>shopping_list = [&quot;eggs&quot;, &quot;ham&quot;, &quot;spam&quot;]
+foreach item in shopping_list:
+    print(item)
+</code></pre>
+<p>This loop would print “eggs”, then “ham”, then “spam”. By default python is one of the only languages that uses foreach as it’s for loop. So here is the above example in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">shopping_list </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;eggs&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;ham&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;spam&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> item </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> shopping_list:</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(item)</span></span></code></pre></figure>
+<p>When you use the <code>range()</code> function in python it actually just generates a list to loop over with a foreach loop. So these two would be the same:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> range</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">10</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">):</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(index)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">3</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">4</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">5</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">6</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">7</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">8</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">9</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]:</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(index)</span></span></code></pre></figure>
+<p>foreach is implemented differently in different languages. Javascript for example runs the loop directly on the data you want to loop over:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">shopping_list </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;eggs&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;ham&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">, </span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;spam&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">shopping_list.</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">forEach</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">item</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> =></span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> {</span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">    // This would be your &quot;loop body&quot;</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    console.</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">log</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(item)</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">});</span></span></code></pre></figure>
+<h6 id="when-to-use-each">When to use each<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#when-to-use-each" class="internal alias"> §</a></h6>
+<p>Both of these two for loops have advantages and disadvantages. But here are some rules of thumb</p>
+<p><strong>C-style</strong>: If you want to make modifications to items, just want to use numbers or foreach isn’t available</p>
+<p><strong>foreach</strong>: If you want to <strong>only read</strong> data. <strong>Some</strong> data types will let you make modifications in foreach loops, but not all of them and not in every language. If you have a list of numbers for example and you add 1 to it, then that change won’t save in a lot of languages. Here’s a python example:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">3</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">4</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">5</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">6</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">7</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">8</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> numbers:</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(numbers) </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># still [0,1,2,3,4,5,6,7,8]</span></span></code></pre></figure>
+<p>For this to work you would need a c-style loop:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">3</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">4</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">5</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">6</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">7</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">8</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">length_numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> len</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(numbers)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> range</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(length_numbers):</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    numbers[index]  </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(numbers) </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># now [1, 2, 3, 4, 5, 6, 7, 8, 9]</span></span></code></pre></figure>
+<h5 id="while">while<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#while" class="internal alias"> §</a></h5>
+<p>while loops are used to run until a certain condition is met. They basically run until whatever condition specified is <strong>true</strong>. So for example this might be a while loop that would run 10 times:</p>
+<p>*Not real code</p>
+<pre><code>number = 0
 
+while number &lt; 10:
+    number += 1
+</code></pre>
+<p>In this case the loop would run 10 times, then on the 10th run <code>number</code> would be 10 and <code>number&lt;10</code> would be false, which would end the loop. This can be useful for tons of things, but the most common is game loops and menus. In games you can have something like:</p>
+<p>*Not real code</p>
+<pre><code>game_over = false
 
+while not game_over:
+    play_game()
+</code></pre>
+<p>Which would run until the game_over variable is set to true (perhaps when a player dies). This can be done with menus as well to wait for someone to select something, or anything that can be controlled with a boolean!</p>
+<p>Here are the above examples in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">while</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 10</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">game_over </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> False</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">while</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> not</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> game_over:</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    play_game()</span></span></code></pre></figure>
+<p>and in javascript:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">while</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 10</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    number </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">game_over </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> false</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">while</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">!</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">game_over){</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">    play_game</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">()</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h4 id="infinite-loops">Infinite loops<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#infinite-loops" class="internal alias"> §</a></h4>
+<p>You need to make sure your while loop <strong>can</strong> end. Most programming languages will not stop you from making a loop that never ends!</p>
+<h3 id="loops-and-collections">loops and collections<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#loops-and-collections" class="internal alias"> §</a></h3>
+<p>These sorts of loops can be very handy when used with <a href="#collections" class="internal alias">Collections</a>. Since collections take multiple steps if you want to run code on everything in them they are a perfect candidate for loops!</p>
+<h4 id="for-loops">For loops<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#for-loops" class="internal alias"> §</a></h4>
+<p>Let’s say for example someone updated their difficulty in a game so you want to increase enemy HP, you could do something like this:</p>
+<p>*Not real code</p>
+<pre><code>index = 0
 
+enemies = [enemy_1, enemy_2, enemny_3]
 
+for index until index is length(enemies):
+    increase_hp(enemies[index])
+</code></pre>
+<p>When accessing values in a list/array (<code>enemies</code>) you can access each item by it’s index. So in this case <code>enemies[0]</code> would give you <code>enemy_1</code>. Since we start at 0 (all arrays/lists do) and then go until the index is the length of the list, we go through each element and run <code>increase_hp()</code> on it. So these two are the same:</p>
+<p>*Not real code</p>
+<pre><code>increase_hp(enemies[0])
+increase_hp(enemy_1)
+</code></pre>
+<p>Here is the same example in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">enemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [enemy_1, enemy_2, enemy_3]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">length_of_enemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> len</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(enemies)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> range</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(length_of_enemies):</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    increase_hp(enemies[index])</span></span></code></pre></figure>
+<p>and in Javascript:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">enemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [enemy_1, enemy_2, enemy_3];</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">lengthOfEnemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> enemies.</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">length</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">;</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">let</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">; index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> lengthOfEnemies; index</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">++</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) {</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">    increase_hp</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(enemies[index]);</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h4 id="while-loops">While loops<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#while-loops" class="internal alias"> §</a></h4>
+<p>Let’s say for example someone updated their difficulty in a game so you want to increase enemy HP, you could do something like this:</p>
+<pre><code>index = 0
 
+enemies = [enemy_1, enemy_2, enemny_3]
 
+while index &lt; length(enemies):
+    increase_hp(enemies[index])
+    index += 1
+</code></pre>
+<p>When accessing values in a list/array (<code>enemies</code>) you can access each item by it’s index. So in this case <code>enemies[0]</code> would give you <code>enemy_1</code>. Since we start at 0 (all arrays/lists do) and then go until the index is the length of the list, we go through each element and run <code>increase_hp()</code> on it. So these two are the same:</p>
+<pre><code>increase_hp(enemies[0])
+increase_hp(enemy_1)
+</code></pre>
+<p>Here is the same example in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">enemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [enemy_1, enemy_2, enemy_3]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">length_of_enemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> len</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(enemies)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">while</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> length_of_enemies):</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    increase_hp(enemies[index])</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span></span></code></pre></figure>
+<p>and in Javascript:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">enemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [enemy_1, enemy_2, enemy_3];</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">lengthOfEnemies </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> enemies.</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">length</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">;</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">while</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> lengthOfEnemies) {</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">    increase_hp</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(enemies[index]);</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">;</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
+<h3 id="other-aspects-of-loops">Other aspects of loops<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-aspects-of-loops" class="internal alias"> §</a></h3>
+<p>Sometimes you want more manual control over a loop. For example let’s say you want to end a loop early, or skip an item if some condition is true. There are built in options to most languages to do this.</p>
+<h4 id="break">break<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#break" class="internal alias"> §</a></h4>
+<p>Break can be used to end a loop early. This can be useful if you are looping over something, and want to allow the loop to stop running if the word “stop” is encountered:</p>
+<pre><code>foreach word in words:
+    if word == &quot;stop&quot;:
+        break
+</code></pre>
+<p>This would break out of the loop when stop is encountered <strong>or</strong> when it reaches the end of the list if stop isn’t there.</p>
+<p>Here is an example in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> word </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> words:</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> word </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;stop&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">        break</span></span></code></pre></figure>
+<p>and in javascript</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">words.</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">forEach</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#FFAB70;--shiki-light:#E36209;">word</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> =></span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> {</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (word </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;stop&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">        break</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    }</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">});</span></span></code></pre></figure>
+<h4 id="continue">continue<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continue" class="internal alias"> §</a></h4>
+<p>continue can be used to “skip” an iteration. For example lets say you want to add 1 to a number if it is even. You could do something like this to skip odd numbers:</p>
+<pre><code>numbers = [1,2,3,4,5,6]
+length_of_numbers = numbers.length
 
+index = 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="table-container"><table><thead><tr><th>Name</th><th>What it means</th></tr></thead><tbody><tr><td>AND</td><td>If both values are true, the result is true, otherwise False</td></tr><tr><td>OR</td><td>If one value is true, the result is true, otherwise false</td></tr><tr><td>NOT</td><td>Invert the operation (true is false and false is true)</td></tr><tr><td>XOR</td><td>If the values are opposite then true, else false</td></tr></tbody></table></div>
+for index until index is length_of_numbers:
+    if isOdd(numbers[index]):
+        continue
+    else:
+        numbers[index] += 1
+</code></pre>
+<p>Here is an example of this in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">3</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">4</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">5</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">6</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">length_of_numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> len</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(numbers)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">in</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> range</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(length_of_numbers):</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    if</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> not</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (numbers[index]</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">%</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">): </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># Is odd number</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">        continue</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    else</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">        numbers[index] </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span></span></code></pre></figure>
+<p>and in javascript:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-dark github-light"><code data-language="javascript" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> [</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">3</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">4</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">5</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">6</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">length_of_numbers </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> numbers.</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">length</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">for</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">let</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">; index </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">&lt;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> length_of_numbers; index</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">++</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) {</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">!</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(numbers[index]</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">%</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">){</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">        continue</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    } </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">else</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">{</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">        numbers[index] </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    }</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">}</span></span></code></pre></figure>
 <h2 id="additional-resources">Additional Resources<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-resources" class="internal alias"> §</a></h2>
+<ul>
+<li>Programming Languages
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iqOYf4RFnMY" class="external alias">What is a Programming Language (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=6YMec72CEiU" class="external alias">What is Programming? (youtube.com)</a></li>
+<li>Markup Languages
+<ul>
+<li>Markdown
+<ul>
+<li><a href="https://www.markdownguide.org/" class="external alias">Markdown Guide</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Markdown" class="external alias">Markdown - Wikipedia</a></li>
+</ul>
+</li>
+<li>Open Document Format (odf)
+<ul>
+<li><a href="https://insider.microsoft365.com/en-us/blog/office-apps-now-support-opendocument-format-odf-1-3" class="external alias">Office apps now support OpenDocument format 1.3 (microsoft365.com)</a></li>
+<li><a href="https://support.microsoft.com/en-us/office/learn-about-file-formats-56dc3b55-7681-402e-a727-c59fa0884b30" class="external alias">Learn about file formats - Microsoft Support</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenDocument" class="external alias">OpenDocument - Wikipedia</a></li>
+</ul>
+</li>
+<li>XML
+<ul>
+<li><a href="https://aws.amazon.com/what-is/xml/#:~:text=Extensible%20Markup%20Language%20(XML)%20lets,%2C%20and%20third%2Dparty%20applications." class="external alias">What is XML? - XML File Explained - AWS (amazon.com)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XML" class="external alias">XML - Wikipedia</a></li>
+<li><a href="https://www.w3schools.com/xml/xml_whatis.asp" class="external alias">XML Introduction (w3schools.com)</a></li>
+</ul>
+</li>
+<li>Latex
+<ul>
+<li><a href="https://www.latex-project.org/" class="external alias">LaTeX - A document preparation system (latex-project.org)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LaTeX" class="external alias">LaTeX - Wikipedia</a></li>
+<li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" class="external alias">Learn LaTeX in 30 minutes - Overleaf, Online LaTeX Editor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bytecode
+<ul>
+<li><a href="https://www.youtube.com/watch?v=-am6IGpM9CU" class="external alias">What is a Bytecode and Machine Code? (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=MfTS9u57c3I" class="external alias">What is Bytecode? Explain Bytecode, Define Bytecode, Meaning of Bytecode (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=mE0oR9NQefw" class="external alias">Python Bytecode: An Introductory Tutorial (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=e2zmmkc5xI0" class="external alias">Java Bytecode Crash Course (youtube.com)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data types
 <ul>
 <li><a href="https://www.youtube.com/watch?v=6otW6OXjR8c" class="external alias">Why TRUE + TRUE = 2: Data Types (youtube.com)</a></li>
 <li><a href="https://www.youtube.com/watch?v=2USMAwcRWHE" class="external alias">Abstract data types (youtube.com)</a></li>
-<li><a href="https://www.youtube.com/watch?v=iqOYf4RFnMY" class="external alias">What is a Programming Language (youtube.com)</a></li>
-<li><a href="https://www.youtube.com/watch?v=6YMec72CEiU" class="external alias">What is Programming? (youtube.com)</a></li>
+<li>Null
+<ul>
+<li><a href="https://www.youtube.com/watch?v=PksUUwvq-po" class="external alias">What exactly is NULL? (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=957GIlc7QDg" class="external alias">Why Null? (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=YYkOWzrO3xg" class="external alias">Null References The Billion Dollar Mistake (youtube.com)</a></li>
+</ul>
+</li>
+<li>Pointers
+<ul>
+<li><a href="https://www.youtube.com/watch?v=t5NszbIerYc" class="external alias">Essentials: Pointer Power! - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iChalAKXffs" class="external alias">What Are Pointers? (C++) (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=knP_5e57biw" class="external alias">Essentials: Hidden Pointers - Computerphile (youtube.com)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recursion
+<ul>
+<li><a href="https://www.youtube.com/watch?v=rf60MejMz3E" class="external alias">Recursion in 100 Seconds (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Mv9NEXX1VHc" class="external alias">What on Earth is Recursion? - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=HXNhEYqFo0o" class="external alias">Programming Loops vs Recursion - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=8lhxIOAfDss" class="external alias">Recursion ‘Super Power’ (in Python) - Computerphile (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Q83nN97LVOU" class="external alias">This is a Better Way to Understand Recursion (youtube.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ivl5-snqul8" class="external alias">Learn RECURSION in 5 minutes! 😵 (youtube.com)</a></li>
+</ul>
+</li>
 </ul></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
 	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
 	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
@@ -332,7 +1026,7 @@ function doStuff(){
 	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
 	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
 	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
-	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#programming-languages" data-for="programming-languages">Programming Languages</a></li><li class="depth-1"><a href="#source-code-binaries-and-scripts" data-for="source-code-binaries-and-scripts">Source Code, Binaries, and scripts</a></li><li class="depth-1"><a href="#pseudocode" data-for="pseudocode">Pseudocode</a></li><li class="depth-1"><a href="#compiled-vs-interpreted-todo" data-for="compiled-vs-interpreted-todo">Compiled vs interpreted (TODO)</a></li><li class="depth-1"><a href="#node-based" data-for="node-based">Node-based</a></li><li class="depth-0"><a href="#comments" data-for="comments">Comments</a></li><li class="depth-0"><a href="#variables-todo" data-for="variables-todo">Variables (TODO)</a></li><li class="depth-1"><a href="#assignment-and-initialization" data-for="assignment-and-initialization">Assignment and initialization</a></li><li class="depth-1"><a href="#mutability" data-for="mutability">Mutability</a></li><li class="depth-0"><a href="#scoping-todo" data-for="scoping-todo">Scoping (TODO)</a></li><li class="depth-1"><a href="#data-types-todo" data-for="data-types-todo">Data Types (TODO)</a></li><li class="depth-0"><a href="#conditionals-todo" data-for="conditionals-todo">Conditionals (TODO)</a></li><li class="depth-0"><a href="#functions-todo" data-for="functions-todo">Functions (TODO)</a></li><li class="depth-1"><a href="#anatomy-of-functions-todo" data-for="anatomy-of-functions-todo">Anatomy of functions (TODO)</a></li><li class="depth-1"><a href="#returns-todo" data-for="returns-todo">Returns (TODO)</a></li><li class="depth-1"><a href="#recursion-todo" data-for="recursion-todo">Recursion (TODO)</a></li><li class="depth-1"><a href="#effect-on-scopes" data-for="effect-on-scopes">Effect on scopes</a></li><li class="depth-0"><a href="#pointers-todo" data-for="pointers-todo">Pointers (TODO)</a></li><li class="depth-0"><a href="#boolean-logic-todo" data-for="boolean-logic-todo">Boolean Logic (TODO)</a></li><li class="depth-0"><a href="#additional-resources" data-for="additional-resources">Additional Resources</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li>No backlinks found</li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#programming-languages" data-for="programming-languages">Programming Languages</a></li><li class="depth-1"><a href="#markup-vs-programming-languages" data-for="markup-vs-programming-languages">Markup vs Programming languages</a></li><li class="depth-1"><a href="#source-code-binaries-and-scripts" data-for="source-code-binaries-and-scripts">Source Code, Binaries, and scripts</a></li><li class="depth-1"><a href="#pseudocode" data-for="pseudocode">Pseudocode</a></li><li class="depth-1"><a href="#compiled-vs-interpreted" data-for="compiled-vs-interpreted">Compiled vs interpreted</a></li><li class="depth-1"><a href="#node-based" data-for="node-based">Node-based</a></li><li class="depth-0"><a href="#comments" data-for="comments">Comments</a></li><li class="depth-0"><a href="#variables" data-for="variables">Variables</a></li><li class="depth-1"><a href="#assignment-and-initialization" data-for="assignment-and-initialization">Assignment and initialization</a></li><li class="depth-1"><a href="#mutability" data-for="mutability">Mutability</a></li><li class="depth-1"><a href="#scoping" data-for="scoping">Scoping</a></li><li class="depth-1"><a href="#data-types" data-for="data-types">Data Types</a></li><li class="depth-0"><a href="#conditionals" data-for="conditionals">Conditionals</a></li><li class="depth-1"><a href="#ifelse-elif-or-else-if" data-for="ifelse-elif-or-else-if">If/Else/ Elif or Else if</a></li><li class="depth-0"><a href="#functions" data-for="functions">Functions</a></li><li class="depth-1"><a href="#using-existing-functions" data-for="using-existing-functions">Using existing functions</a></li><li class="depth-1"><a href="#anatomy-of-functions" data-for="anatomy-of-functions">Anatomy of functions</a></li><li class="depth-1"><a href="#recursion" data-for="recursion">Recursion</a></li><li class="depth-1"><a href="#effect-on-scopes" data-for="effect-on-scopes">Effect on scopes</a></li><li class="depth-0"><a href="#loops" data-for="loops">Loops</a></li><li class="depth-1"><a href="#parts-of-a-loop" data-for="parts-of-a-loop">Parts of a loop</a></li><li class="depth-1"><a href="#iteration" data-for="iteration">Iteration</a></li><li class="depth-1"><a href="#iterators" data-for="iterators">Iterators</a></li><li class="depth-1"><a href="#loop-types" data-for="loop-types">loop Types</a></li><li class="depth-1"><a href="#loops-and-collections" data-for="loops-and-collections">loops and collections</a></li><li class="depth-1"><a href="#other-aspects-of-loops" data-for="other-aspects-of-loops">Other aspects of loops</a></li><li class="depth-0"><a href="#additional-resources" data-for="additional-resources">Additional Resources</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li>No backlinks found</li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
 function toggleCallout() {
   const outerBlock = this.parentElement;
   outerBlock.classList.toggle(`is-collapsed`);
