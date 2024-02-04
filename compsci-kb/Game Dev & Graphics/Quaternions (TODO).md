@@ -1,2 +1,3 @@
+...
 - [Don’t Get Lost in Deep Space: Understanding Quaternions - Technical Articles (allaboutcircuits.com)](https://www.allaboutcircuits.com/technical-articles/dont-get-lost-in-deep-space-understanding-quaternions/#:~:text=Conclusion,not%20suffer%20from%20gimbal%20lock.)
 - [Quaternion - Wikipedia](https://en.wikipedia.org/wiki/Quaternion)

@@ -4,7 +4,8 @@ aliases:
   - internet
 ---
 ...
-
+## OSI
+...
 
 ## Additional resources
 - About early internet

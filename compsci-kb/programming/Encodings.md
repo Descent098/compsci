@@ -15,15 +15,15 @@ Some encoding schemes have other advantages like:
 
 ## Lookup-Based encodings
 
-Lookup based encodings use some sort of [[Programming/Basics#Collections (TODO)|collection]] to provide a mapping of keys-> values. This could be a number representing a letter, or even a word. Whatever the semantics the idea is that you start with a certain input, run it through an encoding, and then have some way to take the encoding and convert it back to the input text!
+Lookup based encodings use some sort of [[Programming/Basics#Collections|collection]] to provide a mapping of keys-> values. This could be a number representing a letter, or even a word. Whatever the semantics the idea is that you start with a certain input, run it through an encoding, and then have some way to take the encoding and convert it back to the input text!
 
 ### Text & File encoders
 
-The most common use for lookup-based encoders is text and file encoding. Every file you open, every webpage you look at, all of them will have a certian encoding to the file that facilitates the text you see on screen.
+The most common use for lookup-based encoders is text and file encoding. Every file you open, every webpage you look at, all of them will have a certain encoding to the file that facilitates the text you see on screen.
 
 #### ASCII
 
-ASCII (American Standard Code for Information Interchange) is one of the simplest of the text encoding systems. Essentailly it's used to map integers to characters. It has 255 values (in the extended version, 128 in the original), which allows it to represent 255 characters using only numbers. A full table can be found [here](https://www.asciitable.com/), but for example we could do a simple python implementation with a subset of the ascii characters:
+ASCII (American Standard Code for Information Interchange) is one of the simplest of the text encoding systems. Essentially it's used to map integers to characters. It has 255 values (in the extended version, 128 in the original), which allows it to represent 255 characters using only numbers. A full table can be found [here](https://www.asciitable.com/), but for example we could do a simple python implementation with a subset of the ascii characters:
 
 ```python
 ASCII_TABLE ={ # This would normally have all 128 or 256 values
@@ -40,7 +40,7 @@ for letter in word:
 print(result) # [104, 101, 108, 108, 111]
 ```
 
-Documents used to commonly use ascii because each characteris guarenteed to be at most 1 byte (8 bits, since 8 bits can represent 256 values). This made early networking code simpler because you could read files 1 byte at a time and be guarenteed 1 letter!
+Documents used to commonly use ascii because each character is guaranteed to be at most 1 byte (8 bits, since 8 bits can represent 256 values). This made early networking code simpler because you could read files 1 byte at a time and be guaranteed 1 letter!
 
 #### UFT-8
 
@@ -48,7 +48,7 @@ UTF-8 Is a more modern version of ASCII. IT is quite a bit larger and more compl
 
 **Pros**
 
-- Larger character set (turns out there's a world beyond english)
+- Larger character set (turns out there's a world beyond English)
 - [Self-Synchronizing](https://en.wikipedia.org/wiki/Self-synchronizing_code)
 
 **Cons**
@@ -84,4 +84,12 @@ Many people call programming languages encodings for the underlying "idea" of a 
 
 Having these lookup systems is great, but what happens when someone does something invalid? What happens in ASCII if someone puts 512 bits? What happens if someone includes a character that's outside your character set? These questions are all questions of sanitization.
 
-Sanitization is essentially the process of cleaning data to make sure it's safe before using it for anything. This can be raising errors and stopping execution for invalid encoded information, or stripping invalid information.
+Sanitization is essentially the process of cleaning data to make sure it's safe before using it for anything. This can be raising errors and stopping execution for invalid encoded information, or stripping invalid information. You can find more information [[Types of attacks (TODO)#Sanitizing|here]].
+
+## Additional Resources
+
+- [The power of paths | Schulich Ignite](https://schulichignite.com/blog/the-power-of-paths/)
+- [Unicode, in friendly terms: ASCII, UTF-8, code points, character encodings, and more (youtube.com)](https://www.youtube.com/watch?v=ut74oHojxqo)
+- [ASCII, Unicode, UTF-8: Explained Simply (youtube.com)](https://www.youtube.com/watch?v=DntKZ9xJ1sM)
+- [Characters, Symbols and the Unicode Miracle - Computerphile (youtube.com)](https://www.youtube.com/watch?v=MijmeoH9LT4)
+- [What are UTF-8 and UTF-16? Working with Unicode encodings (youtube.com)](https://www.youtube.com/watch?v=QCEqpd807z4)

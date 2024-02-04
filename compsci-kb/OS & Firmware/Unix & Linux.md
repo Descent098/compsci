@@ -72,3 +72,4 @@ Well for distros there are lots of "base" of distros, where the distros will fol
 	- [AT&T's The Unix Connection (youtube.com)](https://www.youtube.com/watch?v=JJlz0JIbHt8)
 	- [History of Gnu, Linux, Free and Open Source Software (Revolution OS) (youtube.com)](https://www.youtube.com/watch?v=vjMZssWMweA)
 	- [The History of Unix, Rob Pike](https://youtu.be/_2NI6t2r_Hs?si=FV5i3UIYxLHOlP7u&t=220)
+	- [When Unix Landed - Computerphile (youtube.com)](https://www.youtube.com/watch?v=fCDsn7OTNMg)

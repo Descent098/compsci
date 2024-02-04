@@ -20,5 +20,6 @@ The "brain" of the computer. This is what essentially tells your computer what t
     - [(5) Why do CPUs Need Caches? - Computerphile - YouTube](https://www.youtube.com/watch?v=6JpLD3PUAZk)
 
 
-## References
+## Additional Resources
 - [Reinventing the Processor (youtube.com)](https://www.youtube.com/watch?v=rDnqmVnrZKs)
+- [(2) CPU vs FPGA - YouTube](https://www.youtube.com/watch?v=BML1YHZpx2o)

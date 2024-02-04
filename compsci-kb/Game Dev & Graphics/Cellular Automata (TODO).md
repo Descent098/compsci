@@ -14,7 +14,7 @@ As you can see a very interesting pattern has occurred, based on an incredibly s
 - Von Neuman vs Moore
 
 ## Rules
-Rules is a shorthand name used for various patterns. It was created by Stephen Wolfram in his book *A New Kind of Science*[^1]. These are defined using [[Binary and Hexadecimal (TODO)#Binary|binary]] 
+Rules is a shorthand name used for various patterns. It was created by Stephen Wolfram in his book *A New Kind of Science*[^1]. These are defined using [[Binary, Hexadecimal and Number Systems#Binary|binary]] 
 
 
 
@@ -87,6 +87,11 @@ Conway's game of life was a recreational math project by John Conway.
 
 
 ## Additional Resources
+- [Math Battle in Game Of Life (youtube.com)](https://www.youtube.com/watch?v=-FaqC4h5Ftg)
+- [Hexagonal Game of Life (youtube.com)](https://www.youtube.com/watch?v=5CH-v79IdfQ)
+- [Game of life: programmable computer (youtube.com)](https://www.youtube.com/watch?v=8unMqSp0bFY)
+- [2D Hexagonal Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=fH1dqgcCcxc)
+- [Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=VaWEKIbFKCg)
 - [Cellular Automata: Complexity From Simplicity](https://www.youtube.com/watch?v=t_HcBAO_Yas)
 - [Cellular Automata for video games (youtube.com)](https://www.youtube.com/watch?v=JEPHf9n3Dgc)
 - [Wolfram Atlas: Cellular Automata](https://atlas.wolfram.com/TOC/TOC_101.html)

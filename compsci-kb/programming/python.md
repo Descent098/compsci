@@ -750,23 +750,12 @@ User(**external_data)  # Invalid data, raises ValidationError
 
 ```
 
-  
-
 There are some more strict systems you can use if you want to enforce static typing (checking before you run code). The most popular is [mypy](https://www.mypy-lang.org/), which throws errors if you try to run code that might have the wrong type. There's also a newer library called [pyre](https://pyre-check.org/) from meta (formerly facebook) which has a [playground you can test with](https://pyre-check.org/play?input=%23%20Pyre%20is%20being%20run%20in%20gradual%20typing%20mode%3A%20https%3A%2F%2Fpyre-check.org%2Fdocs%2Ftypes-in-python%2F%23gradual-typing%0A%23%20Use%20the%20%60%23%20pyre-strict%60%20header%20to%20run%20in%20strict%20mode%2C%20which%20requires%20annotations.%0A%0Afrom%20typing%20import%20*%0A%0A%23%20reveal_type%20will%20produce%20a%20type%20error%20that%20tells%20you%20the%20type%20Pyre%20has%0A%23%20computed%20for%20the%20argument%20(in%20this%20case%2C%20int)%0Aclass%20Animal%3A%0A%20%20%20%20def%20__init__(self)%3A%0A%20%20%20%20%20%20%20%20...%0A%20%20%20%20%20%20%20%20%0Aa%20%3D%20Animal()%0A%0Adef%20foo(a%3AAnimal)%20-%3E%20Animal%3A%0A%20%20%20%20return%20a%0A%0Afoo(a)%0Afoo(3)%0A).
-
-  
 
 There's a few others:
 
-  
-
 - [Google Pytype](https://google.github.io/pytype/)
-
 - [Microsoft Pyright](https://github.com/Microsoft/pyright)
-
-  
-  
-  
 
 ## Packing and Unpacking
 

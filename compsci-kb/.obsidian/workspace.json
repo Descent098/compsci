@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "614f24aa3fe2421f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/Basics.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "1ff75b4c6f994b2b",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/Binary and Hexadecimal (TODO).md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "227cf951bcb784c4",
             "type": "leaf",
             "pinned": true,
@@ -64,33 +36,19 @@
             }
           },
           {
-            "id": "82f3c594ae3e5d3b",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OS & Firmware/Unix & Linux.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "9acc04a465b0ce26",
+            "id": "e13928bf571496b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Abstraction (TODO).md",
+                "file": "Networking & Webdev/IP (internet Protocol).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "391781a511da2048",
+            "id": "b4526b1f6b02214c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -102,55 +60,31 @@
             }
           },
           {
-            "id": "b273b736961add53",
+            "id": "fb14211d3e443119",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking & Webdev/HTTP (TODO).md",
+                "file": "Security & Cryptography/Types of attacks (TODO).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "deebea63ba542fb0",
+            "id": "09718367f6762a9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "065dd2a96c609f16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/Logic Gates (TODO).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e13928bf571496b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking & Webdev/IP (internet Protocol).md",
+                "file": "Hardware/CPU (TODO).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -216,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Binary and Hexadecimal (TODO).md",
+                "file": "Hardware/CPU (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Binary and Hexadecimal (TODO).md",
+                "file": "Hardware/CPU (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -256,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Binary and Hexadecimal (TODO).md"
+                "file": "Hardware/CPU (TODO).md"
               }
             }
           }
@@ -282,17 +216,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1ff75b4c6f994b2b",
+  "active": "09718367f6762a9e",
   "lastOpenFiles": [
-    "Networking & Webdev/IP (internet Protocol).md",
-    "Programming/Binary and Hexadecimal (TODO).md",
+    "Programming/Python.md",
+    "Networking & Webdev/Basics.md",
+    "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "Game Dev & Graphics/Basics.md",
     "Hardware/Logic Gates (TODO).md",
-    "Programming/Basics.md",
-    "Networking & Webdev/HTTP (TODO).md",
-    "Hardware/RAM.md",
-    "Programming/Advanced Data Structures (TODO).md",
+    "Hardware/CPU (TODO).md",
+    "OS & Firmware/Unix & Linux.md",
+    "index.md",
+    "Networking & Webdev/Webpages (TODO).md",
+    "Game Dev & Graphics/Quaternions (TODO).md",
+    "Programming/Abstraction (TODO).md",
     "Programming/Encodings.md",
+    "Networking & Webdev/HTTP.md",
+    "Programming/Basics.md",
+    "Programming/Advanced Data Structures (TODO).md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Programming/Binary, Hexadecimal and Number Systems.md",
+    "img/programming/recursion.png",
+    "Hardware/Connection Types (TODO).md",
+    "Hardware/RAM.md",
+    "Security & Cryptography/Types of attacks (TODO).md",
+    "Programming/Speculation & Branch Prediction (TODO).md",
+    "Networking & Webdev/IP (internet Protocol).md",
+    "img/programming/array_access.png",
+    "img/programming/array_access.png.crdownload",
+    "img/programming/array.png",
+    "img/programming/array.png.crdownload",
     "img/binary/stenography-3.png",
     "img/binary/stenography-2.png",
     "img/binary/stenography-1.png",
@@ -301,34 +253,16 @@
     "img/binary/twos-compliment.png",
     "Programming/Hashing.md",
     "img/programming/node-based.png",
-    "index.md",
-    "Programming/Abstraction (TODO).md",
     "Programming/Open Source & Free Software.md",
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
     "img/programming",
-    "OS & Firmware/Unix & Linux.md",
     "Game Dev & Graphics/Shaders (TODO).md",
-    "Game Dev & Graphics/Rendering (TODO).md",
-    "OS & Firmware/Basics.md",
-    "Networking & Webdev/Basics.md",
     "img/binary/bin-to-int-123.png",
-    "img/binary/binary-table-123.png",
-    "Game Dev & Graphics/Basics.md",
-    "Programming/Open Source.md",
-    "Programming/Algorithms & Complexity (TODO).md",
-    "Programming/Parallelism & Asynchronus code (TODO).md",
-    "Programming/python.md",
-    "Hardware/Basics.md",
-    "img/binary/decimals-in-tens.png",
-    "img/binary/decimal-table.png",
     "img/binary",
     "img/hashing",
     "img",
     "definitions",
     "Events",
     "Excalidraw",
-    "events/internet and social media",
-    "events/lawsuits",
-    "concepts and crimes"
+    "events/internet and social media"
   ]
 }
