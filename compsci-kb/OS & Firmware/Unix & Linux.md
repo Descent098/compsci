@@ -54,6 +54,7 @@ Well for distros there are lots of "base" of distros, where the distros will fol
 		- [Coffee with Brian Kernighan - Computerphile (youtube.com)](https://www.youtube.com/watch?v=GNyQxXw_oMQ)
 		- [UNIX was designed for programmers | Brian Kernighan and Lex Fridman - YouTube](https://www.youtube.com/watch?v=v0ON23Y4W68)
 		- [UNIX Special: Profs Kernighan & Brailsford - Computerphile (youtube.com)](https://www.youtube.com/watch?v=vT_J6xc-Az0)
+		- [Oral History of Brian Kernighan (youtube.com)](https://www.youtube.com/watch?v=bTWv-l0JhAc)
 	- Linus Torvalds
 		- [The mind behind Linux | Linus Torvalds | TED (youtube.com)](https://www.youtube.com/watch?v=o8NPllzkFhE)
 		- [Keynote: Linus Torvalds, Creator of Linux & Git, in Conversation with Dirk Hohndel (youtube.com)](https://www.youtube.com/watch?v=OvuEYtkOH88)
@@ -73,3 +74,5 @@ Well for distros there are lots of "base" of distros, where the distros will fol
 	- [History of Gnu, Linux, Free and Open Source Software (Revolution OS) (youtube.com)](https://www.youtube.com/watch?v=vjMZssWMweA)
 	- [The History of Unix, Rob Pike](https://youtu.be/_2NI6t2r_Hs?si=FV5i3UIYxLHOlP7u&t=220)
 	- [When Unix Landed - Computerphile (youtube.com)](https://www.youtube.com/watch?v=fCDsn7OTNMg)
+	- ["What UNIX Cost Us" - Benno Rice (LCA 2020) (youtube.com)](https://www.youtube.com/watch?v=9-IWMbJXoLM)
+	- [Mainframes and the Unix Revolution - Computerphile (youtube.com)](https://www.youtube.com/watch?v=-rPPqm44xLs)

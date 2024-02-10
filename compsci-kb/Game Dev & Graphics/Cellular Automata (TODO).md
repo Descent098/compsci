@@ -110,6 +110,9 @@ Conway's game of life was a recreational math project by John Conway.
 - [Cellular automata as models of complexity | Nature](https://www.nature.com/articles/311419a0#:~:text=The%20origins%20of%20such%20complexity,and%20as%20information%2Dprocessing%20systems.)
 - [Conway's Game of Life 3D (youtube.com)](https://www.youtube.com/watch?v=6O9CLARsJ04)
 - [Cellular Automaton - YouTube](https://www.youtube.com/watch?v=eUcviWn9ACc)
+- [TRIANGLE CONWAY'S GAME OF LIFE (youtube.com)](https://www.youtube.com/watch?v=VOQrDh6AvYQ)
+- [Cellular Automata (youtube.com)](https://www.youtube.com/watch?v=lyZUzakG3bE)
+- [Graaahh's cellular automaton (youtube.com)](https://www.youtube.com/watch?v=IqXcG6AB29g)
 - [Elementary Cellular Automaton - Intro to Computer Science (youtube.com)](https://www.youtube.com/watch?v=M_pkidxeGMY)
 - Papers
 	- [The General and Logical Theory of Automata (vordenker.de)](https://www.vordenker.de/ggphilosophy/jvn_the-general-and-logical-theory-of-automata.pdf)

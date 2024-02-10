@@ -1285,6 +1285,7 @@ for (let index = 0; index < length_of_numbers; index++) {
 		- [What exactly is NULL? (youtube.com)](https://www.youtube.com/watch?v=PksUUwvq-po)
 		- [Why Null? (youtube.com)](https://www.youtube.com/watch?v=957GIlc7QDg)
 		- [Null References The Billion Dollar Mistake (youtube.com)](https://www.youtube.com/watch?v=YYkOWzrO3xg)
+		- [React's Billion Dollar Problem (youtube.com)](https://www.youtube.com/watch?v=FzI7faHqM0M)
 	- Pointers
 		- [Essentials: Pointer Power! - Computerphile (youtube.com)](https://www.youtube.com/watch?v=t5NszbIerYc)
 		- [What Are Pointers? (C++) (youtube.com)](https://www.youtube.com/watch?v=iChalAKXffs)

@@ -22,4 +22,5 @@ The "brain" of the computer. This is what essentially tells your computer what t
 
 ## Additional Resources
 - [Reinventing the Processor (youtube.com)](https://www.youtube.com/watch?v=rDnqmVnrZKs)
-- [(2) CPU vs FPGA - YouTube](https://www.youtube.com/watch?v=BML1YHZpx2o)
+- [CPU vs FPGA - YouTube](https://www.youtube.com/watch?v=BML1YHZpx2o)
+- [How a CPU Works (youtube.com)](https://www.youtube.com/watch?v=cNN_tTXABUA)

@@ -27,6 +27,16 @@ There are many algorithms that exist to create textures and/or meshes. I'm combi
 - [Model Synthesis - Paul Merrell](https://paulmerrell.org/model-synthesis/)
 - [Tile-Based Procedural Terrain Generation (tuwien.ac.at)](https://www.cg.tuwien.ac.at/research/publications/2019/scholz_2017_bac/scholz_2017_bac-thesis.pdf)
 
+#### Fractal Trees (TODO)
+- [Coding Challenge #14: Fractal Trees - Recursive (youtube.com)](https://www.youtube.com/watch?v=0jjeOYMjmDU)
+
+## Animation (TODO)
+...
+
+### IK rigging (TODO)
+...
+### Flocking (TODO)
+...
 
 
 ## Additional Resources

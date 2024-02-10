@@ -46,45 +46,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "b4526b1f6b02214c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/Advanced Data Structures (TODO).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb14211d3e443119",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security & Cryptography/Types of attacks (TODO).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09718367f6762a9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/CPU (TODO).md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -150,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/CPU (TODO).md",
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/CPU (TODO).md",
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/CPU (TODO).md"
+                "file": "Game Dev & Graphics/Cellular Automata (TODO).md"
               }
             }
           }
@@ -216,31 +179,44 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "09718367f6762a9e",
+  "active": "227cf951bcb784c4",
   "lastOpenFiles": [
-    "Programming/Python.md",
-    "Networking & Webdev/Basics.md",
+    "Networking & Webdev/IP (internet Protocol).md",
+    "Programming/Basics.md",
+    "Security & Cryptography/Basics.md",
+    "Security & Cryptography/Types of attacks (TODO).md",
+    "OS & Firmware/Unix & Linux.md",
+    "Game Dev & Graphics/Cellular Automata (TODO).md",
     "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "Programming/Programming Paradigms (TODO).md",
+    "Databases/SQL.md",
+    "Databases/Basics.md",
+    "OS & Firmware/Basics.md",
+    "Databases",
+    "Programming/Algorithms & Complexity (TODO).md",
+    "Programming/Advanced Data Structures (TODO).md",
+    "Programming/Compression.md",
+    "img/compression/t.jpg",
+    "img/compression/t.jpg.crdownload",
+    "img/compression/pixel-image.png",
+    "img/compression/pixel-image.png.crdownload",
+    "img/compression/io-example.png",
+    "img/compression/io-example.png.crdownload",
+    "img/compression",
+    "img/New folder",
+    "Networking & Webdev/Basics.md",
+    "Networking & Webdev/SSH (TODO).md",
+    "Hardware/CPU (TODO).md",
+    "Programming/Parallelism & Asynchronus code (TODO).md",
+    "Programming/Python.md",
     "Game Dev & Graphics/Basics.md",
     "Hardware/Logic Gates (TODO).md",
-    "Hardware/CPU (TODO).md",
-    "OS & Firmware/Unix & Linux.md",
     "index.md",
     "Networking & Webdev/Webpages (TODO).md",
     "Game Dev & Graphics/Quaternions (TODO).md",
     "Programming/Abstraction (TODO).md",
     "Programming/Encodings.md",
-    "Networking & Webdev/HTTP.md",
-    "Programming/Basics.md",
-    "Programming/Advanced Data Structures (TODO).md",
-    "Game Dev & Graphics/Cellular Automata (TODO).md",
-    "Programming/Binary, Hexadecimal and Number Systems.md",
     "img/programming/recursion.png",
-    "Hardware/Connection Types (TODO).md",
-    "Hardware/RAM.md",
-    "Security & Cryptography/Types of attacks (TODO).md",
-    "Programming/Speculation & Branch Prediction (TODO).md",
-    "Networking & Webdev/IP (internet Protocol).md",
     "img/programming/array_access.png",
     "img/programming/array_access.png.crdownload",
     "img/programming/array.png",
@@ -249,20 +225,7 @@
     "img/binary/stenography-2.png",
     "img/binary/stenography-1.png",
     "img/binary/unsigned-addition.png",
-    "HCI & VR/Basics.md",
-    "img/binary/twos-compliment.png",
-    "Programming/Hashing.md",
-    "img/programming/node-based.png",
-    "Programming/Open Source & Free Software.md",
     "img/programming",
-    "Game Dev & Graphics/Shaders (TODO).md",
-    "img/binary/bin-to-int-123.png",
-    "img/binary",
-    "img/hashing",
-    "img",
-    "definitions",
-    "Events",
-    "Excalidraw",
-    "events/internet and social media"
+    "img/binary"
   ]
 }
