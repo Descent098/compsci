@@ -76,3 +76,4 @@ Well for distros there are lots of "base" of distros, where the distros will fol
 	- [When Unix Landed - Computerphile (youtube.com)](https://www.youtube.com/watch?v=fCDsn7OTNMg)
 	- ["What UNIX Cost Us" - Benno Rice (LCA 2020) (youtube.com)](https://www.youtube.com/watch?v=9-IWMbJXoLM)
 	- [Mainframes and the Unix Revolution - Computerphile (youtube.com)](https://www.youtube.com/watch?v=-rPPqm44xLs)
+	- [The Untold Unix Story (youtube.com)](https://www.youtube.com/watch?v=2oU6zEZafnQ)

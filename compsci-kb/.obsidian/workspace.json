@@ -36,18 +36,69 @@
             }
           },
           {
-            "id": "e13928bf571496b9",
+            "id": "f80f64e7fd4e677f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Open Source & Free Software.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "f308d33e8d743673",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking & Webdev/IP (internet Protocol).md",
+                "file": "Networking & Webdev/WebDav (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1779908098e3878d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Advanced Data Structures (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d61a8ffe4df873e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Compilers (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15e41dd2ae4f6d4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Programming Paradigms (TODO).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -113,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
+                "file": "Programming/Programming Paradigms (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md",
+                "file": "Programming/Programming Paradigms (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Game Dev & Graphics/Cellular Automata (TODO).md"
+                "file": "Programming/Programming Paradigms (TODO).md"
               }
             }
           }
@@ -179,23 +230,40 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "227cf951bcb784c4",
+  "active": "15e41dd2ae4f6d4b",
   "lastOpenFiles": [
-    "Networking & Webdev/IP (internet Protocol).md",
+    "img/programming/paradigms/object-oriented/squeak-loops.png",
+    "Programming/Programming Paradigms (TODO).md",
+    "img/programming/paradigms/object-oriented/squeak-booleans.png",
+    "img/programming/paradigms/object-oriented/squeak-hello-world-2.png",
+    "img/programming/paradigms/object-oriented/squeak-hello-world.png",
+    "img/programming/paradigms/object-oriented",
+    "img/programming/paradigms",
+    "Programming/Compilers (TODO).md",
+    "Programming/Compression.md",
+    "Databases/SQL.md",
+    "Programming/Hashing.md",
+    "Programming/Advanced Data Structures (TODO).md",
+    "Programming/Open Source & Free Software.md",
+    "Networking & Webdev/WebDav (TODO).md",
+    "Networking & Webdev/SMB (TODO).md",
+    "Programming/Abstraction (TODO).md",
+    "Databases/Basics.md",
     "Programming/Basics.md",
+    "OS & Firmware/Basics.md",
+    "Programming/Regex (TODO).md",
     "Security & Cryptography/Basics.md",
-    "Security & Cryptography/Types of attacks (TODO).md",
+    "Programming/Encodings.md",
+    "Programming/Binary, Hexadecimal and Number Systems.md",
+    "Game Dev & Graphics/Procedural Generation (TODO).md",
+    "OS & Firmware/Files & Filesystems (TODO).md",
+    "OS & Firmware/Memory & Storage.md",
+    "Hardware/Storage (TODO).md",
+    "Networking & Webdev/IP (internet Protocol).md",
     "OS & Firmware/Unix & Linux.md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
-    "Programming/Programming Paradigms (TODO).md",
-    "Databases/SQL.md",
-    "Databases/Basics.md",
-    "OS & Firmware/Basics.md",
+    "Security & Cryptography/Types of attacks (TODO).md",
     "Databases",
-    "Programming/Algorithms & Complexity (TODO).md",
-    "Programming/Advanced Data Structures (TODO).md",
-    "Programming/Compression.md",
     "img/compression/t.jpg",
     "img/compression/t.jpg.crdownload",
     "img/compression/pixel-image.png",
@@ -204,28 +272,10 @@
     "img/compression/io-example.png.crdownload",
     "img/compression",
     "img/New folder",
-    "Networking & Webdev/Basics.md",
-    "Networking & Webdev/SSH (TODO).md",
-    "Hardware/CPU (TODO).md",
-    "Programming/Parallelism & Asynchronus code (TODO).md",
-    "Programming/Python.md",
-    "Game Dev & Graphics/Basics.md",
-    "Hardware/Logic Gates (TODO).md",
-    "index.md",
-    "Networking & Webdev/Webpages (TODO).md",
-    "Game Dev & Graphics/Quaternions (TODO).md",
-    "Programming/Abstraction (TODO).md",
-    "Programming/Encodings.md",
     "img/programming/recursion.png",
     "img/programming/array_access.png",
     "img/programming/array_access.png.crdownload",
     "img/programming/array.png",
-    "img/programming/array.png.crdownload",
-    "img/binary/stenography-3.png",
-    "img/binary/stenography-2.png",
-    "img/binary/stenography-1.png",
-    "img/binary/unsigned-addition.png",
-    "img/programming",
-    "img/binary"
+    "img/programming/array.png.crdownload"
   ]
 }

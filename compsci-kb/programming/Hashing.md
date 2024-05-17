@@ -211,3 +211,4 @@ For passwords there are more involved hashing algorithms you can look into. Thes
 - [Tutorialspoint | Cryptography Hash functions](https://www.tutorialspoint.com/cryptography/cryptography_hash_functions.htm)
 - [MIT OpenCourseWare | 21. Cryptography: Hash Functions](https://www.youtube.com/watch?v=KqqOXndnvic)
 - [Hash Tables & Hash Functions](https://www.youtube.com/watch?v=KyUTuwz_b7Q)
+- [Brandon Rhodes The Dictionary Even Mightier PyCon 2017 (youtube.com)](https://www.youtube.com/watch?v=66P5FMkWoVU)

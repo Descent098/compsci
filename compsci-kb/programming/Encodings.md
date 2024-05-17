@@ -93,3 +93,4 @@ Sanitization is essentially the process of cleaning data to make sure it's safe 
 - [ASCII, Unicode, UTF-8: Explained Simply (youtube.com)](https://www.youtube.com/watch?v=DntKZ9xJ1sM)
 - [Characters, Symbols and the Unicode Miracle - Computerphile (youtube.com)](https://www.youtube.com/watch?v=MijmeoH9LT4)
 - [What are UTF-8 and UTF-16? Working with Unicode encodings (youtube.com)](https://www.youtube.com/watch?v=QCEqpd807z4)
+- [Error Correction & International Book Codes - Computerphile (youtube.com)](https://www.youtube.com/watch?v=bqtE6Q79PPs)

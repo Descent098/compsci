@@ -44,3 +44,7 @@ An approach
 
 ## References
 - [A Compiler From Scratch (destroyallsoftware.com)](https://www.destroyallsoftware.com/screencasts/catalog/a-compiler-from-scratch)
+- FFI
+	- Foreign Function Index
+- ELF
+	- [ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png (4677×3307) (wikimedia.org)](https://upload.wikimedia.org/wikipedia/commons/e/e4/ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)

@@ -742,6 +742,9 @@ The maximum value of 8 trits is 6560 or `3^8 - 1 `
 		- [Hex_Memory_Addressing.pdf (iitkgp.ac.in)](http://www.facweb.iitkgp.ac.in/~bibhas/Hex_Memory_Addressing.pdf)
 		- [language agnostic - Why are memory addresses are represented using hexadecimal numbers? - Stack Overflow](https://stackoverflow.com/questions/5329916/why-are-memory-addresses-are-represented-using-hexadecimal-numbers)
 		- [Lecture 4 - CS50 (harvard.edu)](https://cs50.harvard.edu/college/2021/spring/notes/4/)
+- Base 60 
+	- [Sexagesimal - Wikipedia](https://en.wikipedia.org/wiki/Sexagesimal#:~:text=Sexagesimal%2C%20also%20known%20as%20base,%2C%20angles%2C%20and%20geographic%20coordinates.)
+	- [Babylonian Mathematics and the Base 60 System (thoughtco.com)](https://www.thoughtco.com/why-we-still-use-babylonian-mathematics-116679)
 
 [^1]: https://stackoverflow.com/a/1125317
 [^2]: https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170#zero

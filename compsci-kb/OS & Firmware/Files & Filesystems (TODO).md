@@ -1,0 +1,11 @@
+
+ - [ ] files
+	- [ ] binary files vs text files vs executables
+	- [ ] file signatures vs extensions
+- [ ] filesystems
+	- [ ] NTFS
+	- [ ] AFS
+	- [ ] ZFS
+	- [ ] EXT
+- [ ] Inodes
+	- [ ] [inotify - Wikipedia](https://en.wikipedia.org/wiki/Inotify)

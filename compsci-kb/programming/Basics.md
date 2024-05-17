@@ -1279,8 +1279,10 @@ for (let index = 0; index < length_of_numbers; index++) {
 		- [Python Bytecode: An Introductory Tutorial (youtube.com)](https://www.youtube.com/watch?v=mE0oR9NQefw)
 		- [Java Bytecode Crash Course (youtube.com)](https://www.youtube.com/watch?v=e2zmmkc5xI0)
 - Data types
+	- [The size of your variables matter. (youtube.com)](https://www.youtube.com/watch?v=hwyRnHA54lI)
 	- [Why TRUE + TRUE = 2: Data Types (youtube.com)](https://www.youtube.com/watch?v=6otW6OXjR8c)
 	- [Abstract data types (youtube.com)](https://www.youtube.com/watch?v=2USMAwcRWHE)
+	- [How Python implements super-long integers (educative.io)](https://www.educative.io/answers/how-python-implements-super-long-integers)
 	- Null
 		- [What exactly is NULL? (youtube.com)](https://www.youtube.com/watch?v=PksUUwvq-po)
 		- [Why Null? (youtube.com)](https://www.youtube.com/watch?v=957GIlc7QDg)

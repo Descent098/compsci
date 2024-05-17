@@ -72,3 +72,8 @@ once started the flow looks more like:
  Hardware --> Kernel --> Userspace (what you see and all the processes you see running including windows managers, desktop environments, user management, etc.)
 
 So for example if you have a frame from a video game first the hardware would generate the frame, it would then send it via the graphics driver to the display server, which would then render it through the Desktop environment/window manager
+
+
+## Additional Resources
+- [Computer Organization and Design Fundamentals - YouTube](https://www.youtube.com/playlist?list=PLxfrSxK7P38X7XfG4X8Y9cdOURvC7ObMF)
+- 

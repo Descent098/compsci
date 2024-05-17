@@ -227,6 +227,7 @@ Many times when people are creating projects they intend to sell they will try t
 If you lie to someone in order to get them to work with you, in most countries you’re committing fraud. It’s fine if you don’t want people to know what you’re using, but that should be the stated reason. Trying to hide behind closing your source to ramp up the price, and/or lie about implementation details can create a lot of problems.
 
 ## Additional Resources
+- [Open Source Guides | Learn how to launch and grow your project.](https://opensource.guide/)
 - Articles & Blog posts on the topic
 	- [Stealing Like a Developer | Schulich Ignite](https://schulichignite.com/blog/stealing-like-a-developer/)
 	- [The Open-Source Philosophy / Blogs / Perficient](https://blogs.perficient.com/2023/05/31/whatisopensource/)
@@ -245,6 +246,11 @@ If you lie to someone in order to get them to work with you, in most countries y
 		- Obsidian
 			- [License Overview - Obsidian](https://obsidian.md/license)
 			- [My problem with obsidian is that I need a license to use it if I add something w... | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=34137857)
+			- [Redis Licensing Overview | Redis](https://redis.com/legal/licenses/)
+		- Dual Licensing
+			- Redis
+				- [Redis Adopts Dual Source-Available Licensing | Redis](https://redis.com/blog/redis-adopts-dual-source-available-licensing/)
+				- [Redis switches licenses, acquires Speedb to go beyond its core in-memory database | TechCrunch](https://techcrunch.com/2024/03/21/redis-switches-licenses-acquires-speedb-to-go-beyond-its-core-in-memory-database/)
 		- SSPL
 			- [The SSPL is Not an Open Source License - Voices of Open Source](https://blog.opensource.org/the-sspl-is-not-an-open-source-license/)
 			- MongoDB
@@ -268,6 +274,17 @@ If you lie to someone in order to get them to work with you, in most countries y
 - [Open-Source License Explained in 5 minutes (youtube.com)](https://www.youtube.com/watch?v=MjN-mufsNbQ)
 - [Software Licensing and Why You NEED to be Careful (youtube.com)](https://www.youtube.com/watch?v=0fK2aFSYauw)
 - [How Does FREE Software Make MONEY?? (youtube.com)](https://www.youtube.com/watch?v=qgbp697tdgk)
+- [The Legal Side of Open Source | Open Source Guides](https://opensource.guide/legal/)
+- [Open Source Alternatives To Proprietary Software](https://www.opensourcealternative.to/)
+- Code of Conduct/Code of ethics
+	- [Your Code of Conduct | Open Source Guides](https://opensource.guide/code-of-conduct/)
+	- Linux
+		- [Contributor Covenant Code of Conduct — The Linux Kernel documentation](https://docs.kernel.org/process/code-of-conduct.html)
+		- [Code of Conduct | LF Events (linuxfoundation.org)](https://events.linuxfoundation.org/about/code-of-conduct/)
+		- [Linux Has a Code of Conduct and Not Everyone is Happy With it (itsfoss.com)](https://itsfoss.com/linux-code-of-conduct/)
+	- SQLite
+		- [Code Of Ethics (sqlite.org)](https://sqlite.org/codeofethics.html)
+
 
 
 [^1]: [Inside You There Are Two Wolves | Know Your Meme](https://knowyourmeme.com/memes/inside-you-there-are-two-wolves)
