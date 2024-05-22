@@ -27,7 +27,7 @@ You can also usually create your own iterators so that for example if you have s
 ...
 
 ## Trees
-This is a computer science concept that comes up **a lot**. The basics are that a graph/tree is a collection of nodes that are linked together. Nodes can represent anything, but usually they represent an object in a hierarchy. A hierarchy is just a fancy name for a structure that shows categories that are related in some way to all of the categories beneath them. This means tree's will have a "starting point" from which the other Nodes flow from (called the root). For example when talking about a location you might have a hierarchy that looks like this:
+This is a computer science concept that comes up **a lot** (the math term is [graph theory](https://www.youtube.com/watch?v=LFKZLXVO-Dg)). The basics are that a graph/tree is a collection of nodes that are linked together. Nodes can represent anything, but usually they represent an object in a hierarchy. A hierarchy is just a fancy name for a structure that shows categories that are related in some way to all of the categories beneath them. This means tree's will have a "starting point" from which the other Nodes flow from (called the root). For example when talking about a location you might have a hierarchy that looks like this:
 
 ```mermaid
 flowchart TD

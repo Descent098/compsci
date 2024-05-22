@@ -583,7 +583,7 @@ So, in this example, the binary division result is Quotient = 1.01 and Remainder
 ### Uses & tricks
 Binary in general is the basis of all computing, but what are some uses where interacting with binary is actually better than working with base 10. These cases typically are for efficiency and/or simplicity.
 #### Binary Enumeration & Booleans
-[[Advanced Data Structures (TODO)#Enumerator|Enumerators]] can be made with a binary number by interpreting the bits as one of the two available values. For example let's say we have some user settings in an app like:
+[[Data Structures (TODO)#Enumerator|Enumerators]] can be made with a binary number by interpreting the bits as one of the two available values. For example let's say we have some user settings in an app like:
 
 ```
 premium: true or false

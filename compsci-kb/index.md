@@ -11,4 +11,4 @@ When navigating through to any new topic in the knowledge base I would recommend
 ## About Me
 Hi 👋, I'm Kieran. 
 
-I'm currently a computer science student with a minor in philosophy at the university of Calgary in Canada. I've been developing since I started my degree professionally as both a freelancer and full-time employee, as well as doing open source work. If you're interested in some of my other projects check out some of the links in the footer of the site!
+I'm currently a computer science student with a minor in philosophy at the University of Calgary in Canada. I've been developing since I started my degree professionally as a freelancer, doing enterprise work on internship and a full-time employee at my university. When I can I also do open source work (including this site). If you're interested in some of my other projects check out some of the links in the footer of the site!

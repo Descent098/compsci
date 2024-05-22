@@ -50,24 +50,36 @@
             }
           },
           {
-            "id": "f308d33e8d743673",
+            "id": "1779908098e3878d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking & Webdev/WebDav (TODO).md",
+                "file": "Programming/Abstraction (TODO).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1779908098e3878d",
+            "id": "15e41dd2ae4f6d4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Advanced Data Structures (TODO).md",
+                "file": "Programming/Data Structures (TODO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b82fc8fbff7c3764",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Programming Paradigms (TODO).md",
                 "mode": "source",
                 "source": false
               }
@@ -84,21 +96,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "15e41dd2ae4f6d4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/Programming Paradigms (TODO).md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Programming Paradigms (TODO).md",
+                "file": "Programming/Data Structures (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Programming Paradigms (TODO).md",
+                "file": "Programming/Data Structures (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Programming Paradigms (TODO).md"
+                "file": "Programming/Data Structures (TODO).md"
               }
             }
           }
@@ -232,24 +232,27 @@
   },
   "active": "15e41dd2ae4f6d4b",
   "lastOpenFiles": [
-    "img/programming/paradigms/object-oriented/squeak-loops.png",
     "Programming/Programming Paradigms (TODO).md",
+    "Programming/Data Structures (TODO).md",
+    "Programming/Compilers (TODO).md",
+    "Programming/Basics.md",
+    "index.md",
+    "Programming/Abstraction (TODO).md",
+    "Programming/Tree & Graph Data Structures (TODO).md",
+    "Programming/Algorithms & Complexity (TODO).md",
+    "img/programming/paradigms/object-oriented/squeak-loops.png",
     "img/programming/paradigms/object-oriented/squeak-booleans.png",
     "img/programming/paradigms/object-oriented/squeak-hello-world-2.png",
     "img/programming/paradigms/object-oriented/squeak-hello-world.png",
     "img/programming/paradigms/object-oriented",
     "img/programming/paradigms",
-    "Programming/Compilers (TODO).md",
     "Programming/Compression.md",
     "Databases/SQL.md",
     "Programming/Hashing.md",
-    "Programming/Advanced Data Structures (TODO).md",
     "Programming/Open Source & Free Software.md",
     "Networking & Webdev/WebDav (TODO).md",
     "Networking & Webdev/SMB (TODO).md",
-    "Programming/Abstraction (TODO).md",
     "Databases/Basics.md",
-    "Programming/Basics.md",
     "OS & Firmware/Basics.md",
     "Programming/Regex (TODO).md",
     "Security & Cryptography/Basics.md",
@@ -261,8 +264,6 @@
     "Hardware/Storage (TODO).md",
     "Networking & Webdev/IP (internet Protocol).md",
     "OS & Firmware/Unix & Linux.md",
-    "Game Dev & Graphics/Cellular Automata (TODO).md",
-    "Security & Cryptography/Types of attacks (TODO).md",
     "Databases",
     "img/compression/t.jpg",
     "img/compression/t.jpg.crdownload",

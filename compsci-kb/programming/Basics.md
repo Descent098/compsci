@@ -75,9 +75,9 @@ print("hello")
 This code is easy to read and friendly, but if we were to put this code in python and get it's resulting bytecode (using [dis](https://docs.python.org/3/library/dis.html)), it looks like this:
 
 ```python
-1           0 RESUME                   0
+1         0 RESUME                   0
 
-2           2 LOAD_GLOBAL              1 (NULL + print)
+2         2 LOAD_GLOBAL              1 (NULL + print)
 		 14 LOAD_FAST                0 (text)
 		 16 PRECALL                  1
 		 20 CALL                     1
@@ -238,7 +238,7 @@ x = 4
 
 #### Primitive vs Derived types
 
-Primitive types are data types that are included by default in most languages. They are the **essential** data types used to build programs. Every type we cover in this section will be a **primitive type**. A derived type is a type that is programmer created and not part of the language. You can create these using [[Advanced Data Structures (TODO)#Class|classes]]/[[Advanced Data Structures (TODO)#Struct|structs]]/[[Advanced Data Structures (TODO)#Enumerator|enums]].
+Primitive types are data types that are included by default in most languages. They are the **essential** data types used to build programs. Every type we cover in this section will be a **primitive type**. A derived type is a type that is programmer created and not part of the language. You can create these using [[Data Structures (TODO)#Class|classes]]/[[Data Structures (TODO)#Struct|structs]]/[[Data Structures (TODO)#Enumerator|enums]].
 #### Integer
 Integers are normal whole numbers (no decimals). So for example here are some integers:
 
@@ -897,7 +897,7 @@ Iterators is the name given to types of data that are designed to be looped over
 You can also usually create your own iterators so that for example if you have some code generating a slideshow you could create an iterator that loops through each slide. The only thing that matters is that you can define a start, an end, and some way to get from one item to another (sometimes items in iterators are called elements).
 ### Iterators
 
-Iterators is the name given to types of data that are designed to be looped over. More details can be found [[Advanced Data Structures (TODO)#Iterators (TODO)|here]]. 
+Iterators is the name given to types of data that are designed to be looped over. More details can be found [[Data Structures (TODO)#Iterators (TODO)|here]]. 
 
 ### loop Types
 
