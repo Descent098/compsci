@@ -3,11 +3,172 @@ Sometimes the basics aren't enough. Often times problems you encounter will requ
 ## Abstract vs concrete data structures
 Abstract data structures are the "idea" of a data structure. It's language-agnostic, and designed to be a tool to understand what a data structure is trying to do. 
 ## Struct
-...
+Structs are a system for organizing data that allows you to define variables into a "package" that you can access more intuitively. For example consider the following struct that stores user data:
+
+```
+struct User{
+    name string
+	age int
+    weight float64
+}
+```
+
+This is essentially a template that can be used to store individual users. For example:
+
+```
+a = User("Kieran", 25, 102.03)
+
+// Access individual fields
+a.name   // "Kieran"
+a.age    // 25
+a.weight // 102.03
+```
+
+This makes working with large numbers of users much easier, for example a function that returns all the users that are over 18:
+
+```
+users = [
+	User("Kieran", 25, 102.03),
+	User("Jamie", 27, 84.03),
+	User("Daniel", 22, 70.03),
+	User("Daphne", 19, 76.03),
+	User("Rajesh", 16, 68.03),
+	User("Melody", 15, 55.03),
+	User("Jane", 18, 60.03),
+]
+
+function get_users_by_minimum_age(age:int, users:list[User]){
+	result = []
+	for user in users{
+		if user.age >= age{
+			result.add(user)
+		}
+	}
+	return result
+}
+
+
+print(get_users_by_minimum_age(18, users)) 
+// Returns [User("Kieran", 25, 102.03), User("Jamie", 27, 84.03), User("Daniel", 22, 70.03), User("Daphne", 19, 76.03), User("Jane", 18, 60.03)]
+
+
+```
+
 ## Interface
-...
+An interface allows you to specify a set of methods that need to be implemented in order for the type to be considered that interface. For example consider a site where you post reviews of movies, and books. For each of these you want to make sure that a `summary()` method is implemented.. You can create an interface like this:
+
+```
+interface Summarized{
+	summary() string
+}
+```
+In this case any type (class or struct) that implements `Summarized` is guarented to have a `summary()` function that returns a string. Different languages implement the syntax differently, but here's an example of what it might look like:
+
+```
+struct Book{
+	name: str
+	description: str
+	rating: str
+}
+
+struct Movie{
+	name: str
+	description: str
+	rating: str
+}
+
+Book implements Summarized{
+	function summary(){
+		return first(self.description, 150) // Returns first 150 characters of description
+	}
+}
+
+Movie implements Summarized{
+	function summary(){
+		return first(self.description, 150) // Returns first 150 characters of description
+	}
+}
+
+```
+
+Now we can have a function that just requires a type to have implemented `Summarized`:
+
+```
+function displayContent(content:Sumarized){
+	print(content.summary())
+}
+```
+
+Now our function will allow us to pass a `Movie` or `Book`, and if we want to create another struct for a TV show we could, and just have to implement the interface for it to work. 
 ## Class
-...
+
+A class is a data type used in [[Programming Paradigms (TODO)#Object oriented|object oriented]] programming to define a "template" that can store data, and functions to manipulate that data. For example consider a `User` class that tracks information about a user:
+
+```
+class User{
+	name: str
+	age: int
+	email: str
+}
+```
+
+Each of the variables inside the class declaration are called attributes. We can create multiple users, and they will all have the same structure:
+
+```
+a = User("Kyle", 26, "kyle@example.com")
+
+a.name   // "Kyle"
+a.age   // 26
+a.email // "kyle@example.com"
+```
+
+`a` in the above example is called an object. If you think of a class is kind of like a template, or cookie cutter an object is an instance or the actual cookie at the end. If you follow the steps laid out by a class, you get an object:
+
+![[classes-objects.png]]
+
+Because the data is the same we can use classes in functions to make sure fields are filled out how we expect:
+
+```
+users = [
+	User("Kieran", 25, "Kieran@example.com"),
+	User("Jamie", 27, "Jamie@example.com"),
+	User("Daniel", 22, "daniel@example.com"),
+	User("Daphne", 19, "daphne@example.com"),
+	User("Rajesh", 16, "raj@example.com"),
+	User("Melody", 15, "mel@example.com"),
+	User("Jane", 18, "jane@example.com"),
+]
+
+
+function get_user_by_email(email:str){
+	for user in users{
+		if user.email = email{
+			return user
+		}
+	}
+}
+
+
+get_user_by_email("jane@example.com") // returns User("Jane", 18, "jane@example.com")
+
+```
+
+On top of this we can define methods, methods allow us to write functions that can modify the object itself. For example consider a function that adds 1 year to your age that you call on the user's birthday:
+
+```
+
+class User{
+	name: str
+	age: int
+	email: str
+
+	function birthday(){
+		self.age += 1
+	}
+}
+```
+
+Now if we run `birthday()` on an instance, it will add 1 to the instance's age value
 ## Enumerator
 ...
 ## Iterators (TODO)

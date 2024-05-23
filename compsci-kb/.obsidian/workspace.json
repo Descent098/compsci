@@ -230,8 +230,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "15e41dd2ae4f6d4b",
+  "active": "861498da0cb7e54b",
   "lastOpenFiles": [
+    "img/programming/paradigms/object-oriented/classes-objects.png",
     "Programming/Programming Paradigms (TODO).md",
     "Programming/Data Structures (TODO).md",
     "Programming/Compilers (TODO).md",
@@ -263,7 +264,6 @@
     "OS & Firmware/Memory & Storage.md",
     "Hardware/Storage (TODO).md",
     "Networking & Webdev/IP (internet Protocol).md",
-    "OS & Firmware/Unix & Linux.md",
     "Databases",
     "img/compression/t.jpg",
     "img/compression/t.jpg.crdownload",
