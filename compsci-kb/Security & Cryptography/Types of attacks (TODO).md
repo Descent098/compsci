@@ -15,7 +15,12 @@ This list can never be exhaustive. New and novel ways of attacking are coming up
 - Client execution
 	- JS
 		- Tweetdeck
+#### Cross-Site Request Forgery (CSRF)
+...
 
+
+- [Cross-Site Request Forgery (CSRF) Explained (youtube.com)](https://www.youtube.com/watch?v=wYazaHJ3l0E)
+- [Cross-Site Request Forgery (CSRF) Explained (youtube.com)](https://www.youtube.com/watch?v=eWEgUcHPle0)
 ## DOS (TODO)
 ...
 ### DDOS (TODO)

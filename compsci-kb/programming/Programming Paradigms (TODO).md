@@ -1384,8 +1384,10 @@ This will open an alert box using Javacsript whenever someone hovers over the `h
 			- [Smalltalk: Getting started with the language (youtube.com)](https://www.youtube.com/watch?v=WLoXXFxU8lw)
 			- [Learn Smalltalk in Y Minutes (learnxinyminutes.com)](https://learnxinyminutes.com/docs/smalltalk/)
 		- [Pharo Smalltalk as Universal Development Platform (youtube.com)](https://www.youtube.com/watch?v=2d2otdj66dw)
-		
+		- [Towards a different Smalltalk by Boris Shingarov - YouTube](https://www.youtube.com/watch?v=PiFg1gD8LNo)
+		- [FAST - Fundación Argentina de Smalltalk - YouTube](https://www.youtube.com/@FASTFoundation/videos)
 		- [Snap!Con 2021 - Smalltalk: Why all the fuss? (youtube.com)](https://www.youtube.com/watch?v=DlQSm6r3I_g)
+		- [30 - Hernan Wilkinson - How Smalltalk Affects Thinking - YouTube](https://www.youtube.com/watch?v=brdx8YAVZag)
 		- [The Early History of Smalltalk (youtube.com)](https://www.youtube.com/watch?v=9KuBmtEb8HI)
 		- [Object Oriented Programming With Smalltalk – Objects & Messages (youtube.com)](https://www.youtube.com/watch?v=ThewgUBRods)
 		- [GNU Smalltalk - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/smalltalk/)

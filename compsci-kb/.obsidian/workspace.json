@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Data Structures (TODO).md",
+                "file": "Databases/Indexes (TODO).md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Programming Paradigms (TODO).md",
+                "file": "Security & Cryptography/Types of attacks (TODO).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -127,7 +127,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:united-states",
+                "query": "quant",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Data Structures (TODO).md",
+                "file": "Programming/Compilers (TODO).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Data Structures (TODO).md",
+                "file": "Programming/Compilers (TODO).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Data Structures (TODO).md"
+                "file": "Programming/Compilers (TODO).md"
               }
             }
           }
@@ -230,11 +230,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "861498da0cb7e54b",
+  "active": "9d61a8ffe4df873e",
   "lastOpenFiles": [
-    "img/programming/paradigms/object-oriented/classes-objects.png",
+    "Programming/Caching.md",
+    "img/programming/caching/bakery-caching-2.png",
+    "img/programming/caching/bakery-caching.png",
+    "Databases/Indexes (TODO).md",
     "Programming/Programming Paradigms (TODO).md",
+    "Pasted image 20240704223153.png",
+    "Security & Cryptography/Types of attacks (TODO).md",
+    "Security & Cryptography/Samir Secret Sharing (TODO).md",
+    "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Pasted image 20240704223747.png",
+    "Pasted image 20240704223451.png",
+    "img/programming/caching",
+    "img/programming/caching/storage-vs-memory.png",
+    "Databases/SQL.md",
     "Programming/Data Structures (TODO).md",
+    "img/programming/paradigms/object-oriented/classes-objects.png",
     "Programming/Compilers (TODO).md",
     "Programming/Basics.md",
     "index.md",
@@ -244,11 +257,9 @@
     "img/programming/paradigms/object-oriented/squeak-loops.png",
     "img/programming/paradigms/object-oriented/squeak-booleans.png",
     "img/programming/paradigms/object-oriented/squeak-hello-world-2.png",
-    "img/programming/paradigms/object-oriented/squeak-hello-world.png",
     "img/programming/paradigms/object-oriented",
     "img/programming/paradigms",
     "Programming/Compression.md",
-    "Databases/SQL.md",
     "Programming/Hashing.md",
     "Programming/Open Source & Free Software.md",
     "Networking & Webdev/WebDav (TODO).md",
@@ -259,24 +270,12 @@
     "Security & Cryptography/Basics.md",
     "Programming/Encodings.md",
     "Programming/Binary, Hexadecimal and Number Systems.md",
-    "Game Dev & Graphics/Procedural Generation (TODO).md",
-    "OS & Firmware/Files & Filesystems (TODO).md",
-    "OS & Firmware/Memory & Storage.md",
-    "Hardware/Storage (TODO).md",
-    "Networking & Webdev/IP (internet Protocol).md",
     "Databases",
-    "img/compression/t.jpg",
     "img/compression/t.jpg.crdownload",
-    "img/compression/pixel-image.png",
     "img/compression/pixel-image.png.crdownload",
-    "img/compression/io-example.png",
     "img/compression/io-example.png.crdownload",
     "img/compression",
     "img/New folder",
-    "img/programming/recursion.png",
-    "img/programming/array_access.png",
-    "img/programming/array_access.png.crdownload",
-    "img/programming/array.png",
-    "img/programming/array.png.crdownload"
+    "img/programming/array_access.png.crdownload"
   ]
 }

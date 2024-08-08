@@ -170,20 +170,86 @@ class User{
 
 Now if we run `birthday()` on an instance, it will add 1 to the instance's age value
 ## Enumerator
-...
+Enumerators are a data type used to represent structured data with a different underlying type. This is useful for data where there is going to be a strict number of instances. An easy way to look at this would be that an enumerator would be a good fit anywhere you would want to put a selection box to select from a predefined list of options. As an example consider a library where you have a number of cities in a region:
+
+```
+struct City{
+	name: str
+}
+```
+
+This works well, but there's a few issues. As it currently stands a City is a string, but there may be multiple instances of the same city floating around:
+
+```
+a = City("CALGRY")
+b = City("calgary")
+c = City("Calgary")
+
+cities = [a, b, c]
+
+for city in cities:
+	if city.name == "Calgary":
+		... // Would only run for c
+```
+
+Instead we could create an enumerator, and define the set of options available ahead of time. With the same City example:
+
+```
+enumerator City{
+	calgary: 1,
+	edmonton: 2,
+	banff: 3
+}
+```
+
+Now we can access the data via the label, or the integer. So for example:
+
+```
+a = City.calgary
+b = City(1)
+
+a == b // True
+```
+
+This allows for:
+- Error checking; You can't choose an incorrect value because it will error
+- standardization; Checks that are happening can be done in a standard way (avoiding "Calgary", "CALGARY" and "calgary")
+- Performance optimization; If you choose an integer, then you can store just the integer in a database, which saves a ton of space. "Calgary" for example might take up 7 bytes, where depending on the number of values in your enum our City value as it's currently defined could be stored in 2 bits (28x less). 
+
+It's also worth noting you can in some languages provide types besides integers, for example:
+
+```
+enumerator City{
+	calgary: "Calgary",
+	edmonton: "Edmonton",
+	banff: "Banff"
+}
+
+a = City.calgary
+b = City("Calgary")
+
+a == b // True
+```
+
 ## Iterators (TODO)
 Iterators is the name given to types of data that are designed to be looped over. For example if you have some text then in most languages that will be an iterator where you will start at the first letter and be able to loop through each letter one at a time.
 
 You can also usually create your own iterators so that for example if you have some code generating a slideshow you could create an iterator that loops through each slide. The only thing that matters is that you can define a start, an end, and some way to get from one item to another (sometimes items in iterators are called elements).
 ## Abstract data types (TODO)
-...
+An abstract data type is a theoretical framework for talking about data structures. It is used in [[Algorithms & Complexity (TODO)|algorithms, data structures, and complexity analysis]] to provide a language-agnostic way of describing how a data structure should work. For example a dictionary in python would be a concrete data type (a real one you can use), but it's based on an [associative array](https://en.wikipedia.org/wiki/Associative_array#:~:text=In%20computer%20science%2C%20an%20associative,a%20function%20with%20finite%20domain.) which is an abstract data type that describes what it should do (but not how it should do it).
 
-### Queues
+Abstract data types allow for a more abstract way to represent data types that under the hood are implemented differently. For example python has [dictionaries](https://www.w3schools.com/python/python_dictionaries.asp), but PHP  has [associative array](https://www.w3schools.com/php/php_arrays_associative.asp)'s, java has [hash map](https://www.w3schools.com/java/java_hashmap.asp)s, and they're all different, but you can describe them all pretty well with an understanding of an associative array.
+
+### Queues (TODO)
 ...
 ### Linked lists (TODO)
 ...
 ### Heaps (TODO )
 ....
+
+### Associative arrays
+
+Also called (hashmaps, dictionaries, hashtables, etc.) Details about these data structures can be found in the dedicated page on [[Hashing]]
 ## Recursive Types
 ...
 
@@ -514,9 +580,7 @@ All the graphs we've seen so far have been unweighted.
 ### Gap Buffers
 [Gap buffer - Wikipedia](https://en.wikipedia.org/wiki/Gap_buffer)
 
-### Hashmaps/dictionaries/hashtables
 
-Details about these data structures can be found in the dedicated page on [[Hashing]]
 
 ## Additional References
 - [MIT 6.851 Advanced Data Structures, Spring 2012 - YouTube](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
