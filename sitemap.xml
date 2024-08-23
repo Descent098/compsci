@@ -1,178 +1,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://quartz.jzhao.xyz/Databases/Basics</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Databases/Indexes-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Databases/SQL</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.324Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Basics</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Cellular-Automata-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Noise-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Procedural-Generation-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Quaternions-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Rendering-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Shaders-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/UI-Strategies-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/HCI-&-VR/basics</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Hardware/Basics</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Hardware/CPU-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Hardware/Connection-Types-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.595Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Hardware/Logic-Gates-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Hardware/RAM</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Hardware/Storage-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/Basics</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/HTTP</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/IP-(internet-Protocol)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/Networking-Error-Correction-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/Products-and-Services-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/SMB-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/SMTP-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/SSH-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/Virtualization-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/WebDav-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Networking-&-Webdev/Webpages-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Files-&-Filesystems-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Memory-&-Storage</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Unix-&-Linux</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Userspace</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Security-&-Cryptography/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Security-&-Cryptography/Samir-Secret-Sharing-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/Security-&-Cryptography/Types-of-attacks-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Security-&-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking</loc>
     <lastmod>2024-01-08T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Security-&-Cryptography/low-level</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/events/GDG-YYC</loc>
-    <lastmod>2024-08-08T22:48:18.599Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.328Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/</loc>
     <lastmod>2024-01-08T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Abstraction-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Caching</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Compilers-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Compression</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Data-Structures-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Encodings</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Garbage-Collection-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Hashing</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/Open-Source-&-Free-Software</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Parallelism-&-Asynchronus-code-(TODO)</loc>
-    <lastmod>2024-01-19T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Programming-Paradigms-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Regex-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Speculation-&-Branch-Prediction-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
-  </url><url>
-    <loc>https://quartz.jzhao.xyz/programming/Tree-&-Graph-Data-Structures-(TODO)</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/programming/python</loc>
-    <lastmod>2024-08-08T22:48:18.611Z</lastmod>
+    <lastmod>2024-08-23T06:48:11.348Z</lastmod>
   </url></urlset>

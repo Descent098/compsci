@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Abstraction (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Abstraction-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Abstraction-(TODO)</guid>
-    <description>… “The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise” Dijkstra Examples § For example consider a program where you need to store data about animals.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
-  </item><item>
-    <title>Algorithms &amp; Complexity (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Algorithms-&-Complexity-(TODO)</guid>
-    <description>Simple patterns (TODO) § These patterns are ones you will often see people do even if they’ve never looked at algorithms before. String Building (TODO) § The idea of the string builder pattern is to treat a string like an list and continuously push substrings into the string in order to build the result slowly.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
-  </item><item>
     <title>Number Systems (binary &amp; hex)</title>
     <link>https:/quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</link>
     <guid>https:/quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</guid>
     <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 .</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
   </item><item>
     <title>Caching</title>
     <link>https:/quartz.jzhao.xyz/programming/Caching</link>
     <guid>https:/quartz.jzhao.xyz/programming/Caching</guid>
     <description>A cache is basically a system where you store something you know you will need for later. Imagine you work in a bakery. If you wait until someone orders a loaf of bread to cook it, then now every person who comes into your store has to wait for you to cook the loaf before they can leave.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
-  </item><item>
-    <title>Compilers (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Compilers-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Compilers-(TODO)</guid>
-    <description>Steps: Lexer/Tokenizer: Break up code into smallest meaningful pieces. For python the code def myfunc(x):\n\tprint(x) might be broken up into a list of: [def, myfunc, (, x, ), :, \t, print, (, x, ) ] Parser: Take the tokens and turn them into something logical.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
   </item><item>
     <title>Compression</title>
     <link>https:/quartz.jzhao.xyz/programming/Compression</link>
     <guid>https:/quartz.jzhao.xyz/programming/Compression</guid>
     <description>Storage space is valuable. Whether it’s memory on someone’s computer that needs to be preserved to keep it running, or space on a drive to keep it from being full.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
-  </item><item>
-    <title>Data Structures (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Data-Structures-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Data-Structures-(TODO)</guid>
-    <description>Sometimes the basics aren’t enough. Often times problems you encounter will require more in-depth algorithms, but sometimes the way you’re representing the data can be enough to handle your problems.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
   </item><item>
     <title>Encodings</title>
     <link>https:/quartz.jzhao.xyz/programming/Encodings</link>
     <guid>https:/quartz.jzhao.xyz/programming/Encodings</guid>
     <description>Encoding just means a way to take a set of information in one format, and convert or represent it to another format. You can imagine the same concept (a boat, a sandwhich etc.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
-  </item><item>
-    <title>Garbage Collection (TODO)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Garbage-Collection-(TODO)</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Garbage-Collection-(TODO)</guid>
-    <description>Algorithms and Theory § Mark-and-Sweep: Garbage Collection Algorithm - GeeksforGeeks Static single-assignment form - Wikipedia Modern Day implementations § V8 (Node JS, Chromium browsers) § Trash talk: the Orinoco garbage collector · V8 High-performance garbage collection for C++ · V8 Garbage collection in V8, an illustrated guide | by Irina Shestak | Medium smol-zines/guides/garbage-collection-in-v8.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
   </item><item>
     <title>Hashing</title>
     <link>https:/quartz.jzhao.xyz/programming/Hashing</link>
     <guid>https:/quartz.jzhao.xyz/programming/Hashing</guid>
     <description>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm.</description>
-    <pubDate>Thu, 08 Aug 2024 22:48:18 GMT</pubDate>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
+  </item><item>
+    <title>FOSS (Free and Open Source Software)</title>
+    <link>https:/quartz.jzhao.xyz/programming/Open-Source-&-Free-Software</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Open-Source-&-Free-Software</guid>
+    <description>When developing software you have an important choice to make. Should users be able to see the source code to the program you’re asking them to run? Should you be able to know the internals of what’s happening in your computer? Much of the software we used today is closed source and proprietary, meaning we don’t know how it works, since we can’t view the source code.</description>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
+  </item><item>
+    <title>python</title>
+    <link>https:/quartz.jzhao.xyz/programming/python</link>
+    <guid>https:/quartz.jzhao.xyz/programming/python</guid>
+    <description>Python is a versatile and widely-used programming language that is used by developers, data scientists, and educators alike. Created by Guido van Rossum and first released in 1991, Python has steadily grown in popularity due to its simplicity and readability.</description>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
+  </item><item>
+    <title>🌱Basics/Intro</title>
+    <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Basics</link>
+    <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Basics</guid>
+    <description>… Game engines § … Additional Resources § Game Analysis Curious Archive - YouTube Game Maker’s Toolkit - YouTube Gingy - YouTube Talks from people in industry GDC - YouTube John Carmack John Carmack: Doom, Quake, VR, AGI, Programming, Video Games, and Rockets | Lex Fridman Podcast #309 (youtube.</description>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
+  </item><item>
+    <title>🌱Basics/Intro</title>
+    <link>https:/quartz.jzhao.xyz/HCI-&-VR/basics</link>
+    <guid>https:/quartz.jzhao.xyz/HCI-&-VR/basics</guid>
+    <description>….</description>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
+  </item><item>
+    <title>🌱Basics/Intro</title>
+    <link>https:/quartz.jzhao.xyz/Hardware/Basics</link>
+    <guid>https:/quartz.jzhao.xyz/Hardware/Basics</guid>
+    <description>Hardware is the name we give to the physical components of a computer. The hardware is all the stuff that actually sends the signals (electrical or otherwise) we need to make our computers work.</description>
+    <pubDate>Fri, 23 Aug 2024 06:48:11 GMT</pubDate>
   </item>
     </channel>
   </rss>
