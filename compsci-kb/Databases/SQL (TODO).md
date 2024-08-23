@@ -6,6 +6,12 @@
 ### Databases & Schemas
 ...
 
+## Relational vs Non-relational (TODO)
+...
+
+
+## SQL vs NoSQL (TODO)
+...
 
 
 

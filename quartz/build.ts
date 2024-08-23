@@ -45,7 +45,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   perf.addEvent("glob")
   const allFiles = await glob("**/*.*", argv.directory, cfg.configuration.ignorePatterns)
-  const fps = allFiles.filter((fp) => fp.endsWith(".md")).sort()
+  const fps = allFiles.filter((fp) => fp.endsWith(".md") && !fp.endsWith("(TODO).md")).sort()
   console.log(
     `Found ${fps.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
   )

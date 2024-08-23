@@ -7,7 +7,12 @@ The idea of the string builder pattern is to treat a string like an [[Programmin
 
 
 
+## Proofs (TODO)
+...
 
+### P vs NP
+
+- [What P vs NP is actually about (youtube.com)](https://www.youtube.com/watch?v=6OPsH8PK7xM)
 
 
 ## Additional Resources

@@ -91,7 +91,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Compilers (TODO).md",
+                "file": "Programming/Compression.md",
                 "mode": "source",
                 "source": false
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Compilers (TODO).md",
+                "file": "Programming/Compression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Compilers (TODO).md",
+                "file": "Programming/Compression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Compilers (TODO).md"
+                "file": "Programming/Compression.md"
               }
             }
           }
@@ -230,52 +230,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9d61a8ffe4df873e",
+  "active": "861498da0cb7e54b",
   "lastOpenFiles": [
     "Programming/Caching.md",
+    "Programming/Algorithms & Complexity (TODO).md",
+    "Programming/Abstraction (TODO).md",
+    "OS & Firmware/Files & Filesystems (TODO).md",
+    "OS & Firmware/Memory & Storage.md",
+    "OS & Firmware/Basics.md",
+    "OS & Firmware/Unix & Linux.md",
+    "OS & Firmware/Userspace.md",
+    "OS & Firmware/Windows (TODO).md",
+    "Databases/Specialized Databases (TODO).md",
+    "Databases/Basics.md",
+    "img/db/specialized/vector-embeddings-1.png",
+    "img/db/specialized/vector-embeddings-2.png",
+    "img/db/specialized",
+    "img/db",
+    "img/Untitled.canvas",
+    "Databases/SQL (TODO).md",
+    "Security & Cryptography/Types of attacks (TODO).md",
+    "Programming/Compilers (TODO).md",
     "img/programming/caching/bakery-caching-2.png",
     "img/programming/caching/bakery-caching.png",
     "Databases/Indexes (TODO).md",
     "Programming/Programming Paradigms (TODO).md",
     "Pasted image 20240704223153.png",
-    "Security & Cryptography/Types of attacks (TODO).md",
     "Security & Cryptography/Samir Secret Sharing (TODO).md",
     "Game Dev & Graphics/Cellular Automata (TODO).md",
     "Pasted image 20240704223747.png",
     "Pasted image 20240704223451.png",
     "img/programming/caching",
     "img/programming/caching/storage-vs-memory.png",
-    "Databases/SQL.md",
     "Programming/Data Structures (TODO).md",
     "img/programming/paradigms/object-oriented/classes-objects.png",
-    "Programming/Compilers (TODO).md",
     "Programming/Basics.md",
     "index.md",
-    "Programming/Abstraction (TODO).md",
     "Programming/Tree & Graph Data Structures (TODO).md",
-    "Programming/Algorithms & Complexity (TODO).md",
     "img/programming/paradigms/object-oriented/squeak-loops.png",
-    "img/programming/paradigms/object-oriented/squeak-booleans.png",
-    "img/programming/paradigms/object-oriented/squeak-hello-world-2.png",
     "img/programming/paradigms/object-oriented",
     "img/programming/paradigms",
     "Programming/Compression.md",
     "Programming/Hashing.md",
     "Programming/Open Source & Free Software.md",
     "Networking & Webdev/WebDav (TODO).md",
-    "Networking & Webdev/SMB (TODO).md",
-    "Databases/Basics.md",
-    "OS & Firmware/Basics.md",
-    "Programming/Regex (TODO).md",
-    "Security & Cryptography/Basics.md",
-    "Programming/Encodings.md",
-    "Programming/Binary, Hexadecimal and Number Systems.md",
     "Databases",
     "img/compression/t.jpg.crdownload",
     "img/compression/pixel-image.png.crdownload",
     "img/compression/io-example.png.crdownload",
-    "img/compression",
-    "img/New folder",
-    "img/programming/array_access.png.crdownload"
+    "img/compression"
   ]
 }
