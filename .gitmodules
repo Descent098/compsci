@@ -1,0 +1,3 @@
+[submodule "compsci-kb-content"]
+	path = compsci-kb
+	url = https://github.com/Descent098/compsci-kb-content

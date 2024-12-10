@@ -1,6 +1,0 @@
-...
-## IP addresses (TODO)
-
-
-### IPV4 vs IPV4
-...

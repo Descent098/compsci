@@ -1,1 +1,0 @@
-There are tons of ways of connecting your PC to peripherals (devices outside your PC)
