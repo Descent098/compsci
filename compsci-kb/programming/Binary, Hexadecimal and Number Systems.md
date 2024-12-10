@@ -614,7 +614,7 @@ How can you tell if a number is odd or even in base 10? You divide by 0 and chec
 The reason for this is because all powers of 2 **except** `2^1` are even, and summing any two even numbers is even. So any number that is odd **must** have a 1 in the rightmost bit so that it can be a non-power of 2 number. 
 
 #### DHCP masks
-In order to use the internet your router has to have an [[IP (internet Protocol)#IP addresses (TODO)|IP address]] for each device that wants to communicate. This would be tedious to do by hand (called static allocation), so instead we often use DHCP (Dynamic Host Configuration Protocol) to automatically rent IP addresses to devices. For IP addresses we use four 1 byte numbers to indicate an IP address. A DHCP subnet mask  allows you to specify how many IP addresses and which pattern to use.
+In order to use the internet your router has to have an [[IP (internet Protocol) (TODO)#IP addresses (TODO)|IP address]] for each device that wants to communicate. This would be tedious to do by hand (called static allocation), so instead we often use DHCP (Dynamic Host Configuration Protocol) to automatically rent IP addresses to devices. For IP addresses we use four 1 byte numbers to indicate an IP address. A DHCP subnet mask  allows you to specify how many IP addresses and which pattern to use.
 
 For each mask you subtract 255 from the octet ant it tells you how many addresses are available. So for example:
 

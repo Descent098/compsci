@@ -158,7 +158,7 @@ While the idea of open source sounds great there are many critiques in practice.
 	- [The Dark Side of Open Source // What really happened to Faker.js? (youtube.com)](https://www.youtube.com/watch?v=R6S-b_k-ZKY)
 	- [The Dark Side of Open Source (youtube.com)](https://www.youtube.com/watch?v=Q-02fW-n4qg)
 	- David Tolney
-		- [rustconf.md (github.com)](https://gist.github.com/dtolnay/7f5da4bf057b7c6d0d00c6bed3060b96)
+		- [rustconf.md (github.com)](https://web.archive.org/web/20231115231234/https://gist.github.com/dtolnay/7f5da4bf057b7c6d0d00c6bed3060b96) 
 		- [David Tolnay on the "RustConf Keynote Fiasco" | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=37378328)
 		- [The LAST Rust Drama (youtube.com)](https://www.youtube.com/watch?v=MD7tcupioh8)
 - Weak Supply chain

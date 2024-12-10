@@ -1,5 +1,10 @@
+Databases in general are used to store data, however the type, and the uses of that data change drastically. So there have been many different types of databases that have been purpose built for specific use cases. Perhaps you need the fastest possible writes, and don't need to read very often, maybe vice-versa. Maybe you need to store a certain type of data, and query in ways traditional databases can't handle. No matter the case, there are various types of specialized databases that are useful for various situations.
 
-...
+## Configurations
+
+The first thing people often overlook in this topic is actually just configurations. When you start up a database, there are often a ton of configuration values you can change, and some of these will fundamentally change the way the database operates. There are some definite advantages to this, such as the fact you can maintain just 1 database system for your various use cases. However, this is often more of a stop-gap measure. 
+
+It works well when you want a little bit more performance, but don't want the complexity of running an entirely new database. Depending on your database system you can find replacements for most of the specialized systems we discuss in this list (but a little bit worse). 
 ## Key-Value Stores (TODO)
 ...
 
@@ -87,7 +92,8 @@ There are a slough of methods for doing embeddings and the math behind them is i
 		- [Intro to Word Embeddings and Vectors for Text Analysis. (shanelynn.ie)](https://www.shanelynn.ie/get-busy-with-word-embeddings-introduction/)
 		- [Vector Embeddings for Beginners - 30 min CS Course | OpenAI (youtube.com)](https://www.youtube.com/watch?v=PR7xz5vQKGg)
 		- [A Beginner's Guide to Vector Embeddings (youtube.com)](https://www.youtube.com/watch?v=NEreO2zlXDk)
-
+- Configuration
+	- [Simplifying Your Tech Stack with PostgreSQL | by Roma Gordeev | Jul, 2024 | Medium](https://medium.com/@roma.gordeev/simplifying-your-tech-stack-with-postgresql-19030dc84f2c)
 
 [^1]: [What is One Hot Encoding and How to Do It | by Michael DelSole | Medium](https://medium.com/@michaeldelsole/what-is-one-hot-encoding-and-how-to-do-it-f0ae272f1179)
 [^2]: [What are Vector Embeddings? | A Comprehensive Vector Embeddings Guide | Elastic](https://www.elastic.co/what-is/vector-embedding)

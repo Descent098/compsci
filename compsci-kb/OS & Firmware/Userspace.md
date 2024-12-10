@@ -237,7 +237,6 @@ What allows you to visually traverse your file system
     
 - Nautilus (GNOME): [GNOME / Files · GitLab](https://gitlab.gnome.org/GNOME/nautilus)
     
-
 ## Helpful reference videos
 
 - [Brief Introduction to Computing Systems - User Space Processes, Shells, Kernels, and Hardware - CS1 - YouTube](https://www.youtube.com/watch?v=LB9wVRYF9tA)

@@ -70,7 +70,7 @@ Audio + video = total per second
 83,120,400 bytes per second / 1000 bytes per kiloByte / 1000 kiloBytes per megaByte = 83.12 MegaBytes per second
 ```
 
-That might not sound like a lot, but for a 1 minute video that’s 4.987 Gigabytes or 2.9922 TeraBytes per hour. So if you had a shop with some security cameras and you wanted to record in 720p with 44.1kHz 16-bit audio you would end up with 71.8128 TeraBytes per day, or 26.211672 PetaBytes a year. If we were to buy the largest drive I found on memory express ([this one](https://www.memoryexpress.com/Products/MX00125311)) it’s about $30/TeraByte, so for a day it would cost $2,127 and for a year it would be ~$786,350.16. This would never be sustainable for video hosting services. To put this in perspective there’s 8760 hours per year, and YouTube has [271,330 hours per **day**](https://www.wyzowl.com/youtube-stats/#:~:text=Around%203.7m%20new%20videos,average%20length%20of%204.4%20minutes.) being uploaded (~$24 million a day, or ~$9 billion a year). So how do we make these smaller?
+That might not sound like a lot, but for a 1 minute video that’s 4.987 Gigabytes or 2.9922 TeraBytes per hour. So if you had a shop with some security cameras and you wanted to record in 720p with 44.1kHz 16-bit audio you would end up with 71.8128 TeraBytes per day, or 26.211672 PetaBytes a year. If we were to buy the largest drive I found on memory express ([this one](https://www.memoryexpress.com/Products/MX00125311)) it’s about \$30/TeraByte, so for a day it would cost \$2,127 and for a year it would be \~\$786,350.16. This would never be sustainable for video hosting services. To put this in perspective there’s 8760 hours per year, and YouTube has [271,330 hours per **day**](https://www.wyzowl.com/youtube-stats/#:~:text=Around%203.7m%20new%20videos,average%20length%20of%204.4%20minutes.) being uploaded (\~\$24 million a day, or \~\$9 billion a year). So how do we make these smaller?
 
 ### Codecs
 
@@ -169,3 +169,9 @@ Most commonly videos are MPEG-4 (`.mp4`) using a `h.264` codec to encode the d
 - [Entropy in Compression - Computerphile (youtube.com)](https://www.youtube.com/watch?v=M5c_RFKVkko)
 - [Compression - Computerphile - YouTube](https://www.youtube.com/watch?v=Lto-ajuqW3w)
 - [CMPRSN (Compression Overview) - Computerphile (youtube.com)](https://www.youtube.com/watch?v=Z4AgvG2Xg0k)
+- AVIF and WEBP
+	- [JPEG is Dying - And that's a bad thing - YouTube](https://www.youtube.com/watch?v=FlWjf8asI4Y)
+	- [What image type should you use for the best balance of performance and quality? (youtube.com)](https://www.youtube.com/watch?v=ffnW8UWl0ok)
+	- [Is AVIF the Future of Web Images? (RIP WebP) (youtube.com)](https://www.youtube.com/watch?v=5eGN_94zbKo)
+	- [Power consumption of JPEG, WebP, and AVIF - Fershad Irani](https://fershad.com/writing/power-consumption-jpeg-webp-and-avif/)
+	

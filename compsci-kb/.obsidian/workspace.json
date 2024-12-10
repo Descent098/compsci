@@ -18,7 +18,9 @@
                 "mode": "source",
                 "source": false
               },
-              "pinned": true
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Cellular Automata (TODO)"
             }
           },
           {
@@ -32,7 +34,9 @@
                 "mode": "source",
                 "source": false
               },
-              "pinned": true
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Procedural Generation (TODO)"
             }
           },
           {
@@ -46,7 +50,9 @@
                 "mode": "source",
                 "source": false
               },
-              "pinned": true
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Open Source & Free Software"
             }
           },
           {
@@ -55,22 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Abstraction (TODO).md",
+                "file": "Hardware/CPU (TODO).md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "15e41dd2ae4f6d4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Databases/Indexes (TODO).md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "CPU (TODO)"
             }
           },
           {
@@ -79,22 +75,64 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security & Cryptography/Types of attacks (TODO).md",
+                "file": "OS & Firmware/Basics.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Basics"
             }
           },
           {
-            "id": "9d61a8ffe4df873e",
+            "id": "9a910032f8971223",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Compression.md",
+                "file": "Programming/Basics.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Basics"
+            }
+          },
+          {
+            "id": "48f4d96d20beb1b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Concurrency & Parallelism.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Concurrency & Parallelism"
+            }
+          },
+          {
+            "id": "a9e83c74bb506df6",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/programming/dining-philosophers.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "dining-philosophers.excalidraw"
+            }
+          },
+          {
+            "id": "6bd930e11c0b2bb2",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/programming/concurrency-parallelism.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "concurrency-parallelism.excalidraw"
             }
           }
         ],
@@ -118,7 +156,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -127,13 +167,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "quant",
+                "query": "pointer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -141,7 +183,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -164,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Compression.md",
+                "file": "Programming/Concurrency & Parallelism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +216,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Concurrency & Parallelism"
             }
           },
           {
@@ -181,10 +227,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Compression.md",
+                "file": "Programming/Concurrency & Parallelism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Concurrency & Parallelism"
             }
           },
           {
@@ -195,7 +243,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -204,8 +254,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Compression.md"
-              }
+                "file": "Programming/Concurrency & Parallelism.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Concurrency & Parallelism"
             }
           }
         ],
@@ -218,6 +270,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-map-view:Open map view": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -225,59 +279,57 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "cmdr:Templater: Create new note from template": false,
-      "obsidian-map-view:Open map view": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "cmdr:Templater: Create new note from template": false
     }
   },
-  "active": "861498da0cb7e54b",
+  "active": "48f4d96d20beb1b8",
   "lastOpenFiles": [
-    "Programming/Caching.md",
-    "Programming/Algorithms & Complexity (TODO).md",
-    "Programming/Abstraction (TODO).md",
-    "OS & Firmware/Files & Filesystems (TODO).md",
-    "OS & Firmware/Memory & Storage.md",
     "OS & Firmware/Basics.md",
-    "OS & Firmware/Unix & Linux.md",
+    "Programming/Concurrency & Parallelism.md",
+    "Excalidraw/programming/dining-philosophers.excalidraw.md",
+    "Programming/Basics.md",
+    "Excalidraw/programming/concurrency-parallelism.excalidraw.md",
+    "Excalidraw/programming/async-diagram.excalidraw - Copy.md",
     "OS & Firmware/Userspace.md",
-    "OS & Firmware/Windows (TODO).md",
-    "Databases/Specialized Databases (TODO).md",
+    "Excalidraw/programming/async-diagram.excalidraw.md",
+    "Excalidraw/programming/async-diagram-2.excalidraw.md",
+    "Excalidraw/programming",
+    "Excalidraw/Drawing 2024-01-11 02.20.24.excalidraw.md",
     "Databases/Basics.md",
+    "Game Dev & Graphics/Cellular Automata (TODO).md",
+    "Programming/Abstraction (TODO).md",
+    "img/programming/abstraction",
+    "img/programming/abstraction/Pasted image 20240904175240.png",
+    "Programming/Algorithms & Complexity (TODO).md",
+    "Databases/Specialized Databases (TODO).md",
+    "Programming/Compression.md",
+    "Hardware/CPU (TODO).md",
+    "Programming/Python.md",
+    "HCI & VR/VR & AR (TODO).md",
+    "HCI & VR/Basics.md",
+    "Databases/Indexes (TODO).md",
+    "HCI & VR/Accessibility (TODO).md",
+    "Programming/Open Source & Free Software.md",
+    "Security & Cryptography/Whitehat, Grey Hat, and Black Hat Hacking.md",
+    "Security & Cryptography/low-level (TODO).md",
+    "Networking & Webdev/IP (internet Protocol) (TODO).md",
     "img/db/specialized/vector-embeddings-1.png",
     "img/db/specialized/vector-embeddings-2.png",
     "img/db/specialized",
     "img/db",
     "img/Untitled.canvas",
-    "Databases/SQL (TODO).md",
-    "Security & Cryptography/Types of attacks (TODO).md",
-    "Programming/Compilers (TODO).md",
     "img/programming/caching/bakery-caching-2.png",
     "img/programming/caching/bakery-caching.png",
-    "Databases/Indexes (TODO).md",
-    "Programming/Programming Paradigms (TODO).md",
     "Pasted image 20240704223153.png",
-    "Security & Cryptography/Samir Secret Sharing (TODO).md",
-    "Game Dev & Graphics/Cellular Automata (TODO).md",
     "Pasted image 20240704223747.png",
     "Pasted image 20240704223451.png",
     "img/programming/caching",
     "img/programming/caching/storage-vs-memory.png",
-    "Programming/Data Structures (TODO).md",
     "img/programming/paradigms/object-oriented/classes-objects.png",
-    "Programming/Basics.md",
-    "index.md",
-    "Programming/Tree & Graph Data Structures (TODO).md",
-    "img/programming/paradigms/object-oriented/squeak-loops.png",
     "img/programming/paradigms/object-oriented",
     "img/programming/paradigms",
-    "Programming/Compression.md",
-    "Programming/Hashing.md",
-    "Programming/Open Source & Free Software.md",
-    "Networking & Webdev/WebDav (TODO).md",
     "Databases",
     "img/compression/t.jpg.crdownload",
-    "img/compression/pixel-image.png.crdownload",
-    "img/compression/io-example.png.crdownload",
-    "img/compression"
+    "img/compression/pixel-image.png.crdownload"
   ]
 }

@@ -76,4 +76,11 @@ So for example if you have a frame from a video game first the hardware would ge
 
 ## Additional Resources
 - [Computer Organization and Design Fundamentals - YouTube](https://www.youtube.com/playlist?list=PLxfrSxK7P38X7XfG4X8Y9cdOURvC7ObMF)
-- 
+- Mobile OS's
+	- [Android Open Source Project](https://source.android.com/)
+		- [LineageOS – LineageOS Android Distribution](https://lineageos.org/)
+		- [GrapheneOS: the private and secure mobile OS](https://grapheneos.org/)
+	- [Home | Ubuntu Touch (ubuntu-touch.io)](https://ubuntu-touch.io/)
+	- [Embedded OS, Support, and Services | BlackBerry QNX](https://blackberry.qnx.com/en)
+	- [IOS](https://www.apple.com/ca/ios)
+	- [Home - KaiOS (kaiostech.com)](https://www.kaiostech.com/)

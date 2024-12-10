@@ -24,3 +24,7 @@ The "brain" of the computer. This is what essentially tells your computer what t
 - [Reinventing the Processor (youtube.com)](https://www.youtube.com/watch?v=rDnqmVnrZKs)
 - [CPU vs FPGA - YouTube](https://www.youtube.com/watch?v=BML1YHZpx2o)
 - [How a CPU Works (youtube.com)](https://www.youtube.com/watch?v=cNN_tTXABUA)
+- Manufacturing
+	- [Speedrunning 30yrs of lithography technology - YouTube](https://www.youtube.com/watch?v=RuVS7MsQk4Y)
+	- [How a CPU is made (youtube.com)](https://www.youtube.com/watch?v=qm67wbB5GmI)
+	- [HOW IT'S MADE: CPU (youtube.com)](https://www.youtube.com/watch?v=G2uYU7aD698)

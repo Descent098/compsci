@@ -1292,6 +1292,9 @@ for (let index = 0; index < length_of_numbers; index++) {
 		- [Essentials: Pointer Power! - Computerphile (youtube.com)](https://www.youtube.com/watch?v=t5NszbIerYc)
 		- [What Are Pointers? (C++) (youtube.com)](https://www.youtube.com/watch?v=iChalAKXffs)
 		- [Essentials: Hidden Pointers - Computerphile (youtube.com)](https://www.youtube.com/watch?v=knP_5e57biw)
+		- Pointers are complicated
+			- [Pointers Are Complicated, or: What's in a Byte? (ralfj.de)](https://www.ralfj.de/blog/2018/07/24/pointers-and-bytes.html)
+			- [Pointers Are Complicated II, or: We need better language specs (ralfj.de)](https://www.ralfj.de/blog/2020/12/14/provenance.html)
 - Recursion
 	- [Recursion in 100 Seconds (youtube.com)](https://www.youtube.com/watch?v=rf60MejMz3E)
 	- [What on Earth is Recursion? - Computerphile (youtube.com)](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
