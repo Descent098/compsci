@@ -1,1 +1,11 @@
 * text=auto eol=lf
+
+# Markdown
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+
+# Ignore the TS/JS files
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
