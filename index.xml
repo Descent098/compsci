@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>python</title>
-    <link>https:/quartz.jzhao.xyz/programming/python</link>
-    <guid>https:/quartz.jzhao.xyz/programming/python</guid>
-    <description>Python is a versatile and widely-used programming language that is used by developers, data scientists, and educators alike. Created by Guido van Rossum and first released in 1991, Python has steadily grown in popularity due to its simplicity and readability.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
-  </item><item>
-    <title>Number Systems (binary &amp; hex)</title>
-    <link>https:/quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</guid>
-    <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 .</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
-  </item><item>
-    <title>Caching</title>
-    <link>https:/quartz.jzhao.xyz/programming/Caching</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Caching</guid>
-    <description>A cache is basically a system where you store something you know you will need for later. Imagine you work in a bakery. If you wait until someone orders a loaf of bread to cook it, then now every person who comes into your store has to wait for you to cook the loaf before they can leave.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
-  </item><item>
-    <title>Compression</title>
-    <link>https:/quartz.jzhao.xyz/programming/Compression</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Compression</guid>
-    <description>Storage space is valuable. Whether it’s memory on someone’s computer that needs to be preserved to keep it running, or space on a drive to keep it from being full.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
-  </item><item>
-    <title>Encodings</title>
-    <link>https:/quartz.jzhao.xyz/programming/Encodings</link>
-    <guid>https:/quartz.jzhao.xyz/programming/Encodings</guid>
-    <description>Encoding just means a way to take a set of information in one format, and convert or represent it to another format. You can imagine the same concept (a boat, a sandwhich etc.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
-  </item><item>
     <title>Hashing</title>
     <link>https:/quartz.jzhao.xyz/programming/Hashing</link>
     <guid>https:/quartz.jzhao.xyz/programming/Hashing</guid>
     <description>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
   </item><item>
     <title>FOSS (Free and Open Source Software)</title>
     <link>https:/quartz.jzhao.xyz/programming/Open-Source-&-Free-Software</link>
     <guid>https:/quartz.jzhao.xyz/programming/Open-Source-&-Free-Software</guid>
     <description>When developing software you have an important choice to make. Should users be able to see the source code to the program you’re asking them to run? Should you be able to know the internals of what’s happening in your computer? Much of the software we used today is closed source and proprietary, meaning we don’t know how it works, since we can’t view the source code.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
+  </item><item>
+    <title>python</title>
+    <link>https:/quartz.jzhao.xyz/programming/python</link>
+    <guid>https:/quartz.jzhao.xyz/programming/python</guid>
+    <description>Python is a versatile and widely-used programming language that is used by developers, data scientists, and educators alike. Created by Guido van Rossum and first released in 1991, Python has steadily grown in popularity due to its simplicity and readability.</description>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
+  </item><item>
+    <title>Number Systems (binary &amp; hex)</title>
+    <link>https:/quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Binary,-Hexadecimal-and-Number-Systems</guid>
+    <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 .</description>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
+  </item><item>
+    <title>Caching</title>
+    <link>https:/quartz.jzhao.xyz/programming/Caching</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Caching</guid>
+    <description>A cache is basically a system where you store something you know you will need for later. Imagine you work in a bakery. If you wait until someone orders a loaf of bread to cook it, then now every person who comes into your store has to wait for you to cook the loaf before they can leave.</description>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
+  </item><item>
+    <title>Compression</title>
+    <link>https:/quartz.jzhao.xyz/programming/Compression</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Compression</guid>
+    <description>Storage space is valuable. Whether it’s memory on someone’s computer that needs to be preserved to keep it running, or space on a drive to keep it from being full.</description>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
+  </item><item>
+    <title>Encodings</title>
+    <link>https:/quartz.jzhao.xyz/programming/Encodings</link>
+    <guid>https:/quartz.jzhao.xyz/programming/Encodings</guid>
+    <description>Encoding just means a way to take a set of information in one format, and convert or represent it to another format. You can imagine the same concept (a boat, a sandwhich etc.</description>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
   </item><item>
     <title>GDG YYC</title>
     <link>https:/quartz.jzhao.xyz/events/GDG-YYC</link>
     <guid>https:/quartz.jzhao.xyz/events/GDG-YYC</guid>
     <description>Notes from GDG YYC 2023, a google conference in Calgary Alberta. Google’s latest experiments in Labs AI § … Google AI Foundations § Attention is All You Need – Google Research Models &amp; Tools § … Gen AI studio § … Generative AI Studio (google.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
-  </item><item>
-    <title>🌱Basics/Intro</title>
-    <link>https:/quartz.jzhao.xyz/Databases/Basics</link>
-    <guid>https:/quartz.jzhao.xyz/Databases/Basics</guid>
-    <description>… Set theory (TODO) § … References § Using an integer for a primary key is insecure by design. (youtube.com) Mastering Relational Database Design: A Comprehensive Guide - DEV Community .</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
   </item><item>
     <title>🌱Basics/Intro</title>
     <link>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Basics</link>
     <guid>https:/quartz.jzhao.xyz/Game-Dev-&-Graphics/Basics</guid>
     <description>… Game engines § … Additional Resources § Game Analysis Curious Archive - YouTube Game Maker’s Toolkit - YouTube Gingy - YouTube Talks from people in industry GDC - YouTube John Carmack John Carmack: Doom, Quake, VR, AGI, Programming, Video Games, and Rockets | Lex Fridman Podcast #309 (youtube.</description>
-    <pubDate>Tue, 10 Dec 2024 23:04:08 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
+  </item><item>
+    <title>🌱Basics/Intro</title>
+    <link>https:/quartz.jzhao.xyz/HCI-&-VR/basics</link>
+    <guid>https:/quartz.jzhao.xyz/HCI-&-VR/basics</guid>
+    <description>HCI (Human Computer Interactions) is a field of computer science (and interdisciplinary with social sciences) that helps to design and analyze hardware, and software interfaces that better suit people’s needs.</description>
+    <pubDate>Tue, 10 Dec 2024 23:10:31 GMT</pubDate>
   </item>
     </channel>
   </rss>
