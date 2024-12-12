@@ -7,64 +7,64 @@
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>🌱Basics/Intro</title>
-    <link>https:/quartz.jzhao.xyz/HCI-&-VR/Basics</link>
-    <guid>https:/quartz.jzhao.xyz/HCI-&-VR/Basics</guid>
-    <description>HCI (Human Computer Interactions) is a field of computer science (and interdisciplinary with social sciences) that helps to design and analyze hardware, and software interfaces that better suit people’s needs.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
-  </item><item>
-    <title>🌱Basics/Intro</title>
-    <link>https:/quartz.jzhao.xyz/Hardware/Basics</link>
-    <guid>https:/quartz.jzhao.xyz/Hardware/Basics</guid>
-    <description>Hardware is the name we give to the physical components of a computer. The hardware is all the stuff that actually sends the signals (electrical or otherwise) we need to make our computers work.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
-  </item><item>
-    <title>RAM</title>
-    <link>https:/quartz.jzhao.xyz/Hardware/RAM</link>
-    <guid>https:/quartz.jzhao.xyz/Hardware/RAM</guid>
-    <description>Volatile vs Persistent Memory (TODO) § … Memory Addressing (TODO) § … Virtual Addressing (TODO) § … Additional Resources § How does Computer Memory Work? 💻🛠 (youtube.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
-  </item><item>
-    <title>🌱Basics/Intro</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/Basics</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/Basics</guid>
     <description>… OSI § … Additional resources § About early internet The Computer Chronicles - The Internet (1993) (youtube.com) Bill Gates Explains the Internet to Dave (1995) | Letterman (youtube.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item><item>
     <title>HTTP</title>
     <link>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP</link>
     <guid>https:/quartz.jzhao.xyz/Networking-&-Webdev/HTTP</guid>
     <description>HTTP (HyperText Transfer Protocol) is the way most of the web communicates. It’s the system that governs how your computer talks to servers around the world to retrieve webpages, talk to your online calendar, and even send messages in point of sales systems.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item><item>
     <title>Linux</title>
     <link>https:/quartz.jzhao.xyz/OS-&-Firmware/Unix-&-Linux</link>
     <guid>https:/quartz.jzhao.xyz/OS-&-Firmware/Unix-&-Linux</guid>
     <description> Info History informs some of the technical information, as such this section will include technical info about linux, and some history. This I think is the best way to talk about linux &amp; unix since often the history informs the technical decisions.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item><item>
     <title>Userspace</title>
     <link>https:/quartz.jzhao.xyz/OS-&-Firmware/Userspace</link>
     <guid>https:/quartz.jzhao.xyz/OS-&-Firmware/Userspace</guid>
     <description>This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done. (5) The Layman’s Guide to Linux: User Space - YouTube (Covers most things at once, but I would recommend doing other sections first then come back to this video) Package managers § These systems are designed to help a user manage packages (applications and services that run on an OS).</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item><item>
     <title>Number Systems (binary &amp; hex)</title>
     <link>https:/quartz.jzhao.xyz/Programming/Binary,-Hexadecimal-and-Number-Systems</link>
     <guid>https:/quartz.jzhao.xyz/Programming/Binary,-Hexadecimal-and-Number-Systems</guid>
     <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 .</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item><item>
     <title>Caching</title>
     <link>https:/quartz.jzhao.xyz/Programming/Caching</link>
     <guid>https:/quartz.jzhao.xyz/Programming/Caching</guid>
     <description>A cache is basically a system where you store something you know you will need for later. Imagine you work in a bakery. If you wait until someone orders a loaf of bread to cook it, then now every person who comes into your store has to wait for you to cook the loaf before they can leave.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item><item>
     <title>Compression</title>
     <link>https:/quartz.jzhao.xyz/Programming/Compression</link>
     <guid>https:/quartz.jzhao.xyz/Programming/Compression</guid>
     <description>Storage space is valuable. Whether it’s memory on someone’s computer that needs to be preserved to keep it running, or space on a drive to keep it from being full.</description>
-    <pubDate>Thu, 12 Dec 2024 00:38:27 GMT</pubDate>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
+  </item><item>
+    <title>Encodings</title>
+    <link>https:/quartz.jzhao.xyz/Programming/Encodings</link>
+    <guid>https:/quartz.jzhao.xyz/Programming/Encodings</guid>
+    <description>Encoding just means a way to take a set of information in one format, and convert or represent it to another format. You can imagine the same concept (a boat, a sandwhich etc.</description>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
+  </item><item>
+    <title>Hashing</title>
+    <link>https:/quartz.jzhao.xyz/Programming/Hashing</link>
+    <guid>https:/quartz.jzhao.xyz/Programming/Hashing</guid>
+    <description>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm.</description>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
+  </item><item>
+    <title>FOSS (Free and Open Source Software)</title>
+    <link>https:/quartz.jzhao.xyz/Programming/Open-Source-&-Free-Software</link>
+    <guid>https:/quartz.jzhao.xyz/Programming/Open-Source-&-Free-Software</guid>
+    <description>When developing software you have an important choice to make. Should users be able to see the source code to the program you’re asking them to run? Should you be able to know the internals of what’s happening in your computer? Much of the software we used today is closed source and proprietary, meaning we don’t know how it works, since we can’t view the source code.</description>
+    <pubDate>Thu, 12 Dec 2024 04:52:43 GMT</pubDate>
   </item>
     </channel>
   </rss>
