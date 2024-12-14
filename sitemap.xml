@@ -1,63 +1,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://quartz.jzhao.xyz/Databases/Basics</loc>
-    <lastmod>2024-12-12T05:10:17.578Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.879Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Game-Dev-&-Graphics/Basics</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/HCI-&-VR/Basics</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Hardware/Basics</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Hardware/RAM</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Networks/Basics</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Networks/HTTP</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Networks/OSI/2.-Link</loc>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
+  </url><url>
+    <loc>https://quartz.jzhao.xyz/Networks/OSI/3.-Network</loc>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Networks/OSI/5-7.-Application</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Unix-&-Linux</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/OS-&-Firmware/Userspace</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.883Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Binary,-Hexadecimal-and-Number-Systems</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Caching</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Compression</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Concurrency-&-Parallelism</loc>
     <lastmod>2024-01-19T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Encodings</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Hashing</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Open-Source-&-Free-Software</loc>
-    <lastmod>2024-12-12T05:10:17.582Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Programming/Python</loc>
-    <lastmod>2024-12-12T05:10:17.586Z</lastmod>
+    <lastmod>2024-12-14T06:10:38.887Z</lastmod>
   </url><url>
     <loc>https://quartz.jzhao.xyz/Security-&-Cryptography/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>

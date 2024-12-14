@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html><head><title>2. Link</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="2. Link"/><meta property="og:description" content="Responsible for transferring packets from one node to another, that are physically connected. Each frame encapsulates datagrams, which encapsulate segments, which encapsulate messages."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Responsible for transferring packets from one node to another, that are physically connected. Each frame encapsulates datagrams, which encapsulate segments, which encapsulate messages."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Networks/OSI/2.-Link"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="../..">Computer Science Knowledge Base</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Databases&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networks&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networks/OSI&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Menu</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Databases"><button class="folder-button"><span class="folder-title">Databases</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Databases"><li><a href="../../Databases/Basics" data-for="Databases/Basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../../Hardware/RAM" data-for="Hardware/RAM">RAM</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../../HCI-&amp;-VR/Basics" data-for="HCI-&amp;-VR/Basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networks"><button class="folder-button"><span class="folder-title">Networks</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networks"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networks/OSI"><button class="folder-button"><span class="folder-title">OSI</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networks/OSI"><li><a href="../../Networks/OSI/2.-Link" data-for="Networks/OSI/2.-Link">2. Link</a></li><li><a href="../../Networks/OSI/3.-Network" data-for="Networks/OSI/3.-Network">3. Network</a></li><li><a href="../../Networks/OSI/5-7.-Application" data-for="Networks/OSI/5-7.-Application">5-7. Application</a></li></ul></div></li><li><a href="../../Networks/Basics" data-for="Networks/Basics">🌱Basics/Intro</a></li><li><a href="../../Networks/HTTP" data-for="Networks/HTTP">HTTP</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../../OS-&amp;-Firmware/Unix-&amp;-Linux" data-for="OS-&amp;-Firmware/Unix-&amp;-Linux">Linux</a></li><li><a href="../../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Programming"><button class="folder-button"><span class="folder-title">Programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Programming"><li><a href="../../Programming/Basics" data-for="Programming/Basics">🌱Basics/Intro</a></li><li><a href="../../Programming/Caching" data-for="Programming/Caching">Caching</a></li><li><a href="../../Programming/Compression" data-for="Programming/Compression">Compression</a></li><li><a href="../../Programming/Concurrency-&amp;-Parallelism" data-for="Programming/Concurrency-&amp;-Parallelism">Concurrency &amp; Parallelism</a></li><li><a href="../../Programming/Encodings" data-for="Programming/Encodings">Encodings</a></li><li><a href="../../Programming/Open-Source-&amp;-Free-Software" data-for="Programming/Open-Source-&amp;-Free-Software">FOSS (Free and Open Source Software)</a></li><li><a href="../../Programming/Hashing" data-for="Programming/Hashing">Hashing</a></li><li><a href="../../Programming/Binary,-Hexadecimal-and-Number-Systems" data-for="Programming/Binary,-Hexadecimal-and-Number-Systems">Number Systems (binary &amp; hex)</a></li><li><a href="../../Programming/Python" data-for="Programming/Python">Python</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Networks/">Networks</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Networks/OSI/">OSI</a></div></nav><div class="explorer mobile-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Databases&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Game-Dev-&amp;-Graphics&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Hardware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;HCI-&amp;-VR&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networks&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Networks/OSI&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;OS-&amp;-Firmware&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Programming&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Security-&amp;-Cryptography&quot;,&quot;collapsed&quot;:true}]"><h1>Menu</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Databases"><button class="folder-button"><span class="folder-title">Databases</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Databases"><li><a href="../../Databases/Basics" data-for="Databases/Basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Game-Dev-&amp;-Graphics"><button class="folder-button"><span class="folder-title">Game Dev &amp; Graphics</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Game-Dev-&amp;-Graphics"><li><a href="../../Game-Dev-&amp;-Graphics/Basics" data-for="Game-Dev-&amp;-Graphics/Basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Hardware"><button class="folder-button"><span class="folder-title">Hardware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Hardware"><li><a href="../../Hardware/Basics" data-for="Hardware/Basics">🌱Basics/Intro</a></li><li><a href="../../Hardware/RAM" data-for="Hardware/RAM">RAM</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="HCI-&amp;-VR"><button class="folder-button"><span class="folder-title">HCI &amp; VR</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="HCI-&amp;-VR"><li><a href="../../HCI-&amp;-VR/Basics" data-for="HCI-&amp;-VR/Basics">🌱Basics/Intro</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networks"><button class="folder-button"><span class="folder-title">Networks</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networks"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Networks/OSI"><button class="folder-button"><span class="folder-title">OSI</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Networks/OSI"><li><a href="../../Networks/OSI/2.-Link" data-for="Networks/OSI/2.-Link">2. Link</a></li><li><a href="../../Networks/OSI/3.-Network" data-for="Networks/OSI/3.-Network">3. Network</a></li><li><a href="../../Networks/OSI/5-7.-Application" data-for="Networks/OSI/5-7.-Application">5-7. Application</a></li></ul></div></li><li><a href="../../Networks/Basics" data-for="Networks/Basics">🌱Basics/Intro</a></li><li><a href="../../Networks/HTTP" data-for="Networks/HTTP">HTTP</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="OS-&amp;-Firmware"><button class="folder-button"><span class="folder-title">OS &amp; Firmware</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="OS-&amp;-Firmware"><li><a href="../../OS-&amp;-Firmware/Basics" data-for="OS-&amp;-Firmware/Basics">🌱Basics/Intro</a></li><li><a href="../../OS-&amp;-Firmware/Unix-&amp;-Linux" data-for="OS-&amp;-Firmware/Unix-&amp;-Linux">Linux</a></li><li><a href="../../OS-&amp;-Firmware/Userspace" data-for="OS-&amp;-Firmware/Userspace">Userspace</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Programming"><button class="folder-button"><span class="folder-title">Programming</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Programming"><li><a href="../../Programming/Basics" data-for="Programming/Basics">🌱Basics/Intro</a></li><li><a href="../../Programming/Caching" data-for="Programming/Caching">Caching</a></li><li><a href="../../Programming/Compression" data-for="Programming/Compression">Compression</a></li><li><a href="../../Programming/Concurrency-&amp;-Parallelism" data-for="Programming/Concurrency-&amp;-Parallelism">Concurrency &amp; Parallelism</a></li><li><a href="../../Programming/Encodings" data-for="Programming/Encodings">Encodings</a></li><li><a href="../../Programming/Open-Source-&amp;-Free-Software" data-for="Programming/Open-Source-&amp;-Free-Software">FOSS (Free and Open Source Software)</a></li><li><a href="../../Programming/Hashing" data-for="Programming/Hashing">Hashing</a></li><li><a href="../../Programming/Binary,-Hexadecimal-and-Number-Systems" data-for="Programming/Binary,-Hexadecimal-and-Number-Systems">Number Systems (binary &amp; hex)</a></li><li><a href="../../Programming/Python" data-for="Programming/Python">Python</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Security-&amp;-Cryptography"><button class="folder-button"><span class="folder-title">Security &amp; Cryptography</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Security-&amp;-Cryptography"><li><a href="../../Security-&amp;-Cryptography/Basics" data-for="Security-&amp;-Cryptography/Basics">🌱Basics/Intro</a></li><li><a href="../../Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking" data-for="Security-&amp;-Cryptography/Whitehat,-Grey-Hat,-and-Black-Hat-Hacking">White, Grey &amp; Black Hat Hacking</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div><h1 class="article-title ">2. Link</h1><p class="content-meta ">Dec 14, 2024, 11 min read</p><div class="toc mobile-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#switching-todo" data-for="switching-todo">Switching (TODO)</a></li><li class="depth-1"><a href="#mac" data-for="mac">MAC</a></li><li class="depth-0"><a href="#error-detection-algorithms" data-for="error-detection-algorithms">Error detection Algorithms</a></li><li class="depth-1"><a href="#single-bit-parity" data-for="single-bit-parity">Single-bit Parity</a></li><li class="depth-1"><a href="#two-dimensional-bit-parity-todo" data-for="two-dimensional-bit-parity-todo">Two-dimensional bit Parity (TODO)</a></li><li class="depth-1"><a href="#forward-error-correction-coding-todo" data-for="forward-error-correction-coding-todo">Forward Error Correction Coding (TODO)</a></li><li class="depth-1"><a href="#cyclic-redundancy-check-todo" data-for="cyclic-redundancy-check-todo">Cyclic Redundancy Check (TODO)</a></li><li class="depth-0"><a href="#additional-resources" data-for="additional-resources">Additional Resources</a></li></ul></div></div></div></div><article class="popover-hint"><p>Responsible for transferring packets from one node to another, that are physically connected. Each <mark style="background:#964B00;color:white;">frame</mark> encapsulates <mark style="background:#00008b;color:white;">datagrams</mark>, which encapsulate <mark style="background:#008B00;color:white;">segments</mark>, which encapsulate <mark style="background:#8B0000;color:white;">messages</mark>. So the sender does this encapsulation, and sends the frame over a NIC, then the receiver takes the frame and unpacks it (i.e. get out <mark style="background:#00008b;color:white;">datagram</mark>, extract <mark style="background:#008B00;color:white;">segment</mark> from it, and pass the <mark style="background:#8B0000;color:white;">message</mark> to the application layer):</p>
+<p><a href="../../OSI-stack.excalidraw" class="internal alias" data-slug="OSI-stack.excalidraw">1200</a></p>
+<p>It’s important to note that over a given network there can be many different link layer protocols (for example a fiber optic cable can be connected to a router that uses WIFI[802.11.xx], that connects to COAX etc.). The network layer above the link layer assumes it’s not very useful. You also typically implement reliable delivery at this layer, but for some physical connection types (like fiber optics) the error layer is so low that they often don’t implement it. This is why reliable data transfer is implemented at both this later and <a href="../../Networks/OSI/4.-Transport-(TODO)" class="internal alias" data-slug="Networks/OSI/4.-Transport-(TODO)">the transport layer</a> to detect the errors that occasionally happen.</p>
+<p>There are two different approaches to how links are structured:</p>
+<ul>
+<li>Direct point-to-point:
+<ul>
+<li>Devices are wired together directly, with no additional hardware between</li>
+<li>Often data is send directly across the connections</li>
+</ul>
+</li>
+<li>Multiple access control (MAC)
+<ul>
+<li>When you’re in a network with more than 2 total devices this helps you disambiguate devices</li>
+</ul>
+</li>
+</ul>
+<p>Additionally some protocols implement (note you’re not guaranteed any of this):</p>
+<ul>
+<li><strong>flow control</strong>, which basically is just a system to make sure devices in a network don’t get overwhelmed</li>
+<li><strong>Error detection &amp; correction</strong>; since you’re using signals there can be noise and signal attenuation. If errors are detected, some schemes will help you drop those frames and resend (fancier ones can correct errors). Please note that this is never 100% reliable.
+<ul>
+<li>Can use single bit parity (is-even/is-odd), or 2d parity (locatable parity)</li>
+</ul>
+</li>
+<li><strong>Duplexing</strong>: with half duplex two nodes can send or receive simultaneously (but not both), full duplex allows simultaneous sending and receiving</li>
+</ul>
+<p>Some of these features are done in hardware (NICs, WIFI chips, switches), others are in software (driver/firmware).</p>
+<h2 id="switching-todo">Switching (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#switching-todo" class="internal alias"> §</a></h2>
+<p>Switches are used to create LAN’s (which are then composed together by routers at the <a href="../../Networks/OSI/3.-Network" class="internal alias" data-slug="Networks/OSI/3.-Network">Network layer</a>). Wired LAN’s are constructed primarily using Ethernet (which uses <a href="#csmacd-todo" class="internal alias">CSMA/CD</a>). For wireless networks primarily WIFI (802.11.xx) is used (typically with <a href="#csmaca-todo" class="internal alias">CSMA/CA</a>.</p>
+<h3 id="mac">MAC<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mac" class="internal alias"> §</a></h3>
+<p>MAC protocols are a branch of multiple access protocols. Multiple access protocols are protocols that are used to avoid collisions. Essentially when multiple devices <strong>can</strong> transmit over a network, they need to be told how each of them can take turns. If they run at the same time, then they will “talk over” each other.</p>
+<p>An ideal system should:</p>
+<p><code>R = Transmission Rate (bits/s)</code></p>
+<ol>
+<li>When M nodes are active, each should transmit at an average rate of R/M</li>
+<li>When only one node is active, it can send at rate R</li>
+<li>Fully decentralized
+<ol>
+<li>No special node to coordinate</li>
+<li>No synchronization of clocks &amp; slots</li>
+</ol>
+</li>
+<li>Simple</li>
+</ol>
+<p>There are three broad classes of protocols:</p>
+<ul>
+<li>Channel Partitioning
+<ul>
+<li>Divide channels into smaller pieces, allocate pieces to nodes to exclusively use
+<ul>
+<li><a href="#fdma" class="internal alias">FDMA</a></li>
+<li><a href="#tdma" class="internal alias">TDMA</a></li>
+<li>CDMA</li>
+</ul>
+</li>
+<li>Share channel efficiently and fairly at high load</li>
+<li>inefficient at low load</li>
+</ul>
+</li>
+<li>Random Access
+<ul>
+<li>Channel not divided, allows collisions, but will try to “recover” from them
+<ul>
+<li><a href="#aloha-todo" class="internal alias">ALOHA</a></li>
+<li><a href="#csma-todo" class="internal alias">CSMA</a></li>
+<li><a href="#csmacd-todo" class="internal alias">CSMA/CD</a></li>
+<li>CSMA/CA</li>
+</ul>
+</li>
+<li>Efficient at low load</li>
+<li>High load has a collision overhead</li>
+</ul>
+</li>
+<li>Turns/Controlled Access
+<ul>
+<li>Nodes take turns, but nodes with more data to send will take longer turns
+<ul>
+<li>Reservation</li>
+<li>Polling</li>
+<li>Token Passing</li>
+</ul>
+</li>
+<li>Try to be efficient at high and low load</li>
+</ul>
+</li>
+</ul>
+<h4 id="mac-addresses">MAC Addresses<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mac-addresses" class="internal alias"> §</a></h4>
+<p>Devices on the same LAN will have a dedicated MAC address. They are a 48bit number that is typically “burned into” your NIC (though some devices let you modify them) typically by storing them on read-only memory. MAC addresses are intended to be unique per-device. Manufacturers must purchase MAC addresses in bulk from IEEE. After a few decades they can be re-used. To use an analogy a MAC address is like a social security number, you will only have 1 in your life. However an IP address is like a physical address, you might end up with a bunch over your life.</p>
+<h5 id="arp-todo">ARP (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arp-todo" class="internal alias"> §</a></h5>
+<p>ARP (address resolution protocol) is the protocol that allows you to convert an IP address to a MAC address.</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="powershell" data-theme="github-dark github-light"><code data-language="powershell" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">arp </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">-</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">a </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># See arp table</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">arp </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">-</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">d </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">*</span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"> # Clear all arp cache</span></span></code></pre></figure>
+<p>You can then ping devices to discover them.</p>
+<h4 id="tdma">TDMA<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tdma" class="internal alias"> §</a></h4>
+<p>TDMA (Time division, multiple access) is a “channel partitioning” system. Each node accesses channels in “rounds”, each node gets a fixed-length time slot for each round. Any unused slots go idle.</p>
+<p><a href="../../TDMA.excalidraw" class="internal alias" data-slug="TDMA.excalidraw">1200</a></p>
+<p>Pros:</p>
+<ul>
+<li>Simple to implement</li>
+<li>Fairly partitions bandwidth</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Wasteful; Any nodes have to wait their turn to run. Fine if lots of nodes have small messages, but if one node has tons of data, it will sit waiting over and over again.</li>
+<li>Slow; Transmissions that could be done in one long burst have to wait for their next “turn”.</li>
+</ul>
+<h4 id="fdma">FDMA<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fdma" class="internal alias"> §</a></h4>
+<p>FDMA (Frequency division multiple access) instead breaks up the bandwidth into different “frequency bands”, which devices then entirely rent. This makes it a Channel Partitioning algorithm:</p>
+<p><a href="../../FDMA.excalidraw" class="internal alias" data-slug="FDMA.excalidraw">1200</a>
+Pros:</p>
+<ul>
+<li>Simple to implement</li>
+<li>Fairly partitions bandwidth</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Wasteful; Any nodes have to wait their turn to run. Fine if lots of nodes have small messages, but if one node has tons of data, it will sit waiting over and over again.</li>
+<li>Slow; Transmissions that could be done in one long burst are slowed down by partitioned bandwidth</li>
+</ul>
+<h4 id="aloha-todo">ALOHA (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aloha-todo" class="internal alias"> §</a></h4>
+<p>Is a random access protocol. Meaning it allows collisions to happen, and then tries to recover from it. The algorithm is incredibly simple, a user transmits at will, for each message they will get an ACK. If there’s a collision, they won’t get an ACK, and the device will retransmit. But to avoid another collision the retransmission rates are staggered per-node. Essentially a random number is set to wait for (within a range).</p>
+<p>The pseudocode is something like:</p>
+<pre><code>
+transmissionTime // The time to wait for a response after sending initial data
+backoffTime      // Randomly generated (within a rnage) time to wait to retransmit
+
+if device.hasData(){
+	ACK = transmit()
+	wait(transmissionTime)
+	if !ACK{
+		backoffTime = randomNumberWithinRange()
+		
+		wait(backoffTime)
+		
+		// retransmit and repeat until ACKed
+		ACK = transmit()
+	}
+}
+</code></pre>
+<p>The throughput for this approach is <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8413em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">2</span><span class="mord mathnormal mtight">G</span></span></span></span></span></span></span></span></span></span></span></span>, meaning the maximum efficiency is when <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> where the throughput is %18.4. The main advantage of ALOHA vs slotted ALOHA is that it’s easy to implement.</p>
+<h5 id="slotted-aloha-todo">Slotted ALOHA (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#slotted-aloha-todo" class="internal alias"> §</a></h5>
+<p>Slotted ALOHA modifies the original <a href="#aloha-todo" class="internal alias">ALOHA</a> algorithm to split the shared channel into time slots, with these time slots, data is only allowed to be sent at the start of the time slot. This should hopefully help improve the throughput of ALOHA by dropping the retransmission rate.</p>
+<p><a href="../../slotted-ALOHA.excalidraw" class="internal alias" data-slug="slotted-ALOHA.excalidraw">1200</a></p>
+<p>Even if packet 2 was ready to go in the middle of timeslot 1, it would have to wait until the start of timeslot 2.</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal" style="margin-right:0.03588em;">ug</span><span class="mord mathnormal">h</span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8413em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">G</span></span></span></span></span></span></span></span></span></span></span></span>: where G is the number of station that wish to transmit at the same time</p>
+<p>So, when <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal" style="margin-right:0.03588em;">ug</span><span class="mord mathnormal">h</span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.368</span></span></span></span></p>
+<p>Assumptions:</p>
+<ul>
+<li>All frames same size</li>
+<li>Time divided into equal size slots (time to transmit = 1 frame)</li>
+<li>nodes start to transmit, only at slot beginning</li>
+<li>nodes are synchronized</li>
+<li>if 2 or more nodes transmit in slot, all nodes detect collisions</li>
+</ul>
+<p>Pros:</p>
+<ul>
+<li>single active node can continuously transmit at full rate of channel</li>
+<li>highly decentralized: only slots in nodes need to be in sync</li>
+<li>simple</li>
+</ul>
+<p>cons:</p>
+<ul>
+<li>collisions, wasting slots</li>
+<li>idle slots</li>
+<li>nodes may be able to detect collision in less than time to transmit packet</li>
+<li>clock synchronization</li>
+<li>max efficiency = <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> = 37%
+<ul>
+<li>Still twice as good as pure ALOHA, but still bad</li>
+</ul>
+</li>
+</ul>
+<h4 id="csma-todo">CSMA (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#csma-todo" class="internal alias"> §</a></h4>
+<p>CSMA (Carrier sense multiple access) Is a random access protocol. Meaning it allows collisions to happen, and then tries to recover from it. Essentially the algorithm is that you broadcast whenever you want, however before you broadcast you stop and listen on the network to see if it’s idle (like listening before speaking). Distance and propagation delay increase collision probability.</p>
+<p>There are 4 main variants:</p>
+<ol>
+<li>Persistent CSMA
+<ol>
+<li>Continuously listen to network for idle, and send as soon as it’s idle</li>
+</ol>
+</li>
+<li>Non-persistent CSMA
+<ol>
+<li>Wait a random amount of time between listening to the network for idle state</li>
+</ol>
+</li>
+<li>P persistent CSMA
+<ol>
+<li>Continuously listen to network for idle, then use a probability to determine if you should send</li>
+</ol>
+</li>
+<li>O persistent CSMA
+<ol>
+<li>A supervisor node determines the order</li>
+</ol>
+</li>
+</ol>
+<h5 id="csmacd-todo">CSMA/CD (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#csmacd-todo" class="internal alias"> §</a></h5>
+<p>Use CSMA, but while transmitting you listen to channel for collisions (collision detection). When a collision is detected, immediately stop transmission. The collision detection itself is easy in wired connections, but really hard in wireless.</p>
+<p>Efficiency is <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.5612em;vertical-align:-0.7161em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.5247em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mtight">6.44</span><span class="mbin mtight">∗</span><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9505em;"><span style="top:-2.656em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">tt</span></span></span></span><span style="top:-3.2255em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.4624em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">Tp</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.344em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7161em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> where Tr is the transmission time (round trip time of 1 bit), and Tp is the Time to propagate (2*propagation time)</p>
+<ul>
+<li>if distance increases CSMA/CD efficiency decreases</li>
+<li>The length of packets also increases efficiency, where the larger the better (up to the maximum size of 1500 Bytes)</li>
+</ul>
+<h5 id="csmaca-todo">CSMA/CA (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#csmaca-todo" class="internal alias"> §</a></h5>
+<p>Use CSMA but avoid collisions. This is a better alternative than CSMA/CD for wireless networks. This allows us to reserve the channel for specific frames.</p>
+<p>Send CTS (clear to send), while others send RTS (request to send)</p>
+<h4 id="token-passing-todo">Token Passing (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#token-passing-todo" class="internal alias"> §</a></h4>
+<p>Arrange the nodes in a network into a ring (essentially a linked list), each node waits for the token, and when receives is able to broadcast over the network. Essentially it’s like having a talking stick to be allowed to speak.</p>
+<p>Pros:</p>
+<ul>
+<li>Compared to polling there’s no master node</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Token overhead</li>
+<li>Latency</li>
+<li>Single point of failure (if for some reason token gets broken, like if a device dies while it has the token)
+<ul>
+<li>More robust versions of this protocol address this, but then that adds complexity and overhead</li>
+</ul>
+</li>
+</ul>
+<h4 id="polling-todo">Polling (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polling-todo" class="internal alias"> §</a></h4>
+<p>One node is selected to be a master node, every other node in the network is considered a slave node. The master node will then iterate through the slave nodes, and ask each of them if they have any data to send. This is often used in bluetooth (because typically smaller networks).</p>
+<p>Pros:</p>
+<ul>
+<li>
+<p>No constant competition (each waits it’s turn)</p>
+</li>
+<li>
+<p>No wasted bandwidth when transmitting
+cons:</p>
+</li>
+<li>
+<p>Single point of failure</p>
+</li>
+<li>
+<p>Latency</p>
+</li>
+<li>
+<p>Polling overhead</p>
+</li>
+<li></li>
+</ul>
+<h2 id="error-detection-algorithms">Error detection Algorithms<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#error-detection-algorithms" class="internal alias"> §</a></h2>
+<p>There are a collection of error-detecting algorithms that can be used to check for any potential errors when messages are sent at the link layer.</p>
+<h3 id="single-bit-parity">Single-bit Parity<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#single-bit-parity" class="internal alias"> §</a></h3>
+<p>Single bit parity is very easy to implement and check. With whatever data you send, you select a bit to be the parity bit. This bit will take every other bit in the message, sum the number of 1’s, and check if that value is even or odd. If it’s odd, then the parity bit is 0, if it’s even, the parity bit is 1. This means if a bit is flipped in the message, then it will change if it’s even or odd. For example consider the 31 bit sequence:</p>
+<pre><code>1010101011001001000101011100101
+</code></pre>
+<p>There are 15 1’s in this sequence. In our case we will add a 0 to the right-most side, making the total sequence 32-bits, and the right-most bit being our parity bit.:</p>
+<pre><code>10101010 11001001 00010101 11001010
+</code></pre>
+<p>Now if any single bit is flipped in the sequence, there will be an error detected. The code for this can be found below in python:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-dark github-light"><code data-language="python" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">from</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> collections </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> Counter</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> generate_parity</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(sequence:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) -> </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    sequence_string </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> str</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">bin</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(sequence))[</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:]</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    number_of_1s </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> Counter(sequence_string)[</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;1&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (number_of_1s </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">%</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">: </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># even</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">        sequence_string </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;1&quot;</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    else</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">: </span><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;"># odd</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">        sequence_string </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">+=</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;0&quot;</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    return</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(sequence_string, </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">def</span><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;"> check_parity</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(sequence:</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) -> </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">bool</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    sequence_string </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> str</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">bin</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(sequence))[</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">-</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    parity </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">str</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">bin</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(sequence))[</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">-</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">])</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    number_of_1s </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> Counter(sequence_string)[</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;1&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">]</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    if</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> parity </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">        return</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (number_of_1s </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">%</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">==</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">    else</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">        return</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> (number_of_1s </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">%</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">!=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> 0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">if</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> __name__</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;"> ==</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> &quot;__main__&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">:</span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">    # Test non-error</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    message_1 </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;1010101011001001000101011100101&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    message_1_with_parity </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;"> generate_parity(message_1)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">    # make a message with an error ()</span></span>
+<span data-line><span style="--shiki-dark:#6A737D;--shiki-light:#6A737D;">	# Flipped bit at pos 3</span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    message_with_error </span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;"> int</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;1011101011001001000101011100101&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">,</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">2</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">) </span></span>
+<span data-line><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">    </span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">f</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Message 1 had no errors: </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">{</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">check_parity(message_1_with_parity)</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">}</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">    print</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#F97583;--shiki-light:#D73A49;">f</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;Message 2 had no errors: </span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">{</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">check_parity(message_with_error)</span><span style="--shiki-dark:#79B8FF;--shiki-light:#005CC5;">}</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">&quot;</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span></code></pre></figure>
+<p>Which prints:</p>
+<pre><code>Message 1 had no errors: True
+Message 2 had no errors: False
+</code></pre>
+<h3 id="two-dimensional-bit-parity-todo">Two-dimensional bit Parity (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#two-dimensional-bit-parity-todo" class="internal alias"> §</a></h3>
+<p>…
+Only really good for situations that are very sensitive (i.e. transmissions with the mars rover), since it adds a ton of data overhead</p>
+<h3 id="forward-error-correction-coding-todo">Forward Error Correction Coding (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forward-error-correction-coding-todo" class="internal alias"> §</a></h3>
+<p>…</p>
+<h3 id="cyclic-redundancy-check-todo">Cyclic Redundancy Check (TODO)<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cyclic-redundancy-check-todo" class="internal alias"> §</a></h3>
+<p>…</p>
+<h2 id="additional-resources">Additional Resources<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-resources" class="internal alias"> §</a></h2>
+<ul>
+<li>Jim Kurose
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lMGWJZLTulY" class="external alias">6.1 Introduction to the Link Layer</a></li>
+<li><a href="https://www.youtube.com/watch?v=x-rQ3RiI7I0" class="external alias">6.2 Error detection and correction</a></li>
+<li><a href="https://www.youtube.com/watch?v=X2cLpzFRMT4" class="external alias">6.3 Multiple Access links and protocols</a></li>
+</ul>
+</li>
+<li>FDMA &amp; TDMA
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KviHyRss-dE" class="external alias">Channelization Protocols</a></li>
+</ul>
+</li>
+<li>ALOHA
+<ul>
+<li><a href="https://www.youtube.com/watch?v=j4-r0e7DjqY" class="external alias">Pure Aloha</a></li>
+<li><a href="https://www.youtube.com/watch?v=aqWTNk90zRA" class="external alias">Slotted Aloha</a></li>
+</ul>
+</li>
+</ul></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#switching-todo" data-for="switching-todo">Switching (TODO)</a></li><li class="depth-1"><a href="#mac" data-for="mac">MAC</a></li><li class="depth-0"><a href="#error-detection-algorithms" data-for="error-detection-algorithms">Error detection Algorithms</a></li><li class="depth-1"><a href="#single-bit-parity" data-for="single-bit-parity">Single-bit Parity</a></li><li class="depth-1"><a href="#two-dimensional-bit-parity-todo" data-for="two-dimensional-bit-parity-todo">Two-dimensional bit Parity (TODO)</a></li><li class="depth-1"><a href="#forward-error-correction-coding-todo" data-for="forward-error-correction-coding-todo">Forward Error Correction Coding (TODO)</a></li><li class="depth-1"><a href="#cyclic-redundancy-check-todo" data-for="cyclic-redundancy-check-todo">Cyclic Redundancy Check (TODO)</a></li><li class="depth-0"><a href="#additional-resources" data-for="additional-resources">Additional Resources</a></li></ul></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li><a href="../../Networks/Basics" class="internal">🌱Basics/Intro</a></li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/" target="_blank">Quartz v4.1.4</a>, © 2024</p><ul><li><a href="https://github.com/descent098">GitHub</a></li><li><a href="https://linkedin.com/in/kieran-wood">LinkedIn</a></li><li><a href="https://kieranwood.ca">Main Site</a></li><li><a href="https://canadiancoding.ca">Canadian Coding</a></li><li><a href="https://kieranwood.ca/tech">Tech Blog</a></li><li><a href="https://kieranwood.ca/philosophy">Philosophy Blog</a></li></ul><script>document.querySelectorAll('img').forEach( 
+  (image)=>{
+      image.addEventListener('click', focusImage)
+  }
+)
+
+function focusImage(){
+  if (this.classList.contains('focusedImage')){
+      document.exitFullscreen()
+  }else{
+      this.requestFullscreen()
+  }
+  this.classList.toggle('focusedImage')
+}</script></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+function toggleCallout() {
+  const outerBlock = this.parentElement;
+  outerBlock.classList.toggle(`is-collapsed`);
+  const collapsed = outerBlock.classList.contains(`is-collapsed`);
+  const height = collapsed ? this.scrollHeight : outerBlock.scrollHeight;
+  outerBlock.style.maxHeight = height + `px`;
+  let current = outerBlock;
+  let parent = outerBlock.parentElement;
+  while (parent) {
+    if (!parent.classList.contains(`callout`)) {
+      return;
+    }
+    const collapsed2 = parent.classList.contains(`is-collapsed`);
+    const height2 = collapsed2 ? parent.scrollHeight : parent.scrollHeight + current.scrollHeight;
+    parent.style.maxHeight = height2 + `px`;
+    current = parent;
+    parent = parent.parentElement;
+  }
+}
+function setupCallout() {
+  const collapsible = document.getElementsByClassName(
+    `callout is-collapsible`
+  );
+  for (const div of collapsible) {
+    const title = div.firstElementChild;
+    if (title) {
+      title.removeEventListener(`click`, toggleCallout);
+      title.addEventListener(`click`, toggleCallout);
+      const collapsed = div.classList.contains(`is-collapsed`);
+      const height = collapsed ? title.scrollHeight : div.scrollHeight;
+      div.style.maxHeight = height + `px`;
+    }
+  }
+}
+document.addEventListener(`nav`, setupCallout);
+window.addEventListener(`resize`, setupCallout);
+</script><script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+          const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+          mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: 'loose',
+            theme: darkMode ? 'dark' : 'default'
+          });
+          document.addEventListener('nav', async () => {
+            await mermaid.run({
+              querySelector: '.mermaid'
+            })
+          });
+          </script><script src="../../postscript.js" type="module"></script></html>
