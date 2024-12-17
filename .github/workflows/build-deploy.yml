@@ -41,7 +41,7 @@ jobs:
       - name: Build
         shell: "bash" 
         run: |
-          npx quartz build
+          npx quartz build -o "site"
       - name: setup git
         shell: "bash"
         run: | 
