@@ -6,65 +6,65 @@
       <description>Last 10 notes on Computer Science Knowledge Base</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>3. Network</title>
+    <link>https://kieranwood.ca/Networks/OSI/3.-Network</link>
+    <guid>https://kieranwood.ca/Networks/OSI/3.-Network</guid>
+    <description>The network layer is primarily concerned with enabling different networks to be connected together. It does also handle some internal network functions (like the data layer), but primarily it’s focused on enabling multiple small networks to talk to one another.</description>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
+  </item><item>
+    <title>5-7. Application</title>
+    <link>https://kieranwood.ca/Networks/OSI/5-7.-Application</link>
+    <guid>https://kieranwood.ca/Networks/OSI/5-7.-Application</guid>
+    <description>The application layer is the layer most developers work with. It’s where web frameworks like react, Flask, and others run. This is the highest layer of abstraction in both the OSI and TCP/IP model, meaning the data from this layer gets encapsulated by every other layer down the stack.</description>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
+  </item><item>
     <title>Linux</title>
     <link>https://kieranwood.ca/OS--and--Firmware/Unix--and--Linux</link>
     <guid>https://kieranwood.ca/OS--and--Firmware/Unix--and--Linux</guid>
     <description> Info History informs some of the technical information, as such this section will include technical info about linux, and some history. This I think is the best way to talk about linux &amp; unix since often the history informs the technical decisions.</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>Userspace</title>
     <link>https://kieranwood.ca/OS--and--Firmware/Userspace</link>
     <guid>https://kieranwood.ca/OS--and--Firmware/Userspace</guid>
     <description>This is the good old operating system you know and love. This is where applications, your desktop, and %90 of computing is done. (5) The Layman’s Guide to Linux: User Space - YouTube (Covers most things at once, but I would recommend doing other sections first then come back to this video) Package managers These systems are designed to help a user manage packages (applications and services that run on an OS).</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>Number Systems (binary &amp; hex)</title>
     <link>https://kieranwood.ca/Programming/Binary,-Hexadecimal-and-Number-Systems</link>
     <guid>https://kieranwood.ca/Programming/Binary,-Hexadecimal-and-Number-Systems</guid>
     <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 ..</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>Caching</title>
     <link>https://kieranwood.ca/Programming/Caching</link>
     <guid>https://kieranwood.ca/Programming/Caching</guid>
     <description>A cache is basically a system where you store something you know you will need for later. Imagine you work in a bakery. If you wait until someone orders a loaf of bread to cook it, then now every person who comes into your store has to wait for you to cook the loaf before they can leave.</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>Compression</title>
     <link>https://kieranwood.ca/Programming/Compression</link>
     <guid>https://kieranwood.ca/Programming/Compression</guid>
     <description>Storage space is valuable. Whether it’s memory on someone’s computer that needs to be preserved to keep it running, or space on a drive to keep it from being full.</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>Encodings</title>
     <link>https://kieranwood.ca/Programming/Encodings</link>
     <guid>https://kieranwood.ca/Programming/Encodings</guid>
     <description>Encoding just means a way to take a set of information in one format, and convert or represent it to another format. You can imagine the same concept (a boat, a sandwhich etc.) being encoded in different languages (spanish, english etc.).</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>Hashing</title>
     <link>https://kieranwood.ca/Programming/Hashing</link>
     <guid>https://kieranwood.ca/Programming/Hashing</guid>
     <description>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm.</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item><item>
     <title>FOSS (Free and Open Source Software)</title>
     <link>https://kieranwood.ca/Programming/Open-Source--and--Free-Software</link>
     <guid>https://kieranwood.ca/Programming/Open-Source--and--Free-Software</guid>
     <description>When developing software you have an important choice to make. Should users be able to see the source code to the program you’re asking them to run? Should you be able to know the internals of what’s happening in your computer? Much of the software we used today is closed source and proprietary, meaning we don’t know how it works, since we can’t view the source code.</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
-  </item><item>
-    <title>Python</title>
-    <link>https://kieranwood.ca/Programming/Python</link>
-    <guid>https://kieranwood.ca/Programming/Python</guid>
-    <description>Python is a versatile and widely-used programming language that is used by developers, data scientists, and educators alike. Created by Guido van Rossum and first released in 1991, Python has steadily grown in popularity due to its simplicity and readability.</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
-  </item><item>
-    <title>🌱Basics/Intro</title>
-    <link>https://kieranwood.ca/Game-Dev--and--Graphics/Basics</link>
-    <guid>https://kieranwood.ca/Game-Dev--and--Graphics/Basics</guid>
-    <description>… Game engines … Additional Resources Game Analysis Curious Archive - YouTube Game Maker’s Toolkit - YouTube Gingy - YouTube Talks from people in industry GDC - YouTube John Carmack ...</description>
-    <pubDate>Tue, 17 Dec 2024 22:08:04 GMT</pubDate>
+    <pubDate>Sat, 21 Dec 2024 03:49:44 GMT</pubDate>
   </item>
     </channel>
   </rss>
