@@ -1,72 +1,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://kieranwood.ca/Databases/Basics</loc>
-    <lastmod>2024-12-21T03:49:44.434Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.783Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Excalidraw/hardware/storage/CLOOK.excalidraw-</loc>
-    <lastmod>2024-12-21T03:49:44.434Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.783Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Game-Dev--and--Graphics/Basics</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/HCI--and--VR/Basics</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Hardware/Basics</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Hardware/RAM</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Networks/Basics</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Networks/HTTP</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Networks/OSI/2.-Link</loc>
-    <lastmod>2024-12-21T03:49:44.462Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Networks/OSI/3.-Network</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.811Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Networks/OSI/5-7.-Application</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/OS--and--Firmware/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/OS--and--Firmware/Unix--and--Linux</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/OS--and--Firmware/Userspace</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Binary,-Hexadecimal-and-Number-Systems</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Caching</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Compression</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Concurrency--and--Parallelism</loc>
     <lastmod>2024-01-19T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Encodings</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Hashing</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Open-Source--and--Free-Software</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
+  </url><url>
+    <loc>https://kieranwood.ca/Programming/Programming-Paradigms</loc>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Programming/Python</loc>
-    <lastmod>2024-12-21T03:49:44.466Z</lastmod>
+    <lastmod>2024-12-30T10:22:51.815Z</lastmod>
   </url><url>
     <loc>https://kieranwood.ca/Security--and--Cryptography/Basics</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
