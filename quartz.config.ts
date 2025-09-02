@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     baseUrl: "kieranwood.ca",
-    ignorePatterns: ["private", "templates", ".obsidian", "_meta", "**.excalidraw.md", "Events", "**TODO).md"],
+    ignorePatterns: ["private", "templates", ".obsidian", "_meta", "**.excalidraw.md", "Events", "**TODO).md", "**.excalidraw"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
