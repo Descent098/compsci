@@ -29,6 +29,8 @@ This whole site is based on [Quartz V4](https://github.com/jackyzha0/quartz)
 
 ## Update Guide
 
+To update contend cd into `/compsci-kb` then run `git pull origin main`.
+
 There are a few config changes made that are hardcoded, and need to be persisted. You will need to manually check differences in the following files:
 
 - `quartz.config.ts`
