@@ -10,61 +10,61 @@
     <link>https://kieranwood.ca/Programming/languages/Markdown</link>
     <guid>https://kieranwood.ca/Programming/languages/Markdown</guid>
     <description>Markdown is a human-readable markup language. It is designed to make creating documents simple, while allowing a syntax that covers the bulk of operations you would want to do for document preparation.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Programming Paradigms</title>
     <link>https://kieranwood.ca/Programming/languages/Programming-Paradigms</link>
     <guid>https://kieranwood.ca/Programming/languages/Programming-Paradigms</guid>
     <description>Object oriented Object oriented programming is based around the idea of describing your program into chunks called objects. You then use these objects to complete whatever task your program is attempting to complete.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Python</title>
     <link>https://kieranwood.ca/Programming/languages/Python</link>
     <guid>https://kieranwood.ca/Programming/languages/Python</guid>
     <description>Python is a versatile and widely-used programming language that is used by developers, data scientists, and educators alike. Created by Guido van Rossum and first released in 1991, Python has steadily grown in popularity due to its simplicity and readability.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Number Systems (binary &amp; hex)</title>
     <link>https://kieranwood.ca/Programming/concepts/Binary,-Hexadecimal-and-Number-Systems</link>
     <guid>https://kieranwood.ca/Programming/concepts/Binary,-Hexadecimal-and-Number-Systems</guid>
     <description>When we count we traditionally use base 10. Base 10 gives us 10 values before we shift digits. We go from 0-9, and then we shift 1 digit left, and start from 0 in the far right column again: 0 1 2 ..</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Caching</title>
     <link>https://kieranwood.ca/Programming/concepts/Caching</link>
     <guid>https://kieranwood.ca/Programming/concepts/Caching</guid>
     <description>A cache is basically a system where you store something you know you will need for later. Imagine you work in a bakery. If you wait until someone orders a loaf of bread to cook it, then now every person who comes into your store has to wait for you to cook the loaf before they can leave.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Compression</title>
     <link>https://kieranwood.ca/Programming/concepts/Compression</link>
     <guid>https://kieranwood.ca/Programming/concepts/Compression</guid>
     <description>Storage space is valuable. Whether it’s memory on someone’s computer that needs to be preserved to keep it running, or space on a drive to keep it from being full.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Encodings</title>
     <link>https://kieranwood.ca/Programming/concepts/Encodings</link>
     <guid>https://kieranwood.ca/Programming/concepts/Encodings</guid>
     <description>Encoding just means a way to take a set of information in one format, and convert or represent it to another format. You can imagine the same concept (a boat, a sandwhich etc.) being encoded in different languages (spanish, english etc.).</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Hashing</title>
     <link>https://kieranwood.ca/Programming/concepts/Hashing</link>
     <guid>https://kieranwood.ca/Programming/concepts/Hashing</guid>
     <description>Hashing is a process where you take some sort of input data and use a hashing algorithm map it to some sort of output data (called a hash). This output data should be deterministic, meaning for each input there should be 1 output when put through our hashing algorithm.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Complexity &amp; Analysis</title>
     <link>https://kieranwood.ca/Programming/DSA/Complexity--and--Analysis</link>
     <guid>https://kieranwood.ca/Programming/DSA/Complexity--and--Analysis</guid>
     <description>When we write algorithms or data structures we often analyze their effectiveness by their complexity. Effectively we want to know how much stuff we need to do, and how much memory we need to run an algorithm or data structure.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item><item>
     <title>Set Theory</title>
     <link>https://kieranwood.ca/Programming/DSA/Set-Theory</link>
     <guid>https://kieranwood.ca/Programming/DSA/Set-Theory</guid>
     <description>Set theory is a branch of math that deals with collections of items. In particular a set is a collection of unique items (no repeats), these sets can be defined up front, or can be defined by a set of conditions.</description>
-    <pubDate>Mon, 12 Jan 2026 18:31:14 GMT</pubDate>
+    <pubDate>Mon, 27 Apr 2026 20:45:32 GMT</pubDate>
   </item>
     </channel>
   </rss>
