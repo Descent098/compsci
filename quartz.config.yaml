@@ -161,6 +161,10 @@ plugins:
     enabled: true
   - source: github:quartz-community/og-image
     enabled: true
+    options:
+      colorScheme: darkMode
+      defaultDescription: ""
+      defaultTitle: ""
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/canvas-page
@@ -252,15 +256,12 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-  - source: github:quartz-community/footer
+  - source: github:Descent098/footer
     enabled: true
     options:
       links:
-        GitHub: "https://github.com/descent098"
-        LinkedIn: "https://linkedin.com/in/kieran-wood"
-        "Personal": "https://kieranwood.ca"
-        "Canadian Coding": "https://canadiancoding.ca"
-        "Blog": "https://kieranwood.ca/tech"
+        "Author Site": "https://kieranwood.ca"
+        "Content licensed under CC BY-SA 4.0": https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -288,10 +289,6 @@ plugins:
       delimiters: ---
       language: yaml
     order: 5
-    layout:
-      position: beforeBody
-      priority: 15
-      display: all
   - source:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
