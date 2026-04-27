@@ -68,6 +68,12 @@ configuration:
     #     highlight: "rgba(143, 159, 169, 0.15)"
     #     textHighlight: "#b3aa0288"
 plugins:
+  - source: github:Descent098/footer
+    enabled: true
+    options:
+      links:
+        "Author Site": "https://kieranwood.ca"
+        "Content licensed under CC BY-SA 4.0": https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:
@@ -256,12 +262,6 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-  - source: github:Descent098/footer
-    enabled: true
-    options:
-      links:
-        "Author Site": "https://kieranwood.ca"
-        "Content licensed under CC BY-SA 4.0": https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
