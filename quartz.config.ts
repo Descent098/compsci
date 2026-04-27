@@ -24,28 +24,28 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#a661ff",
-          tertiary: "#d461ff",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+        "lightMode": {
+            "light": "#f9f5d7",
+            "lightgray": "#ebdbb2",
+            "gray": "#bdae93",
+            "darkgray": "#7c6f64",
+            "dark": "#3c3836",
+            "secondary": "#b16286",
+            "tertiary": "#458588",
+            "highlight": "rgba(80, 73, 69, 0.15)",
+            "textHighlight": "#fabd2f88"
         },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#a661ff",
-          tertiary: "#d461ff",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
+        "darkMode": {
+            "light": "#1d2021",
+            "lightgray": "#3c3836",
+            "gray": "#665c54",
+            "darkgray": "#d5c4a1",
+            "dark": "#fbf1c7",
+            "secondary": "#b16286",
+            "tertiary": "#83a598",
+            "highlight": "rgba(168, 153, 132, 0.15)",
+            "textHighlight": "#fabd2f88"
+        }
       },
     },
     generateSocialImages: false,
@@ -59,8 +59,8 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "everforest-light",
+          dark: "everforest-dark",
         },
         keepBackground: false,
       }),
